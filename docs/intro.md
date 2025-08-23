@@ -27,6 +27,9 @@ Explore CI/CD pipelines, containerization, orchestration, monitoring, and automa
 ### 🤖 AI Engineering
 Understand machine learning operations, AI model deployment, and AI infrastructure.
 
+### 🔬 Research Engineering
+Explore cutting-edge research and development in AI, ML, and emerging technologies. Bridge the gap between research and practical implementation.
+
 ## 📚 What You'll Find
 
 - **Structured Learning Paths**: Step-by-step guides from beginner to advanced

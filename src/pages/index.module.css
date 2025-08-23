@@ -61,6 +61,7 @@
   margin-bottom: 1.5rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   line-height: 1.2;
+  color: white !important;
 }
 
 .heroBanner .hero__subtitle {

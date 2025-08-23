@@ -41,7 +41,7 @@ function HomepageHeader() {
                 <div className="row">
                   <div className="col col--4">
                     <div className="text--center">
-                      <div style={{fontSize: '2rem', fontWeight: 'bold', marginBottom: '0.5rem'}}>5</div>
+                      <div style={{fontSize: '2rem', fontWeight: 'bold', marginBottom: '0.5rem'}}>6</div>
                       <div style={{opacity: 0.8}}>Learning Paths</div>
                     </div>
                   </div>
@@ -94,9 +94,9 @@ function TechStackSection() {
       <div className="container">
         <div className="text--center margin-bottom--lg">
           <Heading as="h2" className="text-gradient">
-            🛠️ Technologies You'll Master
+            🛠️ Technologies We Cover
           </Heading>
-          <p>Industry-standard tools and technologies used by top companies</p>
+          <p>Industry-standard tools and technologies used by top companies across different learning paths</p>
         </div>
         <div className="row">
           {techStacks.map((tech, idx) => (

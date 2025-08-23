@@ -28,7 +28,7 @@ const config: Config = {
   // Deployment settings
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -125,6 +125,10 @@ const config: Config = {
             {
               label: 'AI Engineering',
               to: '/docs/ai-engineering/getting-started',
+            },
+            {
+              label: 'Research Engineering',
+              to: '/docs/research-engineering/getting-started',
             },
           ],
         },

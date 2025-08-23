@@ -67,15 +67,15 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/ai-engineering/getting-started',
   },
   {
-    title: '🎯 Career Focused',
-    icon: '🎯',
+    title: '🔬 Research Engineering',
+    icon: '🔬',
     description: (
       <>
-        Every learning path is designed to get you job-ready with practical skills, 
-        real-world projects, and industry best practices.
+        Explore cutting-edge research and development in AI, ML, and emerging technologies. 
+        Learn to bridge the gap between research and practical implementation.
       </>
     ),
-    link: '/docs/intro',
+    link: '/docs/research-engineering/getting-started',
   },
 ];
 
@@ -111,7 +111,7 @@ export default function HomepageFeatures(): ReactNode {
             🚀 Choose Your Engineering Path
           </Heading>
           <p className="hero__subtitle" style={{color: 'var(--ifm-color-content-secondary)'}}>
-            Free, comprehensive learning paths designed to get you hired in tech
+            Six comprehensive learning paths designed to get you hired in tech
           </p>
         </div>
         <div className="row">
@@ -130,7 +130,7 @@ export default function HomepageFeatures(): ReactNode {
                 border: '1px solid rgba(99, 102, 241, 0.1)'
               }}>
                 <Heading as="h2" className="text-gradient">
-                  ✨ Why Choose Chasing Cloud Careers?
+                  ✨ Built by the Community, For the Community
                 </Heading>
                 <div className="row margin-top--lg">
                   <div className="col col--3">
