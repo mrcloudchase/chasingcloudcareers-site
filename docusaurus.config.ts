@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Chasing Cloud Careers',
-  tagline: 'Free learning paths for engineering careers - Support, Linux, Cloud, DevOps, and AI Engineering',
+  tagline: 'Free learning paths for engineering careers - Support, Linux, Cloud, DevOps, and AI Engineering 🚀',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
