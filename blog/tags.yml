@@ -1,19 +1,59 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+career-change:
+  label: Career Change
+  permalink: /career-change
+  description: Tips and guidance for transitioning into engineering careers
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+learning-paths:
+  label: Learning Paths
+  permalink: /learning-paths
+  description: Structured guides for different engineering disciplines
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+cloud-engineering:
+  label: Cloud Engineering
+  permalink: /cloud-engineering
+  description: Cloud platforms, infrastructure, and cloud-native technologies
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+devops:
+  label: DevOps
+  permalink: /devops
+  description: CI/CD, automation, containerization, and DevOps practices
+
+ai-engineering:
+  label: AI Engineering
+  permalink: /ai-engineering
+  description: Machine learning operations, AI infrastructure, and MLOps
+
+linux:
+  label: Linux
+  permalink: /linux
+  description: Linux systems administration and command line skills
+
+support-engineering:
+  label: Support Engineering
+  permalink: /support-engineering
+  description: Technical support, troubleshooting, and customer success
+
+research-engineering:
+  label: Research Engineering
+  permalink: /research-engineering
+  description: Research methodology, AI/ML research, and innovation
+
+free-resources:
+  label: Free Resources
+  permalink: /free-resources
+  description: Curated free learning materials and tools
+
+community:
+  label: Community
+  permalink: /community
+  description: Community updates, events, and collaboration
+
+getting-started:
+  label: Getting Started
+  permalink: /getting-started
+  description: Beginner-friendly content for new learners
+
+job-search:
+  label: Job Search
+  permalink: /job-search
+  description: Resume tips, interview prep, and job hunting strategies

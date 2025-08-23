@@ -375,6 +375,176 @@ img[src*="docusaurus"] {
   background: var(--gradient-subtle);
 }
 
+/* Blog Styling */
+.blog-wrapper {
+  background: var(--ifm-background-color);
+}
+
+.blog-wrapper h1 {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+.blog-wrapper h2 {
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+  border-bottom: 2px solid rgba(99, 102, 241, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.blog-wrapper h3 {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Blog Post Cards */
+.blog-post-card {
+  background: var(--gradient-subtle);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  border-radius: var(--ifm-card-border-radius);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ifm-box-shadow-lg);
+  border-color: var(--ifm-color-primary);
+}
+
+.blog-post-card h2 a {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+}
+
+.blog-post-card h2 a:hover {
+  text-decoration: none;
+}
+
+/* Blog Author Cards */
+.avatar {
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 50%;
+}
+
+.blog-author-card {
+  background: var(--gradient-subtle);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  border-radius: var(--ifm-border-radius);
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Blog Tags */
+.blog-tags--container {
+  margin: 1rem 0;
+}
+
+.blog-tags--container .badge {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.blog-tags--container .badge:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--ifm-box-shadow-md);
+}
+
+/* Blog Sidebar */
+.blog-sidebar {
+  background: var(--gradient-subtle);
+  border-radius: var(--ifm-card-border-radius);
+  padding: 1.5rem;
+  border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.blog-sidebar h3 {
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Blog Pagination */
+.blog-pagination {
+  margin-top: 3rem;
+}
+
+.blog-pagination .pagination-nav__link {
+  background: var(--gradient-subtle);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  border-radius: var(--ifm-border-radius);
+  transition: all 0.2s ease;
+}
+
+.blog-pagination .pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--ifm-box-shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Blog Archive */
+.blog-archive-item {
+  background: var(--gradient-subtle);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  border-radius: var(--ifm-border-radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
+.blog-archive-item:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+}
+
+/* Blog List Page */
+.blog-list-page h1 {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+/* Blog Post Content Styling */
+.markdown > h1:first-child {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-post-content img {
+  border-radius: var(--ifm-border-radius);
+  box-shadow: var(--ifm-box-shadow-md);
+  margin: 2rem 0;
+}
+
+.blog-post-content blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  background: var(--gradient-subtle);
+  border-radius: 0 var(--ifm-border-radius) var(--ifm-border-radius) 0;
+}
+
 /* Learning Path Cards */
 .learning-path-card {
   background: var(--gradient-subtle);
