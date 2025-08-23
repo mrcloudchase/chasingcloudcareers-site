@@ -71,4 +71,4 @@ Welcome to your **Cloud Engineering** learning journey! This comprehensive path 
 3. **Complete fundamentals course** - Finish cloud basics certification
 4. **Build first project** - Deploy a simple web application
 
-Ready to start your cloud journey? Begin with [Cloud Fundamentals](./cloud-fundamentals) →
+Ready to start your cloud journey? Begin building your cloud engineering skills today!

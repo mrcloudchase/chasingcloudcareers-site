@@ -78,4 +78,4 @@ Welcome to your **AI Engineering** learning journey! Learn to build, deploy, and
 3. **Build end-to-end project** - Train, deploy, and monitor a model
 4. **Explore MLOps tools** - Set up experiment tracking and model versioning
 
-Ready to engineer AI systems? Start with [AI/ML Fundamentals](./ai-ml-fundamentals) →
+Ready to engineer AI systems? Start building your AI engineering skills today!

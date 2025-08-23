@@ -63,4 +63,4 @@ Welcome to your **Support Engineering** learning journey! This path will guide y
 3. **Join communities** - Connect with other support professionals
 4. **Start documenting** - Begin building your knowledge base
 
-Ready to begin? Let's start with [Communication Fundamentals](./communication-fundamentals) →
+Ready to begin? Start building your support engineering skills today!

@@ -76,4 +76,4 @@ Welcome to your **Linux Engineering** learning journey! Master the skills needed
 3. **Practice daily** - Use Linux as your primary development environment
 4. **Build projects** - Set up web servers and automate tasks
 
-Ready to dive into Linux? Start with [Linux Fundamentals](./linux-fundamentals) →
+Ready to dive into Linux? Start building your Linux engineering skills today!

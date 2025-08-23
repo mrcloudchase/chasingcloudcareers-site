@@ -104,23 +104,23 @@ const config: Config = {
           items: [
             {
               label: 'Support Engineering',
-              to: '/docs/support-engineering',
+              to: '/docs/category/support-engineering',
             },
             {
               label: 'Linux Engineering',
-              to: '/docs/linux-engineering',
+              to: '/docs/category/linux-engineering',
             },
             {
               label: 'Cloud Engineering',
-              to: '/docs/cloud-engineering',
+              to: '/docs/category/cloud-engineering',
             },
             {
               label: 'DevOps Engineering',
-              to: '/docs/devops-engineering',
+              to: '/docs/category/devops-engineering',
             },
             {
               label: 'AI Engineering',
-              to: '/docs/ai-engineering',
+              to: '/docs/category/ai-engineering',
             },
           ],
         },

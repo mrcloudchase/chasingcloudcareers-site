@@ -77,4 +77,4 @@ Welcome to your **DevOps Engineering** learning journey! Learn to bridge develop
 3. **Learn containerization** - Build and deploy with Docker
 4. **Practice IaC** - Automate infrastructure provisioning
 
-Ready to start your DevOps journey? Begin with [DevOps Fundamentals](./devops-fundamentals) →
+Ready to start your DevOps journey? Begin building your DevOps engineering skills today!
