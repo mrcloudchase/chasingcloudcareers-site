@@ -3,56 +3,72 @@
   align-items: center;
   padding: 4rem 0;
   width: 100%;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: var(--ifm-background-color);
 }
 
 .featureSvg {
-  height: 180px;
-  width: 180px;
-  filter: drop-shadow(0 4px 6px rgba(139, 92, 246, 0.1));
+  height: 200px;
+  width: 200px;
+}
+
+/* Learning Path Cards */
+.features .learning-path-card {
+  background: var(--gradient-subtle);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  border-radius: var(--ifm-card-border-radius);
+  padding: 2rem;
   transition: all 0.3s ease;
-}
-
-.featureSvg:hover {
-  transform: translateY(-4px);
-  filter: drop-shadow(0 8px 12px rgba(139, 92, 246, 0.2));
-}
-
-/* Feature card styling */
-.features .col {
+  height: 100%;
   margin-bottom: 2rem;
 }
 
-.features h3 {
-  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+.features .learning-path-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ifm-box-shadow-lg);
+  border-color: var(--ifm-color-primary);
+}
+
+.features .learning-path-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.features .text-gradient {
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
 }
 
-.features p {
-  color: #475569;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0;
+/* Responsive adjustments */
+@media screen and (max-width: 996px) {
+  .features {
+    padding: 3rem 0;
+  }
+  
+  .features .learning-path-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .features .learning-path-icon {
+    font-size: 2.5rem;
+  }
 }
 
-/* Dark mode adjustments */
-[data-theme='dark'] .features {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-}
-
-[data-theme='dark'] .features p {
-  color: #cbd5e1;
-}
-
-[data-theme='dark'] .featureSvg {
-  filter: drop-shadow(0 4px 6px rgba(167, 139, 250, 0.2));
-}
-
-[data-theme='dark'] .featureSvg:hover {
-  filter: drop-shadow(0 8px 12px rgba(167, 139, 250, 0.3));
+@media screen and (max-width: 768px) {
+  .features {
+    padding: 2rem 0;
+  }
+  
+  .features .learning-path-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .features .learning-path-icon {
+    font-size: 2rem;
+  }
 }

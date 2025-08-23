@@ -74,7 +74,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.png',
     navbar: {
       title: 'Chasing Cloud Careers',
       logo: {
@@ -155,7 +155,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Chasing Cloud Careers. Empowering your engineering journey.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Chasing Cloud Careers. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

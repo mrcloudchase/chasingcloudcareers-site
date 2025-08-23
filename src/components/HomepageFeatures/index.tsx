@@ -5,52 +5,98 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  icon: string;
   description: ReactNode;
+  link: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '🎯 Structured Learning Paths',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '🛠️ Support Engineering',
+    icon: '🛠️',
     description: (
       <>
-        Follow carefully curated learning paths designed to take you from beginner 
-        to professional in Support, Linux, Cloud, DevOps, and AI Engineering.
+        Master technical support, troubleshooting, and customer success. 
+        Learn to solve complex problems and deliver exceptional user experiences.
       </>
     ),
+    link: '/docs/support-engineering/getting-started',
   },
   {
-    title: '🆓 Completely Free Resources',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '🐧 Linux Engineering',
+    icon: '🐧',
     description: (
       <>
-        Access the best free documentation, tutorials, courses, and hands-on labs 
-        from across the web, all organized in one place for your learning journey.
+        Become proficient in Linux systems administration, shell scripting, 
+        and server management. Build the foundation for modern infrastructure.
       </>
     ),
+    link: '/docs/linux-engineering/getting-started',
   },
   {
-    title: '🚀 Career-Focused Content',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: '☁️ Cloud Engineering',
+    icon: '☁️',
     description: (
       <>
-        Learn skills that matter in the real world with practical projects, 
-        industry best practices, and career guidance to land your dream engineering role.
+        Dive into AWS, Azure, and GCP. Learn infrastructure as code, 
+        cloud-native technologies, and scalable architecture patterns.
       </>
     ),
+    link: '/docs/cloud-engineering/getting-started',
+  },
+  {
+    title: '🔄 DevOps Engineering',
+    icon: '🔄',
+    description: (
+      <>
+        Master CI/CD pipelines, containerization, monitoring, and automation. 
+        Bridge the gap between development and operations.
+      </>
+    ),
+    link: '/docs/devops-engineering/getting-started',
+  },
+  {
+    title: '🤖 AI Engineering',
+    icon: '🤖',
+    description: (
+      <>
+        Learn MLOps, model deployment, and AI infrastructure. 
+        Build and scale machine learning systems in production.
+      </>
+    ),
+    link: '/docs/ai-engineering/getting-started',
+  },
+  {
+    title: '🎯 Career Focused',
+    icon: '🎯',
+    description: (
+      <>
+        Every learning path is designed to get you job-ready with practical skills, 
+        real-world projects, and industry best practices.
+      </>
+    ),
+    link: '/docs/intro',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, icon, description, link}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className="learning-path-card">
+        <div className="text--center">
+          <span className="learning-path-icon">{icon}</span>
+        </div>
+        <div className="text--center padding-horiz--md">
+          <Heading as="h3" className="text-gradient">{title}</Heading>
+          <p>{description}</p>
+          <a 
+            href={link} 
+            className="button button--primary button--sm"
+            style={{marginTop: '1rem'}}
+          >
+            Start Learning →
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -60,10 +106,65 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className="text--center margin-bottom--xl">
+          <Heading as="h2" className="text-gradient">
+            🚀 Choose Your Engineering Path
+          </Heading>
+          <p className="hero__subtitle" style={{color: 'var(--ifm-color-content-secondary)'}}>
+            Free, comprehensive learning paths designed to get you hired in tech
+          </p>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
+        </div>
+        
+        {/* Additional Features Section */}
+        <div className="margin-top--xl">
+          <div className="row">
+            <div className="col col--12">
+              <div className="text--center bg-gradient-subtle" style={{
+                padding: '3rem 2rem',
+                borderRadius: 'var(--ifm-card-border-radius)',
+                border: '1px solid rgba(99, 102, 241, 0.1)'
+              }}>
+                <Heading as="h2" className="text-gradient">
+                  ✨ Why Choose Chasing Cloud Careers?
+                </Heading>
+                <div className="row margin-top--lg">
+                  <div className="col col--3">
+                    <div className="text--center">
+                      <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>📚</div>
+                      <h4>100% Free Resources</h4>
+                      <p>Curated from the best free content available online</p>
+                    </div>
+                  </div>
+                  <div className="col col--3">
+                    <div className="text--center">
+                      <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🛠️</div>
+                      <h4>Hands-on Practice</h4>
+                      <p>Real projects and labs to build your portfolio</p>
+                    </div>
+                  </div>
+                  <div className="col col--3">
+                    <div className="text--center">
+                      <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🎯</div>
+                      <h4>Job-Ready Skills</h4>
+                      <p>Industry-relevant curriculum designed by professionals</p>
+                    </div>
+                  </div>
+                  <div className="col col--3">
+                    <div className="text--center">
+                      <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🚀</div>
+                      <h4>Career Guidance</h4>
+                      <p>Tips for landing your first role and advancing your career</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
