@@ -2,108 +2,96 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mrcloudchase.github.io/chasingcloudcareers-site/blog</id>
     <title>Chasing Cloud Careers Blog</title>
-    <updated>2021-08-26T00:00:00.000Z</updated>
+    <updated>2025-01-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog"/>
     <subtitle>Chasing Cloud Careers Blog</subtitle>
     <icon>https://mrcloudchase.github.io/chasingcloudcareers-site/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Welcome]]></title>
-        <id>https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome</id>
-        <link href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome"/>
-        <updated>2021-08-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p>
-<p>Here are a few tips you might find useful.</p>
-<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
-<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
-<p>The blog post date can be extracted from filenames, such as:</p>
-<ul>
-<li><code>2019-05-30-welcome.md</code></li>
-<li><code>2019-05-30-welcome/index.md</code></li>
-</ul>
-<p>A blog post folder can be convenient to co-locate blog post images:</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://mrcloudchase.github.io/chasingcloudcareers-site/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
-<p>The blog supports tags as well!</p>
-<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
+        <title type="html"><![CDATA[Welcome to Chasing Cloud Careers - Your Gateway to Engineering Excellence]]></title>
+        <id>https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers</id>
+        <link href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers"/>
+        <updated>2025-01-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We're thrilled to have you here! Whether you're just starting your journey into tech or looking to advance your engineering career, you've found the right place. Chasing Cloud Careers is your comprehensive, completely free resource for mastering the skills that matter in today's engineering landscape.]]></summary>
+        <content type="html"><![CDATA[<p>We're thrilled to have you here! Whether you're just starting your journey into tech or looking to advance your engineering career, you've found the right place. <strong>Chasing Cloud Careers</strong> is your comprehensive, completely free resource for mastering the skills that matter in today's engineering landscape.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-our-mission">🎯 Our Mission<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-our-mission" class="hash-link" aria-label="Direct link to 🎯 Our Mission" title="Direct link to 🎯 Our Mission">​</a></h2>
+<p>We believe that everyone deserves access to high-quality engineering education, regardless of their background or financial situation. That's why we've created <strong>six comprehensive learning paths</strong> that guide you from beginner to job-ready professional - all using the best free resources available online.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-six-paths-to-engineering-success">🛤️ Six Paths to Engineering Success<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#%EF%B8%8F-six-paths-to-engineering-success" class="hash-link" aria-label="Direct link to 🛤️ Six Paths to Engineering Success" title="Direct link to 🛤️ Six Paths to Engineering Success">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-support-engineering">🛠️ Support Engineering<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#%EF%B8%8F-support-engineering" class="hash-link" aria-label="Direct link to 🛠️ Support Engineering" title="Direct link to 🛠️ Support Engineering">​</a></h3>
+<p>Master the art of technical support and customer success. Learn systematic troubleshooting, effective communication, and how to turn frustrated users into happy customers. This path covers everything from basic problem-solving methodologies to advanced escalation management.</p>
+<p><strong>Perfect for:</strong> Those who love helping others and solving complex problems
+<strong>Career outcomes:</strong> Technical Support Engineer, Customer Success Engineer, Solutions Engineer</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-linux-engineering">🐧 Linux Engineering<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-linux-engineering" class="hash-link" aria-label="Direct link to 🐧 Linux Engineering" title="Direct link to 🐧 Linux Engineering">​</a></h3>
+<p>Become proficient in the operating system that powers the internet. From basic command-line navigation to advanced system administration, this path will make you comfortable in any Linux environment.</p>
+<p><strong>Perfect for:</strong> Anyone serious about infrastructure, servers, or system administration
+<strong>Career outcomes:</strong> Linux System Administrator, Infrastructure Engineer, Site Reliability Engineer</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-cloud-engineering">☁️ Cloud Engineering<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#%EF%B8%8F-cloud-engineering" class="hash-link" aria-label="Direct link to ☁️ Cloud Engineering" title="Direct link to ☁️ Cloud Engineering">​</a></h3>
+<p>Dive deep into AWS, Azure, and Google Cloud Platform. Learn infrastructure as code, cloud-native architectures, and how to build scalable, resilient systems in the cloud.</p>
+<p><strong>Perfect for:</strong> Those fascinated by modern infrastructure and scalability challenges
+<strong>Career outcomes:</strong> Cloud Engineer, Cloud Architect, Platform Engineer</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-devops-engineering">🔄 DevOps Engineering<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-devops-engineering" class="hash-link" aria-label="Direct link to 🔄 DevOps Engineering" title="Direct link to 🔄 DevOps Engineering">​</a></h3>
+<p>Bridge the gap between development and operations. Master CI/CD pipelines, containerization with Docker and Kubernetes, monitoring, and automation that keeps modern applications running smoothly.</p>
+<p><strong>Perfect for:</strong> People who love automation and want to streamline software delivery
+<strong>Career outcomes:</strong> DevOps Engineer, Platform Engineer, Release Engineer</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-ai-engineering">🤖 AI Engineering<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-ai-engineering" class="hash-link" aria-label="Direct link to 🤖 AI Engineering" title="Direct link to 🤖 AI Engineering">​</a></h3>
+<p>Learn to build, deploy, and maintain AI systems in production. This path covers MLOps, model deployment, AI infrastructure, and the engineering practices that make machine learning work at scale.</p>
+<p><strong>Perfect for:</strong> Engineers interested in the intersection of AI and production systems
+<strong>Career outcomes:</strong> AI Engineer, MLOps Engineer, Machine Learning Platform Engineer</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-research-engineering">🔬 Research Engineering<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-research-engineering" class="hash-link" aria-label="Direct link to 🔬 Research Engineering" title="Direct link to 🔬 Research Engineering">​</a></h3>
+<p><em>New Path!</em> Explore the cutting-edge intersection of research and engineering. Learn to build prototypes, conduct experiments, and translate research ideas into practical solutions. This path incorporates insights from <strong>AJ (Average Joes) Labs</strong> and focuses on innovation and experimentation.</p>
+<p><strong>Perfect for:</strong> Curious minds who want to push the boundaries of what's possible
+<strong>Career outcomes:</strong> Research Engineer, R&amp;D Engineer, Innovation Engineer</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-what-makes-us-different">💡 What Makes Us Different<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-what-makes-us-different" class="hash-link" aria-label="Direct link to 💡 What Makes Us Different" title="Direct link to 💡 What Makes Us Different">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-completely-free">🆓 Completely Free<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-completely-free" class="hash-link" aria-label="Direct link to 🆓 Completely Free" title="Direct link to 🆓 Completely Free">​</a></h3>
+<p>Every resource we recommend is free. No hidden costs, no premium tiers - just high-quality education accessible to everyone.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-job-ready-focus">🎯 Job-Ready Focus<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-job-ready-focus" class="hash-link" aria-label="Direct link to 🎯 Job-Ready Focus" title="Direct link to 🎯 Job-Ready Focus">​</a></h3>
+<p>Our paths aren't just about learning concepts - they're about building the specific skills that employers are looking for right now.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-hands-on-learning">🛠️ Hands-On Learning<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#%EF%B8%8F-hands-on-learning" class="hash-link" aria-label="Direct link to 🛠️ Hands-On Learning" title="Direct link to 🛠️ Hands-On Learning">​</a></h3>
+<p>Each path includes practical projects and labs that you can add to your portfolio. Learn by doing, not just reading.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-curated-excellence">🌟 Curated Excellence<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-curated-excellence" class="hash-link" aria-label="Direct link to 🌟 Curated Excellence" title="Direct link to 🌟 Curated Excellence">​</a></h3>
+<p>We've done the hard work of finding the best free resources online, so you don't have to sift through countless tutorials and courses.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-career-guidance">📈 Career Guidance<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-career-guidance" class="hash-link" aria-label="Direct link to 📈 Career Guidance" title="Direct link to 📈 Career Guidance">​</a></h3>
+<p>Beyond technical skills, we provide guidance on resume building, interview preparation, and career advancement strategies.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-getting-started">🚀 Getting Started<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-getting-started" class="hash-link" aria-label="Direct link to 🚀 Getting Started" title="Direct link to 🚀 Getting Started">​</a></h2>
+<p>Ready to begin your journey? Here's how to get the most out of Chasing Cloud Careers:</p>
+<ol>
+<li>
+<p><strong>Choose Your Path</strong>: Browse our six learning paths and pick the one that aligns with your interests and career goals.</p>
+</li>
+<li>
+<p><strong>Follow the Structure</strong>: Each path is carefully designed to build skills progressively. Start from the beginning, even if you have some experience.</p>
+</li>
+<li>
+<p><strong>Practice Actively</strong>: Don't just read - build projects, experiment with tools, and get your hands dirty with real implementations.</p>
+</li>
+<li>
+<p><strong>Join the Community</strong>: Connect with other learners, share your progress, and help others on their journey.</p>
+</li>
+<li>
+<p><strong>Stay Consistent</strong>: Dedicate regular time to learning. Even 30 minutes a day can lead to significant progress over time.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-success-stories">🌟 Success Stories<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-success-stories" class="hash-link" aria-label="Direct link to 🌟 Success Stories" title="Direct link to 🌟 Success Stories">​</a></h2>
+<p>Our learning paths have helped countless individuals transition into fulfilling engineering careers. From support engineers landing their first tech jobs to experienced developers expanding into cloud and AI roles - the paths work when you put in the effort.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-built-with-love-not-profit">🤝 Built with Love, Not Profit<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-built-with-love-not-profit" class="hash-link" aria-label="Direct link to 🤝 Built with Love, Not Profit" title="Direct link to 🤝 Built with Love, Not Profit">​</a></h2>
+<p>This platform exists because we believe in the power of shared knowledge and community support. We're not here to sell you anything - we're here to help you succeed. Every resource, every guide, and every piece of advice comes from our genuine desire to see you thrive in your engineering career.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-next">🎯 What's Next?<a href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers#-whats-next" class="hash-link" aria-label="Direct link to 🎯 What's Next?" title="Direct link to 🎯 What's Next?">​</a></h2>
+<p>Ready to start your journey? Head over to our <a href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/intro">learning paths</a> and choose the path that excites you most. Remember, the best time to start was yesterday - the second best time is now.</p>
+<p>Whether you're looking to make a complete career change or level up your existing skills, we're here to support you every step of the way.</p>
+<p><strong>Welcome to your engineering future. Let's build something amazing together! 🚀</strong></p>
+<hr>
+<p><em>Have questions or want to share your progress? Connect with us on <a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer">GitHub</a> or reach out to our team. We love hearing from our community!</em></p>]]></content>
         <author>
-            <name>Sébastien Lorber</name>
-            <uri>https://sebastienlorber.com</uri>
+            <name>Chase Dovey</name>
+            <uri>https://github.com/mrcloudchase</uri>
         </author>
         <author>
-            <name>Yangshun Tay</name>
-            <uri>https://linkedin.com/in/yangshun</uri>
+            <name>Emma Schwarz</name>
+            <uri>https://github.com/emmaschwarz</uri>
         </author>
-        <category label="Facebook" term="Facebook"/>
-        <category label="Hello" term="Hello"/>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MDX Blog Post]]></title>
-        <id>https://mrcloudchase.github.io/chasingcloudcareers-site/blog/mdx-blog-post</id>
-        <link href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/mdx-blog-post"/>
-        <updated>2021-08-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></summary>
-        <content type="html"><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer">MDX</a>.</p>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Use the power of React to create interactive blog posts.</p></div></div>
-<!-- -->
-<p>For example, use JSX to create an interactive button:</p>
-<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">alert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'button clicked!'</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:#393A34">!</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">button</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
-<button>Click me!</button>]]></content>
-        <author>
-            <name>Sébastien Lorber</name>
-            <uri>https://sebastienlorber.com</uri>
-        </author>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Long Blog Post]]></title>
-        <id>https://mrcloudchase.github.io/chasingcloudcareers-site/blog/long-blog-post</id>
-        <link href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/long-blog-post"/>
-        <updated>2019-05-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
-        <content type="html"><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Yangshun Tay</name>
-            <uri>https://linkedin.com/in/yangshun</uri>
-        </author>
-        <category label="Hello" term="Hello"/>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First Blog Post]]></title>
-        <id>https://mrcloudchase.github.io/chasingcloudcareers-site/blog/first-blog-post</id>
-        <link href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog/first-blog-post"/>
-        <updated>2019-05-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet...]]></summary>
-        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Sébastien Lorber</name>
-            <uri>https://sebastienlorber.com</uri>
-        </author>
-        <author>
-            <name>Yangshun Tay</name>
-            <uri>https://linkedin.com/in/yangshun</uri>
-        </author>
-        <category label="Hola" term="Hola"/>
-        <category label="Docusaurus" term="Docusaurus"/>
+        <category label="Getting Started" term="Getting Started"/>
+        <category label="Learning Paths" term="Learning Paths"/>
+        <category label="Career Change" term="Career Change"/>
+        <category label="Free Resources" term="Free Resources"/>
     </entry>
 </feed>
