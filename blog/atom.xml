@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/blog"/>
     <subtitle>Chasing Cloud Careers Blog</subtitle>
-    <icon>https://mrcloudchase.github.io/chasingcloudcareers-site/img/favicon.ico</icon>
+    <icon>https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png</icon>
     <entry>
         <title type="html"><![CDATA[Welcome to Chasing Cloud Careers - Your Free Path to Engineering Success]]></title>
         <id>https://mrcloudchase.github.io/chasingcloudcareers-site/blog/welcome-to-chasing-cloud-careers</id>
