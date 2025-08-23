@@ -25,8 +25,12 @@
   transition: all 0.3s ease;
   height: 100%;
   margin-bottom: 2rem;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+}
+
+/* Column spacing for learning path cards */
+.features .col {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
 }
 
 .features .learning-path-card:hover {
@@ -58,8 +62,11 @@
   .features .learning-path-card {
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+  }
+  
+  .features .col {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
   
   .features .row {
@@ -80,13 +87,16 @@
   .features .learning-path-card {
     padding: 1rem;
     margin-bottom: 1rem;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+  }
+  
+  .features .col {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
   
   .features .row {
-    margin-left: -0.25rem;
-    margin-right: -0.25rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
   }
   
   .features .learning-path-icon {
