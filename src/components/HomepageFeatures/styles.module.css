@@ -24,7 +24,7 @@
   padding: 2rem;
   transition: all 0.3s ease;
   height: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* Column spacing for learning path cards */
@@ -61,7 +61,7 @@
   
   .features .learning-path-card {
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
   
   .features .col {
@@ -86,7 +86,7 @@
   
   .features .learning-path-card {
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   
   .features .col {
