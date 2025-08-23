@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: '🎯 Structured Learning Paths',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Follow carefully curated learning paths designed to take you from beginner 
+        to professional in Support, Linux, Cloud, DevOps, and AI Engineering.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '🆓 Completely Free Resources',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Access the best free documentation, tutorials, courses, and hands-on labs 
+        from across the web, all organized in one place for your learning journey.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '🚀 Career-Focused Content',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Learn skills that matter in the real world with practical projects, 
+        industry best practices, and career guidance to land your dream engineering role.
       </>
     ),
   },

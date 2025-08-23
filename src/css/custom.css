@@ -1,30 +1,282 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Chasing Cloud Careers Custom Theme
+ * Blue-Purple-Pink gradient theme matching the logo
  */
 
-/* You can override the default Infima variables here. */
+/* Custom gradient colors matching the logo */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Primary gradient colors */
+  --ccc-gradient-start: #3b82f6; /* Blue */
+  --ccc-gradient-middle: #8b5cf6; /* Purple */
+  --ccc-gradient-end: #ec4899; /* Pink */
+  
+  /* Infima color overrides */
+  --ifm-color-primary: #8b5cf6;
+  --ifm-color-primary-dark: #7c3aed;
+  --ifm-color-primary-darker: #7c3aed;
+  --ifm-color-primary-darkest: #6d28d9;
+  --ifm-color-primary-light: #a78bfa;
+  --ifm-color-primary-lighter: #c4b5fd;
+  --ifm-color-primary-lightest: #ddd6fe;
+  
+  /* Background colors */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8fafc;
+  
+  /* Text colors */
+  --ifm-color-content: #1e293b;
+  --ifm-color-content-secondary: #475569;
+  
+  /* Code styling */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(139, 92, 246, 0.1);
+  
+  /* Custom properties for gradients */
+  --ccc-gradient-bg: linear-gradient(135deg, var(--ccc-gradient-start) 0%, var(--ccc-gradient-middle) 50%, var(--ccc-gradient-end) 100%);
+  --ccc-gradient-text: linear-gradient(135deg, var(--ccc-gradient-start) 0%, var(--ccc-gradient-middle) 50%, var(--ccc-gradient-end) 100%);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode colors */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #a78bfa;
+  --ifm-color-primary-dark: #8b5cf6;
+  --ifm-color-primary-darker: #7c3aed;
+  --ifm-color-primary-darkest: #6d28d9;
+  --ifm-color-primary-light: #c4b5fd;
+  --ifm-color-primary-lighter: #ddd6fe;
+  --ifm-color-primary-lightest: #ede9fe;
+  
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #1e293b;
+  --ifm-color-content: #f1f5f9;
+  --ifm-color-content-secondary: #cbd5e1;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(167, 139, 250, 0.2);
+}
+
+/* Navbar styling */
+.navbar {
+  background: var(--ccc-gradient-bg);
+  border-bottom: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.navbar__brand {
+  color: white !important;
+}
+
+.navbar__title {
+  color: white !important;
+  font-weight: 700;
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar__item .navbar__link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+}
+
+.navbar__item .navbar__link:hover {
+  color: white !important;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+/* Logo styling */
+.navbar__logo {
+  height: 32px;
+  width: auto;
+  margin-right: 12px;
+}
+
+/* Hero section styling */
+.hero {
+  background: var(--ccc-gradient-bg);
+  color: white;
+}
+
+.hero__title {
+  background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+.hero__subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+/* Button styling */
+.button--primary {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.button--primary:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+.footer {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #cbd5e1;
+}
+
+.footer__title {
+  color: white;
+  font-weight: 600;
+}
+
+.footer__link-item {
+  color: #94a3b8;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary-light);
+}
+
+/* Card styling */
+.card {
+  border: 1px solid rgba(139, 92, 246, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: rgba(139, 92, 246, 0.2);
+}
+
+/* Sidebar styling */
+.theme-doc-sidebar-container {
+  border-right: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.menu__link {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.menu__link:hover {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--ifm-color-primary);
+}
+
+.menu__link--active {
+  background: var(--ccc-gradient-bg);
+  color: white;
+  font-weight: 600;
+}
+
+/* Content styling */
+.markdown h1 {
+  background: var(--ccc-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+.markdown h2 {
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+/* Badge styling */
+.badge {
+  background: var(--ccc-gradient-bg);
+  color: white;
+  font-weight: 600;
+}
+
+/* Code block styling */
+.prism-code {
+  border-radius: 8px;
+  border: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+/* Table of contents */
+.table-of-contents__link {
+  color: var(--ifm-color-content-secondary);
+}
+
+.table-of-contents__link:hover {
+  color: var(--ifm-color-primary);
+}
+
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Pagination */
+.pagination-nav__link {
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.1);
+}
+
+/* Announcement bar (if used) */
+.announcementBar {
+  background: var(--ccc-gradient-bg);
+  color: white;
+}
+
+/* Custom animations */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-animate {
+  background: linear-gradient(-45deg, var(--ccc-gradient-start), var(--ccc-gradient-middle), var(--ccc-gradient-end), var(--ccc-gradient-start));
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* Remove Docusaurus branding */
+.footer__copyright {
+  color: #64748b;
+}
+
+/* Custom utility classes */
+.text-gradient {
+  background: var(--ccc-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient {
+  background: var(--ccc-gradient-bg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar__title {
+    font-size: 1.1rem;
+  }
+  
+  .hero__title {
+    font-size: 2rem;
+  }
 }

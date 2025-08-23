@@ -79,7 +79,7 @@ const config: Config = {
       title: 'Chasing Cloud Careers',
       logo: {
         alt: 'Chasing Cloud Careers Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
@@ -155,7 +155,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Chasing Cloud Careers. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Chasing Cloud Careers. Empowering your engineering journey.`,
     },
     prism: {
       theme: prismThemes.github,

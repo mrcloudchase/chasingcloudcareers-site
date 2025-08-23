@@ -19,9 +19,15 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--primary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Start Your Journey 🚀
+          </Link>
+          <Link
+            className="button button--outline button--primary button--lg"
+            to="/docs/cloud-engineering/getting-started"
+            style={{marginLeft: '1rem'}}>
+            Explore Learning Paths 📚
           </Link>
         </div>
       </div>
@@ -33,8 +39,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title} - Free Engineering Learning Paths`}
+      description="Free learning paths for Support, Linux, Cloud, DevOps, and AI Engineering careers. Curated resources, hands-on practice, and career guidance.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
