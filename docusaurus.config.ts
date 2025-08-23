@@ -159,7 +159,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © 2023-${new Date().getFullYear()} Chasing Cloud Careers.`,
+      copyright: `Copyright © 2023 Chasing Cloud Careers LLC.`,
     },
     prism: {
       theme: prismThemes.github,
