@@ -103,24 +103,28 @@ const config: Config = {
           title: 'Learning Paths',
           items: [
             {
+              label: 'Get Started',
+              to: '/docs/intro',
+            },
+            {
               label: 'Support Engineering',
-              to: '/docs/category/support-engineering',
+              to: '/docs/support-engineering/getting-started',
             },
             {
               label: 'Linux Engineering',
-              to: '/docs/category/linux-engineering',
+              to: '/docs/linux-engineering/getting-started',
             },
             {
               label: 'Cloud Engineering',
-              to: '/docs/category/cloud-engineering',
+              to: '/docs/cloud-engineering/getting-started',
             },
             {
               label: 'DevOps Engineering',
-              to: '/docs/category/devops-engineering',
+              to: '/docs/devops-engineering/getting-started',
             },
             {
               label: 'AI Engineering',
-              to: '/docs/category/ai-engineering',
+              to: '/docs/ai-engineering/getting-started',
             },
           ],
         },
