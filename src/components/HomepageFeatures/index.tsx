@@ -75,11 +75,13 @@ const FeatureList: FeatureItem[] = [
         Learn to bridge the gap between research and practical implementation.
       </>
     ),
-    link: '/docs/research-engineering/getting-started',
+    link: 'https://averagejoeslab.com',
   },
 ];
 
 function Feature({title, icon, description, link}: FeatureItem) {
+  const isExternalLink = link.startsWith('http');
+  
   return (
     <div className={clsx('col col--4')}>
       <div className="learning-path-card">
@@ -93,6 +95,10 @@ function Feature({title, icon, description, link}: FeatureItem) {
             href={link} 
             className="button button--primary button--sm"
             style={{marginTop: '1rem'}}
+            {...(isExternalLink && {
+              target: '_blank',
+              rel: 'noopener noreferrer'
+            })}
           >
             Start Learning →
           </a>

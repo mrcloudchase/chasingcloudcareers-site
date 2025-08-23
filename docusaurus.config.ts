@@ -128,7 +128,7 @@ const config: Config = {
             },
             {
               label: 'Research Engineering',
-              to: '/docs/research-engineering/getting-started',
+              href: 'https://averagejoeslab.com',
             },
           ],
         },
