@@ -1,19 +1,49 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+career-change:
+  label: Career Change
+  permalink: /career-change
+  description: Tips and guidance for transitioning into tech careers
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+learning-paths:
+  label: Learning Paths
+  permalink: /learning-paths
+  description: Structured learning journeys for engineering careers
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+cloud-engineering:
+  label: Cloud Engineering
+  permalink: /cloud-engineering
+  description: Cloud platforms, infrastructure, and architecture
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+devops:
+  label: DevOps
+  permalink: /devops
+  description: CI/CD, automation, and infrastructure as code
+
+support-engineering:
+  label: Support Engineering
+  permalink: /support-engineering
+  description: Technical support and customer success
+
+linux:
+  label: Linux
+  permalink: /linux
+  description: Linux systems administration and command line
+
+ai-engineering:
+  label: AI Engineering
+  permalink: /ai-engineering
+  description: Machine learning operations and AI infrastructure
+
+research-engineering:
+  label: Research Engineering
+  permalink: /research-engineering
+  description: Research and development in engineering
+
+free-resources:
+  label: Free Resources
+  permalink: /free-resources
+  description: Curated free learning materials and tools
+
+getting-started:
+  label: Getting Started
+  permalink: /getting-started
+  description: First steps in your engineering journey
