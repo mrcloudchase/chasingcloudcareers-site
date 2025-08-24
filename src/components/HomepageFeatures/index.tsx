@@ -46,7 +46,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'DevOps Engineering',
-    icon: '🔄',
+    icon: '⚙️',
     description: (
       <>
         Master CI/CD pipelines, containerization, monitoring, and automation. 
