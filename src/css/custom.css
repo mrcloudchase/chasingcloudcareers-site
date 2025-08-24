@@ -267,6 +267,17 @@
   color: white;
 }
 
+/* Fix parent menu item visibility when child is active */
+.menu__list-item-collapsible--active > .menu__link {
+  color: var(--ifm-color-content) !important;
+  opacity: 1 !important;
+}
+
+.menu__list-item-collapsible--active > .menu__link:hover {
+  color: var(--ifm-color-primary) !important;
+  background: var(--gradient-subtle);
+}
+
 /* Content Styling */
 .markdown h1 {
   background: var(--gradient-primary);
