@@ -12,7 +12,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '🛠️ Support Engineering',
+    title: 'Support Engineering',
     icon: '🛠️',
     description: (
       <>
@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/support-engineering/getting-started',
   },
   {
-    title: '🐧 Linux Engineering',
+    title: 'Linux Engineering',
     icon: '🐧',
     description: (
       <>
@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/linux-engineering/getting-started',
   },
   {
-    title: '☁️ Cloud Engineering',
+    title: 'Cloud Engineering',
     icon: '☁️',
     description: (
       <>
@@ -45,7 +45,7 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/cloud-engineering/getting-started',
   },
   {
-    title: '🔄 DevOps Engineering',
+    title: 'DevOps Engineering',
     icon: '🔄',
     description: (
       <>
@@ -56,7 +56,7 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/devops-engineering/getting-started',
   },
   {
-    title: '🤖 AI Engineering',
+    title: 'AI Engineering',
     icon: '🤖',
     description: (
       <>
@@ -67,7 +67,7 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/ai-engineering/getting-started',
   },
   {
-    title: '🔬 Research Engineering',
+    title: 'Research Engineering',
     icon: '🔬',
     description: (
       <>
@@ -86,22 +86,25 @@ function Feature({title, icon, description, link}: FeatureItem) {
     <div className={clsx('col col--4')}>
       <div className="learning-path-card">
         <div className="text--center">
-          <span className="learning-path-icon">{icon}</span>
+          <span className="learning-path-icon learning-path-icon-gradient">{icon}</span>
         </div>
         <div className="text--center padding-horiz--md">
           <Heading as="h3" className="text-gradient">{title}</Heading>
-          <p>{description}</p>
-          <a 
-            href={link} 
-            className="button button--primary button--sm"
-            style={{marginTop: '1rem'}}
-            {...(isExternalLink && {
-              target: '_blank',
-              rel: 'noopener noreferrer'
-            })}
-          >
-            Start Learning →
-          </a>
+          <div className="learning-path-description">
+            <p>{description}</p>
+          </div>
+          <div className="learning-path-button-container">
+            <a 
+              href={link} 
+              className="button button--primary button--sm"
+              {...(isExternalLink && {
+                target: '_blank',
+                rel: 'noopener noreferrer'
+              })}
+            >
+              Start Learning →
+            </a>
+          </div>
         </div>
       </div>
     </div>

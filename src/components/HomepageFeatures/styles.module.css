@@ -25,6 +25,8 @@
   transition: all 0.3s ease;
   height: 100%;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Column spacing for learning path cards */
@@ -43,6 +45,32 @@
   font-size: 3rem;
   margin-bottom: 1rem;
   display: block;
+}
+
+.features .learning-path-icon-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 2px 4px rgba(99, 102, 241, 0.3));
+}
+
+/* Ensure equal height cards with proper content distribution */
+.features .learning-path-description {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+}
+
+.features .learning-path-description p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.features .learning-path-button-container {
+  margin-top: auto;
+  padding-top: 1rem;
 }
 
 .features .text-gradient {
@@ -77,6 +105,10 @@
   .features .learning-path-icon {
     font-size: 2.5rem;
   }
+  
+  .features .learning-path-description {
+    min-height: 100px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -101,5 +133,9 @@
   
   .features .learning-path-icon {
     font-size: 2rem;
+  }
+  
+  .features .learning-path-description {
+    min-height: 80px;
   }
 }
