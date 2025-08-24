@@ -36,7 +36,7 @@
   
   /* Text Colors */
   --ifm-color-content: #1e293b;
-  --ifm-color-content-secondary: #475569;
+  --ifm-color-content-secondary: #334155; /* Darker for better contrast */
   --ifm-heading-color: #0f172a;
   
   /* Typography */
@@ -305,6 +305,39 @@
 .pagination-nav__link:hover {
   border-color: var(--ifm-color-primary);
   box-shadow: var(--ifm-box-shadow-md);
+}
+
+/* Breadcrumb Navigation */
+.theme-doc-breadcrumbs {
+  margin-bottom: 1rem;
+}
+
+.breadcrumbs__item {
+  font-weight: 500;
+}
+
+.breadcrumbs__link {
+  color: var(--ifm-color-content) !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--ifm-color-primary) !important;
+  text-decoration: none;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--ifm-color-content-secondary) !important;
+}
+
+/* Ensure proper contrast in light mode */
+:root {
+  --ifm-breadcrumb-color-active: var(--ifm-color-content);
+}
+
+[data-theme='dark'] {
+  --ifm-breadcrumb-color-active: var(--ifm-color-content);
 }
 
 /* Table of Contents */
