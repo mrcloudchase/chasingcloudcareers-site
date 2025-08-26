@@ -73,7 +73,7 @@ function HomepageHeader() {
 
 function TechStackSection() {
   const techStacks = [
-    { name: 'AWS', icon: '☁️' },
+    { name: 'Cloud', icon: '☁️' },
     { name: 'Docker', icon: '🐳' },
     { name: 'Kubernetes', icon: '⚙️' },
     { name: 'Python', icon: '🐍' },
