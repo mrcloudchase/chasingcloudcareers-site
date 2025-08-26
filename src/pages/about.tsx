@@ -16,13 +16,13 @@ function AboutHero() {
               Who we are
             </Heading>
             <p className="hero__subtitle" style={{textAlign: 'left', fontSize: '1.2rem', marginBottom: '2rem'}}>
-              The catalyst for accelerating career success through the delivery of curated learning paths
+              A small team curating free learning resources into structured paths for self-directed career development
             </p>
             <Link
               className="button button--secondary button--lg"
               to="/docs/intro"
               style={{marginTop: '1rem'}}>
-              Our commitment to you
+              Explore Learning Paths
             </Link>
           </div>
           <div className="col col--6">
@@ -49,12 +49,8 @@ function AboutHero() {
 
 function NavigationTabs() {
   const tabs = [
-    { label: 'About Us', active: true },
-    { label: 'Our history', active: false },
-    { label: 'Our focus', active: false },
-    { label: 'Core values', active: false },
-    { label: 'Our leadership', active: false },
-    { label: 'Our approach', active: false }
+    { label: 'Who we are', active: true },
+    { label: 'Our story', active: false }
   ];
 
   return (
@@ -92,34 +88,34 @@ function NavigationTabs() {
   );
 }
 
-function WhatMakesUsUnique() {
+function WhoWeAre() {
   return (
     <section className="padding-vert--xl">
       <div className="container">
         <div className="row">
           <div className="col col--7">
             <Heading as="h2" style={{color: 'var(--ifm-color-primary)', fontSize: '2.5rem', marginBottom: '2rem'}}>
-              What makes us unique
+              Who we are
             </Heading>
             
             <div style={{marginBottom: '2rem'}}>
               <p style={{fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '1rem'}}>
-                Our comprehensive <strong style={{color: 'var(--ifm-color-primary)'}}>expertise and global footprint</strong> means we 
-                can serve aspiring engineers in any industry regardless of their location.
+                We're a small team of engineers who believe that <strong style={{color: 'var(--ifm-color-primary)'}}>quality education should be accessible to everyone</strong>. 
+                We don't create courses or content—instead, we spend our time finding and organizing the best free learning resources already available on the internet.
               </p>
             </div>
 
             <div style={{marginBottom: '2rem'}}>
               <p style={{fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '1rem'}}>
-                Chasing Cloud Careers is a <strong style={{color: 'var(--ifm-color-primary)'}}>visionary, flexible, and nimble service provider</strong>, forging 
-                strategic partnerships with organizations to solve their unique talent development challenges.
+                Our mission is simple: <strong style={{color: 'var(--ifm-color-primary)'}}>curate freely available resources into structured learning paths</strong> that help 
+                people teach themselves the skills they need to transition into tech careers or advance in their current roles.
               </p>
             </div>
 
             <div style={{marginBottom: '2rem'}}>
               <p style={{fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '1rem'}}>
-                We build <strong style={{color: 'var(--ifm-color-primary)'}}>vendor-agnostic solutions</strong> that are tailored to our 
-                learners' career priorities and growth objectives.
+                We focus on <strong style={{color: 'var(--ifm-color-primary)'}}>self-directed learning</strong>—providing clear pathways through the overwhelming amount of 
+                information available online, so learners can focus on studying rather than searching.
               </p>
             </div>
           </div>
@@ -139,8 +135,7 @@ function WhatMakesUsUnique() {
                 color: 'var(--ifm-color-content-secondary)',
                 margin: 0
               }}>
-                "The value we bring to the learners is the quality of our curation and the experience that we have 
-                organizationally in the engineering and technology world."
+                "We believe the best learning resources are already out there—they just need to be organized in a way that makes sense for career development."
               </p>
             </div>
           </div>
@@ -150,64 +145,42 @@ function WhatMakesUsUnique() {
   );
 }
 
-function TransformationSection() {
+function OurStory() {
   return (
     <section className="padding-vert--xl" style={{background: 'var(--ifm-background-surface-color)'}}>
-      <div className="container">
-        <div className="text--center margin-bottom--xl">
-          <Heading as="h2" style={{color: 'var(--ifm-color-primary)', fontSize: '2.5rem', marginBottom: '2rem'}}>
-            Career transformation in the global landscape
-          </Heading>
-          <div className="row">
-            <div className="col col--8 col--offset-2">
-              <p style={{fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '2rem'}}>
-                Today, all professionals—regardless of experience—exist in a highly globalized world. Whether your 
-                challenge is developing a cloud strategy, assessing security vulnerabilities, or developing an 
-                interactive experience for your customers, you need a partner with a global perspective that 
-                understands your strategic goals.
-              </p>
-              <p style={{fontSize: '1rem', lineHeight: '1.6', marginBottom: '2rem', color: 'var(--ifm-color-content-secondary)'}}>
-                From consulting to design and implementation to ongoing maintenance and optimization, Chasing Cloud Careers combines deep technology 
-                experience with the expertise of professionals who bring a personal approach to career transformation.
-              </p>
-              <Link
-                className="button button--primary button--lg"
-                to="/docs/intro"
-                style={{marginTop: '1rem'}}>
-                A Global Learning Provider
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ResultsSection() {
-  return (
-    <section className="padding-vert--xl">
       <div className="container">
         <div className="row">
           <div className="col col--8 col--offset-2">
             <Heading as="h2" style={{color: 'var(--ifm-color-primary)', fontSize: '2.5rem', marginBottom: '2rem', textAlign: 'center'}}>
-              It's not about courses. It's about results.
+              Our story
             </Heading>
-            <p style={{fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '2rem', textAlign: 'center'}}>
-              From strategy through execution, Chasing Cloud Careers delivers comprehensive career results for your transformative learning initiatives.
-            </p>
-            <p style={{fontSize: '1rem', lineHeight: '1.6', marginBottom: '3rem', color: 'var(--ifm-color-content-secondary)'}}>
-              Our learners achieve their objectives through strategic development and modernization of skills and their deployment on secure, scalable platforms. 
-              With continuous monitoring, management, and optimization, organizations free their talent to focus on innovation needed to thrive in the 
-              application era.
-            </p>
+            <div style={{fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '2rem'}}>
+              <p style={{marginBottom: '2rem'}}>
+                Like many people, we found ourselves overwhelmed by the sheer amount of learning resources available online. 
+                YouTube tutorials, blog posts, documentation, free courses—there's incredible content out there, but it's scattered 
+                and hard to navigate when you're trying to learn systematically.
+              </p>
+              <p style={{marginBottom: '2rem'}}>
+                We started Chasing Cloud Careers because we experienced firsthand how challenging it can be to piece together 
+                a coherent learning path from all the free resources available. We wanted to solve this problem not just for 
+                ourselves, but for anyone looking to break into tech or advance their engineering skills.
+              </p>
+              <p style={{marginBottom: '2rem'}}>
+                Our approach is simple: we research, test, and organize the best free educational content into logical sequences 
+                that take you from beginner to job-ready. We don't reinvent the wheel—we just make it easier to find and follow 
+                the path that's right for you.
+              </p>
+              <p style={{marginBottom: '3rem', color: 'var(--ifm-color-content-secondary)'}}>
+                Every learning path we create is built from resources that are completely free and publicly available. 
+                We believe that with the right guidance and structure, anyone can teach themselves the skills they need to succeed in tech.
+              </p>
+            </div>
             <div className="text--center">
               <Link
                 className="button button--primary button--lg"
-                href="https://discord.gg/your-discord-invite"
-                target="_blank"
-                rel="noopener noreferrer">
-                Speak to an Expert
+                to="/docs/intro"
+                style={{marginTop: '1rem'}}>
+                Explore Our Learning Paths
               </Link>
             </div>
           </div>
@@ -216,6 +189,8 @@ function ResultsSection() {
     </section>
   );
 }
+
+
 
 
 
@@ -223,13 +198,12 @@ export default function About(): JSX.Element {
   return (
     <Layout
       title="About Us"
-      description="Learn about Chasing Cloud Careers, our mission to democratize engineering education, and meet our founders Chase Dovey and Emma Schwarz.">
+      description="Learn about Chasing Cloud Careers - a small team curating free learning resources into structured paths for self-directed career development.">
       <AboutHero />
       <NavigationTabs />
       <main>
-        <WhatMakesUsUnique />
-        <TransformationSection />
-        <ResultsSection />
+        <WhoWeAre />
+        <OurStory />
       </main>
     </Layout>
   );
