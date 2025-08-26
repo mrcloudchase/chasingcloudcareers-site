@@ -13,7 +13,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Support Engineering',
-    icon: '🛠️',
+    icon: '',
     description: (
       <>
         Master technical support, troubleshooting, and customer success. 
@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Linux Engineering',
-    icon: '🐧',
+    icon: '',
     description: (
       <>
         Become proficient in Linux systems administration, shell scripting, 
@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Cloud Engineering',
-    icon: '☁️',
+    icon: '',
     description: (
       <>
         Dive into AWS, Azure, and GCP. Learn infrastructure as code, 
@@ -46,7 +46,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'DevOps Engineering',
-    icon: '⚙️',
+    icon: '',
     description: (
       <>
         Master CI/CD pipelines, containerization, monitoring, and automation. 
@@ -57,7 +57,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'AI Engineering',
-    icon: '🤖',
+    icon: '',
     description: (
       <>
         Learn MLOps, model deployment, and AI infrastructure. 
@@ -68,7 +68,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Research Engineering',
-    icon: '🔬',
+    icon: '',
     description: (
       <>
         Explore cutting-edge research and development in AI, ML, and emerging technologies. 
@@ -85,9 +85,11 @@ function Feature({title, icon, description, link}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="learning-path-card">
-        <div className="text--center">
-          <span className="learning-path-icon learning-path-icon-gradient">{icon}</span>
-        </div>
+        {icon && (
+          <div className="text--center">
+            <span className="learning-path-icon learning-path-icon-gradient">{icon}</span>
+          </div>
+        )}
         <div className="text--center padding-horiz--md">
           <Heading as="h3" className="text-gradient">{title}</Heading>
           <div className="learning-path-description">
@@ -117,7 +119,7 @@ export default function HomepageFeatures(): ReactNode {
       <div className="container">
         <div className="text--center margin-bottom--xl">
           <Heading as="h2" className="text-gradient">
-            🚀 Choose Your Engineering Path
+            Choose Your Engineering Path
           </Heading>
           <p className="hero__subtitle" style={{color: 'var(--ifm-color-content-secondary)'}}>
             Six comprehensive learning paths designed to get you hired in tech
@@ -139,33 +141,29 @@ export default function HomepageFeatures(): ReactNode {
                 border: '1px solid rgba(99, 102, 241, 0.1)'
               }}>
                 <Heading as="h2" className="text-gradient">
-                  ✨ Built by the Community, For the Community
+                  Built by the Community, For the Community
                 </Heading>
                 <div className="row margin-top--lg">
                   <div className="col col--3">
                     <div className="text--center">
-                      <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>📚</div>
                       <h4>100% Free Resources</h4>
                       <p>Curated from the best free content available online</p>
                     </div>
                   </div>
                   <div className="col col--3">
                     <div className="text--center">
-                      <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🛠️</div>
                       <h4>Hands-on Practice</h4>
                       <p>Real projects and labs to build your portfolio</p>
                     </div>
                   </div>
                   <div className="col col--3">
                     <div className="text--center">
-                      <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🎯</div>
                       <h4>Job-Ready Skills</h4>
                       <p>Industry-relevant curriculum designed by professionals</p>
                     </div>
                   </div>
                   <div className="col col--3">
                     <div className="text--center">
-                      <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🚀</div>
                       <h4>Career Guidance</h4>
                       <p>Tips for landing your first role and advancing your career</p>
                     </div>
