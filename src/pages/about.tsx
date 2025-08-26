@@ -154,14 +154,9 @@ function OurStoryAndMission() {
               </Heading>
               <div style={{fontSize: '1.1rem', lineHeight: '1.7'}}>
                 <p style={{marginBottom: '1.5rem'}}>
-                  We both came to tech through unconventional paths. Without computer science degrees or traditional tech backgrounds, 
-                  we taught ourselves the skills needed to transition into engineering roles. The journey wasn't easy—we spent countless 
-                  hours searching through scattered resources, trying to piece together coherent learning paths.
-                </p>
-                <p style={{marginBottom: '1.5rem'}}>
-                  Chase transitioned from [previous background] to become a cloud engineer, while Emma moved from [previous background] 
-                  into AI/ML engineering and community building. We both experienced the frustration of finding amazing free content 
-                  online but struggling to know what to learn next or how everything connected.
+                  We both came to tech through unconventional paths. Without computer science degrees, we taught ourselves 
+                  the skills needed to transition into engineering roles. The journey wasn't easy—we spent countless hours 
+                  searching through scattered resources, trying to piece together coherent learning paths.
                 </p>
                 <p style={{marginBottom: '2rem'}}>
                   Our self-taught journeys taught us that the resources are out there—they just need to be organized in a way that 
@@ -185,9 +180,8 @@ function OurStoryAndMission() {
                 <strong>Help others self-teach by providing curated, structured learning paths using completely free resources.</strong>
               </p>
               <p style={{fontSize: '1rem', lineHeight: '1.6', color: 'var(--ifm-color-content-secondary)'}}>
-                We believe that quality tech education should be accessible to everyone, regardless of their financial situation or background. 
-                By organizing the best free resources into clear, progressive learning paths, we're removing the barriers that prevent 
-                people from successfully transitioning into tech careers through self-directed learning.
+                We believe that quality tech education should be accessible to everyone. By organizing the best free resources 
+                into clear learning paths, we're removing barriers that prevent people from successfully transitioning into tech careers.
               </p>
             </div>
 
