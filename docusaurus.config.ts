@@ -90,6 +90,11 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
+          href: 'https://discord.gg/your-discord-invite',
+          label: 'Discord',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/mrcloudchase/chasingcloudcareers-site',
           label: 'GitHub',
           position: 'right',
@@ -135,6 +140,10 @@ const config: Config = {
         {
           title: 'Community',
           items: [
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/your-discord-invite',
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/mrcloudchase/chasingcloudcareers-site',

@@ -25,14 +25,16 @@ function HomepageHeader() {
               </p>
               <div className={styles.buttons}>
                 <Link
-                  className="button button--secondary button--lg margin-right--md"
-                  to="/docs/intro">
-                  Explore Resources
+                  className="button button--primary button--lg margin-right--md"
+                  href="https://discord.gg/your-discord-invite"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Join Community
                 </Link>
                 <Link
-                  className="button button--outline button--secondary button--lg"
+                  className="button button--secondary button--lg"
                   to="/docs/intro">
-                  Browse Paths
+                  Explore Paths
                 </Link>
               </div>
               
