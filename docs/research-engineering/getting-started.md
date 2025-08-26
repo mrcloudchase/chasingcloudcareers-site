@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Welcome to your **Research Engineering** learning journey! This path will guide you through the intersection of cutting-edge research and practical implementation in AI, ML, and emerging technologies.
 
-## 🎯 What You'll Learn
+## What You'll Learn
 
 - **Research Methodology**: Scientific approach to problem-solving and experimentation
 - **AI/ML Research**: Latest developments in artificial intelligence and machine learning
@@ -15,7 +15,7 @@ Welcome to your **Research Engineering** learning journey! This path will guide 
 - **Technical Writing**: Publishing research findings and technical documentation
 - **Collaboration**: Working with academic institutions and research teams
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Strong programming background (Python, R, or similar)
 - Basic understanding of statistics and mathematics
@@ -23,7 +23,7 @@ Welcome to your **Research Engineering** learning journey! This path will guide 
 - Scientific curiosity and analytical mindset
 - Experience with data analysis and visualization
 
-## 🛤️ Learning Path Overview
+## Learning Path Overview
 
 ### Phase 1: Research Foundations (Weeks 1-4)
 - Scientific method and research design
@@ -43,7 +43,7 @@ Welcome to your **Research Engineering** learning journey! This path will guide 
 - Collaboration with engineering teams
 - Publishing and presenting research
 
-## 🔗 Free Resources to Get Started
+## Free Resources to Get Started
 
 ### Research Methodology
 - [MIT Introduction to Research Methods](https://ocw.mit.edu/courses/research-methods/) - Comprehensive research methodology
@@ -73,7 +73,7 @@ Welcome to your **Research Engineering** learning journey! This path will guide 
 - [edX MIT Research](https://www.edx.org/school/mitx) - MIT research methodology courses
 - [Khan Academy Statistics](https://www.khanacademy.org/math/statistics-probability) - Statistical foundations
 
-## 🏗️ Hands-on Projects
+## Hands-on Projects
 
 ### Beginner Projects
 - Literature review on a specific AI/ML topic
@@ -93,7 +93,7 @@ Welcome to your **Research Engineering** learning journey! This path will guide 
 - Mentor junior researchers in the community
 - Bridge research findings to production systems
 
-## 🤝 AJ Labs Community Integration
+## AJ Labs Community Integration
 
 **Average Joes Labs** is our research community where everyday engineers become research contributors:
 
@@ -103,7 +103,7 @@ Welcome to your **Research Engineering** learning journey! This path will guide 
 - **Industry Connections**: Network with research professionals and academics
 - **Open Source Focus**: All research projects are open source and community-driven
 
-## 🎯 Career Paths
+## Career Paths
 
 Research Engineering opens doors to:
 - **Research Scientist** at tech companies
@@ -113,7 +113,7 @@ Research Engineering opens doors to:
 - **Academic Research Collaborator**
 - **Innovation Consultant** for emerging technologies
 
-## 🎯 Next Steps
+## Next Steps
 
 1. **Join AJ Labs Community** - Connect with fellow researchers and engineers
 2. **Choose a research area** - Focus on AI/ML, systems, or emerging tech

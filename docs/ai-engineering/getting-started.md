@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Welcome to your **AI Engineering** learning journey! Learn to build, deploy, and maintain AI systems and machine learning operations (MLOps).
 
-## 🎯 What You'll Learn
+## What You'll Learn
 
 - **MLOps Fundamentals**: Machine Learning Operations and lifecycle management
 - **Model Deployment**: Serving models in production environments
@@ -15,7 +15,7 @@ Welcome to your **AI Engineering** learning journey! Learn to build, deploy, and
 - **Model Monitoring**: Performance tracking and model drift detection
 - **AI Ethics & Governance**: Responsible AI practices and compliance
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Programming experience (Python preferred)
 - Basic understanding of machine learning concepts
@@ -23,7 +23,7 @@ Welcome to your **AI Engineering** learning journey! Learn to build, deploy, and
 - Command line and Git knowledge
 - Basic statistics and mathematics
 
-## 🛤️ Learning Path Overview
+## Learning Path Overview
 
 ### Phase 1: AI/ML Foundations (Weeks 1-4)
 - Machine learning fundamentals
@@ -43,7 +43,7 @@ Welcome to your **AI Engineering** learning journey! Learn to build, deploy, and
 - AI security and governance
 - Advanced MLOps patterns
 
-## 🔗 Free Resources to Get Started
+## Free Resources to Get Started
 
 ### Essential Learning
 - [Machine Learning Course](https://www.coursera.org/learn/machine-learning) - Andrew Ng's foundational course
@@ -71,7 +71,7 @@ Welcome to your **AI Engineering** learning journey! Learn to build, deploy, and
 - [End-to-End ML Projects](https://github.com/topics/machine-learning-projects) - Complete project examples
 - [AI Engineering Examples](https://github.com/topics/ai-engineering) - Production AI systems
 
-## 🎯 Next Steps
+## Next Steps
 
 1. **Strengthen ML fundamentals** - Complete a comprehensive ML course
 2. **Learn Python ecosystem** - Master pandas, scikit-learn, and TensorFlow/PyTorch

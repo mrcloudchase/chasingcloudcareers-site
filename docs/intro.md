@@ -6,31 +6,31 @@ sidebar_position: 1
 
 **Free learning paths for engineering careers** - Your guide to Support, Linux, Cloud, DevOps, and AI Engineering.
 
-## 🚀 Our Mission
+## Our Mission
 
 We provide **completely free, structured learning paths** to help you break into and advance in engineering careers. All resources are carefully curated from the best free content available online, including documentation, articles, blogs, videos, and hands-on practice repositories.
 
-## 🎯 Learning Paths Available
+## Learning Paths Available
 
-### 🛠️ Support Engineering
+### Support Engineering
 Learn the fundamentals of technical support, troubleshooting, and customer success in technology companies.
 
-### 🐧 Linux Engineering
+### Linux Engineering
 Master Linux systems administration, shell scripting, and system operations.
 
-### ☁️ Cloud Engineering
+### Cloud Engineering
 Dive into cloud platforms (AWS, Azure, GCP), infrastructure as code, and cloud-native technologies.
 
-### 🔄 DevOps Engineering
+### DevOps Engineering
 Explore CI/CD pipelines, containerization, orchestration, monitoring, and automation.
 
-### 🤖 AI Engineering
+### AI Engineering
 Understand machine learning operations, AI model deployment, and AI infrastructure.
 
-### 🔬 Research Engineering
+### Research Engineering
 Explore cutting-edge research and development in AI, ML, and emerging technologies. Bridge the gap between research and practical implementation.
 
-## 📚 What You'll Find
+## What You'll Find
 
 - **Structured Learning Paths**: Step-by-step guides from beginner to advanced
 - **Free Resources**: Curated links to the best free documentation, tutorials, and courses
@@ -38,7 +38,7 @@ Explore cutting-edge research and development in AI, ML, and emerging technologi
 - **Real-world Projects**: Practical exercises that mirror industry work
 - **Career Guidance**: Tips for landing your first role and advancing your career
 
-## 🏁 Getting Started
+## Getting Started
 
 1. Choose your learning path from the sidebar
 2. Follow the structured curriculum

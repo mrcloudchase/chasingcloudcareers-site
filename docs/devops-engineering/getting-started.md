@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Welcome to your **DevOps Engineering** learning journey! Learn to bridge development and operations through automation, monitoring, and continuous delivery.
 
-## 🎯 What You'll Learn
+## What You'll Learn
 
 - **CI/CD Pipelines**: Automated testing, building, and deployment
 - **Infrastructure as Code**: Terraform, Ansible, and configuration management
@@ -15,14 +15,14 @@ Welcome to your **DevOps Engineering** learning journey! Learn to bridge develop
 - **Cloud Platforms**: AWS, Azure, GCP DevOps services
 - **Security**: DevSecOps practices and security automation
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Basic programming knowledge (Python, JavaScript, or similar)
 - Command line familiarity
 - Understanding of software development lifecycle
 - Basic networking and system administration concepts
 
-## 🛤️ Learning Path Overview
+## Learning Path Overview
 
 ### Phase 1: DevOps Foundations (Weeks 1-4)
 - DevOps culture and principles
@@ -42,7 +42,7 @@ Welcome to your **DevOps Engineering** learning journey! Learn to bridge develop
 - Security integration
 - Site Reliability Engineering
 
-## 🔗 Free Resources to Get Started
+## Free Resources to Get Started
 
 ### Essential Reading
 - [The DevOps Handbook](https://itrevolution.com/the-devops-handbook/) - DevOps principles
@@ -70,7 +70,7 @@ Welcome to your **DevOps Engineering** learning journey! Learn to bridge develop
 - [Awesome DevOps](https://github.com/awesome-soft/awesome-devops) - Curated DevOps resources
 - [Terraform Examples](https://github.com/hashicorp/terraform/tree/main/examples) - Infrastructure as Code
 
-## 🎯 Next Steps
+## Next Steps
 
 1. **Master Git** - Learn version control fundamentals
 2. **Set up CI/CD** - Create your first automated pipeline

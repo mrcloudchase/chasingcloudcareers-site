@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Welcome to your **Cloud Engineering** learning journey! This comprehensive path will take you from cloud fundamentals to advanced cloud architecture and operations.
 
-## 🎯 What You'll Learn
+## What You'll Learn
 
 - **Cloud Fundamentals**: Core concepts across AWS, Azure, and GCP
 - **Infrastructure as Code**: Terraform, CloudFormation, ARM templates
@@ -15,14 +15,14 @@ Welcome to your **Cloud Engineering** learning journey! This comprehensive path 
 - **Monitoring & Observability**: CloudWatch, Azure Monitor, Stackdriver
 - **Security**: Cloud security best practices and compliance
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Basic networking knowledge
 - Command line familiarity (Linux/Windows)
 - Understanding of virtualization concepts
 - Basic programming skills (Python, Bash, or PowerShell)
 
-## 🛤️ Learning Path Overview
+## Learning Path Overview
 
 ### Phase 1: Cloud Fundamentals (Weeks 1-4)
 - Cloud computing concepts
@@ -42,7 +42,7 @@ Welcome to your **Cloud Engineering** learning journey! This comprehensive path 
 - Multi-cloud strategies
 - Cost optimization
 
-## 🔗 Free Resources to Get Started
+## Free Resources to Get Started
 
 ### Cloud Provider Documentation
 - [AWS Documentation](https://docs.aws.amazon.com/) - Comprehensive AWS guides
@@ -64,7 +64,7 @@ Welcome to your **Cloud Engineering** learning journey! This comprehensive path 
 - [Azure Quickstart Templates](https://github.com/Azure/azure-quickstart-templates) - ARM templates
 - [Terraform Examples](https://github.com/hashicorp/terraform/tree/main/examples) - Infrastructure as Code
 
-## 🎯 Next Steps
+## Next Steps
 
 1. **Choose your primary cloud** - Start with AWS, Azure, or GCP
 2. **Create free accounts** - Set up your cloud provider accounts

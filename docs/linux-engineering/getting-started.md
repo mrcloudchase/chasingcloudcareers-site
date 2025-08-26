@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Welcome to your **Linux Engineering** learning journey! Master the skills needed to become a proficient Linux systems administrator and engineer.
 
-## 🎯 What You'll Learn
+## What You'll Learn
 
 - **Linux Fundamentals**: File systems, permissions, and command line mastery
 - **System Administration**: User management, process control, and system monitoring
@@ -15,14 +15,14 @@ Welcome to your **Linux Engineering** learning journey! Master the skills needed
 - **Server Management**: Web servers, databases, and service configuration
 - **Performance Tuning**: System optimization and troubleshooting
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Basic computer literacy
 - Willingness to use command line interfaces
 - Problem-solving mindset
 - Access to a computer for virtual machines
 
-## 🛤️ Learning Path Overview
+## Learning Path Overview
 
 ### Phase 1: Linux Basics (Weeks 1-3)
 - Linux installation and distributions
@@ -42,7 +42,7 @@ Welcome to your **Linux Engineering** learning journey! Master the skills needed
 - Security hardening
 - Performance optimization
 
-## 🔗 Free Resources to Get Started
+## Free Resources to Get Started
 
 ### Essential Documentation
 - [Linux Documentation Project](https://tldp.org/) - Comprehensive Linux guides
@@ -69,7 +69,7 @@ Welcome to your **Linux Engineering** learning journey! Master the skills needed
 - [Bash Scripting Examples](https://github.com/topics/bash-scripting) - Script collections
 - [Linux Configuration Files](https://github.com/topics/linux-configuration) - Config examples
 
-## 🎯 Next Steps
+## Next Steps
 
 1. **Install Linux** - Set up a virtual machine or dual boot
 2. **Master the basics** - Learn essential commands and navigation

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Welcome to your **Support Engineering** learning journey! This path will guide you through the essential skills needed to excel in technical support roles.
 
-## 🎯 What You'll Learn
+## What You'll Learn
 
 - **Technical Troubleshooting**: Systematic problem-solving approaches
 - **Customer Communication**: Professional and empathetic customer interactions
@@ -14,14 +14,14 @@ Welcome to your **Support Engineering** learning journey! This path will guide y
 - **Documentation**: Creating clear guides and knowledge base articles
 - **Escalation Management**: When and how to escalate complex issues
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Basic computer literacy
 - Willingness to learn and help others
 - Strong communication skills
 - Patience and problem-solving mindset
 
-## 🛤️ Learning Path Overview
+## Learning Path Overview
 
 ### Phase 1: Foundations (Weeks 1-2)
 - Understanding the support role
@@ -40,7 +40,7 @@ Welcome to your **Support Engineering** learning journey! This path will guide y
 - Support metrics and KPIs
 - Career advancement
 
-## 🔗 Free Resources to Get Started
+## Free Resources to Get Started
 
 ### Essential Reading
 - [Zendesk Support Guide](https://www.zendesk.com/guide/) - Comprehensive support best practices
@@ -56,7 +56,7 @@ Welcome to your **Support Engineering** learning journey! This path will guide y
 - Practice troubleshooting scenarios
 - Create documentation templates
 
-## 🎯 Next Steps
+## Next Steps
 
 1. **Read the fundamentals** - Start with communication and troubleshooting basics
 2. **Set up practice environment** - Install VirtualBox and create test scenarios
