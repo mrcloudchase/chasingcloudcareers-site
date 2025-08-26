@@ -132,7 +132,7 @@ function WhoWeAreSection() {
   );
 }
 
-function OurStoryAndMission() {
+function OurStorySection() {
   return (
     <section className="padding-vert--xl" style={{background: 'var(--ifm-background-surface-color)'}}>
       <div className="container">
@@ -140,64 +140,69 @@ function OurStoryAndMission() {
           <div className="col col--8 col--offset-2">
             <div className="text--center margin-bottom--xl">
               <Heading as="h2" style={{color: 'var(--ifm-color-primary)', fontSize: '2.5rem', marginBottom: '1rem'}}>
-                Our Story & Mission
+                Our Story
               </Heading>
               <p style={{fontSize: '1.2rem', color: 'var(--ifm-color-content-secondary)'}}>
                 From self-taught beginnings to helping others find their path in tech
               </p>
             </div>
             
-            {/* Our Story */}
-            <div style={{marginBottom: '3rem'}}>
-              <Heading as="h3" style={{color: 'var(--ifm-color-primary)', fontSize: '1.8rem', marginBottom: '1.5rem', textAlign: 'center'}}>
-                Our Story
-              </Heading>
-              <div style={{fontSize: '1.1rem', lineHeight: '1.7'}}>
-                <p style={{marginBottom: '1.5rem'}}>
-                  We both came to tech through unconventional paths. Without computer science degrees, we taught ourselves 
-                  the skills needed to transition into engineering roles. The journey wasn't easy—we spent countless hours 
-                  searching through scattered resources, trying to piece together coherent learning paths.
-                </p>
-                <p style={{marginBottom: '2rem'}}>
-                  Our self-taught journeys taught us that the resources are out there—they just need to be organized in a way that 
-                  makes sense for career development. That's exactly what we set out to do.
-                </p>
-              </div>
+            <div style={{fontSize: '1.1rem', lineHeight: '1.7', textAlign: 'center'}}>
+              <p style={{marginBottom: '1.5rem'}}>
+                We both came to tech through unconventional paths. Without computer science degrees, we taught ourselves 
+                the skills needed to transition into engineering roles. The journey wasn't easy—we spent countless hours 
+                searching through scattered resources, trying to piece together coherent learning paths.
+              </p>
+              <p style={{marginBottom: '2rem'}}>
+                Our self-taught journeys taught us that the resources are out there—they just need to be organized in a way that 
+                makes sense for career development. That's exactly what we set out to do.
+              </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
-            {/* Our Mission */}
+function OurMissionSection() {
+  return (
+    <section className="padding-vert--xl">
+      <div className="container">
+        <div className="row">
+          <div className="col col--8 col--offset-2">
             <div style={{
               background: 'var(--gradient-subtle)',
               borderRadius: 'var(--ifm-card-border-radius)',
-              padding: '2.5rem',
+              padding: '3rem',
               border: '1px solid rgba(99, 102, 241, 0.1)',
               textAlign: 'center'
             }}>
-              <Heading as="h3" style={{color: 'var(--ifm-color-primary)', fontSize: '1.8rem', marginBottom: '1.5rem'}}>
+              <Heading as="h2" style={{color: 'var(--ifm-color-primary)', fontSize: '2.5rem', marginBottom: '1.5rem'}}>
                 Our Mission
               </Heading>
-              <p style={{fontSize: '1.2rem', lineHeight: '1.6', marginBottom: '1.5rem'}}>
+              <p style={{fontSize: '1.3rem', lineHeight: '1.6', marginBottom: '1.5rem'}}>
                 <strong>Help others self-teach by providing curated, structured learning paths using completely free resources.</strong>
               </p>
-              <p style={{fontSize: '1rem', lineHeight: '1.6', color: 'var(--ifm-color-content-secondary)'}}>
+              <p style={{fontSize: '1.1rem', lineHeight: '1.6', color: 'var(--ifm-color-content-secondary)', marginBottom: '2rem'}}>
                 We believe that quality tech education should be accessible to everyone. By organizing the best free resources 
                 into clear learning paths, we're removing barriers that prevent people from successfully transitioning into tech careers.
               </p>
-            </div>
-
-            <div className="text--center margin-top--xl">
-              <Link
-                className="button button--primary button--lg margin-right--md"
-                to="/docs/intro">
-                Start Your Learning Journey
-              </Link>
-              <Link
-                className="button button--secondary button--lg"
-                href="https://discord.gg/your-discord-invite"
-                target="_blank"
-                rel="noopener noreferrer">
-                Join Our Community
-              </Link>
+              
+              <div className="text--center">
+                <Link
+                  className="button button--primary button--lg margin-right--md"
+                  to="/docs/intro">
+                  Start Your Learning Journey
+                </Link>
+                <Link
+                  className="button button--secondary button--lg"
+                  href="https://discord.gg/your-discord-invite"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Join Our Community
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -220,7 +225,8 @@ export default function About(): JSX.Element {
       <AboutHero />
       <main>
         <WhoWeAreSection />
-        <OurStoryAndMission />
+        <OurStorySection />
+        <OurMissionSection />
       </main>
     </Layout>
   );
