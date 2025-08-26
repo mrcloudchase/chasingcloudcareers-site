@@ -20,8 +20,8 @@ function HomepageHeader() {
                 Curated Learning Paths for Engineering Careers
               </Heading>
               <p className="hero__subtitle">
-                Carefully organized collections of free resources for Support, Linux, Cloud, DevOps, and AI Engineering. 
-                Self-directed learning paths to help you transition into tech or expand your existing skills.
+                Self-directed learning paths for Support, Linux, Cloud, DevOps, and AI Engineering. 
+                Curated from freely available resources to help you transition into tech or expand your existing skills.
               </p>
               <div className={styles.buttons}>
                 <Link
@@ -42,7 +42,7 @@ function HomepageHeader() {
                   <div className="col col--4">
                     <div className="text--center">
                       <div style={{fontSize: '2rem', fontWeight: 'bold', marginBottom: '0.5rem'}}>6</div>
-                      <div style={{opacity: 0.8}}>Curated Paths</div>
+                      <div style={{opacity: 0.8}}>Learning Paths</div>
                     </div>
                   </div>
                   <div className="col col--4">
@@ -90,7 +90,7 @@ function TechStackSection() {
           <Heading as="h2" className="text-gradient">
             Technologies We Cover
           </Heading>
-          <p>Industry-standard tools and technologies covered in our curated resource collections</p>
+          <p>Industry-standard tools and technologies covered in our learning paths</p>
         </div>
         <div className="row">
           {techStacks.map((tech, idx) => (
@@ -123,7 +123,7 @@ function CTASection() {
                 Ready to Start Your Learning Journey?
               </Heading>
               <p style={{fontSize: '1.2rem', marginBottom: '2rem', opacity: 0.9}}>
-                Access our carefully curated collections of free resources, organized into structured paths 
+                Access our learning paths curated from freely available resources 
                 for self-directed career development and skill building.
               </p>
               <Link
@@ -144,7 +144,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Curated Engineering Learning Resources"
-      description="Organized collections of free resources for Support, Linux, Cloud, DevOps, and AI Engineering. Self-directed learning paths curated from the best content across the web.">
+      description="Self-directed learning paths for Support, Linux, Cloud, DevOps, and AI Engineering. Curated from the best free resources across the web.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -16,8 +16,8 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Curated resources for technical support, troubleshooting, and customer success. 
-        Free materials to help you develop problem-solving skills and user experience expertise.
+        Learning path for technical support, troubleshooting, and customer success. 
+        Develop problem-solving skills and user experience expertise through curated free resources.
       </>
     ),
     link: '/docs/support-engineering/getting-started',
@@ -27,8 +27,8 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Organized collection of Linux systems administration, shell scripting, 
-        and server management resources. Build foundational infrastructure skills through self-study.
+        Learning path for Linux systems administration, shell scripting, 
+        and server management. Build foundational infrastructure skills through curated free resources.
       </>
     ),
     link: '/docs/linux-engineering/getting-started',
@@ -38,8 +38,8 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Comprehensive resources covering AWS, Azure, and GCP. Curated materials on infrastructure as code, 
-        cloud-native technologies, and scalable architecture patterns.
+        Learning path covering AWS, Azure, and GCP. Explore infrastructure as code, 
+        cloud-native technologies, and scalable architecture patterns through curated free resources.
       </>
     ),
     link: '/docs/cloud-engineering/getting-started',
@@ -49,8 +49,8 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Structured resources for CI/CD pipelines, containerization, monitoring, and automation. 
-        Materials to help bridge the gap between development and operations through self-directed learning.
+        Learning path for CI/CD pipelines, containerization, monitoring, and automation. 
+        Bridge the gap between development and operations through curated free resources.
       </>
     ),
     link: '/docs/devops-engineering/getting-started',
@@ -60,8 +60,8 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Curated resources for MLOps, model deployment, and AI infrastructure. 
-        Free materials to help you understand building and scaling machine learning systems.
+        Learning path for MLOps, model deployment, and AI infrastructure. 
+        Understand building and scaling machine learning systems through curated free resources.
       </>
     ),
     link: '/docs/ai-engineering/getting-started',
@@ -71,8 +71,8 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Resources for cutting-edge research and development in AI, ML, and emerging technologies. 
-        Materials to help bridge the gap between research and practical implementation.
+        Learning path for cutting-edge research and development in AI, ML, and emerging technologies. 
+        Bridge the gap between research and practical implementation through curated free resources.
       </>
     ),
     link: 'https://averagejoeslab.com',
@@ -122,7 +122,7 @@ export default function HomepageFeatures(): ReactNode {
             Choose Your Engineering Path
           </Heading>
           <p className="hero__subtitle" style={{color: 'var(--ifm-color-content-secondary)'}}>
-            Six curated collections of free resources organized for career development and skill building
+            Six learning paths curated from freely available resources for career development and skill building
           </p>
         </div>
         <div className="row">
