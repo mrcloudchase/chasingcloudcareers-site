@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
@@ -96,16 +97,23 @@ function Feature({title, icon, description, link}: FeatureItem) {
             <p>{description}</p>
           </div>
           <div className="learning-path-button-container">
-            <a 
-              href={link} 
-              className="button button--primary button--sm"
-              {...(isExternalLink && {
-                target: '_blank',
-                rel: 'noopener noreferrer'
-              })}
-            >
-              Start Learning →
-            </a>
+            {isExternalLink ? (
+              <a 
+                href={link} 
+                className="button button--primary button--sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Start Learning →
+              </a>
+            ) : (
+              <Link 
+                to={link} 
+                className="button button--primary button--sm"
+              >
+                Start Learning →
+              </Link>
+            )}
           </div>
         </div>
       </div>
