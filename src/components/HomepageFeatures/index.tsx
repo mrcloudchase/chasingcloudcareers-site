@@ -16,8 +16,8 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Master technical support, troubleshooting, and customer success. 
-        Learn to solve complex problems and deliver exceptional user experiences.
+        Curated resources for technical support, troubleshooting, and customer success. 
+        Free materials to help you develop problem-solving skills and user experience expertise.
       </>
     ),
     link: '/docs/support-engineering/getting-started',
@@ -27,8 +27,8 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Become proficient in Linux systems administration, shell scripting, 
-        and server management. Build the foundation for modern infrastructure.
+        Organized collection of Linux systems administration, shell scripting, 
+        and server management resources. Build foundational infrastructure skills through self-study.
       </>
     ),
     link: '/docs/linux-engineering/getting-started',
@@ -38,7 +38,7 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Dive into AWS, Azure, and GCP. Learn infrastructure as code, 
+        Comprehensive resources covering AWS, Azure, and GCP. Curated materials on infrastructure as code, 
         cloud-native technologies, and scalable architecture patterns.
       </>
     ),
@@ -49,8 +49,8 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Master CI/CD pipelines, containerization, monitoring, and automation. 
-        Bridge the gap between development and operations.
+        Structured resources for CI/CD pipelines, containerization, monitoring, and automation. 
+        Materials to help bridge the gap between development and operations through self-directed learning.
       </>
     ),
     link: '/docs/devops-engineering/getting-started',
@@ -60,8 +60,8 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Learn MLOps, model deployment, and AI infrastructure. 
-        Build and scale machine learning systems in production.
+        Curated resources for MLOps, model deployment, and AI infrastructure. 
+        Free materials to help you understand building and scaling machine learning systems.
       </>
     ),
     link: '/docs/ai-engineering/getting-started',
@@ -71,8 +71,8 @@ const FeatureList: FeatureItem[] = [
     icon: '',
     description: (
       <>
-        Explore cutting-edge research and development in AI, ML, and emerging technologies. 
-        Learn to bridge the gap between research and practical implementation.
+        Resources for cutting-edge research and development in AI, ML, and emerging technologies. 
+        Materials to help bridge the gap between research and practical implementation.
       </>
     ),
     link: 'https://averagejoeslab.com',
@@ -122,7 +122,7 @@ export default function HomepageFeatures(): ReactNode {
             Choose Your Engineering Path
           </Heading>
           <p className="hero__subtitle" style={{color: 'var(--ifm-color-content-secondary)'}}>
-            Six comprehensive learning paths designed to get you hired in tech
+            Six curated collections of free resources organized for career development and skill building
           </p>
         </div>
         <div className="row">

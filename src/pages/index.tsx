@@ -17,17 +17,17 @@ function HomepageHeader() {
           <div className="col col--8 col--offset-2">
             <div className="text--center">
               <Heading as="h1" className="hero__title">
-                Launch Your Engineering Career
+                Curated Learning Paths for Engineering Careers
               </Heading>
               <p className="hero__subtitle">
-                Free, comprehensive learning paths for Support, Linux, Cloud, DevOps, and AI Engineering. 
-                Get job-ready with hands-on projects and industry best practices.
+                Carefully organized collections of free resources for Support, Linux, Cloud, DevOps, and AI Engineering. 
+                Self-directed learning paths to help you transition into tech or expand your existing skills.
               </p>
               <div className={styles.buttons}>
                 <Link
                   className="button button--secondary button--lg margin-right--md"
                   to="/docs/intro">
-                  Start Learning
+                  Explore Resources
                 </Link>
                 <Link
                   className="button button--outline button--secondary button--lg"
@@ -42,7 +42,7 @@ function HomepageHeader() {
                   <div className="col col--4">
                     <div className="text--center">
                       <div style={{fontSize: '2rem', fontWeight: 'bold', marginBottom: '0.5rem'}}>6</div>
-                      <div style={{opacity: 0.8}}>Learning Paths</div>
+                      <div style={{opacity: 0.8}}>Curated Paths</div>
                     </div>
                   </div>
                   <div className="col col--4">
@@ -90,7 +90,7 @@ function TechStackSection() {
           <Heading as="h2" className="text-gradient">
             Technologies We Cover
           </Heading>
-          <p>Industry-standard tools and technologies used by top companies across different learning paths</p>
+          <p>Industry-standard tools and technologies covered in our curated resource collections</p>
         </div>
         <div className="row">
           {techStacks.map((tech, idx) => (
@@ -120,11 +120,11 @@ function CTASection() {
           <div className="col col--8 col--offset-2">
             <div className="text--center" style={{color: 'white'}}>
               <Heading as="h2" style={{color: 'white', marginBottom: '1rem'}}>
-                Ready to Transform Your Career?
+                Ready to Start Your Learning Journey?
               </Heading>
               <p style={{fontSize: '1.2rem', marginBottom: '2rem', opacity: 0.9}}>
-                Join thousands of engineers who have successfully transitioned into tech careers 
-                using our proven learning paths.
+                Access our carefully curated collections of free resources, organized into structured paths 
+                for self-directed career development and skill building.
               </p>
               <Link
                 className="button button--secondary button--lg"
@@ -143,8 +143,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title="Free Engineering Career Learning Paths"
-      description="Master Support, Linux, Cloud, DevOps, and AI Engineering with our comprehensive, free learning paths. Get job-ready with hands-on projects and industry best practices.">
+      title="Curated Engineering Learning Resources"
+      description="Organized collections of free resources for Support, Linux, Cloud, DevOps, and AI Engineering. Self-directed learning paths curated from the best content across the web.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
