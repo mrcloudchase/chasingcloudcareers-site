@@ -27,12 +27,12 @@ function HomepageHeader() {
                 <Link
                   className="button button--secondary button--lg margin-right--md"
                   to="/docs/intro">
-                  🚀 Start Learning
+                  Start Learning
                 </Link>
                 <Link
                   className="button button--outline button--secondary button--lg"
                   to="/docs/intro">
-                  📚 Browse Paths
+                  Browse Paths
                 </Link>
               </div>
               
@@ -66,12 +66,6 @@ function HomepageHeader() {
       
       {/* Animated Background Elements */}
       <div className={styles.heroBackground}>
-        <div className={styles.floatingElement} style={{top: '10%', left: '10%', animationDelay: '0s'}}>💻</div>
-        <div className={styles.floatingElement} style={{top: '20%', right: '15%', animationDelay: '1s'}}>☁️</div>
-        <div className={styles.floatingElement} style={{bottom: '30%', left: '20%', animationDelay: '2s'}}>🚀</div>
-        <div className={styles.floatingElement} style={{bottom: '20%', right: '10%', animationDelay: '3s'}}>⚡</div>
-        <div className={styles.floatingElement} style={{top: '50%', left: '5%', animationDelay: '4s'}}>🔧</div>
-        <div className={styles.floatingElement} style={{top: '60%', right: '5%', animationDelay: '5s'}}>🤖</div>
       </div>
     </header>
   );
@@ -79,14 +73,14 @@ function HomepageHeader() {
 
 function TechStackSection() {
   const techStacks = [
-    { name: 'AWS', icon: '☁️' },
-    { name: 'Docker', icon: '🐳' },
-    { name: 'Kubernetes', icon: '⚙️' },
-    { name: 'Python', icon: '🐍' },
-    { name: 'Linux', icon: '🐧' },
-    { name: 'Git', icon: '📝' },
-    { name: 'Terraform', icon: '🏗️' },
-    { name: 'Jenkins', icon: '🔄' },
+    { name: 'AWS', icon: '' },
+    { name: 'Docker', icon: '' },
+    { name: 'Kubernetes', icon: '' },
+    { name: 'Python', icon: '' },
+    { name: 'Linux', icon: '' },
+    { name: 'Git', icon: '' },
+    { name: 'Terraform', icon: '' },
+    { name: 'Jenkins', icon: '' },
   ];
 
   return (
@@ -94,7 +88,7 @@ function TechStackSection() {
       <div className="container">
         <div className="text--center margin-bottom--lg">
           <Heading as="h2" className="text-gradient">
-            🛠️ Technologies We Cover
+            Technologies We Cover
           </Heading>
           <p>Industry-standard tools and technologies used by top companies across different learning paths</p>
         </div>
@@ -107,7 +101,7 @@ function TechStackSection() {
                 border: '1px solid rgba(99, 102, 241, 0.1)',
                 transition: 'all 0.2s ease'
               }}>
-                <div style={{fontSize: '2rem', marginBottom: '0.5rem'}}>{tech.icon}</div>
+                {tech.icon && <div style={{fontSize: '2rem', marginBottom: '0.5rem'}}>{tech.icon}</div>}
                 <div style={{fontWeight: '600'}}>{tech.name}</div>
               </div>
             </div>
@@ -135,7 +129,7 @@ function CTASection() {
               <Link
                 className="button button--secondary button--lg"
                 to="/docs/intro">
-                🎯 Choose Your Path
+                Choose Your Path
               </Link>
             </div>
           </div>
