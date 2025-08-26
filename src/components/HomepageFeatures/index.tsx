@@ -75,7 +75,7 @@ const FeatureList: FeatureItem[] = [
         Bridge the gap between research and practical implementation through curated free resources.
       </>
     ),
-    link: 'https://averagejoeslab.com',
+    link: '/docs/research-engineering/getting-started',
   },
 ];
 
