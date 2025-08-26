@@ -133,7 +133,7 @@ const config: Config = {
             },
             {
               label: 'Research Engineering',
-              href: 'https://averagejoeslab.com',
+              to: '/docs/research-engineering/getting-started',
             },
           ],
         },
@@ -147,10 +147,6 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/mrcloudchase/chasingcloudcareers-site',
-            },
-            {
-              label: 'Website',
-              href: 'https://chasingcloudcareers.com',
             },
           ],
         },
