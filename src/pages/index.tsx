@@ -73,14 +73,14 @@ function HomepageHeader() {
 
 function TechStackSection() {
   const techStacks = [
-    { name: 'AWS', icon: '' },
-    { name: 'Docker', icon: '' },
-    { name: 'Kubernetes', icon: '' },
-    { name: 'Python', icon: '' },
-    { name: 'Linux', icon: '' },
-    { name: 'Git', icon: '' },
-    { name: 'Terraform', icon: '' },
-    { name: 'Jenkins', icon: '' },
+    { name: 'AWS', icon: '☁️' },
+    { name: 'Docker', icon: '🐳' },
+    { name: 'Kubernetes', icon: '⚙️' },
+    { name: 'Python', icon: '🐍' },
+    { name: 'Linux', icon: '🐧' },
+    { name: 'Git', icon: '📝' },
+    { name: 'Terraform', icon: '🏗️' },
+    { name: 'Jenkins', icon: '🔄' },
   ];
 
   return (
@@ -101,7 +101,7 @@ function TechStackSection() {
                 border: '1px solid rgba(99, 102, 241, 0.1)',
                 transition: 'all 0.2s ease'
               }}>
-                {tech.icon && <div style={{fontSize: '2rem', marginBottom: '0.5rem'}}>{tech.icon}</div>}
+                <div style={{fontSize: '2rem', marginBottom: '0.5rem'}}>{tech.icon}</div>
                 <div style={{fontWeight: '600'}}>{tech.name}</div>
               </div>
             </div>
