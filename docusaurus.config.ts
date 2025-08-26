@@ -89,6 +89,7 @@ const config: Config = {
           label: 'Learning Paths',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/about', label: 'About', position: 'left'},
         {
           href: 'https://discord.gg/your-discord-invite',
           label: 'Discord',
@@ -159,7 +160,7 @@ const config: Config = {
             },
             {
               label: 'About',
-              to: '/docs/intro',
+              to: '/about',
             },
           ],
         },
