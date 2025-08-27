@@ -22,25 +22,52 @@ Welcome to your **Cloud Engineering** learning journey! This comprehensive path 
 - Understanding of virtualization concepts
 - Basic programming skills (Python, Bash, or PowerShell)
 
-## Learning Path Overview
+## Complete Learning Path Structure
 
-### Phase 1: Cloud Fundamentals (Weeks 1-4)
-- Cloud computing concepts
-- AWS/Azure/GCP basics
-- Networking in the cloud
-- Storage and databases
+### Module 1: Cloud Computing Fundamentals (Weeks 1-4)
+**[Cloud Computing Fundamentals →](./01-cloud-fundamentals.md)**
+- What is cloud computing and key characteristics
+- Cloud service models (IaaS, PaaS, SaaS) and deployment models
+- Major cloud providers (AWS, Azure, GCP) overview and comparison
+- Core cloud concepts: virtualization, containers, networking, storage
+- Cloud security fundamentals and shared responsibility model
+- **Hands-on**: Set up accounts with all major cloud providers, deploy basic resources
 
-### Phase 2: Infrastructure & Automation (Weeks 5-8)
-- Infrastructure as Code
-- Configuration management
-- Monitoring and logging
-- Security fundamentals
+### Module 2: AWS Deep Dive (Weeks 5-8)
+**[AWS Deep Dive →](./02-aws-deep-dive.md)**
+- AWS global infrastructure and core services
+- Compute services (EC2, Lambda) with practical examples
+- Storage services (S3, EBS) and database services (RDS, DynamoDB)
+- Networking (VPC, Load Balancers) and security (IAM, KMS)
+- Monitoring and logging with CloudWatch and CloudTrail
+- **Hands-on**: Build complete three-tier web application on AWS
 
-### Phase 3: Advanced Topics (Weeks 9-12)
-- Kubernetes and containers
-- Serverless computing
-- Multi-cloud strategies
-- Cost optimization
+### Module 3: Infrastructure as Code (Weeks 9-12)
+**[Infrastructure as Code →](./03-infrastructure-as-code.md)**
+- IaC principles and benefits, tool comparison
+- Terraform fundamentals: providers, resources, state management
+- Advanced Terraform: modules, workspaces, remote state
+- AWS CloudFormation templates and nested stacks
+- Configuration management with Ansible
+- **Hands-on**: Multi-environment infrastructure deployment with GitOps pipeline
+
+### Module 4: Container Orchestration (Weeks 13-16)
+**[Container Orchestration →](./04-container-orchestration.md)**
+- Container fundamentals and Docker mastery
+- Kubernetes architecture and core concepts
+- Pod management, services, ingress, and storage
+- Cloud-managed Kubernetes (EKS, GKE, AKS)
+- Container security and best practices
+- **Hands-on**: Deploy full-stack application with CI/CD pipeline to Kubernetes
+
+### Module 5: Multi-Cloud Architecture (Weeks 17-20)
+**[Multi-Cloud Architecture →](./05-multi-cloud-architecture.md)**
+- Multi-cloud vs hybrid cloud strategies
+- Cloud-agnostic application design patterns
+- Multi-cloud infrastructure with Terraform
+- Cross-cloud monitoring, security, and cost optimization
+- Service mesh and distributed systems
+- **Hands-on**: Build application spanning AWS, GCP, and Azure with unified monitoring
 
 ## Free Resources to Get Started
 
