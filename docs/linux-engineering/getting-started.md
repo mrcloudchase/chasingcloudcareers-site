@@ -4,43 +4,70 @@ sidebar_position: 1
 
 # Getting Started with Linux Engineering
 
-Welcome to your **Linux Engineering** learning journey! Master the skills needed to become a proficient Linux systems administrator and engineer.
+Welcome to your **Linux Engineering** learning journey! This comprehensive path will take you from Linux basics to advanced system administration and automation.
 
 ## What You'll Learn
 
-- **Linux Fundamentals**: File systems, permissions, and command line mastery
-- **System Administration**: User management, process control, and system monitoring
-- **Shell Scripting**: Bash automation and scripting best practices
-- **Network Configuration**: Networking, firewalls, and security
-- **Server Management**: Web servers, databases, and service configuration
-- **Performance Tuning**: System optimization and troubleshooting
+- **Linux Fundamentals**: File systems, permissions, command line mastery, and system navigation
+- **System Administration**: User management, process control, service management, and system monitoring
+- **Shell Scripting & Automation**: Bash scripting, automation techniques, and error handling
+- **Network Configuration & Security**: Networking, firewalls, SSH hardening, and security best practices
+- **Server Management & Performance**: Web servers, databases, performance monitoring, and optimization
 
 ## Prerequisites
 
 - Basic computer literacy
-- Willingness to use command line interfaces
+- Willingness to learn command line interfaces
 - Problem-solving mindset
-- Access to a computer for virtual machines
+- Access to a computer for virtual machines or cloud instances
+- **No prior Linux experience required** - we start from the basics!
 
-## Learning Path Overview
+## Complete Learning Path Structure
 
-### Phase 1: Linux Basics (Weeks 1-3)
-- Linux installation and distributions
-- Command line fundamentals
-- File system navigation
-- Basic text editing
+### Module 1: Linux Fundamentals (Weeks 1-3)
+**[Linux Fundamentals →](./01-linux-fundamentals)**
+- What is Linux and choosing distributions
+- Setting up your Linux environment (VirtualBox, dual boot, cloud)
+- File system structure and navigation
+- Essential command line operations
+- File permissions and ownership
+- **Hands-on**: Complete file system exploration and permission exercises
 
-### Phase 2: System Administration (Weeks 4-7)
+### Module 2: System Administration (Weeks 4-6)
+**[System Administration →](./02-system-administration)**
 - User and group management
-- Process and service management
-- Package management
-- System monitoring
+- Process management and monitoring
+- System monitoring and performance analysis
+- Service management with systemd
+- Log file analysis and troubleshooting
+- **Hands-on**: Create users, manage processes, monitor system health
 
-### Phase 3: Advanced Topics (Weeks 8-12)
-- Shell scripting and automation
-- Network configuration
-- Security hardening
-- Performance optimization
+### Module 3: Shell Scripting and Automation (Weeks 7-9)
+**[Shell Scripting and Automation →](./03-shell-scripting)**
+- Bash scripting fundamentals
+- Variables, control structures, and functions
+- Input/output and file operations
+- Error handling and debugging
+- Advanced automation techniques
+- **Hands-on**: Build comprehensive system maintenance scripts
+
+### Module 4: Network Configuration and Security (Weeks 10-12)
+**[Network Configuration and Security →](./04-networking-security)**
+- Linux networking fundamentals
+- Network interface configuration
+- Firewall management (iptables, UFW, firewalld)
+- SSH security and hardening
+- System security best practices
+- **Hands-on**: Configure secure network services and firewalls
+
+### Module 5: Server Management and Performance (Weeks 13-15)
+**[Server Management and Performance →](./05-server-management)**
+- Web server configuration (Apache, Nginx)
+- Database management (MySQL, PostgreSQL)
+- SSL/TLS certificate management
+- Performance monitoring and optimization
+- Backup and recovery strategies
+- **Hands-on**: Deploy and secure production-ready servers
 
 ## Free Resources to Get Started
 
