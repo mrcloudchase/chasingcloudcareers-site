@@ -197,10 +197,7 @@
   border-color: var(--ifm-color-primary);
 }
 
-/* Feature Cards */
-.features_src-components-HomepageFeatures-styles-module {
-  padding: 4rem 0;
-}
+/* Feature Cards - Removed unused class */
 
 .feature {
   text-align: center;
@@ -385,18 +382,7 @@
   }
 }
 
-/* Custom Animations */
-@keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.gradient-animate {
-  background: var(--gradient-primary);
-  background-size: 200% 200%;
-  animation: gradient-shift 3s ease infinite;
-}
+/* Custom Animations - Removed unused gradient-animate class */
 
 /* Remove default Docusaurus images */
 .hero .hero__subtitle img,
@@ -446,33 +432,7 @@ img[src*="docusaurus"] {
   font-weight: 600;
 }
 
-/* Blog Post Cards */
-.blog-post-card {
-  background: var(--gradient-subtle);
-  border: 1px solid rgba(99, 102, 241, 0.1);
-  border-radius: var(--ifm-card-border-radius);
-  padding: 2rem;
-  transition: all 0.3s ease;
-  margin-bottom: 2rem;
-}
-
-.blog-post-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--ifm-box-shadow-lg);
-  border-color: var(--ifm-color-primary);
-}
-
-.blog-post-card h2 a {
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-decoration: none;
-}
-
-.blog-post-card h2 a:hover {
-  text-decoration: none;
-}
+/* Blog Post Cards - Removed unused classes */
 
 /* Blog Author Cards */
 .avatar {
@@ -487,27 +447,7 @@ img[src*="docusaurus"] {
   margin: 0.5rem 0;
 }
 
-/* Blog Tags */
-.blog-tags--container {
-  margin: 1rem 0;
-}
-
-.blog-tags--container .badge {
-  background: var(--gradient-primary);
-  color: white;
-  border: none;
-  font-weight: 500;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  transition: all 0.2s ease;
-}
-
-.blog-tags--container .badge:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--ifm-box-shadow-md);
-}
+/* Blog Tags - Removed unused classes */
 
 /* Blog Sidebar */
 .blog-sidebar {
@@ -523,38 +463,9 @@ img[src*="docusaurus"] {
   margin-bottom: 1rem;
 }
 
-/* Blog Pagination */
-.blog-pagination {
-  margin-top: 3rem;
-}
+/* Blog Pagination - Removed unused classes */
 
-.blog-pagination .pagination-nav__link {
-  background: var(--gradient-subtle);
-  border: 1px solid rgba(99, 102, 241, 0.1);
-  border-radius: var(--ifm-border-radius);
-  transition: all 0.2s ease;
-}
-
-.blog-pagination .pagination-nav__link:hover {
-  border-color: var(--ifm-color-primary);
-  box-shadow: var(--ifm-box-shadow-md);
-  transform: translateY(-2px);
-}
-
-/* Blog Archive */
-.blog-archive-item {
-  background: var(--gradient-subtle);
-  border: 1px solid rgba(99, 102, 241, 0.1);
-  border-radius: var(--ifm-border-radius);
-  padding: 1rem;
-  margin-bottom: 1rem;
-  transition: all 0.2s ease;
-}
-
-.blog-archive-item:hover {
-  border-color: var(--ifm-color-primary);
-  transform: translateY(-2px);
-}
+/* Blog Archive - Removed unused classes */
 
 /* Blog List Page */
 .blog-list-page h1 {

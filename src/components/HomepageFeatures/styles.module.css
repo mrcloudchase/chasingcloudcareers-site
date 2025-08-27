@@ -11,10 +11,7 @@
   margin-right: -0.75rem;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
-}
+/* Removed unused featureSvg class */
 
 /* Learning Path Cards */
 .features .learning-path-card {
