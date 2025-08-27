@@ -479,6 +479,416 @@ echo '#!/bin/bash\necho "Script running!"' > executable_script.sh
 ./executable_script.sh
 ```
 
+## Text Editing in Linux
+
+Text editing is a fundamental skill for Linux system administration. You'll constantly need to edit configuration files, scripts, and documentation. Linux offers several text editors, from simple to powerful.
+
+### Editor Overview
+
+**nano** - Simple, beginner-friendly editor
+- Easy to learn and use
+- Good for quick edits and beginners
+- Built-in help and shortcuts displayed
+
+**vim** - Powerful, modal editor (Recommended)
+- Extremely efficient once mastered
+- Available on virtually every Linux system
+- Extensive features and customization
+- Industry standard for system administrators
+
+**Other editors**: emacs, gedit, kate (GUI editors)
+
+### nano - The Beginner-Friendly Editor
+
+nano is perfect for beginners and quick edits. It's straightforward and displays helpful shortcuts at the bottom.
+
+**Basic nano Usage:**
+```bash
+# Open/create a file
+nano filename.txt
+
+# Open file at specific line
+nano +25 filename.txt
+
+# Open with line numbers
+nano -l filename.txt
+```
+
+**Essential nano Shortcuts:**
+```bash
+# Navigation
+Ctrl + A    # Beginning of line
+Ctrl + E    # End of line
+Ctrl + Y    # Page up
+Ctrl + V    # Page down
+
+# Editing
+Ctrl + K    # Cut line
+Ctrl + U    # Paste line
+Ctrl + 6    # Mark text (start selection)
+Alt + 6     # Copy marked text
+Ctrl + W    # Search
+Alt + W     # Search and replace
+
+# File operations
+Ctrl + O    # Save file (WriteOut)
+Ctrl + X    # Exit
+Ctrl + R    # Read file (insert another file)
+
+# Help
+Ctrl + G    # Get help
+```
+
+**nano Example Session:**
+```bash
+# Create a configuration file
+nano /tmp/sample.conf
+
+# Type some content:
+# server_name=localhost
+# port=8080
+# debug=true
+
+# Save: Ctrl+O, then Enter
+# Exit: Ctrl+X
+```
+
+### vim - The Power Editor (Recommended)
+
+vim is the preferred editor for system administrators. While it has a learning curve, it's incredibly powerful and efficient once mastered.
+
+**Why vim?**
+- **Ubiquitous**: Available on every Linux system
+- **Efficient**: Modal editing allows rapid text manipulation
+- **Powerful**: Extensive features for coding and system administration
+- **Customizable**: Highly configurable with plugins and scripts
+- **Industry Standard**: Expected skill for Linux professionals
+
+**vim Modes:**
+```bash
+# Normal Mode (default)
+# - Navigation and commands
+# - Press Esc to return here
+
+# Insert Mode
+# - Text editing
+# - Press 'i', 'a', 'o' to enter
+
+# Visual Mode
+# - Text selection
+# - Press 'v' to enter
+
+# Command Mode
+# - File operations and advanced commands
+# - Press ':' to enter
+```
+
+**Starting vim:**
+```bash
+# Open/create file
+vim filename.txt
+
+# Open at specific line
+vim +25 filename.txt
+
+# Open multiple files
+vim file1.txt file2.txt
+
+# Open in read-only mode
+vim -R filename.txt
+```
+
+**Essential vim Commands:**
+
+**Navigation (Normal Mode):**
+```bash
+# Basic movement
+h, j, k, l    # Left, down, up, right (arrow keys also work)
+w             # Next word
+b             # Previous word
+0             # Beginning of line
+$             # End of line
+gg            # Beginning of file
+G             # End of file
+:25           # Go to line 25
+
+# Screen movement
+Ctrl + f      # Page down
+Ctrl + b      # Page up
+Ctrl + d      # Half page down
+Ctrl + u      # Half page up
+```
+
+**Entering Insert Mode:**
+```bash
+i             # Insert at cursor
+a             # Insert after cursor
+o             # New line below cursor
+O             # New line above cursor
+A             # Insert at end of line
+I             # Insert at beginning of line
+```
+
+**Editing (Normal Mode):**
+```bash
+x             # Delete character
+dd            # Delete line
+yy            # Copy line
+p             # Paste after cursor
+P             # Paste before cursor
+u             # Undo
+Ctrl + r      # Redo
+r             # Replace character
+cw            # Change word
+```
+
+**Visual Mode (Selection):**
+```bash
+v             # Character selection
+V             # Line selection
+Ctrl + v      # Block selection
+
+# After selecting:
+d             # Delete selection
+y             # Copy selection
+c             # Change selection
+```
+
+**Search and Replace:**
+```bash
+/pattern      # Search forward
+?pattern      # Search backward
+n             # Next match
+N             # Previous match
+
+# Replace (in command mode)
+:s/old/new/           # Replace first occurrence in line
+:s/old/new/g          # Replace all in line
+:%s/old/new/g         # Replace all in file
+:%s/old/new/gc        # Replace all with confirmation
+```
+
+**File Operations (Command Mode):**
+```bash
+:w            # Save file
+:w filename   # Save as filename
+:q            # Quit
+:q!           # Quit without saving
+:wq           # Save and quit
+:x            # Save and quit (same as :wq)
+ZZ            # Save and quit (normal mode)
+
+# Working with multiple files
+:e filename   # Edit another file
+:bn           # Next buffer
+:bp           # Previous buffer
+:ls           # List open buffers
+```
+
+### Practical vim Examples
+
+**Example 1: Editing a Configuration File**
+```bash
+# Open SSH configuration
+sudo vim /etc/ssh/sshd_config
+
+# Navigate to Port line (search)
+/Port
+
+# Change the port number
+# 1. Position cursor on the number
+# 2. Press 'cw' to change word
+# 3. Type new port number: 2222
+# 4. Press Esc to return to normal mode
+
+# Save and exit
+:wq
+```
+
+**Example 2: Creating a Script**
+```bash
+# Create new script
+vim backup_script.sh
+
+# Enter insert mode and add shebang
+i
+#!/bin/bash
+
+# Add script content
+echo "Starting backup..."
+cp /important/file /backup/location
+echo "Backup completed"
+
+# Exit insert mode
+Esc
+
+# Save and exit
+:wq
+
+# Make executable
+chmod +x backup_script.sh
+```
+
+**Example 3: Bulk Editing**
+```bash
+# Open configuration file
+vim /etc/hosts
+
+# Add comment to multiple lines
+# 1. Go to first line to comment
+# 2. Enter visual line mode: V
+# 3. Select multiple lines with j/k
+# 4. Enter command mode: :
+# 5. Add comment: s/^/# /
+# This adds "# " to the beginning of each selected line
+
+# Replace all occurrences
+:%s/old_server/new_server/g
+
+# Save changes
+:w
+```
+
+### vim Configuration
+
+Create a basic vim configuration for better usability:
+
+```bash
+# Create vim configuration file
+vim ~/.vimrc
+
+# Add basic settings:
+" Enable line numbers
+set number
+
+" Enable syntax highlighting
+syntax on
+
+" Set tab width
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Enable search highlighting
+set hlsearch
+set incsearch
+
+" Enable auto-indentation
+set autoindent
+set smartindent
+
+" Show matching brackets
+set showmatch
+
+" Enable mouse support
+set mouse=a
+
+" Set color scheme
+colorscheme desert
+
+" Show status line
+set laststatus=2
+
+" Enable file type detection
+filetype on
+filetype plugin on
+filetype indent on
+```
+
+### Choosing Your Editor
+
+**Use nano when:**
+- You're new to Linux
+- Making quick, simple edits
+- You need to edit files occasionally
+- Working in emergency situations where you need something simple
+
+**Use vim when:**
+- You're serious about Linux system administration
+- You edit files frequently
+- You want maximum efficiency
+- You're working on servers without GUI
+- You want to develop professional Linux skills
+
+### Hands-on Exercise: Text Editing Practice
+
+```bash
+# 1. Create practice directory
+mkdir ~/text_editing_practice
+cd ~/text_editing_practice
+
+# 2. Practice with nano
+nano simple_config.txt
+# Add some configuration lines:
+# database_host=localhost
+# database_port=5432
+# debug_mode=true
+# Save with Ctrl+O, exit with Ctrl+X
+
+# 3. Practice with vim
+vim system_info.sh
+# Enter insert mode: i
+# Add script content:
+#!/bin/bash
+echo "System Information"
+echo "=================="
+echo "Hostname: $(hostname)"
+echo "Date: $(date)"
+echo "Uptime: $(uptime)"
+echo "Disk Usage:"
+df -h
+# Exit insert mode: Esc
+# Save and exit: :wq
+
+# 4. Make script executable and test
+chmod +x system_info.sh
+./system_info.sh
+
+# 5. Practice vim editing
+vim system_info.sh
+# Navigate to the echo "Date: $(date)" line
+# Change it to show timezone: echo "Date: $(date '+%Y-%m-%d %H:%M:%S %Z')"
+# Use search: /Date
+# Change word: cw (then type new content)
+# Save: :w
+
+# 6. Practice search and replace
+vim simple_config.txt
+# Replace all 'localhost' with '127.0.0.1'
+# Command: :%s/localhost/127.0.0.1/g
+# Save and exit: :wq
+
+# 7. View your work
+cat simple_config.txt
+cat system_info.sh
+```
+
+### vim Learning Resources
+
+**Interactive Tutorials:**
+- `vimtutor` - Built-in vim tutorial (just type `vimtutor` in terminal)
+- [Vim Adventures](https://vim-adventures.com/) - Game-based vim learning
+- [OpenVim](https://www.openvim.com/) - Interactive vim tutorial
+
+**Cheat Sheets:**
+- [Vim Cheat Sheet](https://vim.rtorr.com/) - Comprehensive command reference
+- [Graphical vi-vim Cheat Sheet](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
+
+**Advanced Learning:**
+- [Practical Vim](https://pragprog.com/titles/dnvim2/practical-vim-second-edition/) - Excellent book
+- [Vim Tips Wiki](https://vim.fandom.com/wiki/Vim_Tips_Wiki) - Community tips and tricks
+
+### Text Editing Best Practices
+
+1. **Start with nano** for basic tasks, then gradually learn vim
+2. **Practice vim daily** - even 10 minutes helps build muscle memory
+3. **Use vimtutor** - it's the best way to learn vim systematically
+4. **Customize your vim** - create a .vimrc that works for you
+5. **Learn incrementally** - master basic commands before advanced features
+6. **Use vim for everything** - the more you use it, the faster you'll learn
+
+Remember: vim has a steep learning curve, but the investment pays off tremendously for Linux system administration work!
+
 ## Free Learning Resources
 
 ### Interactive Tutorials
