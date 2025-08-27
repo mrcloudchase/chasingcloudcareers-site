@@ -25,7 +25,7 @@ Welcome to your **Linux Engineering** learning journey! This comprehensive path 
 ## Complete Learning Path Structure
 
 ### Module 1: Linux Fundamentals (Weeks 1-3)
-**[Linux Fundamentals →](./01-linux-fundamentals)**
+**[Linux Fundamentals →](./01-linux-fundamentals.md)**
 - What is Linux and choosing distributions
 - Setting up your Linux environment (VirtualBox, dual boot, cloud)
 - File system structure and navigation
@@ -34,7 +34,7 @@ Welcome to your **Linux Engineering** learning journey! This comprehensive path 
 - **Hands-on**: Complete file system exploration and permission exercises
 
 ### Module 2: System Administration (Weeks 4-6)
-**[System Administration →](./02-system-administration)**
+**[System Administration →](./02-system-administration.md)**
 - User and group management
 - Process management and monitoring
 - System monitoring and performance analysis
@@ -43,7 +43,7 @@ Welcome to your **Linux Engineering** learning journey! This comprehensive path 
 - **Hands-on**: Create users, manage processes, monitor system health
 
 ### Module 3: Shell Scripting and Automation (Weeks 7-9)
-**[Shell Scripting and Automation →](./03-shell-scripting)**
+**[Shell Scripting and Automation →](./03-shell-scripting.md)**
 - Bash scripting fundamentals
 - Variables, control structures, and functions
 - Input/output and file operations
@@ -52,7 +52,7 @@ Welcome to your **Linux Engineering** learning journey! This comprehensive path 
 - **Hands-on**: Build comprehensive system maintenance scripts
 
 ### Module 4: Network Configuration and Security (Weeks 10-12)
-**[Network Configuration and Security →](./04-networking-security)**
+**[Network Configuration and Security →](./04-networking-security.md)**
 - Linux networking fundamentals
 - Network interface configuration
 - Firewall management (iptables, UFW, firewalld)
@@ -61,7 +61,7 @@ Welcome to your **Linux Engineering** learning journey! This comprehensive path 
 - **Hands-on**: Configure secure network services and firewalls
 
 ### Module 5: Server Management and Performance (Weeks 13-15)
-**[Server Management and Performance →](./05-server-management)**
+**[Server Management and Performance →](./05-server-management.md)**
 - Web server configuration (Apache, Nginx)
 - Database management (MySQL, PostgreSQL)
 - SSL/TLS certificate management
