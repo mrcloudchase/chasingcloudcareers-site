@@ -476,7 +476,6 @@ img[src*="docusaurus"] {
 
 /* Blog Author Cards */
 .avatar {
-  border: 2px solid var(--ifm-color-primary);
   border-radius: 50%;
 }
 
