@@ -91,8 +91,13 @@ function WhoWeAreSection() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: '3rem',
-                  color: 'white'
+                  fontSize: '2.5rem',
+                  fontWeight: '600',
+                  color: 'white',
+                  boxShadow: '0 8px 32px rgba(99, 102, 241, 0.3)',
+                  border: '3px solid rgba(255, 255, 255, 0.2)',
+                  position: 'relative',
+                  overflow: 'hidden'
                 }}>
                   {founder.name.split(' ').map(n => n[0]).join('')}
                 </div>

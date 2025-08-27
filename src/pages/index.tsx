@@ -145,7 +145,7 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title="Curated Engineering Learning Resources"
+      title="Chasing Cloud Careers"
       description="Self-directed learning paths for Support, Linux, Cloud, DevOps, and AI Engineering. Curated from the best free resources across the web.">
       <HomepageHeader />
       <main>
