@@ -199,25 +199,7 @@
 
 /* Feature Cards - Removed unused class */
 
-.feature {
-  text-align: center;
-  padding: 2rem;
-  border-radius: var(--ifm-card-border-radius);
-  background: var(--gradient-subtle);
-  border: 1px solid rgba(99, 102, 241, 0.1);
-  transition: all 0.3s ease;
-}
-
-.feature:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--ifm-box-shadow-lg);
-}
-
-.feature h3 {
-  color: var(--ifm-color-primary);
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
+/* Removed unused .feature class and related styles */
 
 /* Footer Styling */
 .footer {
@@ -464,29 +446,11 @@ img[src*="docusaurus"] {
   border-radius: 50%;
 }
 
-.blog-author-card {
-  background: var(--gradient-subtle);
-  border: 1px solid rgba(99, 102, 241, 0.1);
-  border-radius: var(--ifm-border-radius);
-  padding: 1rem;
-  margin: 0.5rem 0;
-}
+/* Removed unused .blog-author-card class */
 
 /* Blog Tags - Removed unused classes */
 
-/* Blog Sidebar */
-.blog-sidebar {
-  background: var(--gradient-subtle);
-  border-radius: var(--ifm-card-border-radius);
-  padding: 1.5rem;
-  border: 1px solid rgba(99, 102, 241, 0.1);
-}
-
-.blog-sidebar h3 {
-  color: var(--ifm-color-primary);
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
+/* Blog Sidebar - Removed unused classes */
 
 /* Blog Pagination - Removed unused classes */
 
@@ -514,17 +478,7 @@ img[src*="docusaurus"] {
   margin-bottom: 2rem;
 }
 
-.blog-post-content img {
-  border-radius: var(--ifm-border-radius);
-  box-shadow: var(--ifm-box-shadow-md);
-  margin: 2rem 0;
-}
-
-.blog-post-content blockquote {
-  border-left: 4px solid var(--ifm-color-primary);
-  background: var(--gradient-subtle);
-  border-radius: 0 var(--ifm-border-radius) var(--ifm-border-radius) 0;
-}
+/* Removed unused .blog-post-content classes */
 
 /* Learning Path Cards */
 .learning-path-card {
