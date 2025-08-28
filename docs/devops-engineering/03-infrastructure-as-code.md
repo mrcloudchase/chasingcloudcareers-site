@@ -4,323 +4,294 @@ sidebar_position: 5
 
 # Infrastructure as Code
 
-## IaC Fundamentals and Principles
+## Infrastructure as Code Fundamentals
 - **What you Need to Know**
-  - **Infrastructure as Code Concepts**
-    - Declarative vs. imperative infrastructure management approaches
-    - Version control for infrastructure and configuration drift prevention
-    - Immutable infrastructure and infrastructure lifecycle management
+  - **IaC Principles and Benefits**
+    - Declarative vs. imperative infrastructure definition
+    - Version control and reproducibility of infrastructure
+    - Infrastructure testing, validation, and compliance
     - **Resources:**
-      - [Infrastructure as Code Principles](https://infrastructure-as-code.com/) - IaC best practices and patterns
-      - [Terraform Best Practices - Gruntwork](https://blog.gruntwork.io/a-comprehensive-guide-to-terraform-b3d32832baca) - Infrastructure management guide
-      - [AWS Infrastructure as Code](https://aws.amazon.com/what-is/iac/) - Cloud infrastructure automation concepts
+      - [Infrastructure as Code - Kief Morris](https://infrastructure-as-code.com/) - Comprehensive IaC principles and practices
+      - [IaC Best Practices - HashiCorp](https://www.terraform.io/docs/cloud/guides/recommended-practices/) - Terraform-focused best practices
+      - [Infrastructure Testing - ThoughtWorks](https://www.thoughtworks.com/insights/blog/infrastructure-code-testing-approaches) - Testing strategies for IaC
 
-  - **IaC Benefits and Use Cases**
-    - Consistency, repeatability, and scalability of infrastructure deployments
-    - Cost optimization through automated resource management
-    - Disaster recovery and multi-environment management
+  - **IaC Tools and Ecosystem**
+    - Terraform for multi-cloud infrastructure provisioning
+    - CloudFormation for AWS-native infrastructure
+    - ARM templates for Azure resource management
     - **Resources:**
-      - [Infrastructure Automation Benefits - HashiCorp](https://www.hashicorp.com/resources/what-is-infrastructure-as-code) - IaC value proposition
-      - [Cloud Cost Optimization - FinOps](https://www.finops.org/introduction/what-is-finops/) - Infrastructure cost management
-      - [Disaster Recovery with IaC - AWS](https://aws.amazon.com/disaster-recovery/) - Automated recovery strategies
+      - [Terraform Documentation](https://www.terraform.io/docs/) - Complete Terraform reference and tutorials
+      - [AWS CloudFormation User Guide](https://docs.aws.amazon.com/cloudformation/) - AWS infrastructure automation
+      - [Azure Resource Manager Templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/) - Azure infrastructure as code
 
-  - **IaC Tool Ecosystem and Selection**
-    - Tool comparison: Terraform, CloudFormation, ARM, Pulumi, CDK
-    - Multi-cloud vs. cloud-native IaC strategies
-    - Integration with CI/CD pipelines and GitOps workflows
+  - **State Management and Backends**
+    - Infrastructure state tracking and management
+    - Remote state storage and locking mechanisms
+    - State file security and backup strategies
     - **Resources:**
-      - [IaC Tool Comparison - DigitalOcean](https://www.digitalocean.com/community/tutorials/infrastructure-as-code-tools-comparison) - Tool selection guide
-      - [Multi-Cloud Infrastructure - Terraform](https://learn.hashicorp.com/tutorials/terraform/multicloud-kubernetes) - Cross-cloud deployment strategies
-      - [GitOps for Infrastructure - ArgoCD](https://argo-cd.readthedocs.io/en/stable/) - Git-based infrastructure management
+      - [Terraform State Management](https://www.terraform.io/docs/language/state/) - State file concepts and management
+      - [Remote State Backends](https://www.terraform.io/docs/language/settings/backends/) - Centralized state storage
+      - [State Security Best Practices](https://learn.hashicorp.com/tutorials/terraform/sensitive-variables) - Securing infrastructure state
 
-## Terraform Infrastructure Management
+## Terraform Infrastructure Automation
 - **What you Need to Know**
-  - **Terraform Fundamentals**
+  - **Terraform Configuration and Syntax**
     - HCL (HashiCorp Configuration Language) syntax and structure
-    - Providers, resources, and data sources configuration
-    - State management and remote state backends
+    - Resource definitions, data sources, and variables
+    - Modules, outputs, and dependency management
     - **Resources:**
-      - [Terraform Documentation](https://www.terraform.io/docs/) - Complete Terraform reference
-      - [Terraform Tutorial - HashiCorp Learn](https://learn.hashicorp.com/terraform) - Hands-on Terraform learning
-      - [Terraform State Management](https://www.terraform.io/docs/language/state/index.html) - State file best practices
+      - [Terraform Language Documentation](https://www.terraform.io/docs/language/) - Complete HCL syntax reference
+      - [Terraform Configuration Examples](https://github.com/hashicorp/terraform/tree/main/examples) - Sample configurations and patterns
+      - [Learn Terraform - HashiCorp](https://learn.hashicorp.com/terraform) - Hands-on Terraform tutorials
 
-  - **Advanced Terraform Patterns**
-    - Module development and reusable infrastructure components
-    - Workspace management and environment separation
-    - Dynamic configuration and conditional resource creation
+  - **Multi-Cloud Resource Provisioning**
+    - AWS provider configuration and resource management
+    - Azure and Google Cloud provider integration
+    - Cross-cloud networking and resource dependencies
     - **Resources:**
-      - [Terraform Modules - HashiCorp](https://learn.hashicorp.com/tutorials/terraform/module) - Module development guide
-      - [Terraform Workspaces](https://www.terraform.io/docs/language/state/workspaces.html) - Environment management
-      - [Dynamic Blocks - Terraform](https://www.terraform.io/docs/language/expressions/dynamic-blocks.html) - Advanced configuration patterns
+      - [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) - AWS resource provisioning
+      - [Terraform Azure Provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) - Azure resource management
+      - [Terraform Google Cloud Provider](https://registry.terraform.io/providers/hashicorp/google/latest/docs) - GCP infrastructure automation
 
-  - **Terraform Enterprise and Collaboration**
-    - Team collaboration and state sharing strategies
-    - Policy as code with Sentinel and OPA integration
-    - Cost estimation and resource planning
+  - **Terraform Modules and Reusability**
+    - Module development and best practices
+    - Module versioning and distribution
+    - Public and private module registries
     - **Resources:**
-      - [Terraform Cloud](https://www.terraform.io/cloud) - Collaborative infrastructure management
-      - [Policy as Code - HashiCorp Sentinel](https://www.hashicorp.com/sentinel) - Infrastructure policy enforcement
-      - [Terraform Cost Estimation](https://www.terraform.io/cloud/cost-estimation) - Infrastructure cost planning
+      - [Terraform Module Development](https://www.terraform.io/docs/language/modules/develop/) - Creating reusable modules
+      - [Terraform Registry](https://registry.terraform.io/) - Public module and provider registry
+      - [Module Best Practices](https://www.terraform.io/docs/cloud/guides/recommended-practices/part1.html) - Module design patterns
 
-## Cloud-Native Infrastructure Tools
+## Cloud-Native Infrastructure Patterns
 - **What you Need to Know**
-  - **AWS CloudFormation**
-    - CloudFormation template syntax (JSON/YAML)
-    - Stack management and nested stack patterns
-    - Custom resources and CloudFormation extensions
+  - **AWS Infrastructure Automation**
+    - VPC design and networking automation
+    - EC2, ECS, and Lambda resource provisioning
+    - RDS, S3, and other managed service configuration
     - **Resources:**
-      - [AWS CloudFormation Documentation](https://docs.aws.amazon.com/cloudformation/) - Complete CloudFormation guide
-      - [CloudFormation Best Practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html) - Template optimization
-      - [AWS CDK (Cloud Development Kit)](https://docs.aws.amazon.com/cdk/) - Programmatic infrastructure definition
+      - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) - Cloud architecture best practices
+      - [Terraform AWS Examples](https://github.com/terraform-aws-modules) - Community AWS modules
+      - [AWS CloudFormation Samples](https://github.com/aws-samples/aws-cloudformation-templates) - CloudFormation template examples
 
-  - **Azure Resource Manager (ARM) Templates**
-    - ARM template structure and deployment modes
-    - Bicep language for simplified Azure infrastructure
-    - Template functions and parameter management
+  - **Azure Infrastructure Management**
+    - Resource Group and subscription organization
+    - Virtual Network and compute resource automation
+    - Azure SQL, Storage, and App Service provisioning
     - **Resources:**
-      - [ARM Templates Documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/) - Azure infrastructure templates
-      - [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/) - Domain-specific language for Azure
-      - [ARM Template Best Practices](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-best-practices) - Template optimization
+      - [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/) - Azure design patterns and practices
+      - [Azure Quickstart Templates](https://github.com/Azure/azure-quickstart-templates) - ARM template examples
+      - [Terraform Azure Examples](https://github.com/terraform-providers/terraform-provider-azurerm/tree/main/examples) - Azure infrastructure patterns
 
-  - **Google Cloud Deployment Manager**
-    - Deployment Manager configuration and templates
-    - Python and Jinja2 template development
-    - Integration with Google Cloud services and APIs
+  - **Google Cloud Platform Automation**
+    - Project and IAM resource management
+    - Compute Engine, GKE, and Cloud Functions provisioning
+    - Cloud SQL, Cloud Storage, and networking configuration
     - **Resources:**
-      - [Google Cloud Deployment Manager](https://cloud.google.com/deployment-manager/docs) - GCP infrastructure automation
-      - [Deployment Manager Templates](https://github.com/GoogleCloudPlatform/deploymentmanager-samples) - Template examples and patterns
-      - [Google Cloud Config Connector](https://cloud.google.com/config-connector/docs/overview) - Kubernetes-native GCP management
+      - [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework) - GCP design principles
+      - [Cloud Foundation Toolkit](https://cloud.google.com/foundation-toolkit) - GCP infrastructure templates
+      - [Terraform GCP Examples](https://github.com/terraform-google-modules) - Community GCP modules
 
-## Configuration Management
+## Configuration Management with Ansible
 - **What you Need to Know**
-  - **Ansible Automation**
-    - Playbook development and role-based configuration
-    - Inventory management and dynamic inventories
-    - Ansible Vault for secrets management
+  - **Ansible Playbooks and Automation**
+    - Playbook structure and YAML syntax
+    - Task organization and role-based automation
+    - Variable management and template processing
     - **Resources:**
-      - [Ansible Documentation](https://docs.ansible.com/) - Complete automation platform guide
-      - [Ansible for DevOps - Jeff Geerling](https://www.ansiblefordevops.com/) - Practical Ansible implementation
+      - [Ansible User Guide](https://docs.ansible.com/ansible/latest/user_guide/) - Complete Ansible documentation
       - [Ansible Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html) - Playbook optimization
+      - [Ansible Examples](https://github.com/ansible/ansible-examples) - Sample playbooks and configurations
 
-  - **Chef Infrastructure Automation**
-    - Cookbook development and recipe management
-    - Chef Server and Chef Solo deployment models
-    - Test-driven infrastructure with ChefSpec and InSpec
+  - **Infrastructure Configuration and Management**
+    - Server provisioning and configuration automation
+    - Application deployment and service management
+    - Security hardening and compliance automation
     - **Resources:**
-      - [Chef Documentation](https://docs.chef.io/) - Infrastructure automation platform
-      - [Chef Cookbooks](https://supermarket.chef.io/) - Community cookbook repository
-      - [Test-Driven Infrastructure - Chef](https://learn.chef.io/courses/course-v1:chef+Infra101+Perpetual/about) - Infrastructure testing
+      - [Ansible for DevOps - Jeff Geerling](https://www.ansiblefordevops.com/) - Practical Ansible implementation
+      - [Ansible Galaxy](https://galaxy.ansible.com/) - Community roles and collections
+      - [Red Hat Ansible Automation](https://www.redhat.com/en/technologies/management/ansible) - Enterprise Ansible platform
 
-  - **Puppet Configuration Management**
-    - Puppet manifests and module development
-    - Puppet Server architecture and agent management
-    - Hiera data separation and environment management
+  - **Ansible Integration with Cloud Providers**
+    - Dynamic inventory and cloud resource discovery
+    - Cloud module usage and authentication
+    - Hybrid cloud configuration management
     - **Resources:**
-      - [Puppet Documentation](https://puppet.com/docs/) - Configuration management platform
-      - [Puppet Forge](https://forge.puppet.com/) - Module marketplace and community
-      - [Puppet Best Practices](https://puppet.com/docs/puppet/7/style_guide.html) - Code style and organization
+      - [Ansible Cloud Modules](https://docs.ansible.com/ansible/latest/collections/index_cloud.html) - Cloud provider integrations
+      - [Dynamic Inventory Guide](https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html) - Cloud resource discovery
+      - [Ansible Vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html) - Secrets management for cloud credentials
 
 ## Container Infrastructure and Orchestration
 - **What you Need to Know**
-  - **Docker Infrastructure Management**
-    - Docker Compose for multi-container applications
-    - Docker Swarm cluster management and orchestration
-    - Container registry management and image lifecycle
+  - **Kubernetes Cluster Provisioning**
+    - Managed Kubernetes service setup (EKS, AKS, GKE)
+    - Self-managed cluster installation and configuration
+    - Cluster networking and storage configuration
     - **Resources:**
-      - [Docker Compose Documentation](https://docs.docker.com/compose/) - Multi-container application definition
-      - [Docker Swarm Mode](https://docs.docker.com/engine/swarm/) - Container orchestration platform
-      - [Container Registry Best Practices](https://docs.docker.com/registry/deploying/) - Image management strategies
+      - [Kubernetes Documentation](https://kubernetes.io/docs/) - Complete Kubernetes reference
+      - [EKS Workshop](https://www.eksworkshop.com/) - AWS Kubernetes hands-on learning
+      - [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) - Manual cluster setup tutorial
 
-  - **Kubernetes Infrastructure as Code**
-    - Kubernetes manifest management and Helm charts
-    - Kustomize for configuration management and overlays
-    - Kubernetes operators for custom resource management
+  - **Kubernetes Resource Management**
+    - Namespace organization and resource quotas
+    - ConfigMaps, Secrets, and persistent volume management
+    - Service mesh and ingress controller configuration
     - **Resources:**
-      - [Kubernetes Documentation](https://kubernetes.io/docs/) - Container orchestration platform
-      - [Helm Charts](https://helm.sh/docs/) - Kubernetes package manager
-      - [Kustomize](https://kustomize.io/) - Kubernetes configuration management
+      - [Kubernetes Best Practices - Google](https://cloud.google.com/kubernetes-engine/docs/best-practices) - Cluster management best practices
+      - [Helm Package Manager](https://helm.sh/docs/) - Kubernetes application packaging
+      - [Istio Service Mesh](https://istio.io/latest/docs/) - Service mesh implementation
 
-  - **Service Mesh Infrastructure**
-    - Istio service mesh deployment and configuration
-    - Linkerd lightweight service mesh implementation
-    - Service mesh observability and security policies
+  - **GitOps and Kubernetes Automation**
+    - ArgoCD and Flux for GitOps workflows
+    - Application deployment automation
+    - Configuration drift detection and remediation
     - **Resources:**
-      - [Istio Documentation](https://istio.io/latest/docs/) - Service mesh platform
-      - [Linkerd Documentation](https://linkerd.io/2.11/overview/) - Lightweight service mesh
-      - [Service Mesh Comparison](https://servicemesh.es/) - Service mesh technology comparison
+      - [Argo CD Documentation](https://argo-cd.readthedocs.io/en/stable/) - GitOps continuous deployment
+      - [Flux Documentation](https://fluxcd.io/docs/) - GitOps toolkit for Kubernetes
+      - [GitOps Guide - Weaveworks](https://www.weave.works/technologies/gitops/) - GitOps principles and implementation
 
 ## Infrastructure Testing and Validation
 - **What you Need to Know**
   - **Infrastructure Testing Frameworks**
-    - Test-driven infrastructure development with Terratest
-    - Infrastructure compliance testing with InSpec
-    - Policy testing and validation automation
+    - Unit testing for infrastructure code
+    - Integration testing with real cloud resources
+    - Compliance testing and security validation
     - **Resources:**
-      - [Terratest](https://terratest.gruntwork.io/) - Infrastructure testing library
-      - [Chef InSpec](https://www.inspec.io/docs/) - Infrastructure compliance testing
-      - [Open Policy Agent (OPA)](https://www.openpolicyagent.org/docs/latest/) - Policy as code framework
+      - [Terratest](https://terratest.gruntwork.io/) - Go-based infrastructure testing framework
+      - [Kitchen-Terraform](https://newcontext-oss.github.io/kitchen-terraform/) - Test Kitchen integration for Terraform
+      - [InSpec](https://www.inspec.io/docs/) - Infrastructure compliance testing
 
-  - **Continuous Infrastructure Validation**
-    - Automated infrastructure testing in CI/CD pipelines
-    - Configuration drift detection and remediation
-    - Infrastructure security scanning and compliance
+  - **Policy as Code and Governance**
+    - Open Policy Agent (OPA) for policy enforcement
+    - Terraform Sentinel for policy validation
+    - Cloud security posture management
     - **Resources:**
-      - [Infrastructure CI/CD - GitLab](https://docs.gitlab.com/ee/user/infrastructure/) - Infrastructure pipeline integration
-      - [Drift Detection - Terraform Cloud](https://www.terraform.io/cloud/drift-detection) - Configuration monitoring
-      - [Infrastructure Security - Checkov](https://www.checkov.io/) - Static analysis for infrastructure
+      - [Open Policy Agent](https://www.openpolicyagent.org/docs/latest/) - Policy as code framework
+      - [Terraform Sentinel](https://docs.hashicorp.com/sentinel/writing/) - Policy enforcement for Terraform
+      - [Cloud Custodian](https://cloudcustodian.io/docs/) - Cloud resource governance
 
-  - **Performance and Cost Testing**
-    - Infrastructure performance benchmarking and optimization
-    - Cost modeling and budget validation
-    - Resource utilization analysis and rightsizing
+  - **Cost Management and Optimization**
+    - Infrastructure cost estimation and tracking
+    - Resource rightsizing and optimization
+    - Cost allocation and chargeback automation
     - **Resources:**
-      - [Cloud Cost Management - CloudHealth](https://www.cloudhealthtech.com/) - Multi-cloud cost optimization
-      - [Infrastructure Performance Testing](https://www.brendangregg.com/linuxperf.html) - System performance analysis
-      - [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) - Cost analysis and optimization
+      - [Terraform Cost Estimation](https://www.terraform.io/docs/cloud/cost-estimation/) - Infrastructure cost planning
+      - [AWS Cost Explorer](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-what-is.html) - AWS cost analysis
+      - [Infracost](https://www.infracost.io/docs/) - Infrastructure cost estimation tool
 
-## Multi-Cloud and Hybrid Infrastructure
+## CI/CD Integration for Infrastructure
 - **What you Need to Know**
-  - **Multi-Cloud Architecture Patterns**
-    - Cross-cloud resource provisioning and management
-    - Cloud-agnostic infrastructure design principles
-    - Multi-cloud networking and connectivity strategies
-    - **Resources:**
-      - [Multi-Cloud Architecture - Google](https://cloud.google.com/architecture/framework/system-design/multi-cloud) - Cross-cloud design patterns
-      - [Terraform Multi-Cloud](https://learn.hashicorp.com/tutorials/terraform/multicloud-kubernetes) - Multi-provider infrastructure
-      - [Multi-Cloud Networking - Aviatrix](https://docs.aviatrix.com/) - Cloud networking platform
-
-  - **Hybrid Cloud Infrastructure**
-    - On-premises and cloud integration strategies
-    - Hybrid connectivity and network architecture
-    - Data synchronization and workload migration
-    - **Resources:**
-      - [Hybrid Cloud Architecture - AWS](https://aws.amazon.com/hybrid/) - Hybrid cloud strategies
-      - [Azure Arc](https://docs.microsoft.com/en-us/azure/azure-arc/) - Hybrid and multi-cloud management
-      - [Google Anthos](https://cloud.google.com/anthos/docs) - Hybrid and multi-cloud platform
-
-  - **Edge Computing Infrastructure**
-    - Edge infrastructure deployment and management
-    - IoT device management and edge orchestration
-    - Edge-to-cloud data pipeline automation
-    - **Resources:**
-      - [AWS IoT Greengrass](https://docs.aws.amazon.com/greengrass/) - Edge computing platform
-      - [Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/) - Edge computing services
-      - [K3s Edge Kubernetes](https://k3s.io/) - Lightweight Kubernetes for edge
-
-## Infrastructure Security and Compliance
-- **What you Need to Know**
-  - **Security-First Infrastructure Design**
-    - Zero-trust network architecture implementation
-    - Infrastructure hardening and security baselines
-    - Secrets management and credential rotation
-    - **Resources:**
-      - [Zero Trust Architecture - NIST](https://csrc.nist.gov/publications/detail/sp/800-207/final) - Zero trust implementation guide
-      - [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks/) - Security configuration standards
-      - [HashiCorp Vault](https://www.vaultproject.io/docs) - Secrets management platform
-
-  - **Compliance Automation**
-    - Regulatory compliance frameworks (SOC 2, PCI DSS, HIPAA)
-    - Automated compliance checking and reporting
-    - Audit trail management and documentation
-    - **Resources:**
-      - [Compliance as Code - Chef InSpec](https://www.inspec.io/docs/) - Automated compliance testing
-      - [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html) - Configuration compliance monitoring
-      - [Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/) - Governance and compliance automation
-
-  - **Infrastructure Vulnerability Management**
-    - Infrastructure security scanning and assessment
-    - Vulnerability remediation and patch management
-    - Security monitoring and incident response
-    - **Resources:**
-      - [Infrastructure Security - Aqua Security](https://www.aquasec.com/cloud-native-academy/supply-chain-security/) - Cloud-native security
-      - [Vulnerability Scanning - Qualys](https://www.qualys.com/apps/vulnerability-management/) - Infrastructure vulnerability assessment
-      - [Security Monitoring - Falco](https://falco.org/docs/) - Runtime security monitoring
-
-## GitOps and Infrastructure Delivery
-- **What you Need to Know**
-  - **GitOps Principles and Implementation**
-    - Git-based infrastructure delivery workflows
-    - Declarative infrastructure and desired state management
-    - Continuous reconciliation and drift correction
-    - **Resources:**
-      - [GitOps Principles - Weaveworks](https://www.weave.works/technologies/gitops/) - Git-based operations model
-      - [ArgoCD for Infrastructure](https://argo-cd.readthedocs.io/en/stable/) - GitOps continuous delivery
-      - [Flux GitOps Toolkit](https://fluxcd.io/docs/) - Kubernetes GitOps operator
-
   - **Infrastructure Pipeline Automation**
-    - Infrastructure CI/CD pipeline design and implementation
-    - Automated testing and validation in infrastructure pipelines
-    - Progressive infrastructure delivery and rollback strategies
+    - Terraform plan and apply automation
+    - Infrastructure change approval workflows
+    - Rollback and disaster recovery procedures
     - **Resources:**
-      - [Infrastructure Pipelines - Terraform Cloud](https://www.terraform.io/cloud/run/ui) - Automated infrastructure workflows
-      - [GitLab Infrastructure as Code](https://docs.gitlab.com/ee/user/infrastructure/) - Integrated IaC pipelines
-      - [GitHub Actions for Infrastructure](https://github.com/features/actions) - Infrastructure automation workflows
+      - [Terraform Cloud Workflows](https://www.terraform.io/docs/cloud/run/ui.html) - Automated infrastructure workflows
+      - [GitLab Infrastructure Pipelines](https://docs.gitlab.com/ee/user/infrastructure/) - Infrastructure CI/CD integration
+      - [GitHub Actions for Terraform](https://learn.hashicorp.com/tutorials/terraform/github-actions) - Terraform automation with GitHub
 
-  - **Environment Management and Promotion**
-    - Environment-specific infrastructure configuration
-    - Infrastructure promotion pipelines and approval workflows
-    - Blue-green infrastructure deployments
+  - **Multi-Environment Infrastructure Management**
+    - Environment-specific configuration management
+    - Infrastructure promotion and deployment strategies
+    - Environment isolation and security
     - **Resources:**
-      - [Environment Management - Terraform](https://www.terraform.io/docs/language/state/workspaces.html) - Workspace-based environments
-      - [Infrastructure Promotion - Spinnaker](https://spinnaker.io/concepts/) - Multi-cloud deployment platform
-      - [Blue-Green Infrastructure - AWS](https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployments/blue-green-deployments.html) - Zero-downtime infrastructure updates
+      - [Terraform Workspaces](https://www.terraform.io/docs/language/state/workspaces.html) - Environment separation
+      - [Environment Management - Atlassian](https://www.atlassian.com/continuous-delivery/principles/environment-management) - Environment strategy
+      - [Infrastructure Environments - HashiCorp](https://learn.hashicorp.com/tutorials/terraform/organize-configuration) - Configuration organization
 
-## Infrastructure Monitoring and Observability
+  - **Infrastructure Monitoring and Observability**
+    - Infrastructure metrics and monitoring setup
+    - Log aggregation and analysis automation
+    - Alerting and notification configuration
+    - **Resources:**
+      - [Prometheus Monitoring](https://prometheus.io/docs/introduction/overview/) - Infrastructure metrics collection
+      - [Grafana Dashboards](https://grafana.com/docs/grafana/latest/) - Infrastructure visualization
+      - [ELK Stack for Infrastructure](https://www.elastic.co/what-is/elk-stack) - Log management and analysis
+
+## Security and Compliance Automation
 - **What you Need to Know**
-  - **Infrastructure Metrics and Monitoring**
-    - Infrastructure performance monitoring and alerting
-    - Resource utilization tracking and capacity planning
-    - Cost monitoring and optimization automation
+  - **Infrastructure Security Hardening**
+    - Security group and firewall automation
+    - Encryption and key management configuration
+    - Identity and access management automation
     - **Resources:**
-      - [Prometheus Infrastructure Monitoring](https://prometheus.io/docs/) - Metrics collection and alerting
-      - [Grafana Infrastructure Dashboards](https://grafana.com/grafana/dashboards/) - Infrastructure visualization
-      - [CloudWatch Infrastructure Monitoring](https://docs.aws.amazon.com/AmazonCloudWatch/) - AWS infrastructure metrics
+      - [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks/) - Security configuration standards
+      - [AWS Security Best Practices](https://aws.amazon.com/architecture/security-identity-compliance/) - Cloud security guidance
+      - [Terraform Security Modules](https://registry.terraform.io/browse/modules?provider=aws&q=security) - Security-focused infrastructure modules
 
-  - **Infrastructure Logging and Auditing**
-    - Centralized infrastructure logging and analysis
-    - Audit trail collection and compliance reporting
-    - Infrastructure change tracking and documentation
+  - **Compliance as Code Implementation**
+    - Automated compliance checking and reporting
+    - Regulatory framework implementation (SOC 2, PCI DSS, HIPAA)
+    - Audit trail generation and management
     - **Resources:**
-      - [ELK Stack for Infrastructure](https://www.elastic.co/what-is/elk-stack) - Log management platform
-      - [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/) - Infrastructure audit logging
-      - [Infrastructure Change Management](https://www.atlassian.com/itsm/change-management) - Change control processes
+      - [Compliance as Code - Chef InSpec](https://www.inspec.io/docs/) - Automated compliance validation
+      - [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html) - Compliance monitoring automation
+      - [Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/) - Azure compliance automation
 
-  - **Infrastructure Troubleshooting and Debugging**
-    - Infrastructure issue diagnosis and root cause analysis
-    - Performance bottleneck identification and resolution
-    - Disaster recovery testing and validation
+  - **Secrets Management and Encryption**
+    - Secrets management integration with IaC
+    - Encryption at rest and in transit configuration
+    - Key rotation and lifecycle management
     - **Resources:**
-      - [Infrastructure Troubleshooting - Brendan Gregg](http://www.brendangregg.com/methodology.html) - Performance analysis methodology
-      - [Chaos Engineering - Netflix](https://netflix.github.io/chaosmonkey/) - Infrastructure resilience testing
-      - [Disaster Recovery Testing - AWS](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/testing-disaster-recovery.html) - DR validation procedures
+      - [HashiCorp Vault](https://www.vaultproject.io/docs/) - Secrets management platform
+      - [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/) - Cloud secrets management
+      - [Kubernetes Secrets Management](https://kubernetes.io/docs/concepts/configuration/secret/) - Container secrets handling
 
 ## Advanced Infrastructure Patterns
 - **What you Need to Know**
-  - **Microservices Infrastructure**
-    - Service-oriented infrastructure design and implementation
-    - API gateway and service discovery infrastructure
-    - Distributed system infrastructure patterns
+  - **Multi-Cloud and Hybrid Infrastructure**
+    - Cross-cloud networking and connectivity
+    - Workload distribution and failover strategies
+    - Data synchronization and backup across clouds
     - **Resources:**
-      - [Microservices Infrastructure - Martin Fowler](https://martinfowler.com/articles/microservices.html) - Microservices architecture patterns
-      - [Service Mesh Infrastructure](https://servicemesh.es/) - Service communication infrastructure
-      - [API Gateway Patterns](https://microservices.io/patterns/apigateway.html) - API infrastructure design
+      - [Multi-Cloud Architecture - Google](https://cloud.google.com/blog/topics/hybrid-cloud/why-and-how-to-adopt-a-multi-cloud-strategy) - Multi-cloud strategy and implementation
+      - [Hybrid Cloud Patterns - Microsoft](https://docs.microsoft.com/en-us/azure/architecture/hybrid/) - Hybrid infrastructure design
+      - [Terraform Multi-Cloud Examples](https://github.com/hashicorp/terraform/tree/main/examples) - Cross-cloud infrastructure patterns
 
-  - **Event-Driven Infrastructure**
-    - Event sourcing and CQRS infrastructure patterns
-    - Message queue and streaming infrastructure
-    - Serverless event-driven architectures
+  - **Infrastructure Scaling and Auto-Scaling**
+    - Horizontal and vertical scaling automation
+    - Load balancing and traffic distribution
+    - Capacity planning and resource optimization
     - **Resources:**
-      - [Event-Driven Architecture - AWS](https://aws.amazon.com/event-driven-architecture/) - Event-based system design
-      - [Apache Kafka Infrastructure](https://kafka.apache.org/documentation/) - Distributed streaming platform
-      - [Serverless Framework](https://www.serverless.com/framework/docs/) - Event-driven serverless infrastructure
+      - [Auto Scaling Best Practices - AWS](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-benefits.html) - Scaling strategy and implementation
+      - [Kubernetes Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) - Container scaling automation
+      - [Infrastructure Scaling Patterns](https://martinfowler.com/articles/serverless.html) - Scaling architecture patterns
 
-  - **Data Infrastructure and Analytics**
-    - Data pipeline infrastructure and orchestration
-    - Big data processing infrastructure (Spark, Hadoop)
-    - Machine learning infrastructure and MLOps
+  - **Disaster Recovery and Business Continuity**
+    - Backup and recovery automation
+    - Cross-region replication and failover
+    - Recovery time and point objectives implementation
     - **Resources:**
-      - [Data Pipeline Infrastructure - Apache Airflow](https://airflow.apache.org/docs/) - Workflow orchestration platform
-      - [Big Data Infrastructure - Databricks](https://docs.databricks.com/) - Unified analytics platform
-      - [MLOps Infrastructure - Kubeflow](https://www.kubeflow.org/docs/) - Machine learning on Kubernetes
+      - [Disaster Recovery Planning - AWS](https://aws.amazon.com/disaster-recovery/) - DR strategy and implementation
+      - [Azure Site Recovery](https://docs.microsoft.com/en-us/azure/site-recovery/) - Automated disaster recovery
+      - [Kubernetes Disaster Recovery](https://kubernetes.io/docs/concepts/cluster-administration/backup-restore-cluster/) - Container platform DR
 
-**Ready to Continue?** Advance to [Module 4: Containerization and Orchestration](./04-containerization-orchestration.md) to master container technologies and Kubernetes orchestration!
+## Performance Optimization and Cost Management
+- **What you Need to Know**
+  - **Infrastructure Performance Tuning**
+    - Resource sizing and performance optimization
+    - Network performance and latency optimization
+    - Storage performance and IOPS optimization
+    - **Resources:**
+      - [AWS Performance Optimization](https://aws.amazon.com/architecture/performance-efficiency/) - Cloud performance best practices
+      - [Kubernetes Performance Tuning](https://kubernetes.io/docs/concepts/cluster-administration/system-metrics/) - Container performance optimization
+      - [Infrastructure Performance Monitoring](https://www.datadoghq.com/blog/monitoring-101-collecting-data/) - Performance metrics and analysis
+
+  - **Cost Optimization Strategies**
+    - Resource rightsizing and utilization optimization
+    - Reserved instances and savings plans
+    - Spot instances and preemptible workloads
+    - **Resources:**
+      - [AWS Cost Optimization](https://aws.amazon.com/aws-cost-management/) - Cloud cost management strategies
+      - [Azure Cost Management](https://docs.microsoft.com/en-us/azure/cost-management-billing/) - Azure cost optimization
+      - [GCP Cost Optimization](https://cloud.google.com/cost-optimization) - Google Cloud cost management
+
+  - **FinOps and Cloud Financial Management**
+    - Cost allocation and chargeback implementation
+    - Budget management and cost alerting
+    - Financial governance and reporting automation
+    - **Resources:**
+      - [FinOps Foundation](https://www.finops.org/) - Cloud financial management practices
+      - [Cloud Cost Management - Atlassian](https://www.atlassian.com/engineering/cloud-cost-optimization) - Cost optimization strategies
+      - [Infrastructure Cost Tracking](https://www.infracost.io/docs/) - Cost estimation and tracking tools
+
+**Ready to Continue?** Advance to [Module 4: Containerization and Orchestration](./04-containerization-orchestration.md) to master Docker, Kubernetes, and modern container deployment strategies!

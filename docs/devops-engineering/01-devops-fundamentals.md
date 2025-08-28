@@ -8,30 +8,30 @@ sidebar_position: 3
 - **What you Need to Know**
   - **DevOps Principles and Values**
     - Understanding of collaboration between development and operations teams
-    - Emphasis on automation, continuous improvement, and shared responsibility
-    - Focus on customer value delivery and rapid, reliable software releases
+    - Continuous integration, continuous delivery, and continuous deployment concepts
+    - Automation, measurement, and sharing as core DevOps practices
     - **Resources:**
-      - [The DevOps Handbook - Gene Kim](https://itrevolution.com/the-devops-handbook/) - Foundational DevOps principles and practices
-      - [DevOps Culture Guide - Atlassian](https://www.atlassian.com/devops/what-is-devops/devops-culture) - Building collaborative DevOps culture
-      - [State of DevOps Report - Puppet](https://puppet.com/resources/report/2021-state-of-devops-report/) - Industry research and best practices
+      - [The DevOps Handbook - Gene Kim](https://itrevolution.com/the-devops-handbook/) - Comprehensive DevOps principles and practices
+      - [DevOps Culture Guide - Atlassian](https://www.atlassian.com/devops/what-is-devops/devops-culture) - Cultural transformation and collaboration
+      - [CALMS Framework - DevOps Institute](https://devopsinstitute.com/calms/) - Culture, Automation, Lean, Measurement, Sharing
 
-  - **Lean and Agile Methodologies**
-    - Agile development principles and iterative delivery approaches
-    - Lean thinking: eliminating waste and optimizing value streams
-    - Continuous feedback loops and data-driven decision making
+  - **Agile and Lean Methodologies**
+    - Agile development principles and practices
+    - Lean software development and waste elimination
+    - Scrum, Kanban, and other agile frameworks
     - **Resources:**
-      - [Agile Manifesto](https://agilemanifesto.org/) - Core agile development principles
-      - [Lean Software Development - Mary Poppendieck](http://www.poppendieck.com/) - Lean principles in software development
-      - [Scrum Guide](https://scrumguides.org/) - Scrum framework for agile development
+      - [Agile Manifesto](https://agilemanifesto.org/) - Foundational agile principles
+      - [Scrum Guide](https://scrumguides.org/scrum-guide.html) - Official Scrum framework documentation
+      - [Lean Software Development - Mary Poppendieck](http://www.poppendieck.com/lean.htm) - Lean principles in software development
 
-  - **Cultural Transformation and Change Management**
-    - Breaking down silos between development, operations, and other teams
-    - Building trust, psychological safety, and learning organizations
-    - Implementing blameless post-mortems and continuous improvement
+  - **Continuous Improvement and Learning**
+    - Kaizen and continuous improvement practices
+    - Blameless post-mortems and learning from failures
+    - Feedback loops and measurement-driven improvement
     - **Resources:**
-      - [Team Topologies - Matthew Skelton](https://teamtopologies.com/) - Organizing teams for fast flow
-      - [Accelerate - Nicole Forsgren](https://itrevolution.com/accelerate-book/) - Science of lean software and DevOps
-      - [Google SRE Culture](https://sre.google/sre-book/introduction/) - Site reliability engineering culture
+      - [Continuous Improvement Guide - Toyota](https://global.toyota/en/company/vision-and-philosophy/production-system/) - Kaizen and continuous improvement
+      - [Blameless Post-Mortems - Atlassian](https://www.atlassian.com/incident-management/postmortem/blameless) - Learning from incidents
+      - [Feedback Loops - DevOps Research](https://www.devops-research.com/research.html) - Research on DevOps practices
 
 ## Version Control and Collaboration
 - **What you Need to Know**
@@ -41,248 +41,257 @@ sidebar_position: 3
     - Git hooks for automation and quality gates
     - **Resources:**
       - [Git Branching Strategies - Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows) - Comprehensive workflow comparison
-      - [Pro Git Book](https://git-scm.com/book/en/v2) - Complete Git reference and advanced techniques
-      - [Git Hooks Tutorial - Atlassian](https://www.atlassian.com/git/tutorials/git-hooks) - Automation with Git hooks
+      - [Git Hooks Tutorial - GitKraken](https://www.gitkraken.com/learn/git/git-hooks) - Automation with Git hooks
+      - [Pro Git Book](https://git-scm.com/book/en/v2) - Complete Git reference and best practices
 
-  - **Code Review and Quality Practices**
-    - Effective code review processes and best practices
+  - **Code Review and Quality Assurance**
+    - Code review processes and best practices
     - Static code analysis and automated quality checks
-    - Documentation standards and knowledge sharing
+    - Pair programming and collaborative development
     - **Resources:**
       - [Code Review Best Practices - Google](https://google.github.io/eng-practices/review/) - Google's engineering practices
-      - [GitHub Code Review Guide](https://github.com/features/code-review/) - Code review tools and workflows
-      - [SonarQube Documentation](https://docs.sonarqube.org/latest/) - Code quality and security analysis
+      - [Static Analysis Tools - OWASP](https://owasp.org/www-community/Source_Code_Analysis_Tools) - Code quality and security tools
+      - [Pair Programming Guide - Atlassian](https://www.atlassian.com/agile/software-development/pair-programming) - Collaborative development practices
 
-  - **Collaborative Development Platforms**
-    - GitHub, GitLab, and Bitbucket feature comparison and usage
-    - Issue tracking, project management, and documentation integration
-    - Team collaboration tools and communication strategies
+  - **Documentation and Knowledge Sharing**
+    - Technical documentation best practices
+    - README files, API documentation, and runbooks
+    - Knowledge management and team collaboration tools
     - **Resources:**
-      - [GitHub Documentation](https://docs.github.com/) - Complete GitHub platform guide
-      - [GitLab Documentation](https://docs.gitlab.com/) - Integrated DevOps platform
-      - [Atlassian Bitbucket Guide](https://www.atlassian.com/software/bitbucket/guides) - Git repository management
+      - [Technical Writing - Google](https://developers.google.com/tech-writing) - Technical documentation course
+      - [Documentation Guide - GitLab](https://docs.gitlab.com/ee/development/documentation/) - Documentation best practices
+      - [Runbook Templates - PagerDuty](https://response.pagerduty.com/oncall/runbooks/) - Operational documentation
 
-## Automation Fundamentals
+## Linux System Administration for DevOps
 - **What you Need to Know**
-  - **Scripting and Task Automation**
-    - Shell scripting for system administration and deployment tasks
-    - Python automation for complex workflows and integrations
-    - PowerShell for Windows environment automation
+  - **Command Line Mastery**
+    - Advanced shell scripting and command-line tools
+    - Text processing with sed, awk, and grep
+    - Process management and system monitoring
     - **Resources:**
-      - [Bash Scripting Guide - TLDP](https://tldp.org/LDP/abs/html/) - Advanced bash scripting techniques
-      - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - Python automation examples
-      - [PowerShell Documentation - Microsoft](https://docs.microsoft.com/en-us/powershell/) - Windows automation with PowerShell
+      - [Advanced Bash Scripting Guide - TLDP](https://tldp.org/LDP/abs/html/) - Comprehensive bash scripting reference
+      - [Linux Command Line - William Shotts](http://linuxcommand.org/tlcl.php) - Complete command-line guide
+      - [Shell Scripting Tutorial - Linux Config](https://linuxconfig.org/bash-scripting-tutorial-for-beginners) - Practical scripting examples
+
+  - **System Configuration and Management**
+    - Service management with systemd
+    - Package management and software installation
+    - User and permission management
+    - **Resources:**
+      - [Systemd Tutorial - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units) - Service management
+      - [Linux System Administration - Red Hat](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/) - System configuration
+      - [Package Management Guide - Linux Journey](https://linuxjourney.com/lesson/software-distribution) - Software management across distributions
+
+  - **Network Configuration and Security**
+    - Network interface configuration and troubleshooting
+    - Firewall configuration with iptables and firewalld
+    - SSH configuration and key management
+    - **Resources:**
+      - [Linux Networking - Red Hat](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/) - Network configuration
+      - [SSH Hardening Guide - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-18-04) - SSH security configuration
+      - [Firewall Configuration - Linode](https://www.linode.com/docs/guides/configure-firewall-with-ufw/) - Firewall management
+
+## Scripting and Automation Fundamentals
+- **What you Need to Know**
+  - **Python for DevOps**
+    - Python basics and DevOps-specific libraries
+    - API interaction and web scraping
+    - File processing and data manipulation
+    - **Resources:**
+      - [Python for DevOps - O'Reilly](https://www.oreilly.com/library/view/python-for-devops/9781492057680/) - Python in DevOps contexts (free chapters)
+      - [Automate the Boring Stuff - Al Sweigart](https://automatetheboringstuff.com/) - Practical Python automation
+      - [Python DevOps Libraries - Real Python](https://realpython.com/python-devops/) - DevOps-focused Python libraries
+
+  - **Shell Scripting for Automation**
+    - Advanced bash scripting techniques
+    - Error handling and logging in scripts
+    - Script testing and debugging
+    - **Resources:**
+      - [Bash Scripting Best Practices - Google](https://google.github.io/styleguide/shellguide.html) - Shell scripting style guide
+      - [Shell Script Testing - Bats](https://github.com/bats-core/bats-core) - Bash automated testing system
+      - [ShellCheck](https://www.shellcheck.net/) - Shell script static analysis tool
 
   - **Configuration Management Basics**
-    - Infrastructure configuration consistency and drift prevention
-    - Declarative vs. imperative configuration approaches
-    - Configuration management tools overview (Ansible, Chef, Puppet)
+    - Infrastructure as code concepts
+    - Configuration management with Ansible
+    - Template engines and configuration generation
     - **Resources:**
-      - [Ansible for DevOps - Jeff Geerling](https://www.ansiblefordevops.com/) - Practical Ansible automation
-      - [Configuration Management Guide - DigitalOcean](https://www.digitalocean.com/community/tutorials/an-introduction-to-configuration-management) - CM concepts and tools
-      - [Infrastructure as Code Principles](https://infrastructure-as-code.com/) - IaC best practices and patterns
+      - [Ansible for DevOps - Jeff Geerling](https://www.ansiblefordevops.com/) - Comprehensive Ansible guide
+      - [Infrastructure as Code - Kief Morris](https://infrastructure-as-code.com/) - IaC principles and practices
+      - [Jinja2 Templates - Ansible](https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html) - Template configuration
 
-  - **Build and Deployment Automation**
-    - Build system fundamentals and dependency management
-    - Automated testing integration and quality gates
-    - Deployment strategies and rollback procedures
-    - **Resources:**
-      - [Build Systems - Bazel](https://bazel.build/basics) - Modern build system concepts
-      - [Maven Documentation](https://maven.apache.org/guides/) - Java build automation
-      - [npm Documentation](https://docs.npmjs.com/) - Node.js package management and builds
-
-## Continuous Integration Fundamentals
+## Cloud Computing Fundamentals
 - **What you Need to Know**
-  - **CI Principles and Practices**
-    - Frequent code integration and automated build processes
-    - Automated testing strategies and test pyramid concepts
-    - Fast feedback loops and build failure handling
+  - **Cloud Service Models and Deployment**
+    - IaaS, PaaS, and SaaS service models
+    - Public, private, and hybrid cloud deployment models
+    - Cloud provider comparison and selection criteria
+    - **Resources:**
+      - [Cloud Computing Fundamentals - NIST](https://csrc.nist.gov/publications/detail/sp/800-145/final) - Official cloud computing definition
+      - [Cloud Service Models - AWS](https://aws.amazon.com/types-of-cloud-computing/) - Cloud computing types and models
+      - [Multi-Cloud Strategy - Google Cloud](https://cloud.google.com/blog/topics/hybrid-cloud/why-and-how-to-adopt-a-multi-cloud-strategy) - Multi-cloud considerations
+
+  - **AWS Fundamentals**
+    - Core AWS services (EC2, S3, VPC, IAM)
+    - AWS CLI and SDK usage
+    - AWS security and cost management
+    - **Resources:**
+      - [AWS Cloud Practitioner Essentials](https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/) - Free AWS fundamentals course
+      - [AWS CLI User Guide](https://docs.aws.amazon.com/cli/latest/userguide/) - Command-line interface documentation
+      - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) - Cloud architecture best practices
+
+  - **Azure and Google Cloud Basics**
+    - Azure core services and resource management
+    - Google Cloud Platform services and tools
+    - Cross-cloud service comparison and migration
+    - **Resources:**
+      - [Azure Fundamentals](https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/) - Microsoft Azure learning path
+      - [Google Cloud Fundamentals](https://cloud.google.com/training/courses/gcp-fundamentals) - GCP core concepts course
+      - [Cloud Provider Comparison - RightScale](https://www.flexera.com/blog/cloud/cloud-computing-trends-2021-state-of-the-cloud-report/) - Multi-cloud analysis
+
+## Basic CI/CD Concepts
+- **What you Need to Know**
+  - **Continuous Integration Principles**
+    - Automated build and test processes
+    - Code quality gates and static analysis
+    - Branch protection and merge requirements
     - **Resources:**
       - [Continuous Integration - Martin Fowler](https://martinfowler.com/articles/continuousIntegration.html) - CI principles and practices
-      - [Testing Strategies - Google Testing Blog](https://testing.googleblog.com/) - Testing best practices and techniques
-      - [CI/CD Best Practices - GitLab](https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html) - Pipeline optimization
+      - [CI Best Practices - Atlassian](https://www.atlassian.com/continuous-delivery/continuous-integration) - Implementation guidelines
+      - [GitHub Actions Tutorial](https://docs.github.com/en/actions/learn-github-actions) - CI/CD with GitHub Actions
 
-  - **Build Pipeline Design**
-    - Pipeline stages: build, test, package, and deploy
-    - Parallel execution and pipeline optimization
-    - Artifact management and versioning strategies
+  - **Continuous Delivery and Deployment**
+    - Deployment pipeline design and automation
+    - Environment management and promotion strategies
+    - Feature flags and canary deployments
     - **Resources:**
-      - [Jenkins Pipeline Documentation](https://www.jenkins.io/doc/book/pipeline/) - Pipeline as code with Jenkins
-      - [GitHub Actions Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions) - GitHub CI/CD workflows
-      - [Azure DevOps Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/) - Microsoft CI/CD platform
+      - [Continuous Delivery - Jez Humble](https://continuousdelivery.com/) - CD principles and implementation
+      - [Deployment Strategies - Atlassian](https://www.atlassian.com/continuous-delivery/software-deployment/deployment-strategies) - Deployment patterns
+      - [Feature Flags Guide - LaunchDarkly](https://launchdarkly.com/blog/what-are-feature-flags/) - Feature flag implementation
 
-  - **Testing Automation Integration**
-    - Unit testing, integration testing, and end-to-end testing
-    - Test automation frameworks and tools
-    - Code coverage analysis and quality metrics
+  - **Pipeline as Code**
+    - Declarative pipeline configuration
+    - Version control for build and deployment scripts
+    - Pipeline testing and validation
     - **Resources:**
-      - [Test Automation Pyramid - Martin Fowler](https://martinfowler.com/articles/practical-test-pyramid.html) - Testing strategy framework
-      - [Selenium Documentation](https://selenium-python.readthedocs.io/) - Web application testing automation
-      - [Jest Testing Framework](https://jestjs.io/docs/getting-started) - JavaScript testing framework
+      - [Jenkins Pipeline](https://www.jenkins.io/doc/book/pipeline/) - Pipeline as code with Jenkins
+      - [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) - GitLab pipeline configuration
+      - [Azure DevOps Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/) - Azure pipeline automation
 
-## Infrastructure and Environment Management
+## Monitoring and Logging Basics
 - **What you Need to Know**
-  - **Environment Strategy and Management**
-    - Development, staging, and production environment consistency
-    - Environment provisioning and configuration automation
-    - Environment-specific configuration management
+  - **System Monitoring Fundamentals**
+    - Key performance indicators and metrics
+    - Monitoring tools and data collection
+    - Alerting and notification systems
     - **Resources:**
-      - [12-Factor App Methodology](https://12factor.net/) - Modern application development principles
-      - [Environment Management - Heroku](https://devcenter.heroku.com/articles/config-vars) - Configuration and environment variables
-      - [Docker Environment Management](https://docs.docker.com/compose/environment-variables/) - Containerized environment configuration
+      - [Monitoring 101 - Datadog](https://www.datadoghq.com/blog/monitoring-101-collecting-data/) - Monitoring fundamentals
+      - [Site Reliability Engineering - Google](https://sre.google/sre-book/monitoring-distributed-systems/) - SRE monitoring practices
+      - [Prometheus Monitoring](https://prometheus.io/docs/introduction/overview/) - Modern monitoring system
 
-  - **Virtualization and Containerization Basics**
-    - Virtual machines vs. containers: use cases and trade-offs
-    - Docker fundamentals: images, containers, and registries
-    - Container orchestration concepts and platforms
+  - **Log Management and Analysis**
+    - Centralized logging and log aggregation
+    - Log parsing and structured logging
+    - Log analysis and troubleshooting techniques
     - **Resources:**
-      - [Docker Getting Started](https://docs.docker.com/get-started/) - Container fundamentals and best practices
-      - [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/) - Container orchestration introduction
-      - [Container Best Practices - Google](https://cloud.google.com/architecture/best-practices-for-building-containers) - Container optimization
+      - [Logging Best Practices - Splunk](https://www.splunk.com/en_us/blog/learn/logging-best-practices.html) - Log management strategies
+      - [ELK Stack Tutorial - Elastic](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html) - Elasticsearch, Logstash, Kibana
+      - [Structured Logging - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-centralize-logs-with-rsyslog-logstash-and-elasticsearch-on-ubuntu-14-04) - Log centralization
 
-  - **Cloud Platform Fundamentals**
-    - Cloud service models and deployment strategies
-    - Infrastructure as a Service (IaaS) and Platform as a Service (PaaS)
-    - Multi-cloud and hybrid cloud considerations
+  - **Application Performance Monitoring**
+    - APM tools and instrumentation
+    - Distributed tracing and performance analysis
+    - Error tracking and debugging
     - **Resources:**
-      - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) - Cloud architecture principles
-      - [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/) - Cloud design patterns
-      - [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework) - GCP design principles
+      - [APM Best Practices - New Relic](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/) - Application monitoring
+      - [Distributed Tracing - Jaeger](https://www.jaegertracing.io/docs/1.21/getting-started/) - Tracing distributed systems
+      - [Error Monitoring - Sentry](https://docs.sentry.io/product/error-monitoring/) - Error tracking and alerting
 
-## Monitoring and Observability Basics
+## Security and Compliance in DevOps
 - **What you Need to Know**
-  - **Monitoring Fundamentals**
-    - Infrastructure monitoring: CPU, memory, disk, and network metrics
-    - Application monitoring: performance, errors, and user experience
-    - Log aggregation and centralized logging strategies
+  - **DevSecOps Principles**
+    - Security as code and shift-left security
+    - Automated security testing and vulnerability scanning
+    - Compliance automation and policy enforcement
     - **Resources:**
-      - [Monitoring 101 - DataDog](https://www.datadoghq.com/blog/monitoring-101-collecting-data/) - Monitoring fundamentals series
-      - [Prometheus Monitoring Guide](https://prometheus.io/docs/introduction/overview/) - Open-source monitoring system
-      - [ELK Stack Tutorial - Elastic](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html) - Log management platform
+      - [DevSecOps Guide - NIST](https://csrc.nist.gov/publications/detail/sp/800-218/final) - Security in DevOps practices
+      - [Shift-Left Security - Snyk](https://snyk.io/learn/shift-left-security/) - Early security integration
+      - [Security as Code - HashiCorp](https://www.hashicorp.com/resources/security-as-code) - Automated security practices
 
-  - **Alerting and Incident Response**
-    - Alert design principles and notification strategies
-    - Incident escalation and response procedures
-    - Post-incident analysis and continuous improvement
+  - **Container and Infrastructure Security**
+    - Container image security and vulnerability scanning
+    - Infrastructure security and hardening
+    - Secrets management and encryption
     - **Resources:**
-      - [Alerting Best Practices - Google SRE](https://sre.google/sre-book/monitoring-distributed-systems/) - Effective alerting strategies
-      - [PagerDuty Incident Response](https://response.pagerduty.com/) - Incident management best practices
-      - [Blameless Post-Mortems - Atlassian](https://www.atlassian.com/incident-management/postmortem) - Learning from incidents
-
-  - **Performance Optimization**
-    - Application performance profiling and optimization
-    - Infrastructure capacity planning and scaling
-    - Cost optimization and resource efficiency
-    - **Resources:**
-      - [Web Performance Optimization - Google](https://developers.google.com/web/fundamentals/performance) - Frontend performance optimization
-      - [Database Performance Tuning](https://use-the-index-luke.com/) - SQL performance optimization
-      - [Cloud Cost Optimization - FinOps Foundation](https://www.finops.org/) - Cloud financial management
-
-## Security Integration (DevSecOps)
-- **What you Need to Know**
-  - **Security in Development Lifecycle**
-    - Shift-left security: integrating security early in development
-    - Secure coding practices and vulnerability prevention
-    - Security testing automation and code analysis
-    - **Resources:**
-      - [OWASP DevSecOps Guideline](https://owasp.org/www-project-devsecops-guideline/) - Security integration in DevOps
-      - [Secure Code Review - OWASP](https://owasp.org/www-project-code-review-guide/) - Security-focused code review
-      - [SAST Tools Comparison - NIST](https://samate.nist.gov/index.php/Source_Code_Security_Analyzers.html) - Static analysis security testing
-
-  - **Infrastructure Security**
-    - Infrastructure hardening and security baselines
-    - Network security and access control implementation
-    - Secrets management and credential security
-    - **Resources:**
-      - [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks/) - Security configuration standards
-      - [HashiCorp Vault](https://www.vaultproject.io/docs) - Secrets management platform
-      - [Network Security - NIST](https://csrc.nist.gov/publications/detail/sp/800-41/rev-1/final) - Network security guidelines
+      - [Container Security - Aqua Security](https://www.aquasec.com/cloud-native-academy/container-security/) - Container security best practices
+      - [Infrastructure Security - CIS](https://www.cisecurity.org/cis-benchmarks/) - Security configuration benchmarks
+      - [Secrets Management - HashiCorp Vault](https://www.vaultproject.io/docs/what-is-vault) - Secrets management platform
 
   - **Compliance and Governance**
-    - Regulatory compliance requirements (SOC 2, PCI DSS, GDPR)
-    - Policy as code and automated compliance checking
-    - Audit trails and security documentation
+    - Regulatory compliance in automated environments
+    - Audit trails and compliance reporting
+    - Policy as code and governance automation
     - **Resources:**
-      - [Compliance as Code - Chef InSpec](https://www.inspec.io/docs/) - Automated compliance testing
-      - [SOC 2 Compliance Guide - Vanta](https://www.vanta.com/resources/soc-2-compliance-guide) - Security compliance framework
-      - [GDPR Compliance - GDPR.eu](https://gdpr.eu/what-is-gdpr/) - Data protection regulation
+      - [Compliance Automation - Chef InSpec](https://www.inspec.io/docs/) - Infrastructure compliance testing
+      - [Policy as Code - Open Policy Agent](https://www.openpolicyagent.org/docs/latest/) - Policy automation framework
+      - [Governance in DevOps - Microsoft](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/) - Cloud governance practices
 
-## Communication and Documentation
+## Communication and Collaboration Tools
 - **What you Need to Know**
-  - **Technical Documentation**
-    - Documentation as code and version-controlled documentation
-    - API documentation and system architecture diagrams
-    - Runbooks and operational procedures documentation
+  - **Team Collaboration Platforms**
+    - Slack, Microsoft Teams, and communication tools
+    - Project management and issue tracking systems
+    - Documentation and knowledge sharing platforms
     - **Resources:**
-      - [Write the Docs Guide](https://www.writethedocs.org/guide/) - Technical documentation best practices
-      - [GitBook Documentation](https://docs.gitbook.com/) - Modern documentation platform
-      - [Swagger/OpenAPI](https://swagger.io/docs/) - API documentation standards
+      - [Team Collaboration Guide - Atlassian](https://www.atlassian.com/team-playbook) - Team collaboration best practices
+      - [Slack for DevOps Teams](https://slack.com/intl/en-in/solutions/engineering) - Communication platform for technical teams
+      - [Jira for DevOps - Atlassian](https://www.atlassian.com/software/jira/devops) - Issue tracking and project management
 
-  - **Cross-Functional Collaboration**
-    - Effective communication between development and operations teams
-    - Stakeholder management and requirement gathering
-    - Knowledge sharing and team learning practices
+  - **Incident Management and Response**
+    - Incident response procedures and escalation
+    - On-call management and alerting
+    - Post-incident reviews and improvement processes
     - **Resources:**
-      - [Team Communication - Atlassian](https://www.atlassian.com/team-playbook/plays) - Team collaboration playbook
-      - [DevOps Communication Patterns](https://www.thoughtworks.com/insights/blog/effective-communication-patterns-devops) - Communication strategies
-      - [Retrospective Techniques - Atlassian](https://www.atlassian.com/team-playbook/plays/retrospective) - Continuous improvement practices
+      - [Incident Response Guide - PagerDuty](https://response.pagerduty.com/) - Incident management best practices
+      - [On-Call Best Practices - Atlassian](https://www.atlassian.com/incident-management/on-call) - On-call management strategies
+      - [Post-Mortem Templates - Atlassian](https://www.atlassian.com/incident-management/postmortem/templates) - Incident analysis templates
 
-  - **Incident Communication**
-    - Incident communication plans and status pages
-    - Customer communication during outages and incidents
-    - Internal escalation and notification procedures
+  - **Cross-Functional Team Dynamics**
+    - Working with development, QA, and operations teams
+    - Stakeholder communication and expectation management
+    - Agile ceremonies and team rituals
     - **Resources:**
-      - [Incident Communication - PagerDuty](https://response.pagerduty.com/during/during_an_incident/) - Incident response communication
-      - [Status Page Best Practices - Atlassian](https://www.atlassian.com/software/statuspage/resources) - Customer communication during incidents
-      - [Crisis Communication - Harvard Business Review](https://hbr.org/2009/02/how-to-communicate-during-a-crisis) - Crisis management communication
+      - [Cross-Functional Teams - Scrum.org](https://www.scrum.org/resources/blog/cross-functional-teams-what-why-and-how) - Team structure and dynamics
+      - [Stakeholder Management - PMI](https://www.pmi.org/learning/library/stakeholder-management-plan-6090) - Stakeholder communication strategies
+      - [Agile Ceremonies Guide - Atlassian](https://www.atlassian.com/agile/scrum/ceremonies) - Scrum events and practices
 
-## Metrics and Continuous Improvement
+## Getting Started with DevOps Tools
 - **What you Need to Know**
-  - **DevOps Metrics and KPIs**
-    - DORA metrics: deployment frequency, lead time, MTTR, change failure rate
-    - Business metrics alignment and value stream measurement
-    - Team productivity and satisfaction metrics
+  - **Essential DevOps Toolchain**
+    - Version control (Git), CI/CD (Jenkins, GitLab CI, GitHub Actions)
+    - Configuration management (Ansible, Puppet, Chef)
+    - Containerization (Docker) and orchestration (Kubernetes)
     - **Resources:**
-      - [DORA Metrics Guide](https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance) - DevOps performance measurement
-      - [Accelerate Metrics - DORA](https://www.devops-research.com/research.html) - Research-backed DevOps metrics
-      - [Value Stream Mapping - Lean Enterprise Institute](https://www.lean.org/lexicon-terms/value-stream-mapping/) - Process improvement methodology
+      - [DevOps Toolchain Guide - Atlassian](https://www.atlassian.com/devops/devops-tools) - Comprehensive tool overview
+      - [DevOps Tools Comparison - StackShare](https://stackshare.io/devops) - Tool comparison and reviews
+      - [CNCF Landscape](https://landscape.cncf.io/) - Cloud native technology ecosystem
 
-  - **Continuous Improvement Practices**
-    - Kaizen and continuous improvement methodologies
-    - Experimentation and A/B testing in operations
-    - Feedback loops and data-driven decision making
+  - **Tool Selection and Evaluation**
+    - Requirements analysis and tool evaluation criteria
+    - Proof of concept and pilot implementations
+    - Tool integration and workflow optimization
     - **Resources:**
-      - [Kaizen Methodology - Lean Enterprise Institute](https://www.lean.org/lexicon-terms/kaizen/) - Continuous improvement principles
-      - [Experimentation Platform - Netflix](https://netflixtechblog.com/its-all-a-bout-testing-the-netflix-experimentation-platform-4e1ca458c15) - A/B testing in production
-      - [Learning Organization - Peter Senge](https://www.fieldbook.com/learning-org/) - Organizational learning principles
+      - [Tool Selection Guide - ThoughtWorks](https://www.thoughtworks.com/radar) - Technology radar and recommendations
+      - [DevOps Tool Evaluation - Gartner](https://www.gartner.com/en/information-technology/insights/devops) - Industry analysis and trends
+      - [Open Source Alternatives - AlternativeTo](https://alternativeto.net/) - Open source tool alternatives
 
-  - **Feedback and Learning Culture**
-    - Blameless culture and psychological safety
-    - Learning from failures and near-misses
-    - Knowledge sharing and mentoring practices
+  - **Learning and Skill Development**
+    - Hands-on practice with free and open-source tools
+    - Online labs and sandbox environments
+    - Community resources and learning paths
     - **Resources:**
-      - [Psychological Safety - Google](https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/) - Team effectiveness research
-      - [Blameless Post-Mortems - Etsy](https://codeascraft.com/2012/05/22/blameless-postmortems/) - Learning from incidents
-      - [Mentoring Guide - Atlassian](https://www.atlassian.com/team-playbook/plays/mentoring) - Knowledge transfer practices
+      - [Katacoda Interactive Learning](https://www.katacoda.com/courses/devops) - Browser-based DevOps scenarios
+      - [Play with Docker](https://labs.play-with-docker.com/) - Free Docker playground
+      - [Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground) - Interactive Kubernetes learning
 
-## Getting Started Projects and Exercises
-- **What you Need to Know**
-  - **Basic Automation Projects**
-    - Create simple deployment scripts for web applications
-    - Implement basic monitoring and alerting for services
-    - Set up development environment automation with containers
-    - **Resources:**
-      - [DevOps Exercises - Bregman Arie](https://github.com/bregman-arie/devops-exercises) - Hands-on DevOps practice exercises
-      - [90 Days of DevOps](https://github.com/MichaelCade/90DaysOfDevOps) - Comprehensive DevOps learning journey
-      - [DevOps Project Ideas - DigitalOcean](https://www.digitalocean.com/community/tutorial_series/ci-cd-tools-and-tutorials) - Step-by-step project tutorials
-
-  - **Collaboration and Culture Building**
-    - Practice code review processes and feedback techniques
-    - Implement documentation standards and knowledge sharing
-    - Participate in incident response simulations and post-mortems
-    - **Resources:**
-      - [Code Review Checklist - SmartBear](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/) - Code review best practices
-      - [Chaos Engineering - Principles](https://principlesofchaos.org/) - Resilience testing methodology
-      - [GameDay Exercises - AWS](https://wa.aws.amazon.com/wat.concept.gameday.en.html) - Operational readiness testing
-
-**Ready to Continue?** Advance to [Module 2: CI/CD Pipelines](./02-cicd-pipelines.md) to master continuous integration and deployment practices!
+**Ready to Continue?** Advance to [Module 2: CI/CD and Automation](./02-cicd-automation.md) to master pipeline design, automated testing, and deployment strategies!
