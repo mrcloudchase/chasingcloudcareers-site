@@ -165,7 +165,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © 2023 Chasing Cloud Careers LLC.`,
+      copyright: `Copyright © 2023 Chasing Cloud Careers LLC - All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

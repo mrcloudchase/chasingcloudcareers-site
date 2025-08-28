@@ -33,14 +33,14 @@ Welcome to your **Cloud Engineering** learning journey! This comprehensive path 
 - Cloud security fundamentals and shared responsibility model
 - **Hands-on**: Set up accounts with all major cloud providers, deploy basic resources
 
-### Module 2: AWS Deep Dive (Weeks 5-8)
-**[AWS Deep Dive →](./02-aws-deep-dive.md)**
-- AWS global infrastructure and core services
-- Compute services (EC2, Lambda) with practical examples
-- Storage services (S3, EBS) and database services (RDS, DynamoDB)
-- Networking (VPC, Load Balancers) and security (IAM, KMS)
-- Monitoring and logging with CloudWatch and CloudTrail
-- **Hands-on**: Build complete three-tier web application on AWS
+### Module 2: Major Cloud Providers Deep Dive (Weeks 5-8)
+**[Major Cloud Providers Deep Dive →](./02-aws-deep-dive.md)**
+- AWS, Azure, and GCP infrastructure and service comparison
+- Compute services across all providers (EC2, VMs, Compute Engine)
+- Storage and database services comparison and best practices
+- Networking and security patterns across cloud providers
+- Multi-cloud monitoring and management strategies
+- **Hands-on**: Build same three-tier application across AWS, Azure, and GCP
 
 ### Module 3: Infrastructure as Code (Weeks 9-12)
 **[Infrastructure as Code →](./03-infrastructure-as-code.md)**

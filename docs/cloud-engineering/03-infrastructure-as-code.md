@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 4
 ---
 
 # Infrastructure as Code (IaC)
@@ -76,6 +76,21 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
 - JSON/YAML can be verbose
 - Limited programming constructs
 - Slower than Terraform
+```
+
+**Google Cloud Deployment Manager:**
+```bash
+# Pros:
+- Native GCP integration
+- Python and Jinja2 templates
+- Built-in validation
+- Preview mode
+
+# Cons:
+- GCP-only
+- Less mature than CloudFormation
+- Limited community resources
+- Complex template syntax
 ```
 
 **Azure Resource Manager (ARM) Templates:**

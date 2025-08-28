@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 5
 ---
 
 # Container Orchestration
@@ -1486,7 +1486,21 @@ jobs:
         kubectl get services -n production
 ```
 
-## Kubernetes in Cloud Providers
+## Multi-Cloud Kubernetes Services
+
+Kubernetes provides a consistent container orchestration platform across all major cloud providers, enabling true cloud portability.
+
+### Cloud-Managed Kubernetes Comparison
+
+| Feature | AWS EKS | Azure AKS | GCP GKE | 
+|---------|---------|-----------|---------|
+| **Control Plane** | Managed | Managed | Managed |
+| **Node Management** | Self-managed or Fargate | VM Scale Sets | Node Pools |
+| **Networking** | VPC CNI | Azure CNI/Kubenet | VPC-native |
+| **Load Balancing** | ALB/NLB | Azure Load Balancer | Cloud Load Balancing |
+| **Storage** | EBS CSI | Azure Disk/Files | Persistent Disk |
+| **Monitoring** | CloudWatch | Azure Monitor | Cloud Operations |
+| **Cost** | $0.10/hour per cluster | Free control plane | $0.10/hour per cluster |
 
 ### Amazon EKS (Elastic Kubernetes Service)
 
