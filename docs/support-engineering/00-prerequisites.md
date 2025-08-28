@@ -18,6 +18,7 @@ Before diving into the Support Engineering learning path, ensure you have the fo
 
 **Free Resources:**
 - [Computer Basics - GCFGlobal](https://edu.gcfglobal.org/en/computerbasics/) - Comprehensive computer fundamentals
+- [CompTIA A+ Core 1 - Professor Messer](https://www.professormesser.com/free-a-plus-training/220-1101/220-1101-video/220-1101-comptia-a-plus-course/) - Hardware and operating systems fundamentals
 - [Digital Literacy Course - Coursera](https://www.coursera.org/learn/digital) - University of Pittsburgh (Free audit)
 - [Basic Computer Skills - Khan Academy](https://www.khanacademy.org/computing/computer-programming) - Interactive learning modules
 - [Computer Skills Tutorial - Tutorials Point](https://www.tutorialspoint.com/computer_fundamentals/index.htm) - Step-by-step computer basics
@@ -32,6 +33,7 @@ Before diving into the Support Engineering learning path, ensure you have the fo
 
 **Free Resources:**
 - [Command Line Crash Course - Learn Code The Hard Way](https://learnpythonthehardway.org/book/appendixa.html) - Comprehensive CLI tutorial
+- [CompTIA A+ Core 2 Command Line - Professor Messer](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video/220-1102-comptia-a-plus-course/) - Windows and Linux command line fundamentals
 - [Linux Command Line Basics - Ubuntu](https://ubuntu.com/tutorials/command-line-for-beginners) - Linux-focused tutorial
 - [Windows Command Line Tutorial - Microsoft](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) - Windows CMD reference
 - [Terminal and Command Line - freeCodeCamp](https://www.freecodecamp.org/news/command-line-for-beginners/) - Beginner-friendly guide
@@ -46,9 +48,10 @@ Before diving into the Support Engineering learning path, ensure you have the fo
 
 **Free Resources:**
 - [Networking Fundamentals - Cisco Networking Academy](https://www.netacad.com/courses/networking/networking-essentials) - Free comprehensive course
+- [CompTIA Network+ Course - Professor Messer](https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/) - Comprehensive networking fundamentals
+- [CompTIA Security+ Basics - Professor Messer](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) - Network security fundamentals
 - [Computer Networking Course - Khan Academy](https://www.khanacademy.org/computing/computers-and-internet) - Interactive networking basics
 - [Introduction to Networking - Coursera](https://www.coursera.org/learn/computer-networking) - University of Colorado (Free audit)
-- [Network+ Study Guide - Professor Messer](https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/) - Free video course
 
 ### 4. Web Technologies Fundamentals
 

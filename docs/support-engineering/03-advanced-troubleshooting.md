@@ -442,6 +442,8 @@ openssl x509 -noout -dates
 
 ### Free Resources
 
+- [CompTIA Security+ Complete Course - Professor Messer](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) - Comprehensive security fundamentals
+- [CompTIA Security+ Study Groups - Professor Messer](https://www.professormesser.com/security-plus/sy0-701/sy0-701-study-groups/) - Live security Q&A sessions
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/) - Web application security risks
 - [SANS Reading Room](https://www.sans.org/reading-room/) - Security research papers
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework) - Security best practices

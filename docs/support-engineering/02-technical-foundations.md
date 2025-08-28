@@ -160,6 +160,7 @@ find /var/log -name "*.log" -exec grep -l "error" {} \;
 
 ### Free Resources
 
+- [CompTIA A+ Operating Systems - Professor Messer](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video/220-1102-comptia-a-plus-course/) - Windows, macOS, and Linux administration
 - [Linux Command Line Basics - Ubuntu](https://ubuntu.com/tutorials/command-line-for-beginners) - Comprehensive Linux tutorial
 - [Windows Command Line Reference - Microsoft](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) - Official Windows commands
 - [macOS Terminal Guide - Apple](https://support.apple.com/guide/terminal/welcome/mac) - Official macOS terminal guide
@@ -284,6 +285,8 @@ ping -i 0.2 -c 500 server_ip
 
 ### Free Resources
 
+- [CompTIA Network+ Complete Course - Professor Messer](https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/) - Comprehensive networking fundamentals
+- [CompTIA Network+ Study Groups - Professor Messer](https://www.professormesser.com/network-plus/n10-008/n10-008-study-groups/) - Live Q&A sessions and practice
 - [Networking Fundamentals - Cisco](https://www.netacad.com/courses/networking/networking-essentials) - Free networking course
 - [Computer Networking Course - Khan Academy](https://www.khanacademy.org/computing/computers-and-internet) - Basic networking concepts
 - [Wireshark Tutorial - Wireshark University](https://www.wireshark.org/docs/) - Packet analysis guide
@@ -710,6 +713,7 @@ grep -i error $LOG_FILE | tail -5
 
 ### Free Resources
 
+- [CompTIA A+ Command Line Tools - Professor Messer](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video/command-line-tools-220-1102/) - Windows and Linux command line essentials
 - [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html) - Comprehensive CLI tutorial
 - [Bash Scripting Guide](https://tldp.org/LDP/Bash-Beginners-Guide/html/) - Linux Documentation Project
 - [Explainshell.com](https://explainshell.com/) - Interactive command explanation

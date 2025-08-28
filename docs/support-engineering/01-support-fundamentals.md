@@ -49,6 +49,7 @@ Support Engineering bridges the gap between customers and complex technical prod
 ### Free Resources
 
 - [What is Technical Support? - HubSpot](https://blog.hubspot.com/service/what-is-technical-support) - Comprehensive overview
+- [CompTIA A+ IT Support Fundamentals - Professor Messer](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video/220-1102-comptia-a-plus-course/) - Professional IT support practices
 - [Support Engineering Career Guide - Intercom](https://www.intercom.com/blog/support-engineering-career/) - Career progression insights
 - [The Support Engineer's Handbook - GitLab](https://about.gitlab.com/handbook/support/) - Real-world support practices
 
@@ -215,6 +216,8 @@ grep -c "timeout" application.log
 
 ### Free Resources
 
+- [CompTIA A+ Troubleshooting Methodology - Professor Messer](https://www.professormesser.com/free-a-plus-training/220-1101/220-1101-video/troubleshooting-methodology-220-1101/) - Systematic troubleshooting approach
+- [CompTIA A+ Hardware Troubleshooting - Professor Messer](https://www.professormesser.com/free-a-plus-training/220-1101/220-1101-video/220-1101-comptia-a-plus-course/) - Hardware problem diagnosis
 - [Troubleshooting Methodology - CompTIA](https://www.comptia.org/blog/troubleshooting-methodology) - Systematic approach
 - [Browser Developer Tools Guide - MDN](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) - Technical debugging
 - [Log Analysis Basics - Splunk](https://www.splunk.com/en_us/blog/learn/log-analysis.html) - Log investigation techniques

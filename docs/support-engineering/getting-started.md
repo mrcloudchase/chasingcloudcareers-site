@@ -223,6 +223,12 @@ Focus Areas:
 - [Site Reliability Engineering - Google](https://sre.google/books/) - Advanced technical practices
 - [The Support Driven Community](https://supportdriven.com/) - Global support professional network
 
+### Professional Certification Training
+- [CompTIA A+ Free Training - Professor Messer](https://www.professormesser.com/free-a-plus-training/) - Complete IT fundamentals course
+- [CompTIA Network+ Training - Professor Messer](https://www.professormesser.com/network-plus/) - Networking fundamentals for support engineers
+- [CompTIA Security+ Training - Professor Messer](https://www.professormesser.com/security-plus/) - Security fundamentals and best practices
+- [Professor Messer Study Groups](https://www.professormesser.com/study-groups/) - Live monthly Q&A sessions
+
 ### Video Learning
 - [Customer Service Fundamentals - Coursera](https://www.coursera.org/learn/customer-service) - Free audit available
 - [IT Support Fundamentals - Google](https://www.coursera.org/learn/technical-support-fundamentals) - Google Career Certificate

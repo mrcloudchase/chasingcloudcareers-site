@@ -186,6 +186,7 @@ Technical Writing/Documentation:
 ### Free Resources
 
 - [Career Development Planning - LinkedIn Learning](https://www.linkedin.com/learning/paths/career-development) - Comprehensive career planning courses
+- [CompTIA Career Roadmap - Professor Messer](https://www.professormesser.com/comptia-career-roadmap/) - IT certification career progression guide
 - [Support Engineering Career Guide - Intercom](https://www.intercom.com/blog/support-engineering-career/) - Industry-specific career insights
 - [Tech Career Growth - Taro](https://www.jointaro.com/) - Tech career advancement community
 - [Manager Tools Podcast](https://www.manager-tools.com/podcasts) - Management and leadership development
@@ -637,6 +638,45 @@ class IncidentResponseAutomation:
         
         return ticket_id
 ```
+
+### Professional Certifications for Support Engineers
+
+**CompTIA Certification Path (Recommended for Support Engineers):**
+```
+Entry Level:
+├─ CompTIA A+ (Core 1 & 2)
+│  ├─ Hardware and operating systems fundamentals
+│  ├─ Troubleshooting methodology
+│  ├─ Customer service and communication
+│  └─ Foundation for all IT support roles
+
+Intermediate Level:
+├─ CompTIA Network+
+│  ├─ Network infrastructure and troubleshooting
+│  ├─ Network security fundamentals
+│  ├─ Cloud and virtualization concepts
+│  └─ Essential for technical support roles
+
+Advanced Level:
+├─ CompTIA Security+
+│  ├─ Security concepts and practices
+│  ├─ Risk management and incident response
+│  ├─ Compliance and governance
+│  └─ Required for many enterprise support roles
+
+Specialization:
+├─ CompTIA Cloud+ (Cloud support focus)
+├─ CompTIA Server+ (Infrastructure support)
+├─ CompTIA Linux+ (Linux administration)
+└─ CompTIA CySA+ (Security analysis)
+```
+
+**Professor Messer's Free Certification Resources:**
+- [CompTIA A+ Complete Training - Professor Messer](https://www.professormesser.com/free-a-plus-training/) - Full A+ Core 1 & 2 courses
+- [CompTIA Network+ Training - Professor Messer](https://www.professormesser.com/network-plus/) - Complete Network+ course and study materials
+- [CompTIA Security+ Training - Professor Messer](https://www.professormesser.com/security-plus/) - Full Security+ course with practice exams
+- [Professor Messer Study Groups](https://www.professormesser.com/study-groups/) - Live monthly study sessions for all certifications
+- [Professor Messer Practice Exams](https://www.professormesser.com/practice-exams/) - Affordable practice tests for certification prep
 
 ### Free Resources
 
