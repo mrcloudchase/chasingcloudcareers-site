@@ -3,261 +3,433 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
-<title data-rh="true">Getting Started with DevOps Engineering | Chasing Cloud Careers</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" property="og:url" content="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/devops-engineering/getting-started"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Getting Started with DevOps Engineering | Chasing Cloud Careers"><meta data-rh="true" name="description" content="Welcome to your DevOps Engineering learning journey! This comprehensive path will take you from DevOps fundamentals to advanced practices, covering automation, infrastructure, containerization, and modern operational excellence."><meta data-rh="true" property="og:description" content="Welcome to your DevOps Engineering learning journey! This comprehensive path will take you from DevOps fundamentals to advanced practices, covering automation, infrastructure, containerization, and modern operational excellence."><link data-rh="true" rel="icon" href="/chasingcloudcareers-site/img/logo.png"><link data-rh="true" rel="canonical" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/devops-engineering/getting-started"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/devops-engineering/getting-started" hreflang="en"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/devops-engineering/getting-started" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"DevOps Engineering","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/category/devops-engineering"},{"@type":"ListItem","position":2,"name":"Getting Started with DevOps Engineering","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/devops-engineering/getting-started"}]}</script><link rel="alternate" type="application/rss+xml" href="/chasingcloudcareers-site/blog/rss.xml" title="Chasing Cloud Careers RSS Feed">
+<title data-rh="true">Getting Started with DevOps Engineering | Chasing Cloud Careers</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" property="og:url" content="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/devops-engineering/getting-started"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Getting Started with DevOps Engineering | Chasing Cloud Careers"><meta data-rh="true" name="description" content="DevOps Engineering Role Overview"><meta data-rh="true" property="og:description" content="DevOps Engineering Role Overview"><link data-rh="true" rel="icon" href="/chasingcloudcareers-site/img/logo.png"><link data-rh="true" rel="canonical" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/devops-engineering/getting-started"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/devops-engineering/getting-started" hreflang="en"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/devops-engineering/getting-started" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Getting Started with DevOps Engineering","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/devops-engineering/getting-started"}]}</script><link rel="alternate" type="application/rss+xml" href="/chasingcloudcareers-site/blog/rss.xml" title="Chasing Cloud Careers RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/chasingcloudcareers-site/blog/atom.xml" title="Chasing Cloud Careers Atom Feed"><link rel="stylesheet" href="/chasingcloudcareers-site/assets/css/styles.8643be14.css">
-<script src="/chasingcloudcareers-site/assets/js/runtime~main.bedd4cc9.js" defer="defer"></script>
-<script src="/chasingcloudcareers-site/assets/js/main.dfeff22d.js" defer="defer"></script>
+<script src="/chasingcloudcareers-site/assets/js/runtime~main.24cb5f0e.js" defer="defer"></script>
+<script src="/chasingcloudcareers-site/assets/js/main.b04b0296.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
 <symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
 </defs></svg>
-<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/chasingcloudcareers-site/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/chasingcloudcareers-site/"><div class="navbar__logo"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Chasing Cloud Careers</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/chasingcloudcareers-site/docs/intro">Learning Paths</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/blog">Blog</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/about">About</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/chasingcloudcareers-site/docs/intro">Welcome to Chasing Cloud Careers</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/support-engineering">Support Engineering</a><button aria-label="Expand sidebar category &#x27;Support Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/cloud-engineering">Cloud Engineering</a><button aria-label="Expand sidebar category &#x27;Cloud Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/chasingcloudcareers-site/docs/category/devops-engineering">DevOps Engineering</a><button aria-label="Collapse sidebar category &#x27;DevOps Engineering&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/prerequisites">Prerequisites for DevOps Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">Getting Started with DevOps Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/devops-fundamentals">DevOps Fundamentals and Culture</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/cicd-pipelines">CI/CD Pipelines and Automation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/infrastructure-as-code">Infrastructure as Code and Configuration Management</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/containerization-orchestration">Containerization and Orchestration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/monitoring-security-advanced">Monitoring, Security, and Advanced Practices</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/-ai-engineering">🤖 AI Engineering</a><button aria-label="Expand sidebar category &#x27;🤖 AI Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/research-engineering">Research Engineering</a><button aria-label="Expand sidebar category &#x27;Research Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/chasingcloudcareers-site/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/chasingcloudcareers-site/docs/category/devops-engineering"><span>DevOps Engineering</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Getting Started with DevOps Engineering</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Getting Started with DevOps Engineering</h1></header>
-<p>Welcome to your <strong>DevOps Engineering</strong> learning journey! This comprehensive path will take you from DevOps fundamentals to advanced practices, covering automation, infrastructure, containerization, and modern operational excellence.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-devops-engineering">What is DevOps Engineering?<a href="#what-is-devops-engineering" class="hash-link" aria-label="Direct link to What is DevOps Engineering?" title="Direct link to What is DevOps Engineering?">​</a></h2>
-<p>DevOps Engineering is a discipline that combines software development (Dev) and IT operations (Ops) to shorten the development lifecycle and provide continuous delivery with high software quality. DevOps engineers:</p>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/chasingcloudcareers-site/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/chasingcloudcareers-site/"><div class="navbar__logo"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Chasing Cloud Careers</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/chasingcloudcareers-site/docs/intro">Learning Paths</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/blog">Blog</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/about">About</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/chasingcloudcareers-site/docs/intro">Welcome to Chasing Cloud Careers</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/support-engineering">Support Engineering</a><button aria-label="Expand sidebar category &#x27;Support Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">DevOps Engineering</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">Getting Started with DevOps Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/prerequisites">Prerequisites for DevOps Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/devops-fundamentals">DevOps Fundamentals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/cicd-pipelines">CI/CD Pipelines</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/infrastructure-as-code">Infrastructure as Code</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/containerization-orchestration">Containerization and Orchestration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/devops-engineering/monitoring-security-advanced">Monitoring, Security, and Advanced Practices</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/research-engineering">Research Engineering</a><button aria-label="Expand sidebar category &#x27;Research Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/chasingcloudcareers-site/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">DevOps Engineering</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Getting Started with DevOps Engineering</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Getting Started with DevOps Engineering</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="devops-engineering-role-overview">DevOps Engineering Role Overview<a href="#devops-engineering-role-overview" class="hash-link" aria-label="Direct link to DevOps Engineering Role Overview" title="Direct link to DevOps Engineering Role Overview">​</a></h2>
 <ul>
-<li><strong>Bridge Development and Operations</strong> through collaboration and shared responsibility</li>
-<li><strong>Automate Infrastructure and Deployments</strong> using code and modern tooling</li>
-<li><strong>Implement CI/CD Pipelines</strong> for rapid, reliable software delivery</li>
-<li><strong>Monitor and Optimize Systems</strong> for performance, reliability, and security</li>
-<li><strong>Foster Cultural Transformation</strong> toward continuous improvement and learning</li>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Role Definition and Responsibilities</strong></p>
+<ul>
+<li>Bridge development and operations teams to enable faster, more reliable software delivery</li>
+<li>Design and implement CI/CD pipelines for automated testing and deployment</li>
+<li>Manage infrastructure as code and automate system provisioning</li>
+<li>Monitor applications and infrastructure for performance, security, and reliability</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.atlassian.com/devops" target="_blank" rel="noopener noreferrer">What is DevOps? - Atlassian</a> - Comprehensive DevOps overview and practices</li>
+<li><a href="https://about.gitlab.com/topics/devops/" target="_blank" rel="noopener noreferrer">DevOps Engineer Role Guide - GitLab</a> - Role responsibilities and career path</li>
+<li><a href="https://puppet.com/resources/report/2021-state-of-devops-report/" target="_blank" rel="noopener noreferrer">State of DevOps Report - Puppet</a> - Industry trends and practices</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-choose-devops-engineering">Why Choose DevOps Engineering?<a href="#why-choose-devops-engineering" class="hash-link" aria-label="Direct link to Why Choose DevOps Engineering?" title="Direct link to Why Choose DevOps Engineering?">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="high-impact-career-path">High-Impact Career Path<a href="#high-impact-career-path" class="hash-link" aria-label="Direct link to High-Impact Career Path" title="Direct link to High-Impact Career Path">​</a></h3>
-<ul>
-<li><strong>Critical Business Function</strong>: Enable faster time-to-market and improved reliability</li>
-<li><strong>Cross-Functional Influence</strong>: Work with development, operations, security, and business teams</li>
-<li><strong>Innovation Driver</strong>: Implement cutting-edge technologies and practices</li>
-<li><strong>Problem Solver</strong>: Tackle complex technical and organizational challenges</li>
+</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="strong-market-demand">Strong Market Demand<a href="#strong-market-demand" class="hash-link" aria-label="Direct link to Strong Market Demand" title="Direct link to Strong Market Demand">​</a></h3>
+</li>
+<li>
+<p><strong>Career Benefits and Opportunities</strong></p>
 <ul>
-<li><strong>Rapidly Growing Field</strong>: High demand across all industries and company sizes</li>
-<li><strong>Excellent Compensation</strong>: Above-average salaries with strong growth potential</li>
-<li><strong>Remote-Friendly</strong>: Many opportunities for remote and flexible work arrangements</li>
-<li><strong>Career Flexibility</strong>: Multiple specialization paths and advancement opportunities</li>
+<li>High demand across all industries embracing digital transformation</li>
+<li>Competitive salaries and strong job growth in technology sector</li>
+<li>Opportunity to work with cutting-edge technologies and automation tools</li>
+<li>Clear career progression from junior to senior and specialized leadership roles</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.glassdoor.com/Salaries/devops-engineer-salary-SRCH_KO0,15.htm" target="_blank" rel="noopener noreferrer">DevOps Salary Guide - Glassdoor</a> - Compensation benchmarks and trends</li>
+<li><a href="https://www.indeed.com/career-advice/finding-a-job/devops-career-path" target="_blank" rel="noopener noreferrer">DevOps Career Path - Indeed</a> - Career progression and opportunities</li>
+<li><a href="https://www.linuxfoundation.org/resources/publications/open-source-jobs-report" target="_blank" rel="noopener noreferrer">DevOps Jobs Report - Linux Foundation</a> - Market demand and growth</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="diverse-opportunities">Diverse Opportunities<a href="#diverse-opportunities" class="hash-link" aria-label="Direct link to Diverse Opportunities" title="Direct link to Diverse Opportunities">​</a></h3>
-<ul>
-<li><strong>Platform Engineering</strong>: Build and maintain developer platforms and tooling</li>
-<li><strong>Site Reliability Engineering</strong>: Focus on system reliability and performance</li>
-<li><strong>Cloud Engineering</strong>: Specialize in cloud infrastructure and services</li>
-<li><strong>Security Engineering</strong>: Integrate security into DevOps practices (DevSecOps)</li>
-<li><strong>Leadership Roles</strong>: Advance to engineering management and technical leadership</li>
+</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
-<p>Before starting this learning path, review our comprehensive prerequisites guide to ensure you have the foundational knowledge needed for success.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-complete-prerequisites-guide-"><strong>📋 <a href="/chasingcloudcareers-site/docs/devops-engineering/prerequisites">Complete Prerequisites Guide →</a></strong><a href="#-complete-prerequisites-guide-" class="hash-link" aria-label="Direct link to -complete-prerequisites-guide-" title="Direct link to -complete-prerequisites-guide-">​</a></h3>
-<p><strong>Quick Prerequisites Overview:</strong></p>
-<p><strong>Technical Foundation:</strong></p>
-<ul>
-<li>Programming and scripting fundamentals (Python recommended)</li>
-<li>Command line and Linux proficiency</li>
-<li>Version control with Git</li>
-<li>Networking and system administration basics</li>
-<li>Cloud computing fundamentals</li>
+</li>
 </ul>
-<p><strong>Development and Operations Knowledge:</strong></p>
-<ul>
-<li>Software development lifecycle (SDLC)</li>
-<li>Infrastructure and operations concepts</li>
-<li>Containerization basics</li>
-<li>Basic understanding of automation principles</li>
+</li>
 </ul>
-<p><strong>Soft Skills and Mindset:</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites-and-foundation">Prerequisites and Foundation<a href="#prerequisites-and-foundation" class="hash-link" aria-label="Direct link to Prerequisites and Foundation" title="Direct link to Prerequisites and Foundation">​</a></h2>
 <ul>
-<li>Collaboration and communication skills</li>
-<li>Continuous learning and adaptability</li>
-<li>DevOps culture and principles understanding</li>
-<li>Problem-solving and analytical thinking</li>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li><strong>Essential Prerequisites Review</strong>
+<ul>
+<li>Complete programming fundamentals and version control proficiency</li>
+<li>Develop Linux system administration and command line skills</li>
+<li>Build networking, security, and infrastructure knowledge</li>
+<li>Establish collaboration skills and DevOps cultural understanding</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="/chasingcloudcareers-site/docs/devops-engineering/prerequisites">Complete Prerequisites Guide</a> - Comprehensive foundation requirements</li>
+<li><a href="https://roadmap.sh/devops" target="_blank" rel="noopener noreferrer">DevOps Roadmap</a> - Visual learning path and skill progression</li>
+<li><a href="https://www.edx.org/learn/devops/university-of-california-berkeley-introduction-to-devops" target="_blank" rel="noopener noreferrer">Introduction to DevOps - edX</a> - UC Berkeley (Free audit available)</li>
 </ul>
-<p><strong>📚 Missing Prerequisites?</strong> Our prerequisites guide includes free resources and learning paths to help you build any missing foundational skills before starting the main curriculum.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="complete-learning-path-overview">Complete Learning Path Overview<a href="#complete-learning-path-overview" class="hash-link" aria-label="Direct link to Complete Learning Path Overview" title="Direct link to Complete Learning Path Overview">​</a></h2>
-<p>This comprehensive curriculum consists of 5 progressive modules designed to take you from beginner to expert level:</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="module-1-devops-fundamentals-and-culture"><a href="/chasingcloudcareers-site/docs/devops-engineering/devops-fundamentals">Module 1: DevOps Fundamentals and Culture</a><a href="#module-1-devops-fundamentals-and-culture" class="hash-link" aria-label="Direct link to module-1-devops-fundamentals-and-culture" title="Direct link to module-1-devops-fundamentals-and-culture">​</a></h3>
-<p><strong>Duration:</strong> 4-6 weeks | <strong>Level:</strong> Beginner</p>
-<p>Master the core principles and cultural aspects of DevOps:</p>
-<ul>
-<li><strong>DevOps Culture and Principles</strong>: Understanding the philosophy and mindset</li>
-<li><strong>Collaboration and Communication</strong>: Cross-functional team dynamics</li>
-<li><strong>Version Control Mastery</strong>: Advanced Git workflows and branching strategies</li>
-<li><strong>Linux and Command Line</strong>: System administration and automation basics</li>
-<li><strong>Scripting and Automation</strong>: Python and Bash for DevOps tasks</li>
+</li>
 </ul>
-<p><strong>Key Skills Developed:</strong></p>
-<ul>
-<li>DevOps cultural transformation and collaboration</li>
-<li>Advanced Git workflows and team collaboration</li>
-<li>Linux system administration and troubleshooting</li>
-<li>Automation scripting and tool development</li>
-<li>Cross-functional communication and documentation</li>
+</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="module-2-cicd-pipelines-and-automation"><a href="/chasingcloudcareers-site/docs/devops-engineering/cicd-pipelines">Module 2: CI/CD Pipelines and Automation</a><a href="#module-2-cicd-pipelines-and-automation" class="hash-link" aria-label="Direct link to module-2-cicd-pipelines-and-automation" title="Direct link to module-2-cicd-pipelines-and-automation">​</a></h3>
-<p><strong>Duration:</strong> 6-8 weeks | <strong>Level:</strong> Intermediate</p>
-<p>Build robust continuous integration and deployment pipelines:</p>
-<ul>
-<li><strong>Continuous Integration</strong>: Automated testing and code quality</li>
-<li><strong>Continuous Deployment</strong>: Automated release and deployment strategies</li>
-<li><strong>Build Automation</strong>: Build tools, dependency management, and artifacts</li>
-<li><strong>Testing Strategies</strong>: Unit, integration, and end-to-end testing automation</li>
-<li><strong>Pipeline as Code</strong>: Version-controlled pipeline definitions</li>
+</li>
 </ul>
-<p><strong>Key Skills Developed:</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="learning-path-structure">Learning Path Structure<a href="#learning-path-structure" class="hash-link" aria-label="Direct link to Learning Path Structure" title="Direct link to Learning Path Structure">​</a></h2>
 <ul>
-<li>CI/CD pipeline design and implementation</li>
-<li>Automated testing and quality assurance</li>
-<li>Build and release automation</li>
-<li>Pipeline optimization and troubleshooting</li>
-<li>Integration with multiple tools and platforms</li>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Five Progressive Modules Overview</strong></p>
+<ul>
+<li>Module 1: DevOps Fundamentals (4-6 weeks) - Culture, principles, and basic automation</li>
+<li>Module 2: CI/CD Pipelines (6-8 weeks) - Continuous integration and deployment practices</li>
+<li>Module 3: Infrastructure as Code (6-8 weeks) - Automated infrastructure management</li>
+<li>Module 4: Containerization and Orchestration (8-10 weeks) - Docker, Kubernetes, and container platforms</li>
+<li>Module 5: Monitoring, Security, and Advanced Practices (8-10 weeks) - Observability, DevSecOps, and SRE</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="/chasingcloudcareers-site/docs/devops-engineering/devops-fundamentals">Module 1: DevOps Fundamentals</a> - Begin your DevOps journey</li>
+<li><a href="/chasingcloudcareers-site/docs/devops-engineering/cicd-pipelines">Module 2: CI/CD Pipelines</a> - Master continuous delivery</li>
+<li><a href="/chasingcloudcareers-site/docs/devops-engineering/infrastructure-as-code">Module 3: Infrastructure as Code</a> - Automate infrastructure management</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="module-3-infrastructure-as-code-and-configuration-management"><a href="/chasingcloudcareers-site/docs/devops-engineering/infrastructure-as-code">Module 3: Infrastructure as Code and Configuration Management</a><a href="#module-3-infrastructure-as-code-and-configuration-management" class="hash-link" aria-label="Direct link to module-3-infrastructure-as-code-and-configuration-management" title="Direct link to module-3-infrastructure-as-code-and-configuration-management">​</a></h3>
-<p><strong>Duration:</strong> 6-8 weeks | <strong>Level:</strong> Intermediate-Advanced</p>
-<p>Automate infrastructure provisioning and configuration management:</p>
-<ul>
-<li><strong>Infrastructure as Code (IaC)</strong>: Terraform, CloudFormation, and ARM templates</li>
-<li><strong>Configuration Management</strong>: Ansible, Chef, Puppet for system configuration</li>
-<li><strong>Cloud Infrastructure</strong>: Multi-cloud infrastructure automation</li>
-<li><strong>Networking and Security</strong>: Automated network and security configuration</li>
-<li><strong>State Management</strong>: Infrastructure state management and drift detection</li>
+</li>
 </ul>
-<p><strong>Key Skills Developed:</strong></p>
+</li>
+<li>
+<p><strong>Personalized Learning Pathways</strong></p>
 <ul>
-<li>Infrastructure automation and provisioning</li>
-<li>Configuration management and compliance</li>
-<li>Multi-cloud infrastructure deployment</li>
-<li>Infrastructure security and networking automation</li>
-<li>Infrastructure monitoring and cost optimization</li>
+<li>Complete Beginners: 12-18 months comprehensive curriculum with strong foundation building</li>
+<li>Software Developers: 8-12 months focused on operations, infrastructure, and deployment</li>
+<li>System Administrators: 6-10 months emphasizing development practices and automation</li>
+<li>Career Changers: 10-14 months balanced approach with portfolio development</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/learn/paths/evolve-your-devops-practices/" target="_blank" rel="noopener noreferrer">DevOps Learning Path - Microsoft</a> - Structured DevOps skill development</li>
+<li><a href="https://aws.amazon.com/training/learning-paths/devops/" target="_blank" rel="noopener noreferrer">AWS DevOps Learning Path</a> - Cloud-focused DevOps training</li>
+<li><a href="https://cloud.google.com/training/devops-sre" target="_blank" rel="noopener noreferrer">Google Cloud DevOps Path</a> - GCP DevOps and SRE training</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="module-4-containerization-and-orchestration"><a href="/chasingcloudcareers-site/docs/devops-engineering/containerization-orchestration">Module 4: Containerization and Orchestration</a><a href="#module-4-containerization-and-orchestration" class="hash-link" aria-label="Direct link to module-4-containerization-and-orchestration" title="Direct link to module-4-containerization-and-orchestration">​</a></h3>
-<p><strong>Duration:</strong> 6-8 weeks | <strong>Level:</strong> Advanced</p>
-<p>Master containerization and container orchestration platforms:</p>
-<ul>
-<li><strong>Docker Mastery</strong>: Advanced containerization techniques and optimization</li>
-<li><strong>Kubernetes Fundamentals</strong>: Container orchestration and cluster management</li>
-<li><strong>Service Mesh</strong>: Advanced networking and service communication</li>
-<li><strong>Container Security</strong>: Security scanning, policies, and best practices</li>
-<li><strong>Cloud-Native Applications</strong>: Microservices and cloud-native architectures</li>
+</li>
 </ul>
-<p><strong>Key Skills Developed:</strong></p>
-<ul>
-<li>Advanced Docker and containerization techniques</li>
-<li>Kubernetes cluster administration and application deployment</li>
-<li>Service mesh implementation and management</li>
-<li>Container security and compliance</li>
-<li>Cloud-native application architecture and deployment</li>
+</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="module-5-monitoring-security-and-advanced-practices"><a href="/chasingcloudcareers-site/docs/devops-engineering/monitoring-security-advanced">Module 5: Monitoring, Security, and Advanced Practices</a><a href="#module-5-monitoring-security-and-advanced-practices" class="hash-link" aria-label="Direct link to module-5-monitoring-security-and-advanced-practices" title="Direct link to module-5-monitoring-security-and-advanced-practices">​</a></h3>
-<p><strong>Duration:</strong> 6-8 weeks | <strong>Level:</strong> Expert</p>
-<p>Implement comprehensive monitoring, security, and advanced DevOps practices:</p>
-<ul>
-<li><strong>Observability and Monitoring</strong>: Metrics, logging, tracing, and alerting</li>
-<li><strong>DevSecOps</strong>: Security integration throughout the development lifecycle</li>
-<li><strong>Site Reliability Engineering</strong>: SRE practices and reliability engineering</li>
-<li><strong>Performance Optimization</strong>: Application and infrastructure performance tuning</li>
-<li><strong>Advanced Automation</strong>: Complex workflow automation and orchestration</li>
+</li>
 </ul>
-<p><strong>Key Skills Developed:</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="professional-development-resources">Professional Development Resources<a href="#professional-development-resources" class="hash-link" aria-label="Direct link to Professional Development Resources" title="Direct link to Professional Development Resources">​</a></h2>
 <ul>
-<li>Comprehensive observability and monitoring implementation</li>
-<li>Security automation and DevSecOps practices</li>
-<li>Site reliability engineering and incident management</li>
-<li>Performance optimization and capacity planning</li>
-<li>Advanced automation and workflow orchestration</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="learning-path-recommendations">Learning Path Recommendations<a href="#learning-path-recommendations" class="hash-link" aria-label="Direct link to Learning Path Recommendations" title="Direct link to Learning Path Recommendations">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-complete-beginners-0-1-years-experience"><strong>For Complete Beginners (0-1 years experience):</strong><a href="#for-complete-beginners-0-1-years-experience" class="hash-link" aria-label="Direct link to for-complete-beginners-0-1-years-experience" title="Direct link to for-complete-beginners-0-1-years-experience">​</a></h3>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Timeline: 6-9 months full curriculum</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Weeks 1-6: Module 1 (DevOps Fundamentals)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Weeks 7-14: Module 2 (CI/CD Pipelines)  </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Weeks 15-22: Module 3 (Infrastructure as Code)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Weeks 23-30: Module 4 (Containerization)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└─ Weeks 31-38: Module 5 (Monitoring &amp; Security)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Focus Areas:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Master DevOps culture and collaboration fundamentals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Build strong technical foundation across all areas</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Practice hands-on exercises and real-world projects</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Join communities and start networking early</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-experienced-developers-2-5-years"><strong>For Experienced Developers (2-5 years):</strong><a href="#for-experienced-developers-2-5-years" class="hash-link" aria-label="Direct link to for-experienced-developers-2-5-years" title="Direct link to for-experienced-developers-2-5-years">​</a></h3>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Timeline: 4-6 months focused learning</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Weeks 1-2: Module 1 (Review and fill gaps)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Weeks 3-8: Module 2 (CI/CD focus)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Weeks 9-16: Module 3 (Infrastructure automation)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Weeks 17-24: Module 4 (Containerization mastery)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└─ Ongoing: Module 5 (Advanced practices)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Focus Areas:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Leverage existing development knowledge</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Focus on operations and infrastructure skills</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Develop automation and deployment expertise</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Build monitoring and reliability capabilities</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-system-administrators-seeking-devops-3-years"><strong>For System Administrators Seeking DevOps (3+ years):</strong><a href="#for-system-administrators-seeking-devops-3-years" class="hash-link" aria-label="Direct link to for-system-administrators-seeking-devops-3-years" title="Direct link to for-system-administrators-seeking-devops-3-years">​</a></h3>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Timeline: 3-4 months strategic development</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Week 1: Module 1 (Culture and collaboration focus)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Weeks 2-5: Module 2 (CI/CD and development integration)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Weeks 6-9: Module 3 (IaC and modern infrastructure)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├─ Weeks 10-13: Module 4 (Containerization and orchestration)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└─ Weeks 14+: Module 5 (Advanced monitoring and security)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Focus Areas:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Embrace DevOps culture and development collaboration</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Master modern infrastructure automation techniques</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Develop CI/CD and deployment automation skills</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Build containerization and cloud-native expertise</span><br></span></code></pre></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="success-metrics-and-milestones">Success Metrics and Milestones<a href="#success-metrics-and-milestones" class="hash-link" aria-label="Direct link to Success Metrics and Milestones" title="Direct link to Success Metrics and Milestones">​</a></h2>
-<p><strong>Module Completion Criteria:</strong></p>
+<li><strong>What you Need to Know</strong>
 <ul>
-<li>✅ Complete all reading materials and exercises</li>
-<li>✅ Build practical projects and portfolio examples</li>
-<li>✅ Demonstrate skills through hands-on scenarios</li>
-<li>✅ Contribute to community discussions and knowledge sharing</li>
-</ul>
-<p><strong>Career Milestone Tracking:</strong></p>
+<li>
+<p><strong>Industry Certifications and Training</strong></p>
 <ul>
-<li><strong>Junior DevOps Engineer</strong>: Complete Modules 1-2</li>
-<li><strong>DevOps Engineer</strong>: Complete Modules 1-3</li>
-<li><strong>Senior DevOps Engineer</strong>: Complete Modules 1-4</li>
-<li><strong>DevOps Team Lead/Platform Engineer</strong>: Complete all 5 modules</li>
-<li><strong>DevOps Architect/Director</strong>: Master Module 5 + ongoing specialization</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="free-resources-to-get-started">Free Resources to Get Started<a href="#free-resources-to-get-started" class="hash-link" aria-label="Direct link to Free Resources to Get Started" title="Direct link to Free Resources to Get Started">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="essential-reading">Essential Reading<a href="#essential-reading" class="hash-link" aria-label="Direct link to Essential Reading" title="Direct link to Essential Reading">​</a></h3>
+<li>AWS Certified DevOps Engineer for cloud-native DevOps practices</li>
+<li>Azure DevOps Engineer Expert for Microsoft ecosystem expertise</li>
+<li>Google Cloud Professional DevOps Engineer for GCP specialization</li>
+<li><strong>Resources:</strong>
 <ul>
-<li><a href="https://itrevolution.com/the-devops-handbook/" target="_blank" rel="noopener noreferrer">The DevOps Handbook</a> - DevOps transformation principles</li>
-<li><a href="https://sre.google/sre-book/" target="_blank" rel="noopener noreferrer">Site Reliability Engineering - Google</a> - SRE practices and reliability engineering</li>
-<li><a href="https://itrevolution.com/the-phoenix-project/" target="_blank" rel="noopener noreferrer">The Phoenix Project</a> - DevOps transformation story</li>
-<li><a href="https://continuousdelivery.com/" target="_blank" rel="noopener noreferrer">Continuous Delivery</a> - Deployment automation practices</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="professional-training-and-certification">Professional Training and Certification<a href="#professional-training-and-certification" class="hash-link" aria-label="Direct link to Professional Training and Certification" title="Direct link to Professional Training and Certification">​</a></h3>
-<ul>
-<li><a href="https://aws.amazon.com/certification/certified-devops-engineer-professional/" target="_blank" rel="noopener noreferrer">AWS DevOps Engineer Professional</a> - AWS DevOps certification path</li>
-<li><a href="https://docs.microsoft.com/en-us/learn/certifications/devops-engineer/" target="_blank" rel="noopener noreferrer">Azure DevOps Engineer Expert</a> - Microsoft Azure DevOps</li>
-<li><a href="https://cloud.google.com/certification/cloud-devops-engineer" target="_blank" rel="noopener noreferrer">Google Cloud Professional DevOps Engineer</a> - GCP DevOps certification</li>
+<li><a href="https://aws.amazon.com/certification/certified-devops-engineer-professional/" target="_blank" rel="noopener noreferrer">AWS DevOps Certification</a> - AWS DevOps professional certification</li>
+<li><a href="https://docs.microsoft.com/en-us/learn/certifications/devops-engineer/" target="_blank" rel="noopener noreferrer">Azure DevOps Certification</a> - Microsoft DevOps engineer certification</li>
+<li><a href="https://cloud.google.com/certification/cloud-devops-engineer" target="_blank" rel="noopener noreferrer">Google Cloud DevOps Certification</a> - GCP DevOps engineer certification</li>
 <li><a href="https://training.mirantis.com/dca-certification-exam/" target="_blank" rel="noopener noreferrer">Docker Certified Associate</a> - Container technology certification</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="video-learning">Video Learning<a href="#video-learning" class="hash-link" aria-label="Direct link to Video Learning" title="Direct link to Video Learning">​</a></h3>
-<ul>
-<li><a href="https://www.linkedin.com/learning/devops-foundations" target="_blank" rel="noopener noreferrer">DevOps Foundations - LinkedIn Learning</a> - Cultural and technical foundations</li>
-<li><a href="https://www.freecodecamp.org/learn/" target="_blank" rel="noopener noreferrer">Docker and Kubernetes Course - freeCodeCamp</a> - Container technology fundamentals</li>
-<li><a href="https://docs.gitlab.com/ee/ci/quick_start/" target="_blank" rel="noopener noreferrer">CI/CD Pipeline Tutorial - GitLab</a> - Hands-on pipeline development</li>
+</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="practice-environments">Practice Environments<a href="#practice-environments" class="hash-link" aria-label="Direct link to Practice Environments" title="Direct link to Practice Environments">​</a></h3>
+</li>
+<li>
+<p><strong>Practice Environments and Labs</strong></p>
 <ul>
-<li><a href="https://github.com/features/codespaces" target="_blank" rel="noopener noreferrer">GitHub Codespaces</a> - Cloud development environment</li>
+<li>Set up local development environment with virtualization and containers</li>
+<li>Use cloud provider free tiers for hands-on infrastructure practice</li>
+<li>Build home lab environments for advanced experimentation and learning</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener noreferrer">Docker Desktop</a> - Local container development environment</li>
+<li><a href="https://www.vagrantup.com/intro" target="_blank" rel="noopener noreferrer">Vagrant Tutorial</a> - Development environment automation</li>
+<li><a href="https://www.katacoda.com/" target="_blank" rel="noopener noreferrer">Katacoda Interactive Scenarios</a> - Browser-based DevOps practice environments</li>
 <li><a href="https://labs.play-with-docker.com/" target="_blank" rel="noopener noreferrer">Play with Docker</a> - Free Docker playground</li>
-<li><a href="https://www.katacoda.com/" target="_blank" rel="noopener noreferrer">Katacoda</a> - Interactive DevOps scenarios</li>
-<li><a href="https://aws.amazon.com/free/" target="_blank" rel="noopener noreferrer">AWS Free Tier</a> - Free cloud resources for practice</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="professional-communities">Professional Communities<a href="#professional-communities" class="hash-link" aria-label="Direct link to Professional Communities" title="Direct link to Professional Communities">​</a></h3>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="community-and-professional-networks">Community and Professional Networks<a href="#community-and-professional-networks" class="hash-link" aria-label="Direct link to Community and Professional Networks" title="Direct link to Community and Professional Networks">​</a></h2>
 <ul>
-<li><a href="https://www.reddit.com/r/devops/" target="_blank" rel="noopener noreferrer">r/devops</a> - DevOps community discussions</li>
-<li><a href="https://devops.com/" target="_blank" rel="noopener noreferrer">DevOps.com Community</a> - Industry news and insights</li>
-<li><a href="https://www.cncf.io/community/" target="_blank" rel="noopener noreferrer">CNCF Community</a> - Cloud native computing community</li>
-<li><a href="https://www.meetup.com/" target="_blank" rel="noopener noreferrer">Local DevOps Meetups</a> - In-person networking and learning</li>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>DevOps Communities and Forums</strong></p>
+<ul>
+<li>Join active DevOps communities for learning, networking, and knowledge sharing</li>
+<li>Participate in open-source projects and contribute to DevOps tools ecosystem</li>
+<li>Attend local DevOps meetups, conferences, and technology events</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.reddit.com/r/devops/" target="_blank" rel="noopener noreferrer">r/devops Community</a> - Large DevOps discussion community</li>
+<li><a href="https://devops.stackexchange.com/" target="_blank" rel="noopener noreferrer">DevOps Stack Exchange</a> - Q&amp;A platform for DevOps professionals</li>
+<li><a href="https://www.cncf.io/community/" target="_blank" rel="noopener noreferrer">CNCF Community</a> - Cloud Native Computing Foundation community</li>
+<li><a href="https://www.meetup.com/topics/devops/" target="_blank" rel="noopener noreferrer">Local DevOps Meetups</a> - Find local DevOps communities</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started-checklist">Getting Started Checklist<a href="#getting-started-checklist" class="hash-link" aria-label="Direct link to Getting Started Checklist" title="Direct link to Getting Started Checklist">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="week-1-foundation-setup">Week 1: Foundation Setup<a href="#week-1-foundation-setup" class="hash-link" aria-label="Direct link to Week 1: Foundation Setup" title="Direct link to Week 1: Foundation Setup">​</a></h3>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Join professional communities</strong> (r/devops, CNCF, local meetups)</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Set up development environment</strong> (Git, Docker, cloud accounts)</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Create learning schedule</strong> (dedicate 15-20 hours per week)</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Start Module 1: DevOps Fundamentals</strong></li>
+</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="week-2-3-core-skills-development">Week 2-3: Core Skills Development<a href="#week-2-3-core-skills-development" class="hash-link" aria-label="Direct link to Week 2-3: Core Skills Development" title="Direct link to Week 2-3: Core Skills Development">​</a></h3>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Complete DevOps culture exercises</strong> from Module 1</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Practice Git workflows</strong> with collaborative scenarios</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Set up automation environment</strong> (Python, Bash scripting)</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Connect with 5 new professionals</strong> in DevOps communities</li>
+</li>
+<li>
+<p><strong>Open Source Contribution and Portfolio Building</strong></p>
+<ul>
+<li>Contribute to DevOps tools and infrastructure projects</li>
+<li>Build and share automation scripts and infrastructure templates</li>
+<li>Document learning journey and project implementations publicly</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://github.com/awesome-soft/awesome-devops" target="_blank" rel="noopener noreferrer">Awesome DevOps</a> - Curated DevOps tools and resources</li>
+<li><a href="https://goodfirstissues.com/" target="_blank" rel="noopener noreferrer">Good First Issues</a> - Beginner-friendly open-source projects</li>
+<li><a href="https://github.com/MichaelCade/90DaysOfDevOps" target="_blank" rel="noopener noreferrer">DevOps Project Ideas</a> - 90 days of DevOps learning projects</li>
+<li><a href="https://github.com/terraform-providers" target="_blank" rel="noopener noreferrer">Infrastructure as Code Examples</a> - Real-world IaC templates</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="week-4-technical-foundation">Week 4: Technical Foundation<a href="#week-4-technical-foundation" class="hash-link" aria-label="Direct link to Week 4: Technical Foundation" title="Direct link to Week 4: Technical Foundation">​</a></h3>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Begin Module 2: CI/CD Pipelines</strong></li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Set up CI/CD practice environment</strong> with GitHub Actions or GitLab CI</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Complete first automation project</strong></li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Share learning progress</strong> with community</li>
+</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="month-2-and-beyond">Month 2 and Beyond:<a href="#month-2-and-beyond" class="hash-link" aria-label="Direct link to Month 2 and Beyond:" title="Direct link to Month 2 and Beyond:">​</a></h3>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Continue progressive module completion</strong></li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Build portfolio of practical DevOps projects</strong></li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Participate actively in community discussions</strong></li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Apply learning to real-world scenarios</strong></li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Seek mentorship and provide help to others</strong></li>
+</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ready-to-transform-your-career">Ready to Transform Your Career?<a href="#ready-to-transform-your-career" class="hash-link" aria-label="Direct link to Ready to Transform Your Career?" title="Direct link to Ready to Transform Your Career?">​</a></h2>
-<p>DevOps Engineering offers an exciting path to combine development expertise with operational excellence, driving innovation and reliability at scale. Whether you&#x27;re starting your tech career or looking to advance to leadership roles, this comprehensive learning path provides the roadmap and resources you need.</p>
-<p><strong>Your journey to becoming a DevOps engineering expert starts now!</strong></p>
-<p>🚀 <strong><a href="/chasingcloudcareers-site/docs/devops-engineering/devops-fundamentals">Begin with Module 1: DevOps Fundamentals →</a></strong></p>
-<hr>
-<p><em>&quot;Great DevOps engineers don&#x27;t just automate processes – they transform cultures, enable innovation, and build systems that scale with business growth.&quot;</em></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site/tree/main/docs/devops-engineering/getting-started.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/chasingcloudcareers-site/docs/devops-engineering/prerequisites"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Prerequisites for DevOps Engineering</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/chasingcloudcareers-site/docs/devops-engineering/devops-fundamentals"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">DevOps Fundamentals and Culture</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#what-is-devops-engineering" class="table-of-contents__link toc-highlight">What is DevOps Engineering?</a></li><li><a href="#why-choose-devops-engineering" class="table-of-contents__link toc-highlight">Why Choose DevOps Engineering?</a><ul><li><a href="#high-impact-career-path" class="table-of-contents__link toc-highlight">High-Impact Career Path</a></li><li><a href="#strong-market-demand" class="table-of-contents__link toc-highlight">Strong Market Demand</a></li><li><a href="#diverse-opportunities" class="table-of-contents__link toc-highlight">Diverse Opportunities</a></li></ul></li><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a><ul><li><a href="#-complete-prerequisites-guide-" class="table-of-contents__link toc-highlight"><strong>📋 Complete Prerequisites Guide →</strong></a></li></ul></li><li><a href="#complete-learning-path-overview" class="table-of-contents__link toc-highlight">Complete Learning Path Overview</a><ul><li><a href="#module-1-devops-fundamentals-and-culture" class="table-of-contents__link toc-highlight">Module 1: DevOps Fundamentals and Culture</a></li><li><a href="#module-2-cicd-pipelines-and-automation" class="table-of-contents__link toc-highlight">Module 2: CI/CD Pipelines and Automation</a></li><li><a href="#module-3-infrastructure-as-code-and-configuration-management" class="table-of-contents__link toc-highlight">Module 3: Infrastructure as Code and Configuration Management</a></li><li><a href="#module-4-containerization-and-orchestration" class="table-of-contents__link toc-highlight">Module 4: Containerization and Orchestration</a></li><li><a href="#module-5-monitoring-security-and-advanced-practices" class="table-of-contents__link toc-highlight">Module 5: Monitoring, Security, and Advanced Practices</a></li></ul></li><li><a href="#learning-path-recommendations" class="table-of-contents__link toc-highlight">Learning Path Recommendations</a><ul><li><a href="#for-complete-beginners-0-1-years-experience" class="table-of-contents__link toc-highlight"><strong>For Complete Beginners (0-1 years experience):</strong></a></li><li><a href="#for-experienced-developers-2-5-years" class="table-of-contents__link toc-highlight"><strong>For Experienced Developers (2-5 years):</strong></a></li><li><a href="#for-system-administrators-seeking-devops-3-years" class="table-of-contents__link toc-highlight"><strong>For System Administrators Seeking DevOps (3+ years):</strong></a></li></ul></li><li><a href="#success-metrics-and-milestones" class="table-of-contents__link toc-highlight">Success Metrics and Milestones</a></li><li><a href="#free-resources-to-get-started" class="table-of-contents__link toc-highlight">Free Resources to Get Started</a><ul><li><a href="#essential-reading" class="table-of-contents__link toc-highlight">Essential Reading</a></li><li><a href="#professional-training-and-certification" class="table-of-contents__link toc-highlight">Professional Training and Certification</a></li><li><a href="#video-learning" class="table-of-contents__link toc-highlight">Video Learning</a></li><li><a href="#practice-environments" class="table-of-contents__link toc-highlight">Practice Environments</a></li><li><a href="#professional-communities" class="table-of-contents__link toc-highlight">Professional Communities</a></li></ul></li><li><a href="#getting-started-checklist" class="table-of-contents__link toc-highlight">Getting Started Checklist</a><ul><li><a href="#week-1-foundation-setup" class="table-of-contents__link toc-highlight">Week 1: Foundation Setup</a></li><li><a href="#week-2-3-core-skills-development" class="table-of-contents__link toc-highlight">Week 2-3: Core Skills Development</a></li><li><a href="#week-4-technical-foundation" class="table-of-contents__link toc-highlight">Week 4: Technical Foundation</a></li><li><a href="#month-2-and-beyond" class="table-of-contents__link toc-highlight">Month 2 and Beyond:</a></li></ul></li><li><a href="#ready-to-transform-your-career" class="table-of-contents__link toc-highlight">Ready to Transform Your Career?</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Learning Paths</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/intro">Get Started</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/support-engineering/getting-started">Support Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/cloud-engineering/getting-started">Cloud Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">DevOps Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/ai-engineering/getting-started">AI Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/research-engineering/getting-started">Research Engineering</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/about">About</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Chasing Cloud Careers LLC - All rights reserved.</div></div></div></footer></div>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hands-on-practice-and-projects">Hands-On Practice and Projects<a href="#hands-on-practice-and-projects" class="hash-link" aria-label="Direct link to Hands-On Practice and Projects" title="Direct link to Hands-On Practice and Projects">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Essential Practice Projects</strong></p>
+<ul>
+<li>Build and deploy web applications using CI/CD pipelines</li>
+<li>Create infrastructure as code templates for cloud environments</li>
+<li>Implement monitoring and logging solutions for applications</li>
+<li>Design and implement container orchestration solutions</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorial_series/ci-cd-tools-and-tutorials" target="_blank" rel="noopener noreferrer">DevOps Project Tutorials - DigitalOcean</a> - Step-by-step DevOps projects</li>
+<li><a href="https://github.com/hashicorp/terraform/tree/main/examples" target="_blank" rel="noopener noreferrer">Terraform Examples</a> - Infrastructure as code examples</li>
+<li><a href="https://github.com/kubernetes/examples" target="_blank" rel="noopener noreferrer">Kubernetes Examples</a> - Container orchestration projects</li>
+<li><a href="https://github.com/topics/cicd-pipeline" target="_blank" rel="noopener noreferrer">CI/CD Pipeline Examples</a> - Real-world pipeline implementations</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Portfolio Development and Documentation</strong></p>
+<ul>
+<li>Create GitHub repositories showcasing DevOps skills and automation</li>
+<li>Build personal blog or website demonstrating expertise and learning</li>
+<li>Document infrastructure designs and deployment procedures</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio/" target="_blank" rel="noopener noreferrer">DevOps Portfolio Guide</a> - Building effective technical portfolios</li>
+<li><a href="https://github.com/topics/devops-portfolio" target="_blank" rel="noopener noreferrer">GitHub Portfolio Examples</a> - DevOps portfolio inspiration</li>
+<li><a href="https://dev.to/t/devops" target="_blank" rel="noopener noreferrer">Technical Blog Writing - Dev.to</a> - Platform for sharing DevOps knowledge</li>
+<li><a href="https://www.terraform.io/docs/cloud/workspaces/state.html" target="_blank" rel="noopener noreferrer">Infrastructure Documentation - Terraform</a> - Documenting infrastructure</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started-action-plan">Getting Started Action Plan<a href="#getting-started-action-plan" class="hash-link" aria-label="Direct link to Getting Started Action Plan" title="Direct link to Getting Started Action Plan">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Week 1-2: Environment Setup and Orientation</strong></p>
+<ul>
+<li>Complete prerequisites assessment and address any knowledge gaps</li>
+<li>Set up development environment with essential DevOps tools</li>
+<li>Create accounts on major cloud platforms and explore free tiers</li>
+<li>Join DevOps communities and bookmark essential learning resources</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.atlassian.com/devops/devops-tools" target="_blank" rel="noopener noreferrer">DevOps Toolchain Setup</a> - Essential DevOps tools overview</li>
+<li><a href="https://www.cloudzero.com/blog/aws-vs-azure-vs-google-cloud-pricing" target="_blank" rel="noopener noreferrer">Cloud Free Tier Comparison</a> - Cloud platform comparison</li>
+<li><a href="https://www.cncf.io/community/code-of-conduct/" target="_blank" rel="noopener noreferrer">DevOps Community Guidelines</a> - Community participation best practices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Week 3-4: Foundation Building and First Projects</strong></p>
+<ul>
+<li>Begin Module 1: DevOps Fundamentals with daily practice</li>
+<li>Set up regular study schedule and hands-on lab time</li>
+<li>Start first automation project and document the learning process</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.notion.so/templates/study-schedule" target="_blank" rel="noopener noreferrer">DevOps Learning Schedule Template</a> - Learning schedule organization</li>
+<li><a href="https://github.com/bregman-arie/devops-exercises" target="_blank" rel="noopener noreferrer">First DevOps Project Ideas</a> - Beginner-friendly DevOps exercises</li>
+<li><a href="https://www.evernote.com/shard/s302/sh/c6b3ea3c-9c3e-4c5e-b6a7-8b9c5d2e1f0a/note" target="_blank" rel="noopener noreferrer">Learning Journal Template</a> - Track progress and insights</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Month 2-3: Skill Development and Advanced Practice</strong></p>
+<ul>
+<li>Progress through CI/CD and infrastructure automation modules</li>
+<li>Complete hands-on projects with real-world applications</li>
+<li>Begin contributing to open-source DevOps projects or documentation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.jenkins.io/doc/tutorials/" target="_blank" rel="noopener noreferrer">CI/CD Project Tutorials</a> - Jenkins pipeline tutorials</li>
+<li><a href="https://learn.hashicorp.com/terraform" target="_blank" rel="noopener noreferrer">Infrastructure Automation Labs</a> - Terraform hands-on learning</li>
+<li><a href="https://opensource.guide/how-to-contribute/" target="_blank" rel="noopener noreferrer">Open Source Contribution Guide</a> - Getting started with contributions</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="success-metrics-and-milestones">Success Metrics and Milestones<a href="#success-metrics-and-milestones" class="hash-link" aria-label="Direct link to Success Metrics and Milestones" title="Direct link to Success Metrics and Milestones">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Technical Skill Benchmarks</strong></p>
+<ul>
+<li>Proficiency in version control, CI/CD pipelines, and infrastructure automation</li>
+<li>Ability to containerize applications and manage orchestration platforms</li>
+<li>Understanding of monitoring, logging, and security integration in DevOps</li>
+<li>Experience with cloud platforms and infrastructure as code practices</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://roadmap.sh/devops" target="_blank" rel="noopener noreferrer">DevOps Skills Assessment</a> - Self-assessment framework and skill matrix</li>
+<li><a href="https://aws.amazon.com/partners/competencies/devops/" target="_blank" rel="noopener noreferrer">AWS DevOps Competency</a> - Industry skill standards</li>
+<li><a href="https://www.atlassian.com/devops/frameworks/devops-maturity-model" target="_blank" rel="noopener noreferrer">DevOps Maturity Model</a> - Organizational and individual maturity assessment</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Professional Development Goals</strong></p>
+<ul>
+<li>Build comprehensive portfolio of DevOps projects and contributions</li>
+<li>Obtain relevant industry certifications (AWS, Azure, GCP, Docker)</li>
+<li>Establish professional network within DevOps and cloud communities</li>
+<li>Secure internship, entry-level position, or advance in current role</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.indeed.com/career-advice/finding-a-job/devops-career-path" target="_blank" rel="noopener noreferrer">DevOps Career Roadmap</a> - Professional development planning</li>
+<li><a href="https://github.com/bregman-arie/devops-interview-questions" target="_blank" rel="noopener noreferrer">Technical Interview Preparation</a> - DevOps interview questions and scenarios</li>
+<li><a href="https://www.linkedin.com/learning/topics/devops" target="_blank" rel="noopener noreferrer">LinkedIn Learning - DevOps</a> - Professional skill development courses</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="essential-tools-and-technologies">Essential Tools and Technologies<a href="#essential-tools-and-technologies" class="hash-link" aria-label="Direct link to Essential Tools and Technologies" title="Direct link to Essential Tools and Technologies">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Version Control and Collaboration</strong></p>
+<ul>
+<li>Git for source code management and collaboration workflows</li>
+<li>GitHub, GitLab, or Bitbucket for repository hosting and CI/CD</li>
+<li>Code review processes and branch management strategies</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://guides.github.com/introduction/git-handbook/" target="_blank" rel="noopener noreferrer">Git Handbook - GitHub</a> - Git fundamentals and workflows</li>
+<li><a href="https://docs.gitlab.com/ee/ci/" target="_blank" rel="noopener noreferrer">GitLab CI/CD Documentation</a> - Integrated DevOps platform</li>
+<li><a href="https://www.atlassian.com/git/tutorials" target="_blank" rel="noopener noreferrer">Atlassian Git Tutorials</a> - Comprehensive Git learning</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Automation and Infrastructure Tools</strong></p>
+<ul>
+<li>Configuration management with Ansible, Chef, or Puppet</li>
+<li>Infrastructure as code with Terraform, CloudFormation, or ARM templates</li>
+<li>Container technologies with Docker and orchestration with Kubernetes</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.ansible.com/" target="_blank" rel="noopener noreferrer">Ansible Documentation</a> - Configuration management automation</li>
+<li><a href="https://www.terraform.io/docs/" target="_blank" rel="noopener noreferrer">Terraform Documentation</a> - Infrastructure as code platform</li>
+<li><a href="https://kubernetes.io/docs/" target="_blank" rel="noopener noreferrer">Kubernetes Documentation</a> - Container orchestration platform</li>
+<li><a href="https://docs.docker.com/" target="_blank" rel="noopener noreferrer">Docker Documentation</a> - Containerization technology</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Monitoring and Observability</strong></p>
+<ul>
+<li>Application and infrastructure monitoring with Prometheus, Grafana</li>
+<li>Log management with ELK stack (Elasticsearch, Logstash, Kibana)</li>
+<li>Distributed tracing and application performance monitoring</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://prometheus.io/docs/" target="_blank" rel="noopener noreferrer">Prometheus Documentation</a> - Monitoring and alerting toolkit</li>
+<li><a href="https://grafana.com/docs/" target="_blank" rel="noopener noreferrer">Grafana Documentation</a> - Visualization and dashboards</li>
+<li><a href="https://www.elastic.co/guide/" target="_blank" rel="noopener noreferrer">Elastic Stack Documentation</a> - Search and analytics platform</li>
+<li><a href="https://www.jaegertracing.io/docs/" target="_blank" rel="noopener noreferrer">Jaeger Tracing</a> - Distributed tracing system</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="industry-trends-and-emerging-technologies">Industry Trends and Emerging Technologies<a href="#industry-trends-and-emerging-technologies" class="hash-link" aria-label="Direct link to Industry Trends and Emerging Technologies" title="Direct link to Industry Trends and Emerging Technologies">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Cloud-Native and Microservices</strong></p>
+<ul>
+<li>Understanding of cloud-native application design and deployment</li>
+<li>Microservices architecture patterns and service mesh technologies</li>
+<li>Serverless computing and function-as-a-service platforms</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.cncf.io/" target="_blank" rel="noopener noreferrer">Cloud Native Computing Foundation</a> - Cloud-native technologies and projects</li>
+<li><a href="https://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener noreferrer">Microservices Patterns - Martin Fowler</a> - Microservices architecture</li>
+<li><a href="https://www.serverless.com/framework/docs/" target="_blank" rel="noopener noreferrer">Serverless Framework</a> - Serverless application framework</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>DevSecOps and Security Integration</strong></p>
+<ul>
+<li>Security integration throughout the development and deployment pipeline</li>
+<li>Container security scanning and vulnerability management</li>
+<li>Compliance as code and automated security testing</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://csrc.nist.gov/publications/detail/white-paper/2022/02/07/devsecops-guidelines/final" target="_blank" rel="noopener noreferrer">DevSecOps Guide - NIST</a> - Security integration guidelines</li>
+<li><a href="https://owasp.org/www-project-devsecops-guideline/" target="_blank" rel="noopener noreferrer">OWASP DevSecOps Guideline</a> - Security practices in DevOps</li>
+<li><a href="https://www.aquasec.com/cloud-native-academy/container-security/" target="_blank" rel="noopener noreferrer">Container Security - Aqua</a> - Container security best practices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Site Reliability Engineering (SRE)</strong></p>
+<ul>
+<li>SRE principles and practices for reliable, scalable systems</li>
+<li>Error budgets, service level objectives, and reliability engineering</li>
+<li>Chaos engineering and resilience testing practices</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://sre.google/books/" target="_blank" rel="noopener noreferrer">Site Reliability Engineering - Google</a> - SRE practices and methodologies</li>
+<li><a href="https://sre.google/workbook/table-of-contents/" target="_blank" rel="noopener noreferrer">SRE Workbook - Google</a> - Practical SRE implementation</li>
+<li><a href="https://principlesofchaos.org/" target="_blank" rel="noopener noreferrer">Chaos Engineering - Principles</a> - Chaos engineering fundamentals</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ready to Begin?</strong> Start your DevOps Engineering journey with <a href="/chasingcloudcareers-site/docs/devops-engineering/devops-fundamentals">Module 1: DevOps Fundamentals</a> and transform your approach to software delivery and infrastructure management!</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site/tree/main/docs/devops-engineering/getting-started.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/chasingcloudcareers-site/docs/linux-engineering/server-management"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Server Management and DevOps</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/chasingcloudcareers-site/docs/devops-engineering/prerequisites"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Prerequisites for DevOps Engineering</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#devops-engineering-role-overview" class="table-of-contents__link toc-highlight">DevOps Engineering Role Overview</a></li><li><a href="#prerequisites-and-foundation" class="table-of-contents__link toc-highlight">Prerequisites and Foundation</a></li><li><a href="#learning-path-structure" class="table-of-contents__link toc-highlight">Learning Path Structure</a></li><li><a href="#professional-development-resources" class="table-of-contents__link toc-highlight">Professional Development Resources</a></li><li><a href="#community-and-professional-networks" class="table-of-contents__link toc-highlight">Community and Professional Networks</a></li><li><a href="#hands-on-practice-and-projects" class="table-of-contents__link toc-highlight">Hands-On Practice and Projects</a></li><li><a href="#getting-started-action-plan" class="table-of-contents__link toc-highlight">Getting Started Action Plan</a></li><li><a href="#success-metrics-and-milestones" class="table-of-contents__link toc-highlight">Success Metrics and Milestones</a></li><li><a href="#essential-tools-and-technologies" class="table-of-contents__link toc-highlight">Essential Tools and Technologies</a></li><li><a href="#industry-trends-and-emerging-technologies" class="table-of-contents__link toc-highlight">Industry Trends and Emerging Technologies</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Learning Paths</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/intro">Get Started</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/support-engineering/getting-started">Support Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/cloud-engineering/getting-started">Cloud Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">DevOps Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/ai-engineering/getting-started">AI Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/research-engineering/getting-started">Research Engineering</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/about">About</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Chasing Cloud Careers LLC - All rights reserved.</div></div></div></footer></div>
 </body>
 </html>
