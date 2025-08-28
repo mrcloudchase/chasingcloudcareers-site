@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-cloud-engineering/cloud-native-development" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Cloud-Native Development | Chasing Cloud Careers</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" property="og:url" content="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/cloud-engineering/cloud-native-development"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Cloud-Native Development | Chasing Cloud Careers"><meta data-rh="true" name="description" content="Twelve-Factor App Methodology"><meta data-rh="true" property="og:description" content="Twelve-Factor App Methodology"><link data-rh="true" rel="icon" href="/chasingcloudcareers-site/img/logo.png"><link data-rh="true" rel="canonical" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/cloud-engineering/cloud-native-development"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/cloud-engineering/cloud-native-development" hreflang="en"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/cloud-engineering/cloud-native-development" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cloud Engineering","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/category/cloud-engineering"},{"@type":"ListItem","position":2,"name":"Cloud-Native Development","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/cloud-engineering/cloud-native-development"}]}</script><link rel="alternate" type="application/rss+xml" href="/chasingcloudcareers-site/blog/rss.xml" title="Chasing Cloud Careers RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/chasingcloudcareers-site/blog/atom.xml" title="Chasing Cloud Careers Atom Feed"><link rel="stylesheet" href="/chasingcloudcareers-site/assets/css/styles.8643be14.css">
+<script src="/chasingcloudcareers-site/assets/js/runtime~main.6240a9a1.js" defer="defer"></script>
+<script src="/chasingcloudcareers-site/assets/js/main.8bb73bf3.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/chasingcloudcareers-site/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/chasingcloudcareers-site/"><div class="navbar__logo"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Chasing Cloud Careers</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/chasingcloudcareers-site/docs/intro">Learning Paths</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/blog">Blog</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/about">About</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/chasingcloudcareers-site/docs/intro">Welcome to Chasing Cloud Careers</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">DevOps Engineering</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/support-engineering">Support Engineering</a><button aria-label="Expand sidebar category &#x27;Support Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/chasingcloudcareers-site/docs/category/cloud-engineering">Cloud Engineering</a><button aria-label="Collapse sidebar category &#x27;Cloud Engineering&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/cloud-engineering/prerequisites">Prerequisites for Cloud Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/cloud-engineering/getting-started">Getting Started with Cloud Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/cloud-engineering/cloud-fundamentals">Cloud Fundamentals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/cloud-engineering/multi-cloud-infrastructure">Multi-Cloud Infrastructure</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/cloud-engineering/cloud-security">Cloud Security</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/chasingcloudcareers-site/docs/cloud-engineering/cloud-native-development">Cloud-Native Development</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/cloud-engineering/advanced-architecture">Advanced Architecture</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/research-engineering">Research Engineering</a><button aria-label="Expand sidebar category &#x27;Research Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/chasingcloudcareers-site/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/chasingcloudcareers-site/docs/category/cloud-engineering"><span>Cloud Engineering</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Cloud-Native Development</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Cloud-Native Development</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="twelve-factor-app-methodology">Twelve-Factor App Methodology<a href="#twelve-factor-app-methodology" class="hash-link" aria-label="Direct link to Twelve-Factor App Methodology" title="Direct link to Twelve-Factor App Methodology">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Cloud-Native Application Design Principles</strong></p>
+<ul>
+<li>Codebase: One codebase tracked in revision control, many deploys</li>
+<li>Dependencies: Explicitly declare and isolate dependencies</li>
+<li>Config: Store configuration in the environment</li>
+<li>Backing services: Treat backing services as attached resources</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://12factor.net/" target="_blank" rel="noopener noreferrer">The Twelve-Factor App</a> - Complete methodology for building SaaS applications</li>
+<li><a href="https://content.pivotal.io/blog/beyond-the-twelve-factor-app" target="_blank" rel="noopener noreferrer">Beyond the Twelve-Factor App</a> - Modern cloud-native principles</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/" target="_blank" rel="noopener noreferrer">Cloud Native Application Architecture</a> - Microsoft cloud-native design guide</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Build, Release, and Run Stages</strong></p>
+<ul>
+<li>Build stage: Transform code into executable bundle</li>
+<li>Release stage: Combine build with configuration</li>
+<li>Run stage: Execute application in runtime environment</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://cloud.google.com/architecture/devops/devops-tech-continuous-integration" target="_blank" rel="noopener noreferrer">CI/CD for Cloud-Native Apps</a> - Continuous integration best practices</li>
+<li><a href="https://www.gitops.tech/" target="_blank" rel="noopener noreferrer">GitOps Workflow</a> - Git-based deployment and operations</li>
+<li><a href="https://landscape.cncf.io/card-mode?category=continuous-integration-delivery" target="_blank" rel="noopener noreferrer">Cloud Native CI/CD</a> - CNCF CI/CD landscape</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Stateless Processes and Data Persistence</strong></p>
+<ul>
+<li>Stateless application design and horizontal scaling</li>
+<li>External data stores and session management</li>
+<li>Process isolation and crash recovery strategies</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://cloud.google.com/architecture/best-practices-for-building-a-multiregional-serverless-backend" target="_blank" rel="noopener noreferrer">Stateless vs Stateful Applications</a> - Design patterns for scalability</li>
+<li><a href="https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/distributed-data-management.html" target="_blank" rel="noopener noreferrer">Session Management Patterns</a> - Distributed session strategies</li>
+<li><a href="https://martinfowler.com/articles/microservice-trade-offs.html" target="_blank" rel="noopener noreferrer">Data Persistence Patterns</a> - Database per service pattern</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-docker-and-containerization">Advanced Docker and Containerization<a href="#advanced-docker-and-containerization" class="hash-link" aria-label="Direct link to Advanced Docker and Containerization" title="Direct link to Advanced Docker and Containerization">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Multi-Stage Docker Builds and Optimization</strong></p>
+<ul>
+<li>Multi-stage builds for smaller production images</li>
+<li>Docker layer caching and build optimization</li>
+<li>Security scanning and vulnerability management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.docker.com/develop/dev-best-practices/" target="_blank" rel="noopener noreferrer">Docker Multi-Stage Builds</a> - Efficient container image creation</li>
+<li><a href="https://docs.docker.com/engine/security/security/" target="_blank" rel="noopener noreferrer">Docker Security Best Practices</a> - Container security fundamentals</li>
+<li><a href="https://cloud.google.com/architecture/best-practices-for-building-containers" target="_blank" rel="noopener noreferrer">Container Image Optimization</a> - Google Cloud container best practices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Container Orchestration Patterns</strong></p>
+<ul>
+<li>Sidecar, ambassador, and adapter patterns</li>
+<li>Init containers and lifecycle management</li>
+<li>Resource limits and quality of service classes</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://k8spatterns.io/" target="_blank" rel="noopener noreferrer">Kubernetes Patterns</a> - Design patterns for Kubernetes applications</li>
+<li><a href="https://kubernetes.io/blog/2015/06/the-distributed-system-toolkit-patterns/" target="_blank" rel="noopener noreferrer">Container Design Patterns</a> - Distributed system patterns</li>
+<li><a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/" target="_blank" rel="noopener noreferrer">Pod Lifecycle Management</a> - Pod states and management</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Container Registry and Image Management</strong></p>
+<ul>
+<li>Private container registries and image distribution</li>
+<li>Image signing and supply chain security</li>
+<li>Automated image builds and vulnerability scanning</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.aws.amazon.com/AmazonECR/latest/userguide/best-practices.html" target="_blank" rel="noopener noreferrer">AWS ECR Best Practices</a> - Container registry management</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/container-registry/container-registry-best-practices" target="_blank" rel="noopener noreferrer">Azure Container Registry</a> - ACR best practices</li>
+<li><a href="https://cloud.google.com/container-registry/docs/best-practices" target="_blank" rel="noopener noreferrer">Google Container Registry</a> - GCR optimization and security</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-orchestration-mastery">Kubernetes Orchestration Mastery<a href="#kubernetes-orchestration-mastery" class="hash-link" aria-label="Direct link to Kubernetes Orchestration Mastery" title="Direct link to Kubernetes Orchestration Mastery">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Advanced Kubernetes Workload Management</strong></p>
+<ul>
+<li>Deployments, StatefulSets, and DaemonSets</li>
+<li>Jobs and CronJobs for batch processing</li>
+<li>Horizontal Pod Autoscaler and Vertical Pod Autoscaler</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kubernetes.io/docs/concepts/workloads/" target="_blank" rel="noopener noreferrer">Kubernetes Workloads</a> - Workload types and management</li>
+<li><a href="https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/" target="_blank" rel="noopener noreferrer">Kubernetes Autoscaling</a> - Automatic scaling strategies</li>
+<li><a href="https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/" target="_blank" rel="noopener noreferrer">StatefulSet Patterns</a> - Stateful application management</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Service Discovery and Load Balancing</strong></p>
+<ul>
+<li>Kubernetes Services and Ingress controllers</li>
+<li>Service mesh integration (Istio, Linkerd)</li>
+<li>External DNS and certificate management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/service/" target="_blank" rel="noopener noreferrer">Kubernetes Services</a> - Service types and networking</li>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/" target="_blank" rel="noopener noreferrer">Ingress Controllers</a> - HTTP/HTTPS load balancing</li>
+<li><a href="https://servicemesh.es/" target="_blank" rel="noopener noreferrer">Service Mesh Comparison</a> - Service mesh options and features</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Persistent Storage and Data Management</strong></p>
+<ul>
+<li>Persistent Volumes and Storage Classes</li>
+<li>Container Storage Interface (CSI) drivers</li>
+<li>Backup and disaster recovery for stateful workloads</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kubernetes.io/docs/concepts/storage/" target="_blank" rel="noopener noreferrer">Kubernetes Storage</a> - Storage concepts and management</li>
+<li><a href="https://kubernetes-csi.github.io/docs/" target="_blank" rel="noopener noreferrer">CSI Drivers</a> - Container Storage Interface</li>
+<li><a href="https://velero.io/docs/" target="_blank" rel="noopener noreferrer">Velero Backup</a> - Kubernetes backup and migration</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="serverless-computing-and-functions">Serverless Computing and Functions<a href="#serverless-computing-and-functions" class="hash-link" aria-label="Direct link to Serverless Computing and Functions" title="Direct link to Serverless Computing and Functions">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Function as a Service (FaaS) Platforms</strong></p>
+<ul>
+<li>AWS Lambda functions and event sources</li>
+<li>Azure Functions and triggers</li>
+<li>Google Cloud Functions and Cloud Run</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.aws.amazon.com/lambda/" target="_blank" rel="noopener noreferrer">AWS Lambda Developer Guide</a> - Serverless function development</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/" target="_blank" rel="noopener noreferrer">Azure Functions Documentation</a> - Function app development and deployment</li>
+<li><a href="https://cloud.google.com/functions/docs" target="_blank" rel="noopener noreferrer">Google Cloud Functions</a> - Event-driven serverless functions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Event-Driven Architecture Patterns</strong></p>
+<ul>
+<li>Event sourcing and CQRS patterns</li>
+<li>Message queues and event streaming</li>
+<li>Saga pattern for distributed transactions</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://martinfowler.com/articles/201701-event-driven.html" target="_blank" rel="noopener noreferrer">Event-Driven Architecture</a> - EDA patterns and implementation</li>
+<li><a href="https://docs.aws.amazon.com/eventbridge/" target="_blank" rel="noopener noreferrer">AWS EventBridge</a> - Event bus and routing</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/event-grid/" target="_blank" rel="noopener noreferrer">Azure Event Grid</a> - Event routing service</li>
+<li><a href="https://cloud.google.com/pubsub/docs" target="_blank" rel="noopener noreferrer">Google Cloud Pub/Sub</a> - Messaging and event streaming</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Serverless Application Frameworks</strong></p>
+<ul>
+<li>Serverless Framework and SAM templates</li>
+<li>Infrastructure as Code for serverless applications</li>
+<li>Local development and testing strategies</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.serverless.com/framework/docs/" target="_blank" rel="noopener noreferrer">Serverless Framework</a> - Multi-cloud serverless deployment</li>
+<li><a href="https://docs.aws.amazon.com/serverless-application-model/" target="_blank" rel="noopener noreferrer">AWS SAM</a> - Serverless Application Model</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-infrastructure-as-code" target="_blank" rel="noopener noreferrer">Azure ARM Templates</a> - Serverless infrastructure automation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="microservices-architecture-and-design">Microservices Architecture and Design<a href="#microservices-architecture-and-design" class="hash-link" aria-label="Direct link to Microservices Architecture and Design" title="Direct link to Microservices Architecture and Design">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Microservices Design Patterns</strong></p>
+<ul>
+<li>Domain-driven design and bounded contexts</li>
+<li>API gateway and service composition patterns</li>
+<li>Circuit breaker and bulkhead patterns for resilience</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://microservices.io/patterns/index.html" target="_blank" rel="noopener noreferrer">Microservices Patterns</a> - Comprehensive microservices pattern catalog</li>
+<li><a href="https://samnewman.io/books/building_microservices/" target="_blank" rel="noopener noreferrer">Building Microservices</a> - Microservices architecture guide</li>
+<li><a href="https://martinfowler.com/tags/domain%20driven%20design.html" target="_blank" rel="noopener noreferrer">Domain-Driven Design</a> - DDD concepts and implementation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Inter-Service Communication</strong></p>
+<ul>
+<li>Synchronous communication with REST and GraphQL</li>
+<li>Asynchronous messaging with event streaming</li>
+<li>Service contracts and API versioning strategies</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://restfulapi.net/" target="_blank" rel="noopener noreferrer">REST API Design</a> - RESTful API design principles</li>
+<li><a href="https://graphql.org/learn/best-practices/" target="_blank" rel="noopener noreferrer">GraphQL Best Practices</a> - GraphQL implementation guide</li>
+<li><a href="https://www.troyhunt.com/your-api-versioning-is-wrong-which-is/" target="_blank" rel="noopener noreferrer">API Versioning Strategies</a> - API evolution and compatibility</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Management in Microservices</strong></p>
+<ul>
+<li>Database per service pattern</li>
+<li>Event sourcing and CQRS implementation</li>
+<li>Distributed transaction patterns and eventual consistency</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://microservices.io/patterns/data/index.html" target="_blank" rel="noopener noreferrer">Microservices Data Patterns</a> - Data management strategies</li>
+<li><a href="https://martinfowler.com/eaaDev/EventSourcing.html" target="_blank" rel="noopener noreferrer">Event Sourcing</a> - Event-driven data architecture</li>
+<li><a href="https://microservices.io/patterns/data/saga.html" target="_blank" rel="noopener noreferrer">Saga Pattern</a> - Distributed transaction management</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="api-design-and-management">API Design and Management<a href="#api-design-and-management" class="hash-link" aria-label="Direct link to API Design and Management" title="Direct link to API Design and Management">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>RESTful API Design and Best Practices</strong></p>
+<ul>
+<li>Resource-oriented design and HTTP methods</li>
+<li>API documentation with OpenAPI/Swagger</li>
+<li>Error handling and status code conventions</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://restapitutorial.com/" target="_blank" rel="noopener noreferrer">REST API Tutorial</a> - Complete REST API design guide</li>
+<li><a href="https://swagger.io/specification/" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> - API documentation standard</li>
+<li><a href="https://cloud.google.com/apis/design" target="_blank" rel="noopener noreferrer">API Design Guidelines</a> - Google API design principles</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>GraphQL and Modern API Patterns</strong></p>
+<ul>
+<li>GraphQL schema design and query optimization</li>
+<li>Real-time subscriptions and data federation</li>
+<li>API security and rate limiting strategies</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://graphql.org/learn/" target="_blank" rel="noopener noreferrer">GraphQL Documentation</a> - GraphQL concepts and implementation</li>
+<li><a href="https://www.apollographql.com/docs/" target="_blank" rel="noopener noreferrer">Apollo GraphQL</a> - GraphQL platform and tools</li>
+<li><a href="https://owasp.org/www-project-api-security/" target="_blank" rel="noopener noreferrer">API Security Best Practices</a> - OWASP API security guidelines</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>API Gateway and Service Mesh</strong></p>
+<ul>
+<li>API gateway patterns and implementation</li>
+<li>Service mesh for microservices communication</li>
+<li>Traffic management and canary deployments</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.aws.amazon.com/apigateway/" target="_blank" rel="noopener noreferrer">AWS API Gateway</a> - API management and security</li>
+<li><a href="https://istio.io/latest/docs/" target="_blank" rel="noopener noreferrer">Istio Service Mesh</a> - Service mesh architecture</li>
+<li><a href="https://docs.konghq.com/" target="_blank" rel="noopener noreferrer">Kong API Gateway</a> - Open-source API gateway</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cloud-native-databases-and-data-services">Cloud-Native Databases and Data Services<a href="#cloud-native-databases-and-data-services" class="hash-link" aria-label="Direct link to Cloud-Native Databases and Data Services" title="Direct link to Cloud-Native Databases and Data Services">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Multi-Model Database Strategies</strong></p>
+<ul>
+<li>Polyglot persistence and database selection criteria</li>
+<li>NoSQL databases: Document, key-value, graph, and column-family</li>
+<li>NewSQL and distributed SQL databases</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://aws.amazon.com/products/databases/" target="_blank" rel="noopener noreferrer">Database Selection Guide</a> - AWS database services comparison</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/databases/" target="_blank" rel="noopener noreferrer">Azure Database Services</a> - Azure database portfolio</li>
+<li><a href="https://cloud.google.com/products/databases" target="_blank" rel="noopener noreferrer">Google Cloud Databases</a> - GCP database services</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Database Scaling and Performance</strong></p>
+<ul>
+<li>Read replicas and database clustering</li>
+<li>Sharding strategies and data partitioning</li>
+<li>Caching layers and performance optimization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.aws.amazon.com/whitepapers/latest/database-caching-strategies-using-redis/database-caching-strategies-using-redis.html" target="_blank" rel="noopener noreferrer">Database Scaling Patterns</a> - Scaling and caching strategies</li>
+<li><a href="https://cloud.google.com/spanner/docs/concepts" target="_blank" rel="noopener noreferrer">Distributed Database Concepts</a> - Global database architecture</li>
+<li><a href="https://use-the-index-luke.com/" target="_blank" rel="noopener noreferrer">Database Performance Tuning</a> - SQL performance optimization</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Streaming and Real-Time Processing</strong></p>
+<ul>
+<li>Apache Kafka and cloud-managed streaming services</li>
+<li>Stream processing with Apache Flink and Spark</li>
+<li>Real-time analytics and event processing</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kafka.apache.org/documentation/" target="_blank" rel="noopener noreferrer">Apache Kafka Documentation</a> - Distributed streaming platform</li>
+<li><a href="https://docs.aws.amazon.com/kinesis/" target="_blank" rel="noopener noreferrer">AWS Kinesis</a> - Real-time data streaming</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/event-hubs/" target="_blank" rel="noopener noreferrer">Azure Event Hubs</a> - Big data streaming platform</li>
+<li><a href="https://cloud.google.com/dataflow/docs" target="_blank" rel="noopener noreferrer">Google Cloud Dataflow</a> - Stream and batch processing</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="devops-integration-and-cicd">DevOps Integration and CI/CD<a href="#devops-integration-and-cicd" class="hash-link" aria-label="Direct link to DevOps Integration and CI/CD" title="Direct link to DevOps Integration and CI/CD">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Cloud-Native CI/CD Pipelines</strong></p>
+<ul>
+<li>GitOps workflows and deployment automation</li>
+<li>Container image building and security scanning</li>
+<li>Progressive delivery and feature flags</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.gitops.tech/" target="_blank" rel="noopener noreferrer">GitOps Principles</a> - Git-based deployment workflows</li>
+<li><a href="https://tekton.dev/docs/" target="_blank" rel="noopener noreferrer">Tekton Pipelines</a> - Kubernetes-native CI/CD</li>
+<li><a href="https://argo-cd.readthedocs.io/" target="_blank" rel="noopener noreferrer">Argo CD</a> - GitOps continuous delivery</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Infrastructure and Application Monitoring</strong></p>
+<ul>
+<li>Observability for cloud-native applications</li>
+<li>Distributed tracing and performance monitoring</li>
+<li>Log aggregation and metrics collection</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://prometheus.io/docs/" target="_blank" rel="noopener noreferrer">Prometheus Monitoring</a> - Metrics collection and alerting</li>
+<li><a href="https://www.jaegertracing.io/docs/" target="_blank" rel="noopener noreferrer">Jaeger Tracing</a> - Distributed tracing system</li>
+<li><a href="https://grafana.com/docs/" target="_blank" rel="noopener noreferrer">Grafana Dashboards</a> - Metrics visualization and alerting</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Chaos Engineering and Resilience Testing</strong></p>
+<ul>
+<li>Fault injection and resilience testing</li>
+<li>Chaos engineering principles and tools</li>
+<li>Disaster recovery testing and validation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://principlesofchaos.org/" target="_blank" rel="noopener noreferrer">Chaos Engineering Principles</a> - Chaos engineering methodology</li>
+<li><a href="https://netflix.github.io/chaosmonkey/" target="_blank" rel="noopener noreferrer">Chaos Monkey</a> - Netflix chaos engineering tool</li>
+<li><a href="https://litmuschaos.io/" target="_blank" rel="noopener noreferrer">Litmus Chaos</a> - Kubernetes chaos engineering</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ready to Architect?</strong> Advance to <a href="/chasingcloudcareers-site/docs/cloud-engineering/advanced-architecture">Module 5: Advanced Architecture</a> to master enterprise-scale patterns, performance optimization, and emerging cloud technologies.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site/tree/main/docs/cloud-engineering/04-cloud-native-development.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/chasingcloudcareers-site/docs/cloud-engineering/cloud-security"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Cloud Security</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/chasingcloudcareers-site/docs/cloud-engineering/advanced-architecture"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Advanced Architecture</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#twelve-factor-app-methodology" class="table-of-contents__link toc-highlight">Twelve-Factor App Methodology</a></li><li><a href="#advanced-docker-and-containerization" class="table-of-contents__link toc-highlight">Advanced Docker and Containerization</a></li><li><a href="#kubernetes-orchestration-mastery" class="table-of-contents__link toc-highlight">Kubernetes Orchestration Mastery</a></li><li><a href="#serverless-computing-and-functions" class="table-of-contents__link toc-highlight">Serverless Computing and Functions</a></li><li><a href="#microservices-architecture-and-design" class="table-of-contents__link toc-highlight">Microservices Architecture and Design</a></li><li><a href="#api-design-and-management" class="table-of-contents__link toc-highlight">API Design and Management</a></li><li><a href="#cloud-native-databases-and-data-services" class="table-of-contents__link toc-highlight">Cloud-Native Databases and Data Services</a></li><li><a href="#devops-integration-and-cicd" class="table-of-contents__link toc-highlight">DevOps Integration and CI/CD</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Learning Paths</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/intro">Get Started</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/support-engineering/getting-started">Support Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/cloud-engineering/getting-started">Cloud Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">DevOps Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/ai-engineering/getting-started">AI Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/research-engineering/getting-started">Research Engineering</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/about">About</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Chasing Cloud Careers LLC - All rights reserved.</div></div></div></footer></div>
+</body>
+</html>
