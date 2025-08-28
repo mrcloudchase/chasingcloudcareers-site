@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-linux-engineering/networking-security" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Networking and Security | Chasing Cloud Careers</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" property="og:url" content="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/networking-security"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Networking and Security | Chasing Cloud Careers"><meta data-rh="true" name="description" content="Network Configuration and Management"><meta data-rh="true" property="og:description" content="Network Configuration and Management"><link data-rh="true" rel="icon" href="/chasingcloudcareers-site/img/logo.png"><link data-rh="true" rel="canonical" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/networking-security"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/networking-security" hreflang="en"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/networking-security" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Networking and Security","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/networking-security"}]}</script><link rel="alternate" type="application/rss+xml" href="/chasingcloudcareers-site/blog/rss.xml" title="Chasing Cloud Careers RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/chasingcloudcareers-site/blog/atom.xml" title="Chasing Cloud Careers Atom Feed"><link rel="stylesheet" href="/chasingcloudcareers-site/assets/css/styles.8643be14.css">
+<script src="/chasingcloudcareers-site/assets/js/runtime~main.bedd4cc9.js" defer="defer"></script>
+<script src="/chasingcloudcareers-site/assets/js/main.dfeff22d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/chasingcloudcareers-site/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/chasingcloudcareers-site/"><div class="navbar__logo"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Chasing Cloud Careers</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/chasingcloudcareers-site/docs/intro">Learning Paths</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/blog">Blog</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/about">About</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/chasingcloudcareers-site/docs/intro">Welcome to Chasing Cloud Careers</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/support-engineering">Support Engineering</a><button aria-label="Expand sidebar category &#x27;Support Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Getting Started with Linux Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/prerequisites">Prerequisites for Linux Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/linux-fundamentals">Linux Fundamentals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/system-administration">System Administration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/shell-scripting">Shell Scripting and Automation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/networking-security">Networking and Security</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/server-management">Server Management and DevOps</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/cloud-engineering">Cloud Engineering</a><button aria-label="Expand sidebar category &#x27;Cloud Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/devops-engineering">DevOps Engineering</a><button aria-label="Expand sidebar category &#x27;DevOps Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/-ai-engineering">🤖 AI Engineering</a><button aria-label="Expand sidebar category &#x27;🤖 AI Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/research-engineering">Research Engineering</a><button aria-label="Expand sidebar category &#x27;Research Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/chasingcloudcareers-site/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Linux Engineering</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Networking and Security</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Networking and Security</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="network-configuration-and-management">Network Configuration and Management<a href="#network-configuration-and-management" class="hash-link" aria-label="Direct link to Network Configuration and Management" title="Direct link to Network Configuration and Management">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Network Interface Configuration</strong></p>
+<ul>
+<li>Network interface management with ip and ifconfig commands</li>
+<li>Static and dynamic IP address configuration (DHCP)</li>
+<li>Network interface bonding, bridging, and VLAN configuration</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/" target="_blank" rel="noopener noreferrer">Network Configuration Guide - Red Hat</a> - Comprehensive network configuration</li>
+<li><a href="https://linuxize.com/post/linux-ip-command/" target="_blank" rel="noopener noreferrer">IP Command Tutorial - Linuxize</a> - Modern network interface management</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-configure-network-bonding-on-ubuntu-20-04" target="_blank" rel="noopener noreferrer">Network Bonding Guide - DigitalOcean</a> - Advanced networking concepts</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Routing and Gateway Configuration</strong></p>
+<ul>
+<li>Routing table management and static route configuration</li>
+<li>Default gateway setup and multi-homed systems</li>
+<li>Policy-based routing and advanced routing concepts</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/route-command-in-linux-with-examples/" target="_blank" rel="noopener noreferrer">Linux Routing Tutorial - GeeksforGeeks</a> - Routing configuration and management</li>
+<li><a href="https://tldp.org/HOWTO/Adv-Routing-HOWTO/" target="_blank" rel="noopener noreferrer">Advanced Routing - TLDP</a> - Advanced routing techniques</li>
+<li><a href="https://wiki.linuxfoundation.org/networking/iproute2" target="_blank" rel="noopener noreferrer">Policy Routing Guide - Linux Foundation</a> - Policy-based routing implementation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Network Services Configuration</strong></p>
+<ul>
+<li>DHCP client and server configuration</li>
+<li>DNS client configuration and name resolution</li>
+<li>Network Time Protocol (NTP) setup and synchronization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://ubuntu.com/server/docs/network-dhcp" target="_blank" rel="noopener noreferrer">DHCP Configuration - Ubuntu</a> - DHCP client and server setup</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/configuring-hostname-and-dns_configuring-and-managing-networking" target="_blank" rel="noopener noreferrer">DNS Configuration Guide - Red Hat</a> - DNS setup and troubleshooting</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-time-synchronization-on-ubuntu-18-04" target="_blank" rel="noopener noreferrer">NTP Configuration - DigitalOcean</a> - Time synchronization setup</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="network-troubleshooting-and-diagnostics">Network Troubleshooting and Diagnostics<a href="#network-troubleshooting-and-diagnostics" class="hash-link" aria-label="Direct link to Network Troubleshooting and Diagnostics" title="Direct link to Network Troubleshooting and Diagnostics">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Network Connectivity Testing</strong></p>
+<ul>
+<li>Ping, traceroute, and path analysis tools</li>
+<li>Network connectivity troubleshooting methodologies</li>
+<li>Bandwidth testing and network performance analysis</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.tecmint.com/linux-network-configuration-and-troubleshooting-commands/" target="_blank" rel="noopener noreferrer">Network Troubleshooting Guide - Tecmint</a> - Essential network diagnostic tools</li>
+<li><a href="https://www.linuxjournal.com/content/network-performance-testing-linux" target="_blank" rel="noopener noreferrer">Network Performance Testing - Linux Journal</a> - Bandwidth and performance analysis</li>
+<li><a href="https://www.nanog.org/sites/default/files/traceroute.pdf" target="_blank" rel="noopener noreferrer">Traceroute Analysis - NANOG</a> - Path analysis and troubleshooting</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Network Traffic Analysis</strong></p>
+<ul>
+<li>Packet capture and analysis with tcpdump and Wireshark</li>
+<li>Network traffic monitoring and flow analysis</li>
+<li>Protocol analysis and network forensics</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-tcpdump-to-capture-and-analyze-packets-on-linux" target="_blank" rel="noopener noreferrer">Tcpdump Tutorial - DigitalOcean</a> - Packet capture and analysis</li>
+<li><a href="https://www.wireshark.org/docs/" target="_blank" rel="noopener noreferrer">Wireshark Documentation</a> - Network protocol analysis</li>
+<li><a href="https://www.sans.org/white-papers/33901/" target="_blank" rel="noopener noreferrer">Network Forensics Guide - SANS</a> - Network traffic analysis techniques</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Network Service Debugging</strong></p>
+<ul>
+<li>Service port scanning and availability testing</li>
+<li>Network service configuration troubleshooting</li>
+<li>SSL/TLS certificate validation and debugging</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://linuxhint.com/nmap_tutorial/" target="_blank" rel="noopener noreferrer">Nmap Tutorial - Linux Hint</a> - Network discovery and port scanning</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/troubleshooting-network-issues_configuring-and-managing-networking" target="_blank" rel="noopener noreferrer">Service Debugging - Red Hat</a> - Network service troubleshooting</li>
+<li><a href="https://www.ssllabs.com/ssltest/" target="_blank" rel="noopener noreferrer">SSL/TLS Testing - SSL Labs</a> - Certificate validation and testing</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="firewall-configuration-and-management">Firewall Configuration and Management<a href="#firewall-configuration-and-management" class="hash-link" aria-label="Direct link to Firewall Configuration and Management" title="Direct link to Firewall Configuration and Management">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Iptables Firewall Management</strong></p>
+<ul>
+<li>Iptables rules, chains, and tables configuration</li>
+<li>Packet filtering, NAT, and port forwarding</li>
+<li>Firewall rule optimization and performance tuning</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-iptables-on-ubuntu-18-04" target="_blank" rel="noopener noreferrer">Iptables Tutorial - DigitalOcean</a> - Comprehensive iptables configuration</li>
+<li><a href="https://netfilter.org/documentation/HOWTO/packet-filtering-HOWTO.html" target="_blank" rel="noopener noreferrer">Iptables Guide - Netfilter</a> - Official netfilter documentation</li>
+<li><a href="https://tldp.org/HOWTO/Iptables-Tutorial/index.html" target="_blank" rel="noopener noreferrer">Advanced Iptables - TLDP</a> - Advanced firewall configuration</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Firewalld and Modern Firewall Management</strong></p>
+<ul>
+<li>Firewalld zones, services, and rich rules</li>
+<li>Dynamic firewall management and runtime configuration</li>
+<li>Integration with systemd and network services</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/using-and-configuring-firewalld_configuring-and-managing-networking" target="_blank" rel="noopener noreferrer">Firewalld Guide - Red Hat</a> - Modern firewall management</li>
+<li><a href="https://linuxize.com/post/how-to-configure-and-manage-firewall-on-centos-8/" target="_blank" rel="noopener noreferrer">Firewalld Tutorial - Linuxize</a> - Firewalld configuration examples</li>
+<li><a href="https://help.ubuntu.com/community/UFW" target="_blank" rel="noopener noreferrer">UFW Tutorial - Ubuntu</a> - Uncomplicated Firewall setup</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Network Security Policies</strong></p>
+<ul>
+<li>Security policy development and implementation</li>
+<li>Network segmentation and access control</li>
+<li>Intrusion detection and prevention systems</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://csrc.nist.gov/publications/detail/sp/800-41/rev-1/final" target="_blank" rel="noopener noreferrer">Network Security Policy - NIST</a> - Network security guidelines</li>
+<li><a href="https://www.sans.org/white-papers/36267/" target="_blank" rel="noopener noreferrer">Network Segmentation - SANS</a> - Network isolation strategies</li>
+<li><a href="https://www.snort.org/documents" target="_blank" rel="noopener noreferrer">IDS/IPS Configuration - Snort</a> - Intrusion detection systems</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ssh-and-remote-access-security">SSH and Remote Access Security<a href="#ssh-and-remote-access-security" class="hash-link" aria-label="Direct link to SSH and Remote Access Security" title="Direct link to SSH and Remote Access Security">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>SSH Server Configuration and Hardening</strong></p>
+<ul>
+<li>SSH daemon configuration and security settings</li>
+<li>Key-based authentication and certificate management</li>
+<li>SSH tunneling and port forwarding techniques</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-18-04" target="_blank" rel="noopener noreferrer">SSH Hardening Guide - DigitalOcean</a> - SSH security configuration</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/using-secure-communications_security-hardening" target="_blank" rel="noopener noreferrer">SSH Key Management - Red Hat</a> - SSH authentication and keys</li>
+<li><a href="https://www.linuxjournal.com/content/ssh-tunneling" target="_blank" rel="noopener noreferrer">SSH Tunneling Tutorial - Linux Journal</a> - Advanced SSH techniques</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>VPN Configuration and Management</strong></p>
+<ul>
+<li>OpenVPN server and client configuration</li>
+<li>WireGuard VPN setup and management</li>
+<li>IPSec VPN configuration and troubleshooting</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-ubuntu-20-04" target="_blank" rel="noopener noreferrer">OpenVPN Tutorial - DigitalOcean</a> - OpenVPN server setup</li>
+<li><a href="https://www.wireguard.com/quickstart/" target="_blank" rel="noopener noreferrer">WireGuard Guide - WireGuard</a> - Modern VPN configuration</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/configuring-a-vpn-with-ipsec_security-hardening" target="_blank" rel="noopener noreferrer">IPSec Configuration - Red Hat</a> - IPSec VPN setup</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Multi-Factor Authentication</strong></p>
+<ul>
+<li>Two-factor authentication implementation</li>
+<li>LDAP and Active Directory integration</li>
+<li>Certificate-based authentication systems</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-multi-factor-authentication-for-ssh-on-ubuntu-18-04" target="_blank" rel="noopener noreferrer">2FA Setup Guide - DigitalOcean</a> - Multi-factor authentication</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_authentication_and_authorization_in_rhel/" target="_blank" rel="noopener noreferrer">LDAP Integration - Red Hat</a> - Directory service integration</li>
+<li><a href="https://www.openssl.org/docs/" target="_blank" rel="noopener noreferrer">Certificate Authentication - OpenSSL</a> - Certificate-based security</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="system-security-hardening">System Security Hardening<a href="#system-security-hardening" class="hash-link" aria-label="Direct link to System Security Hardening" title="Direct link to System Security Hardening">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Access Control and Permissions</strong></p>
+<ul>
+<li>Advanced file permissions and Access Control Lists (ACLs)</li>
+<li>SELinux and AppArmor mandatory access controls</li>
+<li>User and group security policies</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_permissions/managing-access-control-lists_managing-file-permissions" target="_blank" rel="noopener noreferrer">ACL Tutorial - Red Hat</a> - Advanced permission management</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/using_selinux/" target="_blank" rel="noopener noreferrer">SELinux Guide - Red Hat</a> - Mandatory access control with SELinux</li>
+<li><a href="https://ubuntu.com/server/docs/security-apparmor" target="_blank" rel="noopener noreferrer">AppArmor Tutorial - Ubuntu</a> - Application security profiles</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>System Auditing and Monitoring</strong></p>
+<ul>
+<li>System audit configuration with auditd</li>
+<li>Log monitoring and security event detection</li>
+<li>File integrity monitoring and change detection</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/auditing-the-system_security-hardening" target="_blank" rel="noopener noreferrer">Linux Auditing - Red Hat</a> - System audit configuration</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-aide-on-a-digitalocean-vps" target="_blank" rel="noopener noreferrer">AIDE Tutorial - DigitalOcean</a> - File integrity monitoring</li>
+<li><a href="https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html" target="_blank" rel="noopener noreferrer">Log Analysis - Elastic</a> - Log monitoring and analysis</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Vulnerability Assessment and Patch Management</strong></p>
+<ul>
+<li>Vulnerability scanning and assessment tools</li>
+<li>Security patch management and testing</li>
+<li>Security baseline configuration and compliance</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.openvas.org/documentation/" target="_blank" rel="noopener noreferrer">Vulnerability Scanning - OpenVAS</a> - Open source vulnerability assessment</li>
+<li><a href="https://access.redhat.com/solutions/27606" target="_blank" rel="noopener noreferrer">Patch Management - Red Hat</a> - Security update management</li>
+<li><a href="https://www.cisecurity.org/cis-benchmarks/" target="_blank" rel="noopener noreferrer">Security Benchmarks - CIS</a> - Security configuration standards</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="encryption-and-pki-management">Encryption and PKI Management<a href="#encryption-and-pki-management" class="hash-link" aria-label="Direct link to Encryption and PKI Management" title="Direct link to Encryption and PKI Management">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>File and Disk Encryption</strong></p>
+<ul>
+<li>File-level encryption with GnuPG and OpenSSL</li>
+<li>Full disk encryption with LUKS and dm-crypt</li>
+<li>Encrypted file systems and secure storage</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://gnupg.org/gph/en/manual.html" target="_blank" rel="noopener noreferrer">GnuPG Tutorial - GNU</a> - File encryption and digital signatures</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/encrypting-block-devices-using-luks_security-hardening" target="_blank" rel="noopener noreferrer">LUKS Encryption - Red Hat</a> - Full disk encryption</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-encfs-to-encrypt-files-and-directories-on-linux" target="_blank" rel="noopener noreferrer">EncFS Tutorial - DigitalOcean</a> - Encrypted file systems</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Certificate Management and PKI</strong></p>
+<ul>
+<li>SSL/TLS certificate creation and management</li>
+<li>Certificate Authority (CA) setup and operation</li>
+<li>Certificate revocation and lifecycle management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs" target="_blank" rel="noopener noreferrer">OpenSSL Tutorial - DigitalOcean</a> - Certificate management with OpenSSL</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_certificate_system/" target="_blank" rel="noopener noreferrer">PKI Implementation - Red Hat</a> - Public Key Infrastructure</li>
+<li><a href="https://certbot.eff.org/docs/" target="_blank" rel="noopener noreferrer">Let&#x27;s Encrypt - Certbot</a> - Automated certificate management</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Secure Communication Protocols</strong></p>
+<ul>
+<li>SSL/TLS configuration and optimization</li>
+<li>Secure email and messaging systems</li>
+<li>Encrypted network protocols and services</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://wiki.mozilla.org/Security/Server_Side_TLS" target="_blank" rel="noopener noreferrer">SSL/TLS Configuration - Mozilla</a> - SSL/TLS best practices</li>
+<li><a href="http://www.postfix.org/TLS_README.html" target="_blank" rel="noopener noreferrer">Secure Email - Postfix</a> - Email encryption configuration</li>
+<li><a href="https://owasp.org/www-project-cheat-sheets/" target="_blank" rel="noopener noreferrer">Protocol Security - OWASP</a> - Secure protocol implementation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="network-services-security">Network Services Security<a href="#network-services-security" class="hash-link" aria-label="Direct link to Network Services Security" title="Direct link to Network Services Security">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Web Server Security</strong></p>
+<ul>
+<li>Apache and Nginx security configuration</li>
+<li>Web application firewall (WAF) implementation</li>
+<li>SSL/TLS termination and security headers</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://httpd.apache.org/docs/2.4/misc/security_tips.html" target="_blank" rel="noopener noreferrer">Apache Security - Apache Foundation</a> - Apache security configuration</li>
+<li><a href="https://nginx.org/en/docs/http/ngx_http_ssl_module.html" target="_blank" rel="noopener noreferrer">Nginx Security - Nginx</a> - Nginx security and SSL configuration</li>
+<li><a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer">Web Security - OWASP</a> - Web application security</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Database Security</strong></p>
+<ul>
+<li>Database access control and authentication</li>
+<li>Database encryption and secure connections</li>
+<li>Database auditing and compliance monitoring</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://dev.mysql.com/doc/refman/8.0/en/security.html" target="_blank" rel="noopener noreferrer">MySQL Security - Oracle</a> - MySQL security configuration</li>
+<li><a href="https://www.postgresql.org/docs/current/security.html" target="_blank" rel="noopener noreferrer">PostgreSQL Security - PostgreSQL</a> - PostgreSQL security features</li>
+<li><a href="https://csrc.nist.gov/publications/detail/sp/800-123/final" target="_blank" rel="noopener noreferrer">Database Hardening - NIST</a> - Database security guidelines</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Mail Server Security</strong></p>
+<ul>
+<li>Mail server hardening and spam prevention</li>
+<li>Email encryption and digital signatures</li>
+<li>Mail relay security and authentication</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="http://www.postfix.org/BASIC_CONFIGURATION_README.html" target="_blank" rel="noopener noreferrer">Postfix Security - Postfix</a> - Mail server security</li>
+<li><a href="https://doc.dovecot.org/configuration_manual/authentication/" target="_blank" rel="noopener noreferrer">Dovecot Security - Dovecot</a> - IMAP/POP3 security</li>
+<li><a href="https://www.sans.org/white-papers/1705/" target="_blank" rel="noopener noreferrer">Email Security - SANS</a> - Email system security</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="intrusion-detection-and-incident-response">Intrusion Detection and Incident Response<a href="#intrusion-detection-and-incident-response" class="hash-link" aria-label="Direct link to Intrusion Detection and Incident Response" title="Direct link to Intrusion Detection and Incident Response">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Host-Based Intrusion Detection</strong></p>
+<ul>
+<li>HIDS configuration and rule management</li>
+<li>Real-time monitoring and alerting systems</li>
+<li>Behavioral analysis and anomaly detection</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ossec-security-monitoring-on-ubuntu-14-04" target="_blank" rel="noopener noreferrer">OSSEC Tutorial - DigitalOcean</a> - Host-based intrusion detection</li>
+<li><a href="https://linuxize.com/post/install-configure-fail2ban-on-ubuntu-20-04/" target="_blank" rel="noopener noreferrer">Fail2ban Configuration - Linuxize</a> - Intrusion prevention system</li>
+<li><a href="https://www.tripwire.com/state-of-security/security-data-protection/cyber-security/how-to-use-tripwire-in-linux/" target="_blank" rel="noopener noreferrer">Tripwire Guide - Tripwire</a> - File integrity monitoring</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Network Intrusion Detection</strong></p>
+<ul>
+<li>Network-based IDS configuration and deployment</li>
+<li>Traffic analysis and signature-based detection</li>
+<li>Network forensics and incident investigation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://suricata-ids.org/documentation/" target="_blank" rel="noopener noreferrer">Suricata IDS - Suricata</a> - Network intrusion detection system</li>
+<li><a href="https://www.snort.org/documents" target="_blank" rel="noopener noreferrer">Snort Configuration - Snort</a> - Network intrusion prevention</li>
+<li><a href="https://www.sans.org/white-papers/33901/" target="_blank" rel="noopener noreferrer">Network Forensics - SANS</a> - Network incident analysis</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Incident Response and Recovery</strong></p>
+<ul>
+<li>Incident response planning and procedures</li>
+<li>Digital forensics and evidence collection</li>
+<li>System recovery and business continuity</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final" target="_blank" rel="noopener noreferrer">Incident Response Guide - NIST</a> - Incident handling procedures</li>
+<li><a href="https://www.sans.org/white-papers/1337/" target="_blank" rel="noopener noreferrer">Digital Forensics - SANS</a> - Forensic investigation techniques</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_storage_devices/recovering-from-boot-problems_managing-storage-devices" target="_blank" rel="noopener noreferrer">Disaster Recovery - Red Hat</a> - System recovery procedures</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="compliance-and-security-frameworks">Compliance and Security Frameworks<a href="#compliance-and-security-frameworks" class="hash-link" aria-label="Direct link to Compliance and Security Frameworks" title="Direct link to Compliance and Security Frameworks">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Security Standards and Frameworks</strong></p>
+<ul>
+<li>CIS Controls and security benchmarks</li>
+<li>NIST Cybersecurity Framework implementation</li>
+<li>ISO 27001 and security management systems</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.cisecurity.org/controls/" target="_blank" rel="noopener noreferrer">CIS Controls - Center for Internet Security</a> - Security control framework</li>
+<li><a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener noreferrer">NIST Framework - NIST</a> - Cybersecurity framework</li>
+<li><a href="https://www.iso.org/isoiec-27001-information-security.html" target="_blank" rel="noopener noreferrer">ISO 27001 Guide - ISO</a> - Information security management</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Compliance Monitoring and Reporting</strong></p>
+<ul>
+<li>Automated compliance checking and validation</li>
+<li>Security metrics and reporting systems</li>
+<li>Audit trail management and documentation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/scanning-the-system-for-security-compliance-and-vulnerabilities_security-hardening" target="_blank" rel="noopener noreferrer">OpenSCAP Tutorial - Red Hat</a> - Security compliance scanning</li>
+<li><a href="https://www.inspec.io/docs/" target="_blank" rel="noopener noreferrer">Compliance Automation - Chef InSpec</a> - Infrastructure compliance testing</li>
+<li><a href="https://www.sans.org/white-papers/55/" target="_blank" rel="noopener noreferrer">Security Metrics - SANS</a> - Security measurement and reporting</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Regulatory Compliance</strong></p>
+<ul>
+<li>GDPR, HIPAA, and PCI DSS compliance requirements</li>
+<li>Data protection and privacy controls</li>
+<li>Compliance documentation and evidence management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://gdpr.eu/what-is-gdpr/" target="_blank" rel="noopener noreferrer">GDPR Compliance - GDPR.eu</a> - Data protection regulation</li>
+<li><a href="https://www.hhs.gov/hipaa/for-professionals/security/index.html" target="_blank" rel="noopener noreferrer">HIPAA Security - HHS</a> - Healthcare data protection</li>
+<li><a href="https://www.pcisecuritystandards.org/pci_security/" target="_blank" rel="noopener noreferrer">PCI DSS Guide - PCI Security</a> - Payment card industry security</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-automation-and-devsecops">Security Automation and DevSecOps<a href="#security-automation-and-devsecops" class="hash-link" aria-label="Direct link to Security Automation and DevSecOps" title="Direct link to Security Automation and DevSecOps">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Security Testing Automation</strong></p>
+<ul>
+<li>Automated vulnerability scanning and assessment</li>
+<li>Security testing integration in CI/CD pipelines</li>
+<li>Infrastructure security testing and validation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://owasp.org/www-project-web-security-testing-guide/" target="_blank" rel="noopener noreferrer">Security Testing - OWASP</a> - Application security testing</li>
+<li><a href="https://docs.gitlab.com/ee/user/application_security/" target="_blank" rel="noopener noreferrer">DevSecOps Pipeline - GitLab</a> - Security integration in DevOps</li>
+<li><a href="https://kitchen.ci/" target="_blank" rel="noopener noreferrer">Infrastructure Testing - Test Kitchen</a> - Infrastructure security testing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Security Configuration Management</strong></p>
+<ul>
+<li>Automated security hardening and configuration</li>
+<li>Security policy as code implementation</li>
+<li>Continuous compliance monitoring and remediation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.ansible.com/ansible/latest/collections/ansible/posix/" target="_blank" rel="noopener noreferrer">Ansible Security - Red Hat</a> - Automated security configuration</li>
+<li><a href="https://learn.hashicorp.com/tutorials/terraform/security-compliance" target="_blank" rel="noopener noreferrer">Terraform Security - HashiCorp</a> - Infrastructure security automation</li>
+<li><a href="https://www.openpolicyagent.org/docs/latest/" target="_blank" rel="noopener noreferrer">Policy as Code - Open Policy Agent</a> - Policy automation framework</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Security Monitoring and Analytics</strong></p>
+<ul>
+<li>Security information and event management (SIEM)</li>
+<li>Threat intelligence integration and analysis</li>
+<li>Security orchestration and automated response</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.elastic.co/security" target="_blank" rel="noopener noreferrer">ELK Security - Elastic</a> - Security analytics platform</li>
+<li><a href="https://www.splunk.com/en_us/software/splunk-security.html" target="_blank" rel="noopener noreferrer">SIEM Implementation - Splunk</a> - Security information management</li>
+<li><a href="https://www.misp-project.org/documentation/" target="_blank" rel="noopener noreferrer">Threat Intelligence - MISP</a> - Threat intelligence platform</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ready to Continue?</strong> Complete your Linux Engineering journey with <a href="/chasingcloudcareers-site/docs/linux-engineering/server-management">Module 5: Server Management and DevOps</a> to master web servers, databases, containerization, and modern deployment practices!</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site/tree/main/docs/linux-engineering/04-networking-security.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/chasingcloudcareers-site/docs/linux-engineering/shell-scripting"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Shell Scripting and Automation</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/chasingcloudcareers-site/docs/linux-engineering/server-management"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Server Management and DevOps</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#network-configuration-and-management" class="table-of-contents__link toc-highlight">Network Configuration and Management</a></li><li><a href="#network-troubleshooting-and-diagnostics" class="table-of-contents__link toc-highlight">Network Troubleshooting and Diagnostics</a></li><li><a href="#firewall-configuration-and-management" class="table-of-contents__link toc-highlight">Firewall Configuration and Management</a></li><li><a href="#ssh-and-remote-access-security" class="table-of-contents__link toc-highlight">SSH and Remote Access Security</a></li><li><a href="#system-security-hardening" class="table-of-contents__link toc-highlight">System Security Hardening</a></li><li><a href="#encryption-and-pki-management" class="table-of-contents__link toc-highlight">Encryption and PKI Management</a></li><li><a href="#network-services-security" class="table-of-contents__link toc-highlight">Network Services Security</a></li><li><a href="#intrusion-detection-and-incident-response" class="table-of-contents__link toc-highlight">Intrusion Detection and Incident Response</a></li><li><a href="#compliance-and-security-frameworks" class="table-of-contents__link toc-highlight">Compliance and Security Frameworks</a></li><li><a href="#security-automation-and-devsecops" class="table-of-contents__link toc-highlight">Security Automation and DevSecOps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Learning Paths</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/intro">Get Started</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/support-engineering/getting-started">Support Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/cloud-engineering/getting-started">Cloud Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">DevOps Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/ai-engineering/getting-started">AI Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/research-engineering/getting-started">Research Engineering</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/about">About</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Chasing Cloud Careers LLC - All rights reserved.</div></div></div></footer></div>
+</body>
+</html>

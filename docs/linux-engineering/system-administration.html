@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-linux-engineering/system-administration" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">System Administration | Chasing Cloud Careers</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" property="og:url" content="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/system-administration"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="System Administration | Chasing Cloud Careers"><meta data-rh="true" name="description" content="User and Group Management"><meta data-rh="true" property="og:description" content="User and Group Management"><link data-rh="true" rel="icon" href="/chasingcloudcareers-site/img/logo.png"><link data-rh="true" rel="canonical" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/system-administration"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/system-administration" hreflang="en"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/system-administration" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"System Administration","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/system-administration"}]}</script><link rel="alternate" type="application/rss+xml" href="/chasingcloudcareers-site/blog/rss.xml" title="Chasing Cloud Careers RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/chasingcloudcareers-site/blog/atom.xml" title="Chasing Cloud Careers Atom Feed"><link rel="stylesheet" href="/chasingcloudcareers-site/assets/css/styles.8643be14.css">
+<script src="/chasingcloudcareers-site/assets/js/runtime~main.bedd4cc9.js" defer="defer"></script>
+<script src="/chasingcloudcareers-site/assets/js/main.dfeff22d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/chasingcloudcareers-site/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/chasingcloudcareers-site/"><div class="navbar__logo"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Chasing Cloud Careers</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/chasingcloudcareers-site/docs/intro">Learning Paths</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/blog">Blog</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/about">About</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/chasingcloudcareers-site/docs/intro">Welcome to Chasing Cloud Careers</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/support-engineering">Support Engineering</a><button aria-label="Expand sidebar category &#x27;Support Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Getting Started with Linux Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/prerequisites">Prerequisites for Linux Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/linux-fundamentals">Linux Fundamentals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/system-administration">System Administration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/shell-scripting">Shell Scripting and Automation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/networking-security">Networking and Security</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/server-management">Server Management and DevOps</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/cloud-engineering">Cloud Engineering</a><button aria-label="Expand sidebar category &#x27;Cloud Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/devops-engineering">DevOps Engineering</a><button aria-label="Expand sidebar category &#x27;DevOps Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/-ai-engineering">🤖 AI Engineering</a><button aria-label="Expand sidebar category &#x27;🤖 AI Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/research-engineering">Research Engineering</a><button aria-label="Expand sidebar category &#x27;Research Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/chasingcloudcareers-site/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Linux Engineering</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">System Administration</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>System Administration</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="user-and-group-management">User and Group Management<a href="#user-and-group-management" class="hash-link" aria-label="Direct link to User and Group Management" title="Direct link to User and Group Management">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>User Account Administration</strong></p>
+<ul>
+<li>Creating, modifying, and deleting user accounts</li>
+<li>Understanding user ID (UID) and group ID (GID) concepts</li>
+<li>User account properties and configuration files (/etc/passwd, /etc/shadow)</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-users-and-groups_configuring-basic-system-settings" target="_blank" rel="noopener noreferrer">User Management Guide - Red Hat</a> - Comprehensive user administration</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-18-04" target="_blank" rel="noopener noreferrer">Linux User Management - DigitalOcean</a> - Practical user management examples</li>
+<li><a href="https://tldp.org/LDP/lame/LAME/linux-admin-made-easy/shadow-file-formats.html" target="_blank" rel="noopener noreferrer">Understanding /etc/passwd - TLDP</a> - User account file formats</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Group Management and Permissions</strong></p>
+<ul>
+<li>Creating and managing groups for access control</li>
+<li>Adding and removing users from groups</li>
+<li>Understanding primary and secondary groups</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://linuxize.com/post/how-to-add-user-to-group-in-linux/" target="_blank" rel="noopener noreferrer">Group Management Tutorial - Linuxize</a> - Group administration techniques</li>
+<li><a href="https://linuxhandbook.com/linux-groups/" target="_blank" rel="noopener noreferrer">Linux Groups Explained - Linux Handbook</a> - Group concepts and management</li>
+<li><a href="https://www.geeksforgeeks.org/etc-group-file-in-linux/" target="_blank" rel="noopener noreferrer">Group Configuration Files - GeeksforGeeks</a> - Understanding /etc/group structure</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Sudo and Administrative Access</strong></p>
+<ul>
+<li>Configuring sudo access and sudoers file</li>
+<li>Understanding privilege escalation and security implications</li>
+<li>Best practices for administrative access management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file" target="_blank" rel="noopener noreferrer">Sudo Configuration Guide - DigitalOcean</a> - Sudoers file management and security</li>
+<li><a href="https://www.redhat.com/sysadmin/sudo-configuration-best-practices" target="_blank" rel="noopener noreferrer">Sudo Best Practices - Red Hat</a> - Security-focused sudo configuration</li>
+<li><a href="https://linuxconfig.org/how-to-use-sudo-without-password" target="_blank" rel="noopener noreferrer">Visudo Tutorial - Linux Config</a> - Safe sudoers editing practices</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="process-management-and-system-control">Process Management and System Control<a href="#process-management-and-system-control" class="hash-link" aria-label="Direct link to Process Management and System Control" title="Direct link to Process Management and System Control">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Advanced Process Management</strong></p>
+<ul>
+<li>Process monitoring with ps, top, htop, and system activity tools</li>
+<li>Process priority management with nice and renice commands</li>
+<li>Process control signals and job management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.tecmint.com/linux-process-management/" target="_blank" rel="noopener noreferrer">Process Management Deep Dive - Tecmint</a> - Comprehensive process control guide</li>
+<li><a href="https://www.geeksforgeeks.org/states-of-a-process-in-operating-systems/" target="_blank" rel="noopener noreferrer">Linux Process States - GeeksforGeeks</a> - Understanding process lifecycle</li>
+<li><a href="https://tldp.org/LDP/abs/html/x9644.html" target="_blank" rel="noopener noreferrer">Job Control in Linux - TLDP</a> - Advanced job management techniques</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>System Services and Daemons</strong></p>
+<ul>
+<li>Understanding systemd and service management</li>
+<li>Starting, stopping, enabling, and disabling services</li>
+<li>Service configuration and troubleshooting</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units" target="_blank" rel="noopener noreferrer">Systemd Tutorial - DigitalOcean</a> - Complete systemd service management</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-managing_services_with_systemd" target="_blank" rel="noopener noreferrer">Understanding Systemd - Red Hat</a> - Systemd concepts and administration</li>
+<li><a href="https://wiki.archlinux.org/title/Systemd#Writing_unit_files" target="_blank" rel="noopener noreferrer">Service Unit Files - Arch Wiki</a> - Creating and configuring service units</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>System Startup and Boot Process</strong></p>
+<ul>
+<li>Understanding Linux boot sequence and initialization</li>
+<li>GRUB bootloader configuration and troubleshooting</li>
+<li>Runlevels, targets, and system initialization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/linux-booting-process/" target="_blank" rel="noopener noreferrer">Linux Boot Process - GeeksforGeeks</a> - Complete boot sequence explanation</li>
+<li><a href="https://help.ubuntu.com/community/Grub2/Setup" target="_blank" rel="noopener noreferrer">GRUB Configuration - Ubuntu</a> - Bootloader management and customization</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/sect-managing_services_with_systemd-targets" target="_blank" rel="noopener noreferrer">Systemd Targets - Red Hat</a> - System state management</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="file-system-management-and-storage">File System Management and Storage<a href="#file-system-management-and-storage" class="hash-link" aria-label="Direct link to File System Management and Storage" title="Direct link to File System Management and Storage">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>File System Types and Structure</strong></p>
+<ul>
+<li>Understanding different file systems (ext4, xfs, btrfs, zfs)</li>
+<li>File system creation, mounting, and unmounting</li>
+<li>File system checking and repair tools (fsck)</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_systems/" target="_blank" rel="noopener noreferrer">Linux File Systems - Red Hat</a> - File system administration guide</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-partition-and-format-storage-devices-in-linux" target="_blank" rel="noopener noreferrer">File System Comparison - DigitalOcean</a> - Storage device management</li>
+<li><a href="https://www.kernel.org/doc/Documentation/filesystems/ext4.txt" target="_blank" rel="noopener noreferrer">Ext4 File System - Kernel.org</a> - Ext4 technical documentation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Disk Partitioning and Management</strong></p>
+<ul>
+<li>Disk partitioning with fdisk, parted, and gdisk</li>
+<li>Understanding MBR and GPT partition tables</li>
+<li>Logical Volume Management (LVM) concepts and implementation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://linuxize.com/post/how-to-create-and-manage-disk-partitions-in-linux/" target="_blank" rel="noopener noreferrer">Disk Partitioning Guide - Linuxize</a> - Comprehensive partitioning tutorial</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_logical_volumes/" target="_blank" rel="noopener noreferrer">LVM Tutorial - Red Hat</a> - Logical volume management</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-partition-and-format-storage-devices-in-linux#step-1-%E2%80%94-installing-parted" target="_blank" rel="noopener noreferrer">GPT vs MBR - DigitalOcean</a> - Partition table comparison</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Mount Points and File System Hierarchy</strong></p>
+<ul>
+<li>Understanding mount points and the /etc/fstab file</li>
+<li>Temporary and permanent mounting strategies</li>
+<li>Network file systems and remote mounting (NFS, CIFS)</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.tecmint.com/mount-filesystem-in-linux/" target="_blank" rel="noopener noreferrer">Mount Command Tutorial - Tecmint</a> - File system mounting techniques</li>
+<li><a href="https://wiki.archlinux.org/title/Fstab" target="_blank" rel="noopener noreferrer">Fstab Configuration - ArchWiki</a> - Automatic mounting configuration</li>
+<li><a href="https://tldp.org/HOWTO/NFS-HOWTO/" target="_blank" rel="noopener noreferrer">Network File Systems - TLDP</a> - NFS setup and configuration</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="system-monitoring-and-performance">System Monitoring and Performance<a href="#system-monitoring-and-performance" class="hash-link" aria-label="Direct link to System Monitoring and Performance" title="Direct link to System Monitoring and Performance">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Resource Monitoring and Analysis</strong></p>
+<ul>
+<li>CPU, memory, and disk usage monitoring tools</li>
+<li>Network traffic analysis and monitoring</li>
+<li>System load analysis and performance metrics</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.tecmint.com/command-line-tools-to-monitor-linux-performance/" target="_blank" rel="noopener noreferrer">Linux Performance Monitoring - Tecmint</a> - Essential monitoring tools</li>
+<li><a href="https://www.brendangregg.com/linuxperf.html" target="_blank" rel="noopener noreferrer">System Performance Analysis - Brendan Gregg</a> - Advanced performance analysis techniques</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-htop-to-monitor-system-processes-on-linux" target="_blank" rel="noopener noreferrer">Monitoring with Htop - DigitalOcean</a> - Interactive process monitoring</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Log Management and Analysis</strong></p>
+<ul>
+<li>Understanding system logs and log file locations</li>
+<li>Log rotation and management with logrotate</li>
+<li>Log analysis tools and techniques</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-view-and-configure-linux-logs-on-ubuntu-and-centos" target="_blank" rel="noopener noreferrer">Linux Log Files Guide - DigitalOcean</a> - Log file management and analysis</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/s1-using_the_journal" target="_blank" rel="noopener noreferrer">Journalctl Tutorial - Red Hat</a> - Systemd journal management</li>
+<li><a href="https://linuxize.com/post/logrotate/" target="_blank" rel="noopener noreferrer">Logrotate Configuration - Linuxize</a> - Automated log rotation setup</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>System Health and Diagnostics</strong></p>
+<ul>
+<li>Hardware monitoring and health checking tools</li>
+<li>System diagnostic commands and troubleshooting</li>
+<li>Performance bottleneck identification and resolution</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.linuxjournal.com/content/linux-system-monitoring-tools" target="_blank" rel="noopener noreferrer">Hardware Monitoring - Linux Journal</a> - Hardware health monitoring</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/monitoring_and_managing_system_status_and_performance/" target="_blank" rel="noopener noreferrer">System Diagnostics - Red Hat</a> - Comprehensive system diagnostics</li>
+<li><a href="https://tldp.org/LDP/GNU-Linux-Tools-Summary/html/c1089.htm" target="_blank" rel="noopener noreferrer">Troubleshooting Guide - TLDP</a> - System troubleshooting methodologies</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="network-configuration-and-management">Network Configuration and Management<a href="#network-configuration-and-management" class="hash-link" aria-label="Direct link to Network Configuration and Management" title="Direct link to Network Configuration and Management">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Network Interface Configuration</strong></p>
+<ul>
+<li>Network interface management with ip and ifconfig commands</li>
+<li>Static and dynamic IP address configuration</li>
+<li>Network interface bonding and bridging</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/" target="_blank" rel="noopener noreferrer">Network Configuration - Red Hat</a> - Complete network configuration guide</li>
+<li><a href="https://linuxize.com/post/linux-ip-command/" target="_blank" rel="noopener noreferrer">IP Command Tutorial - Linuxize</a> - Modern network interface management</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-configure-a-linux-bridge-interface" target="_blank" rel="noopener noreferrer">Network Bridging - DigitalOcean</a> - Advanced networking concepts</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Routing and DNS Configuration</strong></p>
+<ul>
+<li>Routing table management and static routes</li>
+<li>DNS configuration and name resolution</li>
+<li>Network troubleshooting tools and techniques</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/route-command-in-linux-with-examples/" target="_blank" rel="noopener noreferrer">Linux Routing Tutorial - GeeksforGeeks</a> - Routing configuration and management</li>
+<li><a href="https://ubuntu.com/server/docs/network-name-resolution" target="_blank" rel="noopener noreferrer">DNS Configuration - Ubuntu</a> - DNS setup and troubleshooting</li>
+<li><a href="https://www.tecmint.com/linux-network-configuration-and-troubleshooting-commands/" target="_blank" rel="noopener noreferrer">Network Troubleshooting - Tecmint</a> - Network diagnostic tools</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Firewall and Security Configuration</strong></p>
+<ul>
+<li>Firewall configuration with iptables and firewalld</li>
+<li>Port management and service access control</li>
+<li>Network security best practices and hardening</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-iptables-on-ubuntu-18-04" target="_blank" rel="noopener noreferrer">Iptables Tutorial - DigitalOcean</a> - Comprehensive firewall configuration</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/using-and-configuring-firewalld_configuring-and-managing-networking" target="_blank" rel="noopener noreferrer">Firewalld Guide - Red Hat</a> - Modern firewall management</li>
+<li><a href="https://www.sans.org/white-papers/1396/" target="_blank" rel="noopener noreferrer">Network Security - SANS</a> - Network security fundamentals</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="system-backup-and-recovery">System Backup and Recovery<a href="#system-backup-and-recovery" class="hash-link" aria-label="Direct link to System Backup and Recovery" title="Direct link to System Backup and Recovery">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Backup Strategies and Implementation</strong></p>
+<ul>
+<li>Full, incremental, and differential backup concepts</li>
+<li>Backup tools and utilities (tar, rsync, dd)</li>
+<li>Automated backup scheduling with cron</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-choose-an-effective-backup-strategy-for-your-vps" target="_blank" rel="noopener noreferrer">Linux Backup Guide - DigitalOcean</a> - Backup strategy planning and implementation</li>
+<li><a href="https://linuxize.com/post/how-to-use-rsync-for-local-and-remote-data-transfer-and-synchronization/" target="_blank" rel="noopener noreferrer">Rsync Tutorial - Linuxize</a> - File synchronization and backup</li>
+<li><a href="https://www.tecmint.com/18-tar-command-examples-in-linux/" target="_blank" rel="noopener noreferrer">Tar Command Guide - Tecmint</a> - Archive creation and management</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>System Recovery and Restoration</strong></p>
+<ul>
+<li>System recovery procedures and boot repair</li>
+<li>File system recovery and data restoration</li>
+<li>Disaster recovery planning and implementation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_storage_devices/recovering-from-boot-problems_managing-storage-devices" target="_blank" rel="noopener noreferrer">System Recovery Guide - Red Hat</a> - Boot and system recovery</li>
+<li><a href="https://www.linuxjournal.com/content/data-recovery-linux" target="_blank" rel="noopener noreferrer">Data Recovery Tools - Linux Journal</a> - File recovery techniques and tools</li>
+<li><a href="https://www.sans.org/white-papers/1164/" target="_blank" rel="noopener noreferrer">Disaster Recovery Planning - SANS</a> - Comprehensive recovery planning</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Version Control for System Configuration</strong></p>
+<ul>
+<li>Configuration management with Git</li>
+<li>System configuration backup and versioning</li>
+<li>Infrastructure as Code concepts and practices</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.atlassian.com/git/tutorials/git-for-sysadmins" target="_blank" rel="noopener noreferrer">Git for System Administration - Atlassian</a> - Version control for system configs</li>
+<li><a href="https://www.redhat.com/en/topics/automation/what-is-configuration-management" target="_blank" rel="noopener noreferrer">Configuration Management - Red Hat</a> - Configuration management concepts</li>
+<li><a href="https://www.terraform.io/intro/index.html" target="_blank" rel="noopener noreferrer">Infrastructure as Code - HashiCorp</a> - IaC fundamentals and practices</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cron-jobs-and-task-automation">Cron Jobs and Task Automation<a href="#cron-jobs-and-task-automation" class="hash-link" aria-label="Direct link to Cron Jobs and Task Automation" title="Direct link to Cron Jobs and Task Automation">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Cron Service and Scheduling</strong></p>
+<ul>
+<li>Understanding cron daemon and crontab syntax</li>
+<li>User and system crontab configuration</li>
+<li>Cron job scheduling patterns and best practices</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-ubuntu-1804" target="_blank" rel="noopener noreferrer">Cron Jobs Tutorial - DigitalOcean</a> - Complete cron job guide</li>
+<li><a href="https://crontab.guru/" target="_blank" rel="noopener noreferrer">Crontab Syntax - Crontab Guru</a> - Interactive cron expression builder</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/ch-automating_system_tasks" target="_blank" rel="noopener noreferrer">Cron Best Practices - Red Hat</a> - Automated task management</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>At Jobs and One-Time Scheduling</strong></p>
+<ul>
+<li>One-time task scheduling with at command</li>
+<li>Batch job processing and queue management</li>
+<li>Alternative scheduling tools and methods</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://linuxize.com/post/at-command-in-linux/" target="_blank" rel="noopener noreferrer">At Command Tutorial - Linuxize</a> - One-time job scheduling</li>
+<li><a href="https://tldp.org/LDP/abs/html/timedate.html" target="_blank" rel="noopener noreferrer">Batch Processing - TLDP</a> - Batch job management</li>
+<li><a href="https://wiki.archlinux.org/title/Systemd/Timers" target="_blank" rel="noopener noreferrer">Systemd Timers - ArchWiki</a> - Modern task scheduling alternatives</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Automation Scripts and Monitoring</strong></p>
+<ul>
+<li>Creating automation scripts for routine tasks</li>
+<li>Monitoring and logging automated processes</li>
+<li>Error handling and notification in automated tasks</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://linuxconfig.org/bash-scripting-tutorial-for-beginners" target="_blank" rel="noopener noreferrer">Automation Scripting - Linux Config</a> - Script automation techniques</li>
+<li><a href="https://www.tecmint.com/linux-process-monitoring-tools/" target="_blank" rel="noopener noreferrer">Process Monitoring - Tecmint</a> - Automated process monitoring</li>
+<li><a href="https://tldp.org/LDP/abs/html/debugging.html" target="_blank" rel="noopener noreferrer">Error Handling in Scripts - TLDP</a> - Script debugging and error management</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="system-security-and-hardening">System Security and Hardening<a href="#system-security-and-hardening" class="hash-link" aria-label="Direct link to System Security and Hardening" title="Direct link to System Security and Hardening">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Access Control and Authentication</strong></p>
+<ul>
+<li>SSH configuration and key-based authentication</li>
+<li>Password policies and account security</li>
+<li>Multi-factor authentication implementation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-18-04" target="_blank" rel="noopener noreferrer">SSH Security Guide - DigitalOcean</a> - SSH hardening and security</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/" target="_blank" rel="noopener noreferrer">Linux Security - Red Hat</a> - Comprehensive security hardening</li>
+<li><a href="https://tldp.org/HOWTO/User-Authentication-HOWTO/x115.html" target="_blank" rel="noopener noreferrer">PAM Configuration - TLDP</a> - Authentication module configuration</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>System Auditing and Compliance</strong></p>
+<ul>
+<li>System auditing with auditd and audit logs</li>
+<li>Security compliance frameworks and standards</li>
+<li>Vulnerability assessment and patch management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/auditing-the-system_security-hardening" target="_blank" rel="noopener noreferrer">Linux Auditing - Red Hat</a> - System audit configuration</li>
+<li><a href="https://www.cisecurity.org/cis-benchmarks/" target="_blank" rel="noopener noreferrer">Security Benchmarks - CIS</a> - Security configuration standards</li>
+<li><a href="https://www.sans.org/white-papers/1240/" target="_blank" rel="noopener noreferrer">Vulnerability Management - SANS</a> - Vulnerability assessment practices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Intrusion Detection and Prevention</strong></p>
+<ul>
+<li>Host-based intrusion detection systems (HIDS)</li>
+<li>File integrity monitoring and change detection</li>
+<li>Security incident response procedures</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-aide-on-a-digitalocean-vps" target="_blank" rel="noopener noreferrer">AIDE Tutorial - DigitalOcean</a> - File integrity monitoring</li>
+<li><a href="https://linuxize.com/post/install-configure-fail2ban-on-ubuntu-20-04/" target="_blank" rel="noopener noreferrer">Fail2ban Configuration - Linuxize</a> - Intrusion prevention system</li>
+<li><a href="https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final" target="_blank" rel="noopener noreferrer">Incident Response - NIST</a> - Security incident handling guide</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="package-management-and-software-maintenance">Package Management and Software Maintenance<a href="#package-management-and-software-maintenance" class="hash-link" aria-label="Direct link to Package Management and Software Maintenance" title="Direct link to Package Management and Software Maintenance">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Advanced Package Management</strong></p>
+<ul>
+<li>Repository management and package signing</li>
+<li>Dependency resolution and package conflicts</li>
+<li>Custom package creation and distribution</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-software-packages_configuring-basic-system-settings" target="_blank" rel="noopener noreferrer">Advanced Package Management - Red Hat</a> - Enterprise package management</li>
+<li><a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-rpm-packages/" target="_blank" rel="noopener noreferrer">Creating RPM Packages - Fedora</a> - Custom package creation</li>
+<li><a href="https://www.debian.org/doc/manuals/debian-reference/ch02.en.html" target="_blank" rel="noopener noreferrer">Debian Package Management - Debian</a> - Advanced APT usage</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>System Updates and Patch Management</strong></p>
+<ul>
+<li>Automated update configuration and scheduling</li>
+<li>Security patch management and testing</li>
+<li>System rollback and recovery procedures</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates" target="_blank" rel="noopener noreferrer">Automatic Updates - Ubuntu</a> - Automated security updates</li>
+<li><a href="https://access.redhat.com/solutions/27606" target="_blank" rel="noopener noreferrer">Patch Management - Red Hat</a> - Enterprise patch management</li>
+<li><a href="https://documentation.suse.com/sles/15-SP2/html/SLES-all/cha-snapper.html" target="_blank" rel="noopener noreferrer">System Snapshots - SUSE</a> - System state management</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Software Compilation and Installation</strong></p>
+<ul>
+<li>Source code compilation and dependency management</li>
+<li>Alternative installation methods and package formats</li>
+<li>Software version management and environment isolation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://tldp.org/HOWTO/Software-Building-HOWTO.html" target="_blank" rel="noopener noreferrer">Compiling Software - TLDP</a> - Source compilation guide</li>
+<li><a href="https://docs.conda.io/en/latest/" target="_blank" rel="noopener noreferrer">Environment Management - Conda</a> - Software environment isolation</li>
+<li><a href="https://docs.docker.com/get-started/" target="_blank" rel="noopener noreferrer">Container-based Software - Docker</a> - Containerized application deployment</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ready to Continue?</strong> Advance to <a href="/chasingcloudcareers-site/docs/linux-engineering/shell-scripting">Module 3: Shell Scripting and Automation</a> to learn automation, scripting, and advanced command line techniques!</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site/tree/main/docs/linux-engineering/02-system-administration.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/chasingcloudcareers-site/docs/linux-engineering/linux-fundamentals"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Linux Fundamentals</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/chasingcloudcareers-site/docs/linux-engineering/shell-scripting"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Shell Scripting and Automation</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#user-and-group-management" class="table-of-contents__link toc-highlight">User and Group Management</a></li><li><a href="#process-management-and-system-control" class="table-of-contents__link toc-highlight">Process Management and System Control</a></li><li><a href="#file-system-management-and-storage" class="table-of-contents__link toc-highlight">File System Management and Storage</a></li><li><a href="#system-monitoring-and-performance" class="table-of-contents__link toc-highlight">System Monitoring and Performance</a></li><li><a href="#network-configuration-and-management" class="table-of-contents__link toc-highlight">Network Configuration and Management</a></li><li><a href="#system-backup-and-recovery" class="table-of-contents__link toc-highlight">System Backup and Recovery</a></li><li><a href="#cron-jobs-and-task-automation" class="table-of-contents__link toc-highlight">Cron Jobs and Task Automation</a></li><li><a href="#system-security-and-hardening" class="table-of-contents__link toc-highlight">System Security and Hardening</a></li><li><a href="#package-management-and-software-maintenance" class="table-of-contents__link toc-highlight">Package Management and Software Maintenance</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Learning Paths</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/intro">Get Started</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/support-engineering/getting-started">Support Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/cloud-engineering/getting-started">Cloud Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">DevOps Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/ai-engineering/getting-started">AI Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/research-engineering/getting-started">Research Engineering</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/about">About</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Chasing Cloud Careers LLC - All rights reserved.</div></div></div></footer></div>
+</body>
+</html>

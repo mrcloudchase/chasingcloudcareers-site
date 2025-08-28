@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-linux-engineering/shell-scripting" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Shell Scripting and Automation | Chasing Cloud Careers</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" property="og:url" content="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/shell-scripting"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Shell Scripting and Automation | Chasing Cloud Careers"><meta data-rh="true" name="description" content="Bash Scripting Fundamentals"><meta data-rh="true" property="og:description" content="Bash Scripting Fundamentals"><link data-rh="true" rel="icon" href="/chasingcloudcareers-site/img/logo.png"><link data-rh="true" rel="canonical" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/shell-scripting"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/shell-scripting" hreflang="en"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/shell-scripting" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Shell Scripting and Automation","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/linux-engineering/shell-scripting"}]}</script><link rel="alternate" type="application/rss+xml" href="/chasingcloudcareers-site/blog/rss.xml" title="Chasing Cloud Careers RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/chasingcloudcareers-site/blog/atom.xml" title="Chasing Cloud Careers Atom Feed"><link rel="stylesheet" href="/chasingcloudcareers-site/assets/css/styles.8643be14.css">
+<script src="/chasingcloudcareers-site/assets/js/runtime~main.bedd4cc9.js" defer="defer"></script>
+<script src="/chasingcloudcareers-site/assets/js/main.dfeff22d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/chasingcloudcareers-site/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/chasingcloudcareers-site/"><div class="navbar__logo"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Chasing Cloud Careers</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/chasingcloudcareers-site/docs/intro">Learning Paths</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/blog">Blog</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/about">About</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/chasingcloudcareers-site/docs/intro">Welcome to Chasing Cloud Careers</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/support-engineering">Support Engineering</a><button aria-label="Expand sidebar category &#x27;Support Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Getting Started with Linux Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/prerequisites">Prerequisites for Linux Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/linux-fundamentals">Linux Fundamentals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/system-administration">System Administration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/shell-scripting">Shell Scripting and Automation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/networking-security">Networking and Security</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/linux-engineering/server-management">Server Management and DevOps</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/cloud-engineering">Cloud Engineering</a><button aria-label="Expand sidebar category &#x27;Cloud Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/devops-engineering">DevOps Engineering</a><button aria-label="Expand sidebar category &#x27;DevOps Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/-ai-engineering">🤖 AI Engineering</a><button aria-label="Expand sidebar category &#x27;🤖 AI Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/research-engineering">Research Engineering</a><button aria-label="Expand sidebar category &#x27;Research Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/chasingcloudcareers-site/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Linux Engineering</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Shell Scripting and Automation</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Shell Scripting and Automation</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bash-scripting-fundamentals">Bash Scripting Fundamentals<a href="#bash-scripting-fundamentals" class="hash-link" aria-label="Direct link to Bash Scripting Fundamentals" title="Direct link to Bash Scripting Fundamentals">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Script Structure and Execution</strong></p>
+<ul>
+<li>Shebang lines and script interpreters</li>
+<li>Script permissions and execution methods</li>
+<li>Script debugging and error handling basics</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://linuxconfig.org/bash-scripting-tutorial-for-beginners" target="_blank" rel="noopener noreferrer">Bash Scripting Tutorial - Linux Config</a> - Comprehensive beginner&#x27;s guide to bash scripting</li>
+<li><a href="https://tldp.org/LDP/abs/html/" target="_blank" rel="noopener noreferrer">Advanced Bash Scripting Guide - TLDP</a> - Complete reference for bash scripting</li>
+<li><a href="https://developer.apple.com/library/archive/documentation/OpenSource/Conceptual/ShellScripting/" target="_blank" rel="noopener noreferrer">Shell Scripting Primer - Apple Developer</a> - Shell scripting concepts and best practices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Variables and Data Types</strong></p>
+<ul>
+<li>Variable declaration, assignment, and scope</li>
+<li>String manipulation and text processing</li>
+<li>Arrays and associative arrays in bash</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://linuxhint.com/bash_variables_tutorial/" target="_blank" rel="noopener noreferrer">Bash Variables Guide - LinuxHint</a> - Variable usage and manipulation</li>
+<li><a href="https://wiki.bash-hackers.org/syntax/pe" target="_blank" rel="noopener noreferrer">String Manipulation - Bash Hackers</a> - Advanced string processing techniques</li>
+<li><a href="https://www.tecmint.com/working-with-arrays-in-linux-shell-scripting/" target="_blank" rel="noopener noreferrer">Bash Arrays Tutorial - Tecmint</a> - Array operations and usage</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Input and Output Operations</strong></p>
+<ul>
+<li>Reading user input and command line arguments</li>
+<li>Output formatting and redirection in scripts</li>
+<li>File input/output and data processing</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-useful-bash-aliases-and-functions" target="_blank" rel="noopener noreferrer">Bash Input/Output - DigitalOcean</a> - I/O operations in shell scripts</li>
+<li><a href="https://www.geeksforgeeks.org/bash-scripting-how-to-read-command-line-arguments/" target="_blank" rel="noopener noreferrer">Command Line Arguments - GeeksforGeeks</a> - Processing script parameters</li>
+<li><a href="https://linuxjourney.com/lesson/file-compression" target="_blank" rel="noopener noreferrer">File Processing - Linux Journey</a> - File manipulation in scripts</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="control-structures-and-logic">Control Structures and Logic<a href="#control-structures-and-logic" class="hash-link" aria-label="Direct link to Control Structures and Logic" title="Direct link to Control Structures and Logic">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Conditional Statements and Decision Making</strong></p>
+<ul>
+<li>if-then-else statements and nested conditions</li>
+<li>Case statements for multiple condition handling</li>
+<li>Test operators and comparison methods</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://linuxize.com/post/bash-if-else-statement/" target="_blank" rel="noopener noreferrer">Bash Conditionals - Linuxize</a> - Conditional logic in bash scripts</li>
+<li><a href="https://tldp.org/LDP/abs/html/testconstructs.html" target="_blank" rel="noopener noreferrer">Test Command Tutorial - TLDP</a> - Testing conditions and comparisons</li>
+<li><a href="https://mywiki.wooledge.org/BashGuide/TestsAndConditionals#Choices_.28case_and_select.29" target="_blank" rel="noopener noreferrer">Case Statements - Bash Guide</a> - Multi-way branching in scripts</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Loops and Iteration</strong></p>
+<ul>
+<li>For loops for iterating over lists and ranges</li>
+<li>While and until loops for condition-based iteration</li>
+<li>Loop control with break and continue statements</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.tecmint.com/bash-loop-examples/" target="_blank" rel="noopener noreferrer">Bash Loops Tutorial - Tecmint</a> - Comprehensive loop examples and usage</li>
+<li><a href="https://linuxhint.com/bash_for_loop_examples/" target="_blank" rel="noopener noreferrer">For Loop Guide - LinuxHint</a> - For loop variations and applications</li>
+<li><a href="https://www.geeksforgeeks.org/bash-scripting-while-loop/" target="_blank" rel="noopener noreferrer">While Loop Examples - GeeksforGeeks</a> - While loop implementation patterns</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Functions and Modular Programming</strong></p>
+<ul>
+<li>Function definition and parameter passing</li>
+<li>Local and global variable scope in functions</li>
+<li>Function return values and exit codes</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-define-and-use-functions-in-bash-scripts-on-a-linux-vps" target="_blank" rel="noopener noreferrer">Bash Functions Guide - DigitalOcean</a> - Function creation and usage</li>
+<li><a href="https://wiki.bash-hackers.org/syntax/basicgrammar#functions" target="_blank" rel="noopener noreferrer">Function Best Practices - Bash Hackers</a> - Function design and implementation</li>
+<li><a href="https://linuxconfig.org/bash-scripting-tutorial" target="_blank" rel="noopener noreferrer">Modular Scripting - Linux Config</a> - Script organization and modularity</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-scripting-techniques">Advanced Scripting Techniques<a href="#advanced-scripting-techniques" class="hash-link" aria-label="Direct link to Advanced Scripting Techniques" title="Direct link to Advanced Scripting Techniques">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Regular Expressions and Pattern Matching</strong></p>
+<ul>
+<li>Basic and extended regular expression syntax</li>
+<li>Pattern matching with grep, sed, and awk</li>
+<li>Text processing and data extraction techniques</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://regexone.com/" target="_blank" rel="noopener noreferrer">Regular Expressions Tutorial - RegexOne</a> - Interactive regex learning platform</li>
+<li><a href="https://www.grymoire.com/Unix/Sed.html" target="_blank" rel="noopener noreferrer">Sed and Awk Guide - Grymoire</a> - Advanced text processing tools</li>
+<li><a href="https://tldp.org/LDP/abs/html/regexp.html" target="_blank" rel="noopener noreferrer">Regex in Bash - TLDP</a> - Regular expressions in shell scripts</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Error Handling and Debugging</strong></p>
+<ul>
+<li>Exit codes and error status handling</li>
+<li>Debugging techniques and script testing</li>
+<li>Logging and error reporting in scripts</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://linuxhint.com/bash_error_handling/" target="_blank" rel="noopener noreferrer">Bash Error Handling - LinuxHint</a> - Error management and recovery</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-debug-bash-scripts" target="_blank" rel="noopener noreferrer">Script Debugging - DigitalOcean</a> - Debugging techniques and tools</li>
+<li><a href="http://redsymbol.net/articles/unofficial-bash-strict-mode/" target="_blank" rel="noopener noreferrer">Bash Strict Mode - Aaron Maxwell</a> - Defensive scripting practices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Process Management and Background Jobs</strong></p>
+<ul>
+<li>Running processes in background and foreground</li>
+<li>Process synchronization and job control</li>
+<li>Inter-process communication and signal handling</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://tldp.org/LDP/abs/html/x9644.html" target="_blank" rel="noopener noreferrer">Process Control - TLDP</a> - Advanced process management</li>
+<li><a href="https://www.gnu.org/software/bash/manual/html_node/Job-Control.html" target="_blank" rel="noopener noreferrer">Background Jobs - Bash Manual</a> - Job control and process management</li>
+<li><a href="https://www.geeksforgeeks.org/signals-c-language/" target="_blank" rel="noopener noreferrer">Signal Handling - GeeksforGeeks</a> - Signal processing in scripts</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="system-administration-scripts">System Administration Scripts<a href="#system-administration-scripts" class="hash-link" aria-label="Direct link to System Administration Scripts" title="Direct link to System Administration Scripts">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>System Monitoring and Reporting Scripts</strong></p>
+<ul>
+<li>System resource monitoring and alerting</li>
+<li>Log analysis and report generation</li>
+<li>Performance metrics collection and visualization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.tecmint.com/linux-system-monitoring-tools/" target="_blank" rel="noopener noreferrer">System Monitoring Scripts - Tecmint</a> - Automated system monitoring</li>
+<li><a href="https://www.linuxjournal.com/content/analyzing-logs-bash" target="_blank" rel="noopener noreferrer">Log Analysis Scripts - Linux Journal</a> - Log processing and analysis</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/monitoring_and_managing_system_status_and_performance/" target="_blank" rel="noopener noreferrer">Performance Monitoring - Red Hat</a> - System performance scripting</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Backup and Maintenance Automation</strong></p>
+<ul>
+<li>Automated backup scripts and scheduling</li>
+<li>System cleanup and maintenance tasks</li>
+<li>Database backup and recovery automation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-choose-an-effective-backup-strategy-for-your-vps" target="_blank" rel="noopener noreferrer">Backup Scripts - DigitalOcean</a> - Automated backup solutions</li>
+<li><a href="https://linuxconfig.org/system-maintenance-commands-on-linux" target="_blank" rel="noopener noreferrer">System Maintenance - Linux Config</a> - Maintenance task automation</li>
+<li><a href="https://linuxize.com/post/how-to-back-up-and-restore-mysql-databases-with-mysqldump/" target="_blank" rel="noopener noreferrer">Database Backup Scripts - Linuxize</a> - Database automation scripts</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>User Management and Security Scripts</strong></p>
+<ul>
+<li>User account provisioning and deprovisioning</li>
+<li>Security auditing and compliance checking</li>
+<li>Access control and permission management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-users-and-groups_configuring-basic-system-settings" target="_blank" rel="noopener noreferrer">User Management Scripts - Red Hat</a> - Automated user administration</li>
+<li><a href="https://www.sans.org/white-papers/1814/" target="_blank" rel="noopener noreferrer">Security Auditing Scripts - SANS</a> - Security automation and auditing</li>
+<li><a href="https://www.linuxsecurity.com/content/view/115462/49/" target="_blank" rel="noopener noreferrer">Access Control Automation - Linux Security</a> - Permission management scripts</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-management-and-deployment">Configuration Management and Deployment<a href="#configuration-management-and-deployment" class="hash-link" aria-label="Direct link to Configuration Management and Deployment" title="Direct link to Configuration Management and Deployment">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Configuration File Management</strong></p>
+<ul>
+<li>Template-based configuration generation</li>
+<li>Configuration validation and testing</li>
+<li>Version control for configuration files</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html" target="_blank" rel="noopener noreferrer">Configuration Management - Ansible</a> - Automated configuration management</li>
+<li><a href="https://jinja.palletsprojects.com/en/3.0.x/templates/" target="_blank" rel="noopener noreferrer">Template Processing - Jinja2</a> - Configuration templating</li>
+<li><a href="https://www.atlassian.com/git/tutorials/git-for-sysadmins" target="_blank" rel="noopener noreferrer">Git for Configuration - Atlassian</a> - Version control for system configs</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Application Deployment Scripts</strong></p>
+<ul>
+<li>Automated application installation and updates</li>
+<li>Service deployment and configuration</li>
+<li>Rollback and recovery procedures</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps" target="_blank" rel="noopener noreferrer">Deployment Automation - DigitalOcean</a> - Automated deployment strategies</li>
+<li><a href="https://www.freedesktop.org/software/systemd/man/systemd.service.html" target="_blank" rel="noopener noreferrer">Service Management Scripts - Systemd</a> - Service automation and management</li>
+<li><a href="https://martinfowler.com/bliki/BlueGreenDeployment.html" target="_blank" rel="noopener noreferrer">Blue-Green Deployment - Martin Fowler</a> - Deployment pattern implementation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Infrastructure Provisioning</strong></p>
+<ul>
+<li>Server provisioning and initialization scripts</li>
+<li>Environment setup and dependency management</li>
+<li>Infrastructure testing and validation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code" target="_blank" rel="noopener noreferrer">Infrastructure Scripts - Terraform</a> - Infrastructure automation</li>
+<li><a href="https://cloudinit.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">Server Provisioning - Cloud-Init</a> - Automated server initialization</li>
+<li><a href="https://docs.docker.com/get-started/" target="_blank" rel="noopener noreferrer">Environment Management - Docker</a> - Containerized environment setup</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="text-processing-and-data-manipulation">Text Processing and Data Manipulation<a href="#text-processing-and-data-manipulation" class="hash-link" aria-label="Direct link to Text Processing and Data Manipulation" title="Direct link to Text Processing and Data Manipulation">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Advanced Text Processing with Sed and Awk</strong></p>
+<ul>
+<li>Stream editing and text transformation with sed</li>
+<li>Pattern scanning and data extraction with awk</li>
+<li>Complex text processing pipelines</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.grymoire.com/Unix/Sed.html" target="_blank" rel="noopener noreferrer">Sed Tutorial - Grymoire</a> - Comprehensive sed guide and examples</li>
+<li><a href="https://www.gnu.org/software/gawk/manual/gawk.html" target="_blank" rel="noopener noreferrer">Awk Programming - GNU</a> - Complete awk programming reference</li>
+<li><a href="https://tldp.org/LDP/abs/html/textproc.html" target="_blank" rel="noopener noreferrer">Text Processing Examples - TLDP</a> - Practical text processing scenarios</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Parsing and Format Conversion</strong></p>
+<ul>
+<li>CSV, JSON, and XML data processing</li>
+<li>Data validation and format conversion</li>
+<li>Report generation and data visualization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://stedolan.github.io/jq/manual/" target="_blank" rel="noopener noreferrer">JSON Processing - jq Manual</a> - Command-line JSON processor</li>
+<li><a href="https://miller.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">CSV Processing - Miller</a> - CSV data manipulation tool</li>
+<li><a href="http://xmlstar.sourceforge.net/doc/UG/xmlstarlet-ug.html" target="_blank" rel="noopener noreferrer">XML Processing - XMLStarlet</a> - XML command-line toolkit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Log Analysis and Reporting</strong></p>
+<ul>
+<li>Log file parsing and analysis techniques</li>
+<li>Statistical analysis and trend identification</li>
+<li>Automated report generation and alerting</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.elastic.co/guide/en/logstash/current/getting-started-with-logstash.html" target="_blank" rel="noopener noreferrer">Log Analysis Guide - Elastic</a> - Log processing and analysis</li>
+<li><a href="https://www.gnu.org/software/datamash/" target="_blank" rel="noopener noreferrer">Statistical Analysis - GNU Datamash</a> - Command-line statistics tool</li>
+<li><a href="https://www.linuxjournal.com/content/generating-reports-command-line" target="_blank" rel="noopener noreferrer">Reporting Scripts - Linux Journal</a> - Automated report generation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="network-and-api-automation">Network and API Automation<a href="#network-and-api-automation" class="hash-link" aria-label="Direct link to Network and API Automation" title="Direct link to Network and API Automation">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Network Configuration and Monitoring</strong></p>
+<ul>
+<li>Network interface configuration scripts</li>
+<li>Network connectivity testing and monitoring</li>
+<li>Firewall rule management and automation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/" target="_blank" rel="noopener noreferrer">Network Automation - Red Hat</a> - Network configuration automation</li>
+<li><a href="https://www.nagios.org/documentation/" target="_blank" rel="noopener noreferrer">Network Monitoring Scripts - Nagios</a> - Network monitoring and alerting</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-iptables-on-ubuntu-18-04" target="_blank" rel="noopener noreferrer">Firewall Automation - DigitalOcean</a> - Automated firewall management</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>API Integration and Web Services</strong></p>
+<ul>
+<li>REST API consumption with curl and wget</li>
+<li>JSON and XML data processing from APIs</li>
+<li>Web service integration and automation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://everything.curl.dev/" target="_blank" rel="noopener noreferrer">cURL Tutorial - Everything cURL</a> - Complete cURL reference and examples</li>
+<li><a href="https://learning.postman.com/docs/getting-started/introduction/" target="_blank" rel="noopener noreferrer">API Testing - Postman</a> - API testing and automation</li>
+<li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank" rel="noopener noreferrer">Web Scraping - Beautiful Soup</a> - Web data extraction techniques</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud Service Integration</strong></p>
+<ul>
+<li>Cloud provider CLI integration and automation</li>
+<li>Infrastructure management through APIs</li>
+<li>Multi-cloud deployment and management scripts</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-examples.html" target="_blank" rel="noopener noreferrer">AWS CLI Scripting - AWS</a> - AWS automation examples</li>
+<li><a href="https://docs.microsoft.com/en-us/cli/azure/azure-cli-examples" target="_blank" rel="noopener noreferrer">Azure CLI Scripts - Microsoft</a> - Azure automation techniques</li>
+<li><a href="https://cloud.google.com/sdk/gcloud/reference" target="_blank" rel="noopener noreferrer">Google Cloud Scripts - Google</a> - GCP automation and scripting</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="testing-and-quality-assurance">Testing and Quality Assurance<a href="#testing-and-quality-assurance" class="hash-link" aria-label="Direct link to Testing and Quality Assurance" title="Direct link to Testing and Quality Assurance">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Script Testing Frameworks</strong></p>
+<ul>
+<li>Unit testing for shell scripts</li>
+<li>Integration testing and test automation</li>
+<li>Test-driven development for scripts</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://github.com/bats-core/bats-core" target="_blank" rel="noopener noreferrer">Bats Testing Framework</a> - Bash automated testing system</li>
+<li><a href="https://www.shellcheck.net/" target="_blank" rel="noopener noreferrer">ShellCheck - Static Analysis</a> - Shell script analysis and linting</li>
+<li><a href="https://google.github.io/styleguide/shellguide.html" target="_blank" rel="noopener noreferrer">Script Testing Guide - Google</a> - Shell scripting best practices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Code Quality and Standards</strong></p>
+<ul>
+<li>Shell script linting and style checking</li>
+<li>Code review practices and standards</li>
+<li>Documentation and maintainability</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://google.github.io/styleguide/shellguide.html" target="_blank" rel="noopener noreferrer">Shell Style Guide - Google</a> - Shell scripting style standards</li>
+<li><a href="https://mywiki.wooledge.org/BashPitfalls" target="_blank" rel="noopener noreferrer">Bash Best Practices - Wooledge</a> - Common pitfalls and best practices</li>
+<li><a href="https://github.com/features/code-review/" target="_blank" rel="noopener noreferrer">Code Review Guidelines - GitHub</a> - Code review process and tools</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Performance Optimization</strong></p>
+<ul>
+<li>Script performance profiling and optimization</li>
+<li>Resource usage monitoring and optimization</li>
+<li>Scalability considerations for automation scripts</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="http://www.brendangregg.com/blog/2014-05-11/strace-wow-much-syscall.html" target="_blank" rel="noopener noreferrer">Bash Performance - Linux Performance</a> - Script performance analysis</li>
+<li><a href="https://tldp.org/LDP/abs/html/optimizations.html" target="_blank" rel="noopener noreferrer">Optimization Techniques - Advanced Bash</a> - Performance optimization strategies</li>
+<li><a href="https://www.gnu.org/software/bash/manual/html_node/Bash-Variables.html" target="_blank" rel="noopener noreferrer">Profiling Tools - GNU</a> - Bash profiling and debugging</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="devops-integration-and-cicd">DevOps Integration and CI/CD<a href="#devops-integration-and-cicd" class="hash-link" aria-label="Direct link to DevOps Integration and CI/CD" title="Direct link to DevOps Integration and CI/CD">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Version Control Integration</strong></p>
+<ul>
+<li>Git hooks and automation triggers</li>
+<li>Continuous integration pipeline scripts</li>
+<li>Automated testing and deployment workflows</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.atlassian.com/git/tutorials/git-hooks" target="_blank" rel="noopener noreferrer">Git Hooks Tutorial - Atlassian</a> - Git automation and triggers</li>
+<li><a href="https://docs.github.com/en/actions/learn-github-actions" target="_blank" rel="noopener noreferrer">CI/CD Pipelines - GitHub Actions</a> - Automated workflow creation</li>
+<li><a href="https://www.jenkins.io/doc/book/pipeline/" target="_blank" rel="noopener noreferrer">Jenkins Scripting - Jenkins</a> - Pipeline automation and scripting</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Container and Orchestration Integration</strong></p>
+<ul>
+<li>Docker container management scripts</li>
+<li>Kubernetes deployment and management automation</li>
+<li>Container registry and image management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.docker.com/engine/reference/commandline/docker/" target="_blank" rel="noopener noreferrer">Docker Automation - Docker</a> - Container management scripting</li>
+<li><a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/" target="_blank" rel="noopener noreferrer">Kubernetes Scripts - Kubernetes</a> - Kubernetes automation examples</li>
+<li><a href="https://www.redhat.com/en/topics/containers/what-is-container-orchestration" target="_blank" rel="noopener noreferrer">Container Orchestration - Red Hat</a> - Orchestration automation concepts</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Infrastructure as Code</strong></p>
+<ul>
+<li>Terraform and infrastructure automation</li>
+<li>Configuration management with Ansible</li>
+<li>Infrastructure testing and validation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code" target="_blank" rel="noopener noreferrer">Terraform Scripting - HashiCorp</a> - Infrastructure automation with Terraform</li>
+<li><a href="https://docs.ansible.com/ansible/latest/user_guide/index.html" target="_blank" rel="noopener noreferrer">Ansible Automation - Red Hat</a> - Configuration management automation</li>
+<li><a href="https://kitchen.ci/" target="_blank" rel="noopener noreferrer">Infrastructure Testing - Test Kitchen</a> - Infrastructure testing frameworks</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-and-compliance-automation">Security and Compliance Automation<a href="#security-and-compliance-automation" class="hash-link" aria-label="Direct link to Security and Compliance Automation" title="Direct link to Security and Compliance Automation">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Security Scanning and Auditing</strong></p>
+<ul>
+<li>Vulnerability scanning automation</li>
+<li>Security compliance checking scripts</li>
+<li>Automated security reporting and alerting</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://csrc.nist.gov/publications/detail/sp/800-126/rev-3/final" target="_blank" rel="noopener noreferrer">Security Automation - NIST</a> - Security automation guidelines</li>
+<li><a href="https://www.openvas.org/documentation/" target="_blank" rel="noopener noreferrer">Vulnerability Scanning - OpenVAS</a> - Automated vulnerability assessment</li>
+<li><a href="https://www.inspec.io/docs/" target="_blank" rel="noopener noreferrer">Compliance Automation - Chef InSpec</a> - Infrastructure compliance testing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Access Control and Identity Management</strong></p>
+<ul>
+<li>User provisioning and deprovisioning automation</li>
+<li>Role-based access control implementation</li>
+<li>Identity synchronization and management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.freeipa.org/page/Documentation" target="_blank" rel="noopener noreferrer">Identity Management - FreeIPA</a> - Identity and access management</li>
+<li><a href="https://www.openldap.org/doc/" target="_blank" rel="noopener noreferrer">LDAP Automation - OpenLDAP</a> - Directory service automation</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-users-and-groups_configuring-basic-system-settings" target="_blank" rel="noopener noreferrer">Access Control Scripts - Red Hat</a> - Automated access management</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Incident Response and Recovery</strong></p>
+<ul>
+<li>Automated incident detection and response</li>
+<li>System recovery and rollback procedures</li>
+<li>Forensic data collection and analysis</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.sans.org/white-papers/1164/" target="_blank" rel="noopener noreferrer">Incident Response - SANS</a> - Incident response automation</li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_storage_devices/recovering-from-boot-problems_managing-storage-devices" target="_blank" rel="noopener noreferrer">System Recovery Scripts - Red Hat</a> - Automated recovery procedures</li>
+<li><a href="https://www.caine-live.net/page5/page5.html" target="_blank" rel="noopener noreferrer">Forensic Tools - CAINE</a> - Digital forensics automation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ready to Continue?</strong> Advance to <a href="/chasingcloudcareers-site/docs/linux-engineering/networking-security">Module 4: Networking and Security</a> to master network configuration, security hardening, and system protection!</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site/tree/main/docs/linux-engineering/03-shell-scripting.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/chasingcloudcareers-site/docs/linux-engineering/system-administration"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">System Administration</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/chasingcloudcareers-site/docs/linux-engineering/networking-security"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Networking and Security</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#bash-scripting-fundamentals" class="table-of-contents__link toc-highlight">Bash Scripting Fundamentals</a></li><li><a href="#control-structures-and-logic" class="table-of-contents__link toc-highlight">Control Structures and Logic</a></li><li><a href="#advanced-scripting-techniques" class="table-of-contents__link toc-highlight">Advanced Scripting Techniques</a></li><li><a href="#system-administration-scripts" class="table-of-contents__link toc-highlight">System Administration Scripts</a></li><li><a href="#configuration-management-and-deployment" class="table-of-contents__link toc-highlight">Configuration Management and Deployment</a></li><li><a href="#text-processing-and-data-manipulation" class="table-of-contents__link toc-highlight">Text Processing and Data Manipulation</a></li><li><a href="#network-and-api-automation" class="table-of-contents__link toc-highlight">Network and API Automation</a></li><li><a href="#testing-and-quality-assurance" class="table-of-contents__link toc-highlight">Testing and Quality Assurance</a></li><li><a href="#devops-integration-and-cicd" class="table-of-contents__link toc-highlight">DevOps Integration and CI/CD</a></li><li><a href="#security-and-compliance-automation" class="table-of-contents__link toc-highlight">Security and Compliance Automation</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Learning Paths</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/intro">Get Started</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/support-engineering/getting-started">Support Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/cloud-engineering/getting-started">Cloud Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">DevOps Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/ai-engineering/getting-started">AI Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/research-engineering/getting-started">Research Engineering</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/about">About</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Chasing Cloud Careers LLC - All rights reserved.</div></div></div></footer></div>
+</body>
+</html>
