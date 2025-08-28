@@ -2,122 +2,130 @@
 sidebar_position: 1
 ---
 
-# Getting Started with Research Engineering
+# Research Engineering Learning Path
 
-Welcome to your **Research Engineering** learning journey! This path will guide you through the intersection of cutting-edge research and practical implementation in AI, ML, and emerging technologies.
+Welcome to **Research Engineering** - the intersection of cutting-edge research and practical implementation. This field bridges the gap between academic research and real-world applications, making you a valuable contributor to innovation across any industry.
 
-## What You'll Learn
+## What is Research Engineering?
 
-- **Research Methodology**: Scientific approach to problem-solving and experimentation
-- **AI/ML Research**: Latest developments in artificial intelligence and machine learning
-- **Prototype Development**: Rapid prototyping and proof-of-concept creation
-- **Research to Production**: Bridging the gap between research and real-world applications
-- **Technical Writing**: Publishing research findings and technical documentation
-- **Collaboration**: Working with academic institutions and research teams
+Research Engineering combines:
+- **Scientific methodology** with practical implementation skills
+- **Academic research** with industry applications  
+- **Experimental design** with production-ready systems
+- **Open science** with collaborative development
+
+Research engineers work at the forefront of technology, turning breakthrough research into working prototypes and scalable solutions.
+
+## Why Research Engineering?
+
+### High-Impact Career Path
+- Work on cutting-edge problems that shape the future
+- Bridge the gap between research and real-world applications
+- Contribute to open science and democratized research
+- Build solutions that advance entire fields of study
+
+### Versatile Skill Set
+- Applicable across all industries (AI/ML, biotech, fintech, etc.)
+- Combines technical depth with research methodology
+- Valuable in both academic and industry settings
+- Enables independent research and innovation
+
+### Growing Demand
+- Tech companies increasingly need research engineers
+- Startups require rapid research-to-product capabilities
+- Academic institutions value industry collaboration
+- Open research initiatives need technical contributors
 
 ## Prerequisites
 
-- Strong programming background (Python, R, or similar)
-- Basic understanding of statistics and mathematics
-- Familiarity with machine learning concepts
-- Scientific curiosity and analytical mindset
-- Experience with data analysis and visualization
+- **Programming experience** (Python recommended)
+- **Mathematical foundation** (statistics, basic calculus)
+- **Scientific curiosity** and analytical mindset
+- **Willingness to learn** complex technical concepts
 
-## Learning Path Overview
+*Don't have all prerequisites? You can learn as you go - research engineering teaches you to acquire knowledge systematically.*
 
-### Phase 1: Research Foundations (Weeks 1-4)
-- Scientific method and research design
-- Literature review and academic writing
-- Data collection and experimental design
-- Statistical analysis fundamentals
+## Complete Learning Path at Average Joes Lab
 
-### Phase 2: AI/ML Research (Weeks 5-8)
-- Current AI/ML research trends
-- Research paper analysis and implementation
-- Experimental frameworks and methodologies
-- Model evaluation and validation
+**This comprehensive learning path is provided by our research community at Average Joes Lab:**
 
-### Phase 3: Applied Research (Weeks 9-12)
-- Industry research applications
-- Research to product pipeline
-- Collaboration with engineering teams
-- Publishing and presenting research
+### 🚀 [**Complete Research Engineering Learning Path →**](https://averagejoeslab.com/docs/intro)
 
-## Free Resources to Get Started
+**What you'll find at Average Joes Lab:**
 
-### Research Methodology
-- [MIT Introduction to Research Methods](https://ocw.mit.edu/courses/research-methods/) - Comprehensive research methodology
-- [Stanford CS229 Research Projects](https://cs229.stanford.edu/projects.html) - Real research project examples
-- [Google Research](https://research.google/) - Latest research publications and methodologies
+#### **4-Phase Structured Curriculum (16 weeks)**
+- **Phase 1: Research Foundations** - Scientific method, literature review, experimental design
+- **Phase 2: Technical Skills** - Programming for research, version control, reproducible workflows  
+- **Phase 3: Research Practice** - Original research projects, systematic experimentation
+- **Phase 4: Community Contribution** - Publishing, mentoring, collaborative research
 
-### AI/ML Research Resources
-- [Papers with Code](https://paperswithcode.com/) - Latest ML papers with implementation
-- [ArXiv](https://arxiv.org/) - Preprint repository for research papers
-- [Distill](https://distill.pub/) - Interactive machine learning research
-- [OpenAI Research](https://openai.com/research/) - Cutting-edge AI research
+#### **Hands-On Learning Approach**
+- **Real research projects** from day one
+- **Paper reproduction** to learn methodology
+- **Original research** with community support
+- **Research engineering flywheel** - continuous innovation cycle
 
-### Research Tools & Platforms
-- [Jupyter Notebooks](https://jupyter.org/) - Interactive research environment
-- [Weights & Biases](https://wandb.ai/) - Experiment tracking and collaboration
-- [Hugging Face](https://huggingface.co/) - ML model hub and research platform
-- [Google Colab](https://colab.research.google.com/) - Free GPU/TPU for research
+#### **Complete Template Repository**
+- **[Research Engineering Starter Template](https://github.com/mrcloudchase/research-engineering-starter)** - Organized structure for all 4 phases
+- **Best practices** for research documentation
+- **Version control** for research projects
+- **Links to all learning resources**
 
-### AJ (Average Joes) Labs Partnership
-- **Community Research Projects**: Collaborate on real-world research initiatives
-- **Mentorship Program**: Connect with experienced research engineers
-- **Open Source Contributions**: Contribute to community-driven research projects
-- **Research Challenges**: Participate in monthly research competitions and hackathons
+#### **Active Research Community**
+- **Discord community** for real-time collaboration
+- **Mentorship program** with experienced researchers
+- **Monthly research meetups** and discussions
+- **Collaborative projects** with global impact
+- **Open source focus** - all research is transparent
 
-### Academic Resources
-- [Coursera Research Courses](https://www.coursera.org/courses?query=research%20methods) - University-level research courses
-- [edX MIT Research](https://www.edx.org/school/mitx) - MIT research methodology courses
-- [Khan Academy Statistics](https://www.khanacademy.org/math/statistics-probability) - Statistical foundations
+## Why Average Joes Lab for Research Engineering?
 
-## Hands-on Projects
+### **Democratized Research**
+- No gatekeeping based on credentials or institutional affiliation
+- Learn from practitioners and community experts
+- Contribute to meaningful research from day one
+- Open and accessible to all backgrounds
 
-### Beginner Projects
-- Literature review on a specific AI/ML topic
-- Reproduce results from a research paper
-- Create a research proposal for a novel problem
-- Build a simple experimental framework
+### **Practical Focus**
+- Learn by doing real research, not just theory
+- Build a portfolio of actual research contributions
+- Develop skills that translate directly to career opportunities
+- Experience the complete research-to-implementation pipeline
 
-### Intermediate Projects
-- Implement and improve upon existing research
-- Design and conduct original experiments
-- Collaborate on AJ Labs community research project
-- Present findings at virtual conferences
+### **Community-Driven**
+- Collaborate with fellow citizen researchers worldwide
+- Get mentorship from experienced research engineers
+- Participate in real research projects with global impact
+- Share knowledge and learn from diverse perspectives
 
-### Advanced Projects
-- Lead an original research initiative
-- Publish findings in open-access venues
-- Mentor junior researchers in the community
-- Bridge research findings to production systems
-
-## AJ Labs Community Integration
-
-**Average Joes Labs** is our research community where everyday engineers become research contributors:
-
-- **Monthly Research Meetups**: Virtual sessions discussing latest research trends
-- **Collaborative Projects**: Team up on research initiatives that matter
-- **Skill Sharing**: Learn from and teach fellow community members
-- **Industry Connections**: Network with research professionals and academics
-- **Open Source Focus**: All research projects are open source and community-driven
-
-## Career Paths
+## Career Opportunities
 
 Research Engineering opens doors to:
-- **Research Scientist** at tech companies
-- **Applied Research Engineer** in industry
-- **Research & Development** roles
-- **Technical Research Lead** positions
-- **Academic Research Collaborator**
-- **Innovation Consultant** for emerging technologies
+- **Research Scientist** at major tech companies
+- **Applied Research Engineer** in industry R&D
+- **Research & Development Lead** at innovative organizations
+- **Independent Researcher** in citizen science initiatives
+- **Research Consultant** for emerging technologies
+- **Academic Research Collaborator** bridging industry and academia
 
-## Next Steps
+## Get Started Today
 
-1. **Join AJ Labs Community** - Connect with fellow researchers and engineers
-2. **Choose a research area** - Focus on AI/ML, systems, or emerging tech
-3. **Start with paper reproduction** - Implement existing research to learn methodology
-4. **Build your research portfolio** - Document experiments and findings
+### **Immediate Next Steps:**
 
-Ready to start your research engineering journey? Join the AJ Labs community and begin contributing to the future of technology!
+1. **[📚 Start the Complete Learning Path](https://averagejoeslab.com/docs/intro)** - Comprehensive 16-week curriculum
+2. **[🚀 Fork the Starter Template](https://github.com/mrcloudchase/research-engineering-starter)** - Get organized project structure
+3. **[💬 Join the Discord Community](https://discord.gg/averagejoeslab)** - Connect with fellow researchers
+4. **[🔬 Explore Ongoing Projects](https://github.com/mrcloudchase/averagejoeslab)** - Find collaboration opportunities
+
+### **Choose Your Research Journey:**
+- **Beginner**: Start with literature review and paper reproduction
+- **Intermediate**: Jump into original research with community support  
+- **Advanced**: Lead collaborative projects and mentor others
+
+---
+
+**Ready to contribute to the future of research?**
+
+**[🚀 Begin Your Research Engineering Journey at Average Joes Lab →](https://averagejoeslab.com/docs/intro)**
+
+*"Research is not just for academics. Every curious mind can contribute to human knowledge."*
