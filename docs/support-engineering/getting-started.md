@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Getting Started with Support Engineering
@@ -37,23 +37,31 @@ Support Engineering is a critical role that bridges technology and customer succ
 
 ## Prerequisites
 
+Before starting this learning path, review our comprehensive prerequisites guide to ensure you have the foundational knowledge needed for success.
+
+### **📋 [Complete Prerequisites Guide →](./00-prerequisites.md)**
+
+**Quick Prerequisites Overview:**
+
 **Technical Foundation:**
-- Basic computer literacy and troubleshooting skills
-- Willingness to learn programming and system administration
-- Logical thinking and systematic problem-solving approach
+- Basic computer literacy and command line familiarity
+- Understanding of networking fundamentals (IP, DNS, HTTP)
+- Basic programming/scripting concepts
+- Web technologies and database basics
 
 **Communication Skills:**
-- Strong written and verbal communication
-- Empathy and patience when working with frustrated customers
-- Ability to explain technical concepts to non-technical audiences
+- Professional written and verbal communication
+- Customer service fundamentals
+- Active listening and empathy
+- Technical explanation abilities
 
 **Personal Qualities:**
-- Curiosity and continuous learning mindset
-- Resilience and ability to work under pressure
-- Collaborative approach and team-first mentality
-- Customer-focused and results-oriented thinking
+- Continuous learning mindset and curiosity
+- Problem-solving and critical thinking skills
+- Resilience and stress management
+- Teamwork and collaboration abilities
 
-*Don't have all prerequisites? This learning path will help you develop these skills progressively.*
+**📚 Missing Prerequisites?** Our prerequisites guide includes free resources and learning paths to help you build any missing foundational skills before starting the main curriculum.
 
 ## Complete Learning Path Overview
 
