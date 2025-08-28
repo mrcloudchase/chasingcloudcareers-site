@@ -1,0 +1,8 @@
+{
+  "label": "AI Engineering",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Build AI-powered applications using modern frameworks, APIs, and integration patterns for production systems."
+  }
+}
