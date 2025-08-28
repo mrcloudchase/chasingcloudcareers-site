@@ -1,8 +1,5 @@
 {
   "label": "DevOps Engineering",
   "position": 5,
-  "link": {
-    "type": "generated-index",
-    "description": "Explore CI/CD pipelines, containerization, orchestration, monitoring, and automation."
-  }
+  "description": "Master DevOps practices, CI/CD pipelines, infrastructure automation, and modern deployment strategies for scalable software delivery."
 }
