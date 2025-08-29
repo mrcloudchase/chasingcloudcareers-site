@@ -1,6 +1,6 @@
 {
   "label": "MLOps Engineering",
-  "position": 8,
+  "position": 9,
   "link": {
     "type": "generated-index",
     "description": "Operationalize machine learning systems with deployment pipelines, monitoring, and infrastructure automation for production ML."
