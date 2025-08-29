@@ -18,16 +18,34 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="our-story">Our Story<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#our-story" class="hash-link" aria-label="Direct link to Our Story" title="Direct link to Our Story">​</a></h2>
 <p>Chasing Cloud Careers was born from a simple belief: <strong>everyone deserves access to high-quality engineering education, regardless of their financial situation</strong>. We've curated the best free resources from across the internet, organized them into structured learning paths, and built a supportive community around shared learning and growth.</p>
 <p>This isn't about selling you courses or certifications. This is about empowering you with the knowledge, skills, and confidence to chase your engineering dreams.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="six-comprehensive-learning-paths">Six Comprehensive Learning Paths<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#six-comprehensive-learning-paths" class="hash-link" aria-label="Direct link to Six Comprehensive Learning Paths" title="Direct link to Six Comprehensive Learning Paths">​</a></h2>
-<p>We've designed six distinct learning paths, each tailored to different engineering disciplines and career goals:</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ten-comprehensive-learning-paths">Ten Comprehensive Learning Paths<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#ten-comprehensive-learning-paths" class="hash-link" aria-label="Direct link to Ten Comprehensive Learning Paths" title="Direct link to Ten Comprehensive Learning Paths">​</a></h2>
+<p>We've designed ten distinct learning paths, each tailored to different engineering disciplines and career goals:</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="support-engineering">Support Engineering<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#support-engineering" class="hash-link" aria-label="Direct link to Support Engineering" title="Direct link to Support Engineering">​</a></h3>
 <p>Perfect for those who love problem-solving and helping others. Learn technical troubleshooting, customer success principles, and the art of turning frustrated users into happy customers. This path is ideal for career changers who want to enter tech with strong communication skills.</p>
 <p><strong>What you'll master:</strong></p>
 <ul>
 <li>Technical troubleshooting methodologies</li>
-<li>Customer communication and empathy</li>
-<li>Product knowledge and documentation</li>
-<li>Escalation management and team collaboration</li>
+<li>Customer communication and relationship management</li>
+<li>Advanced debugging and system analysis</li>
+<li>Career development and leadership skills</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="software-engineering">Software Engineering<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#software-engineering" class="hash-link" aria-label="Direct link to Software Engineering" title="Direct link to Software Engineering">​</a></h3>
+<p>Master programming fundamentals and build scalable applications. Learn multiple programming languages, web development frameworks, and professional software development practices. Perfect for those who want to create applications and systems from the ground up.</p>
+<p><strong>What you'll master:</strong></p>
+<ul>
+<li>Programming fundamentals and multiple languages</li>
+<li>Web development (frontend, backend, full-stack)</li>
+<li>Software engineering practices and methodologies</li>
+<li>System design and scalable architecture</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-science">Data Science<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#data-science" class="hash-link" aria-label="Direct link to Data Science" title="Direct link to Data Science">​</a></h3>
+<p>Extract insights from data and build predictive models. Master statistical analysis, machine learning, and data visualization to drive business decisions. Perfect for analytical minds who want to turn data into actionable insights.</p>
+<p><strong>What you'll master:</strong></p>
+<ul>
+<li>Statistics, mathematics, and probability theory</li>
+<li>Data analysis, cleaning, and manipulation</li>
+<li>Machine learning algorithms and model building</li>
+<li>Data visualization and storytelling</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="linux-engineering">Linux Engineering<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#linux-engineering" class="hash-link" aria-label="Direct link to Linux Engineering" title="Direct link to Linux Engineering">​</a></h3>
 <p>Dive deep into the backbone of modern infrastructure. Master command-line interfaces, system administration, and the skills that power everything from web servers to cloud platforms. Linux knowledge is foundational for almost every other engineering discipline.</p>
@@ -39,40 +57,58 @@
 <li>Server management and performance optimization</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloud-engineering">Cloud Engineering<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#cloud-engineering" class="hash-link" aria-label="Direct link to Cloud Engineering" title="Direct link to Cloud Engineering">​</a></h3>
-<p>Learn to build, deploy, and manage applications in the cloud. Explore AWS, Azure, and Google Cloud Platform while mastering infrastructure as code, containerization, and cloud-native architectures. This is where the future of infrastructure is heading.</p>
+<p>Learn to build, deploy, and manage applications across multiple cloud platforms. Master AWS, Azure, and Google Cloud Platform while learning infrastructure as code, containerization, and cloud-native architectures.</p>
 <p><strong>What you'll master:</strong></p>
 <ul>
 <li>Multi-cloud platform expertise (AWS, Azure, GCP)</li>
 <li>Infrastructure as Code with Terraform and CloudFormation</li>
-<li>Containerization with Docker and Kubernetes</li>
-<li>Cloud security and cost optimization</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="devops-engineering">DevOps Engineering<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#devops-engineering" class="hash-link" aria-label="Direct link to DevOps Engineering" title="Direct link to DevOps Engineering">​</a></h3>
-<p>Bridge the gap between development and operations. Learn to automate deployments, manage CI/CD pipelines, and create the systems that allow software teams to ship faster and more reliably. DevOps engineers are in high demand across all industries.</p>
-<p><strong>What you'll master:</strong></p>
-<ul>
-<li>CI/CD pipeline design and implementation</li>
-<li>Container orchestration and microservices</li>
-<li>Monitoring, logging, and observability</li>
-<li>Infrastructure automation and configuration management</li>
+<li>Cloud security and compliance frameworks</li>
+<li>Advanced architecture and cost optimization</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="ai-engineering">AI Engineering<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#ai-engineering" class="hash-link" aria-label="Direct link to AI Engineering" title="Direct link to AI Engineering">​</a></h3>
-<p>Step into the future of technology. Learn to build, deploy, and maintain AI systems in production. This isn't just about training models - it's about creating the infrastructure and processes that make AI applications reliable and scalable.</p>
+<p>Build AI-powered applications using modern frameworks and APIs. Focus on practical AI implementation, user experience design, and integrating AI capabilities into real-world applications.</p>
 <p><strong>What you'll master:</strong></p>
 <ul>
-<li>MLOps and model lifecycle management</li>
-<li>AI infrastructure and deployment strategies</li>
-<li>Model monitoring and performance optimization</li>
-<li>Ethical AI practices and governance</li>
+<li>AI fundamentals and framework integration</li>
+<li>LLM integration and prompt engineering</li>
+<li>Computer vision and image processing</li>
+<li>AI application development and deployment</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="machine-learning-engineering">Machine Learning Engineering<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#machine-learning-engineering" class="hash-link" aria-label="Direct link to Machine Learning Engineering" title="Direct link to Machine Learning Engineering">​</a></h3>
+<p>Master the mathematical foundations and algorithmic principles behind machine learning. Build ML systems from theory to implementation, focusing on rigorous model development and cutting-edge research.</p>
+<p><strong>What you'll master:</strong></p>
+<ul>
+<li>Mathematical foundations and algorithm theory</li>
+<li>Advanced model development and optimization</li>
+<li>Research implementation and experimentation</li>
+<li>Cutting-edge ML techniques and paradigms</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mlops-engineering">MLOps Engineering<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#mlops-engineering" class="hash-link" aria-label="Direct link to MLOps Engineering" title="Direct link to MLOps Engineering">​</a></h3>
+<p>Learn to operationalize machine learning systems at scale. Bridge the gap between ML development and production deployment through infrastructure automation and monitoring.</p>
+<p><strong>What you'll master:</strong></p>
+<ul>
+<li>ML infrastructure and deployment pipelines</li>
+<li>Model monitoring and drift detection</li>
+<li>Automated ML workflows and orchestration</li>
+<li>Production ML system reliability</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="devops-engineering">DevOps Engineering<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#devops-engineering" class="hash-link" aria-label="Direct link to DevOps Engineering" title="Direct link to DevOps Engineering">​</a></h3>
+<p>Bridge the gap between development and operations. Learn to automate deployments, manage CI/CD pipelines, and create the systems that allow software teams to ship faster and more reliably.</p>
+<p><strong>What you'll master:</strong></p>
+<ul>
+<li>CI/CD pipeline design and automation</li>
+<li>Infrastructure as Code and configuration management</li>
+<li>Containerization and orchestration (Docker, Kubernetes)</li>
+<li>Monitoring, observability, and site reliability</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="research-engineering">Research Engineering<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#research-engineering" class="hash-link" aria-label="Direct link to Research Engineering" title="Direct link to Research Engineering">​</a></h3>
-<p>For those who want to push the boundaries of what's possible. Learn to bridge cutting-edge research with practical implementation, working at the intersection of academia and industry. Partner with our <strong>AJ (Average Joes) Labs</strong> community for real-world research projects.</p>
+<p>For those who want to push the boundaries of what's possible. Learn to bridge cutting-edge research with practical implementation, working at the intersection of academia and industry. Partner with our <strong>Average Joes Lab</strong> community for comprehensive research training.</p>
 <p><strong>What you'll master:</strong></p>
 <ul>
 <li>Research methodology and experimental design</li>
 <li>Academic paper implementation and analysis</li>
-<li>Prototype development and proof-of-concept creation</li>
-<li>Collaboration between research and engineering teams</li>
+<li>Prototype development and innovation</li>
+<li>Open science and collaborative research</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="built-by-the-community-for-the-community">Built by the Community, For the Community<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#built-by-the-community-for-the-community" class="hash-link" aria-label="Direct link to Built by the Community, For the Community" title="Direct link to Built by the Community, For the Community">​</a></h2>
 <p>What makes Chasing Cloud Careers special isn't just our content - it's our community. We believe that learning happens best when people support each other, share experiences, and grow together.</p>
@@ -85,56 +121,70 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="join-our-growing-community">Join Our Growing Community<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#join-our-growing-community" class="hash-link" aria-label="Direct link to Join Our Growing Community" title="Direct link to Join Our Growing Community">​</a></h3>
 <ul>
-<li><strong>Monthly Meetups</strong>: Virtual sessions for each learning path</li>
-<li><strong>Study Groups</strong>: Connect with learners at your level</li>
-<li><strong>Mentorship</strong>: Get guidance from experienced professionals</li>
+<li><strong>Discord Community</strong>: Real-time discussions, study groups, and peer support</li>
+<li><strong>Learning Path Channels</strong>: Dedicated spaces for each of our 10 engineering paths</li>
+<li><strong>Study Groups</strong>: Connect with learners at your level and form accountability partnerships</li>
 <li><strong>Project Collaboration</strong>: Work on real projects with other community members</li>
-<li><strong>Job Search Support</strong>: Resume reviews, interview prep, and networking</li>
+<li><strong>Career Support</strong>: Resume reviews, interview prep, job opportunities, and networking</li>
+<li><strong>Success Celebrations</strong>: Share wins, milestones, and career transitions</li>
+<li><strong>Technical Help</strong>: Get assistance with coding, tools, and learning obstacles</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="technologies-we-cover">Technologies We Cover<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#technologies-we-cover" class="hash-link" aria-label="Direct link to Technologies We Cover" title="Direct link to Technologies We Cover">​</a></h2>
 <p>Depending on your chosen learning path, you'll work with industry-standard tools and technologies:</p>
 <ul>
-<li><strong>Cloud Platforms</strong>: AWS, Azure, Google Cloud Platform</li>
-<li><strong>Containerization</strong>: Docker, Kubernetes, container registries</li>
-<li><strong>Infrastructure</strong>: Terraform, Ansible, CloudFormation</li>
-<li><strong>Programming</strong>: Python, JavaScript, Go, Bash scripting</li>
-<li><strong>Databases</strong>: PostgreSQL, MongoDB, Redis</li>
-<li><strong>Monitoring</strong>: Prometheus, Grafana, ELK Stack</li>
-<li><strong>CI/CD</strong>: Jenkins, GitHub Actions, GitLab CI</li>
-<li><strong>Version Control</strong>: Git, GitHub, GitLab</li>
+<li><strong>Programming Languages</strong>: Python, JavaScript, Go, Java, C++, Bash scripting</li>
+<li><strong>Web Development</strong>: React, Node.js, HTML/CSS, REST APIs, GraphQL</li>
+<li><strong>Data Science</strong>: NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch</li>
+<li><strong>Cloud Platforms</strong>: AWS, Azure, Google Cloud Platform, multi-cloud architectures</li>
+<li><strong>AI/ML Frameworks</strong>: TensorFlow, PyTorch, Hugging Face, OpenAI API</li>
+<li><strong>Containerization</strong>: Docker, Kubernetes, container registries, service mesh</li>
+<li><strong>Infrastructure</strong>: Terraform, Ansible, CloudFormation, Infrastructure as Code</li>
+<li><strong>Databases</strong>: PostgreSQL, MongoDB, Redis, time-series, data warehousing</li>
+<li><strong>Analytics</strong>: Statistical analysis, data visualization, business intelligence</li>
+<li><strong>Monitoring</strong>: Prometheus, Grafana, ELK Stack, distributed tracing</li>
+<li><strong>CI/CD</strong>: Jenkins, GitHub Actions, GitLab CI, deployment automation</li>
+<li><strong>Version Control</strong>: Git, GitHub, GitLab, data versioning (DVC)</li>
+<li><strong>Security</strong>: Cybersecurity fundamentals, cloud security, DevSecOps</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started-is-easy">Getting Started is Easy<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#getting-started-is-easy" class="hash-link" aria-label="Direct link to Getting Started is Easy" title="Direct link to Getting Started is Easy">​</a></h2>
 <ol>
-<li><strong>Explore the Learning Paths</strong>: Browse our six paths and choose the one that excites you most</li>
-<li><strong>Start with Fundamentals</strong>: Each path begins with foundational concepts</li>
-<li><strong>Learn by Doing</strong>: Follow along with hands-on projects and exercises</li>
-<li><strong>Join the Community</strong>: Connect with other learners and mentors</li>
-<li><strong>Build Your Portfolio</strong>: Create projects that showcase your new skills</li>
-<li><strong>Land Your Dream Job</strong>: Use our job search resources to make the transition</li>
+<li><strong>Explore the Learning Paths</strong>: Browse our ten paths and choose the one that excites you most</li>
+<li><strong>Check Prerequisites</strong>: Each path has a prerequisites guide to ensure you're ready</li>
+<li><strong>Start with Fundamentals</strong>: Every path begins with foundational concepts and builds progressively</li>
+<li><strong>Join the Community</strong>: Connect with other learners, mentors, and study groups on Discord</li>
+<li><strong>Learn by Doing</strong>: Follow along with hands-on projects and real-world exercises</li>
+<li><strong>Build Your Portfolio</strong>: Create projects that showcase your new skills and expertise</li>
+<li><strong>Get Career Support</strong>: Use our job search resources, resume reviews, and interview prep</li>
+<li><strong>Land Your Dream Job</strong>: Transition into your new engineering career with confidence</li>
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="success-stories">Success Stories<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#success-stories" class="hash-link" aria-label="Direct link to Success Stories" title="Direct link to Success Stories">​</a></h2>
 <p>Our community members have successfully transitioned into roles at:</p>
 <ul>
-<li>Major cloud providers (AWS, Microsoft, Google)</li>
-<li>Fast-growing startups and scale-ups</li>
-<li>Traditional enterprises embracing digital transformation</li>
-<li>Research institutions and innovation labs</li>
-<li>Consulting firms and agencies</li>
+<li><strong>Major cloud providers</strong> (AWS, Microsoft, Google, Oracle)</li>
+<li><strong>AI/ML companies</strong> (OpenAI, Anthropic, Hugging Face, DataRobot)</li>
+<li><strong>Fast-growing startups</strong> and unicorn companies</li>
+<li><strong>Traditional enterprises</strong> embracing digital transformation</li>
+<li><strong>Financial institutions</strong> building fintech and quantitative systems</li>
+<li><strong>Healthcare organizations</strong> implementing AI and data analytics</li>
+<li><strong>Research institutions</strong> and innovation labs</li>
+<li><strong>Consulting firms</strong> specializing in cloud and AI transformation</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next?<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#whats-next" class="hash-link" aria-label="Direct link to What's Next?" title="Direct link to What's Next?">​</a></h2>
 <p>Ready to start your engineering journey? Here's what we recommend:</p>
 <ol>
-<li><strong>Browse the Learning Paths</strong>: Take some time to explore each path and see what resonates with you</li>
-<li><strong>Join Our Community</strong>: Connect with us on GitHub and follow our progress</li>
-<li><strong>Start Learning</strong>: Pick a path and begin with the "Getting Started" guide</li>
-<li><strong>Share Your Journey</strong>: Document your learning process and help others along the way</li>
+<li><strong>Browse the Learning Paths</strong>: Take some time to explore all ten paths and see what resonates with you</li>
+<li><strong>Join Our Discord Community</strong>: Connect with learners, get support, and find study partners</li>
+<li><strong>Check Prerequisites</strong>: Review the prerequisites guide for your chosen path</li>
+<li><strong>Start Learning</strong>: Begin with the "Getting Started" guide and progress through modules</li>
+<li><strong>Share Your Journey</strong>: Document your learning process and help others in the community</li>
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="connect-with-us">Connect With Us<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#connect-with-us" class="hash-link" aria-label="Direct link to Connect With Us" title="Direct link to Connect With Us">​</a></h2>
 <p>We're always here to help and would love to hear from you:</p>
 <ul>
+<li><strong>Discord</strong>: <a href="https://discord.gg/Zp4ZMvBJxY" target="_blank" rel="noopener noreferrer">Join our community</a> for real-time discussions and support</li>
 <li><strong>GitHub</strong>: <a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer">mrcloudchase/chasingcloudcareers-site</a></li>
-<li><strong>Community Discussions</strong>: Join our GitHub Discussions for questions and collaboration</li>
-<li><strong>Feedback</strong>: Help us improve by sharing your learning experience</li>
+<li><strong>Community Discussions</strong>: Ask questions, share projects, and collaborate with fellow learners</li>
+<li><strong>Feedback</strong>: Help us improve by sharing your learning experience and suggestions</li>
 </ul>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-personal-note">A Personal Note<a href="https://chasingcloudcareers.com/blog/welcome-to-chasing-cloud-careers#a-personal-note" class="hash-link" aria-label="Direct link to A Personal Note" title="Direct link to A Personal Note">​</a></h2>
