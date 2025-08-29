@@ -202,7 +202,7 @@ function OurMissionSection() {
                 </Link>
                 <Link
                   className="button button--secondary button--lg"
-                  href="https://discord.gg/your-discord-invite"
+                  href="https://discord.gg/Zp4ZMvBJxY"
                   target="_blank"
                   rel="noopener noreferrer">
                   Join Our Community

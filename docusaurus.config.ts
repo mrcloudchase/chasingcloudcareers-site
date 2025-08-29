@@ -91,7 +91,7 @@ const config: Config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/about', label: 'About', position: 'left'},
         {
-          href: 'https://discord.gg/your-discord-invite',
+                      href: 'https://discord.gg/Zp4ZMvBJxY',
           label: 'Discord',
           position: 'right',
         },
@@ -143,7 +143,7 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/your-discord-invite',
+              href: 'https://discord.gg/Zp4ZMvBJxY',
             },
             {
               label: 'GitHub',

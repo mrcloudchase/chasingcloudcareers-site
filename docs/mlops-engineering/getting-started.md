@@ -5,7 +5,7 @@ sidebar_position: 2
 # Getting Started with MLOps Engineering
 
 > **🚧 This learning path is in beta!** We're continuously improving our content based on community feedback. Have suggestions, found outdated resources, or want to contribute? 
-> - **Discord:** Join our community discussions
+> - **Discord:** Join our community discussions at https://discord.gg/Zp4ZMvBJxY
 > - **GitHub:** Open an issue or submit a pull request to our [repository](https://github.com/mrcloudchase/chasingcloudcareers-site)
 > - **Feedback:** Help us make this path even better for future learners!
 
