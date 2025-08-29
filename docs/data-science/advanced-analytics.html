@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-data-science/advanced-analytics" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Advanced Analytics | Chasing Cloud Careers</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" property="og:url" content="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/data-science/advanced-analytics"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Advanced Analytics | Chasing Cloud Careers"><meta data-rh="true" name="description" content="Advanced Statistical Methods"><meta data-rh="true" property="og:description" content="Advanced Statistical Methods"><link data-rh="true" rel="icon" href="/chasingcloudcareers-site/img/logo.png"><link data-rh="true" rel="canonical" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/data-science/advanced-analytics"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/data-science/advanced-analytics" hreflang="en"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/data-science/advanced-analytics" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Data Science","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/category/data-science"},{"@type":"ListItem","position":2,"name":"Advanced Analytics","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/data-science/advanced-analytics"}]}</script><link rel="alternate" type="application/rss+xml" href="/chasingcloudcareers-site/blog/rss.xml" title="Chasing Cloud Careers RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/chasingcloudcareers-site/blog/atom.xml" title="Chasing Cloud Careers Atom Feed"><link rel="stylesheet" href="/chasingcloudcareers-site/assets/css/styles.8643be14.css">
+<script src="/chasingcloudcareers-site/assets/js/runtime~main.b170f9a4.js" defer="defer"></script>
+<script src="/chasingcloudcareers-site/assets/js/main.f1a87134.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/chasingcloudcareers-site/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/chasingcloudcareers-site/"><div class="navbar__logo"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Chasing Cloud Careers</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/chasingcloudcareers-site/docs/intro">Learning Paths</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/blog">Blog</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/about">About</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/chasingcloudcareers-site/docs/intro">Welcome to Chasing Cloud Careers</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/support-engineering">Support Engineering</a><button aria-label="Expand sidebar category &#x27;Support Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/software-engineering">Software Engineering</a><button aria-label="Expand sidebar category &#x27;Software Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/chasingcloudcareers-site/docs/category/data-science">Data Science</a><button aria-label="Collapse sidebar category &#x27;Data Science&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/data-science/prerequisites">Prerequisites for Data Science</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/data-science/getting-started">Getting Started with Data Science</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/data-science/statistics-mathematics">Statistics and Mathematics</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/data-science/data-analysis">Data Analysis</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/data-science/machine-learning">Machine Learning</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/data-science/data-visualization">Data Visualization</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/chasingcloudcareers-site/docs/data-science/advanced-analytics">Advanced Analytics</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/cloud-engineering">Cloud Engineering</a><button aria-label="Expand sidebar category &#x27;Cloud Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/ai-engineering">AI Engineering</a><button aria-label="Expand sidebar category &#x27;AI Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/machine-learning-engineering">Machine Learning Engineering</a><button aria-label="Expand sidebar category &#x27;Machine Learning Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/mlops-engineering">MLOps Engineering</a><button aria-label="Expand sidebar category &#x27;MLOps Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/devops-engineering">DevOps Engineering</a><button aria-label="Expand sidebar category &#x27;DevOps Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/research-engineering">Research Engineering</a><button aria-label="Expand sidebar category &#x27;Research Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/chasingcloudcareers-site/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/chasingcloudcareers-site/docs/category/data-science"><span>Data Science</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Advanced Analytics</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Advanced Analytics</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-statistical-methods">Advanced Statistical Methods<a href="#advanced-statistical-methods" class="hash-link" aria-label="Direct link to Advanced Statistical Methods" title="Direct link to Advanced Statistical Methods">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Multivariate Statistical Analysis</strong></p>
+<ul>
+<li>Multiple regression and model building strategies</li>
+<li>Factor analysis and principal component analysis</li>
+<li>Canonical correlation and discriminant analysis</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://online.stat.psu.edu/stat505/" target="_blank" rel="noopener noreferrer">Multivariate Statistics</a> - Penn State multivariate analysis course</li>
+<li><a href="https://scikit-learn.org/stable/modules/decomposition.html#factor-analysis" target="_blank" rel="noopener noreferrer">Factor Analysis</a> - Factor analysis implementation</li>
+<li><a href="https://www.statsmodels.org/stable/stats.html#multivariate-statistics" target="_blank" rel="noopener noreferrer">Statsmodels Multivariate</a> - Multivariate statistical methods</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Non-Parametric Statistics</strong></p>
+<ul>
+<li>Rank-based tests and distribution-free methods</li>
+<li>Bootstrap and permutation testing</li>
+<li>Robust statistical methods</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://online.stat.psu.edu/stat500/lesson/15" target="_blank" rel="noopener noreferrer">Non-Parametric Statistics</a> - Penn State non-parametric methods</li>
+<li><a href="https://machinelearningmastery.com/a-gentle-introduction-to-the-bootstrap-method/" target="_blank" rel="noopener noreferrer">Bootstrap Methods</a> - Bootstrap statistical inference</li>
+<li><a href="https://www.statsmodels.org/stable/examples/notebooks/generated/robust_models_0.html" target="_blank" rel="noopener noreferrer">Robust Statistics</a> - Robust regression methods</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Survival Analysis and Event Modeling</strong></p>
+<ul>
+<li>Kaplan-Meier survival curves</li>
+<li>Cox proportional hazards models</li>
+<li>Time-to-event analysis and censoring</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://lifelines.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">Survival Analysis</a> - Lifelines survival analysis library</li>
+<li><a href="https://www.statsmodels.org/stable/examples/notebooks/generated/survival_analysis.html" target="_blank" rel="noopener noreferrer">Cox Regression</a> - Cox proportional hazards</li>
+<li><a href="https://www.coursera.org/learn/survival-analysis" target="_blank" rel="noopener noreferrer">Survival Analysis Course</a> - Stanford survival analysis</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="causal-inference-and-experimental-design">Causal Inference and Experimental Design<a href="#causal-inference-and-experimental-design" class="hash-link" aria-label="Direct link to Causal Inference and Experimental Design" title="Direct link to Causal Inference and Experimental Design">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Causal Inference Methods</strong></p>
+<ul>
+<li>Randomized controlled trials and natural experiments</li>
+<li>Instrumental variables and regression discontinuity</li>
+<li>Difference-in-differences and matching methods</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://mixtape.scunning.com/" target="_blank" rel="noopener noreferrer">Causal Inference Book</a> - Causal inference: The Mixtape</li>
+<li><a href="https://github.com/microsoft/dowhy" target="_blank" rel="noopener noreferrer">DoWhy Library</a> - Microsoft causal inference framework</li>
+<li><a href="https://www.coursera.org/learn/crash-course-in-causality" target="_blank" rel="noopener noreferrer">Causal Inference Course</a> - University of Pennsylvania causality</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Propensity Score Methods</strong></p>
+<ul>
+<li>Propensity score estimation and matching</li>
+<li>Inverse probability weighting</li>
+<li>Doubly robust estimation methods</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://github.com/akelleh/causality" target="_blank" rel="noopener noreferrer">Propensity Score Analysis</a> - Causal inference library</li>
+<li><a href="https://sekhon.berkeley.edu/matching/" target="_blank" rel="noopener noreferrer">Matching Methods</a> - Statistical matching for causal inference</li>
+<li><a href="https://github.com/microsoft/EconML" target="_blank" rel="noopener noreferrer">Causal ML</a> - Microsoft causal machine learning</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Quasi-Experimental Methods</strong></p>
+<ul>
+<li>Regression discontinuity design</li>
+<li>Instrumental variable estimation</li>
+<li>Synthetic control methods</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/quasi-experimental-design" target="_blank" rel="noopener noreferrer">Quasi-Experimental Design</a> - Quasi-experimental methods course</li>
+<li><a href="https://rdpackages.github.io/" target="_blank" rel="noopener noreferrer">Regression Discontinuity</a> - RD analysis packages</li>
+<li><a href="https://github.com/microsoft/synthetic-control-methods" target="_blank" rel="noopener noreferrer">Synthetic Control</a> - Synthetic control implementation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="text-analytics-and-natural-language-processing">Text Analytics and Natural Language Processing<a href="#text-analytics-and-natural-language-processing" class="hash-link" aria-label="Direct link to Text Analytics and Natural Language Processing" title="Direct link to Text Analytics and Natural Language Processing">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Text Preprocessing and Feature Extraction</strong></p>
+<ul>
+<li>Tokenization, stemming, and lemmatization</li>
+<li>Stop word removal and text normalization</li>
+<li>TF-IDF and bag-of-words representation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.nltk.org/book/" target="_blank" rel="noopener noreferrer">NLTK Tutorial</a> - Natural Language Toolkit</li>
+<li><a href="https://spacy.io/usage/spacy-101" target="_blank" rel="noopener noreferrer">spaCy Documentation</a> - Industrial-strength NLP</li>
+<li><a href="https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction" target="_blank" rel="noopener noreferrer">Text Preprocessing</a> - Text vectorization</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Sentiment Analysis and Opinion Mining</strong></p>
+<ul>
+<li>Sentiment classification and polarity detection</li>
+<li>Aspect-based sentiment analysis</li>
+<li>Emotion detection and opinion mining</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://textblob.readthedocs.io/en/dev/" target="_blank" rel="noopener noreferrer">TextBlob</a> - Simple text processing library</li>
+<li><a href="https://github.com/cjhutto/vaderSentiment" target="_blank" rel="noopener noreferrer">VADER Sentiment</a> - Sentiment analysis tool</li>
+<li><a href="https://realpython.com/python-nltk-sentiment-analysis/" target="_blank" rel="noopener noreferrer">Sentiment Analysis Tutorial</a> - Python sentiment analysis</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Topic Modeling and Document Analysis</strong></p>
+<ul>
+<li>Latent Dirichlet Allocation (LDA) for topic discovery</li>
+<li>Non-negative Matrix Factorization for topics</li>
+<li>Document clustering and similarity analysis</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html" target="_blank" rel="noopener noreferrer">Gensim Topic Modeling</a> - LDA implementation</li>
+<li><a href="https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/" target="_blank" rel="noopener noreferrer">Topic Modeling Tutorial</a> - Complete topic modeling guide</li>
+<li><a href="https://radimrehurek.com/gensim/auto_examples/tutorials/run_doc2vec_lee.html" target="_blank" rel="noopener noreferrer">Document Similarity</a> - Document similarity with Doc2Vec</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-machine-learning-techniques">Advanced Machine Learning Techniques<a href="#advanced-machine-learning-techniques" class="hash-link" aria-label="Direct link to Advanced Machine Learning Techniques" title="Direct link to Advanced Machine Learning Techniques">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Ensemble Methods and Model Stacking</strong></p>
+<ul>
+<li>Bagging and boosting ensemble techniques</li>
+<li>Model stacking and meta-learning</li>
+<li>Ensemble diversity and combination strategies</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/ensemble.html" target="_blank" rel="noopener noreferrer">Ensemble Methods</a> - Ensemble learning algorithms</li>
+<li><a href="https://machinelearningmastery.com/stacking-ensemble-machine-learning-with-python/" target="_blank" rel="noopener noreferrer">Model Stacking</a> - Ensemble stacking implementation</li>
+<li><a href="https://www.kaggle.com/learn/machine-learning-explainability" target="_blank" rel="noopener noreferrer">Ensemble Guide</a> - Ensemble methods for competitions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Feature Selection and Engineering</strong></p>
+<ul>
+<li>Recursive feature elimination and importance ranking</li>
+<li>Automated feature engineering techniques</li>
+<li>Feature interaction and polynomial features</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/feature_selection.html" target="_blank" rel="noopener noreferrer">Feature Selection</a> - Feature selection methods</li>
+<li><a href="https://github.com/FeatureLabs/featuretools" target="_blank" rel="noopener noreferrer">Feature Engineering</a> - Automated feature engineering</li>
+<li><a href="https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html" target="_blank" rel="noopener noreferrer">Feature Importance</a> - Feature importance analysis</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Model Interpretability and Explainability</strong></p>
+<ul>
+<li>SHAP values for model explanation</li>
+<li>LIME for local interpretable explanations</li>
+<li>Partial dependence plots and feature effects</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://shap.readthedocs.io/" target="_blank" rel="noopener noreferrer">SHAP Documentation</a> - Model explanation framework</li>
+<li><a href="https://github.com/marcotcr/lime" target="_blank" rel="noopener noreferrer">LIME Tutorial</a> - Local interpretable explanations</li>
+<li><a href="https://christophm.github.io/interpretable-ml-book/" target="_blank" rel="noopener noreferrer">Interpretable ML Book</a> - Model interpretability guide</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="domain-specific-analytics-applications">Domain-Specific Analytics Applications<a href="#domain-specific-analytics-applications" class="hash-link" aria-label="Direct link to Domain-Specific Analytics Applications" title="Direct link to Domain-Specific Analytics Applications">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Customer Analytics and Segmentation</strong></p>
+<ul>
+<li>Customer lifetime value (CLV) modeling</li>
+<li>RFM analysis and customer segmentation</li>
+<li>Churn prediction and retention modeling</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/customer-analytics" target="_blank" rel="noopener noreferrer">Customer Analytics</a> - University of Pennsylvania customer analytics</li>
+<li><a href="https://towardsdatascience.com/customer-segmentation-using-k-means-clustering-d33964f238c3" target="_blank" rel="noopener noreferrer">Customer Segmentation</a> - Segmentation techniques</li>
+<li><a href="https://github.com/CamDavidsonPilon/lifetimes" target="_blank" rel="noopener noreferrer">CLV Modeling</a> - Customer lifetime value analysis</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Marketing Analytics and Attribution</strong></p>
+<ul>
+<li>Marketing mix modeling and attribution analysis</li>
+<li>A/B testing for marketing campaigns</li>
+<li>Conversion funnel analysis and optimization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/marketing-analytics" target="_blank" rel="noopener noreferrer">Marketing Analytics</a> - University of Virginia marketing analytics</li>
+<li><a href="https://github.com/google/attribution-reporting-api" target="_blank" rel="noopener noreferrer">Attribution Modeling</a> - Marketing attribution methods</li>
+<li><a href="https://github.com/google/lightweight_mmm" target="_blank" rel="noopener noreferrer">Marketing Mix Modeling</a> - Google&#x27;s MMM framework</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Financial Analytics and Risk Modeling</strong></p>
+<ul>
+<li>Credit scoring and risk assessment models</li>
+<li>Portfolio optimization and asset allocation</li>
+<li>Algorithmic trading and quantitative finance</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/financial-markets" target="_blank" rel="noopener noreferrer">Financial Analytics</a> - Yale University financial markets</li>
+<li><a href="https://github.com/quantopian/zipline" target="_blank" rel="noopener noreferrer">Risk Modeling</a> - Algorithmic trading library</li>
+<li><a href="https://github.com/ing-bank/skorecard" target="_blank" rel="noopener noreferrer">Credit Scoring</a> - Credit risk modeling</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="big-data-analytics-and-distributed-computing">Big Data Analytics and Distributed Computing<a href="#big-data-analytics-and-distributed-computing" class="hash-link" aria-label="Direct link to Big Data Analytics and Distributed Computing" title="Direct link to Big Data Analytics and Distributed Computing">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Apache Spark for Big Data</strong></p>
+<ul>
+<li>Spark DataFrames and SQL operations</li>
+<li>MLlib for distributed machine learning</li>
+<li>Spark Streaming for real-time analytics</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://spark.apache.org/docs/latest/api/python/getting_started/index.html" target="_blank" rel="noopener noreferrer">PySpark Tutorial</a> - Spark with Python</li>
+<li><a href="https://spark.apache.org/docs/latest/sql-programming-guide.html" target="_blank" rel="noopener noreferrer">Spark SQL Guide</a> - Distributed SQL processing</li>
+<li><a href="https://spark.apache.org/docs/latest/ml-guide.html" target="_blank" rel="noopener noreferrer">MLlib Documentation</a> - Spark machine learning library</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud Analytics Platforms</strong></p>
+<ul>
+<li>Google BigQuery for large-scale analytics</li>
+<li>AWS Redshift and data warehousing</li>
+<li>Azure Synapse Analytics for enterprise data</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://cloud.google.com/bigquery/docs" target="_blank" rel="noopener noreferrer">BigQuery Documentation</a> - Google&#x27;s data warehouse</li>
+<li><a href="https://aws.amazon.com/big-data/analytics/" target="_blank" rel="noopener noreferrer">AWS Analytics Services</a> - AWS analytics platform</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/synapse-analytics/" target="_blank" rel="noopener noreferrer">Azure Analytics</a> - Microsoft analytics services</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Stream Processing and Real-Time Analytics</strong></p>
+<ul>
+<li>Apache Kafka for data streaming</li>
+<li>Real-time dashboard and monitoring</li>
+<li>Event-driven analytics architectures</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kafka.apache.org/documentation/streams/" target="_blank" rel="noopener noreferrer">Kafka Streams</a> - Stream processing with Kafka</li>
+<li><a href="https://github.com/apache/beam" target="_blank" rel="noopener noreferrer">Real-Time Analytics</a> - Apache Beam stream processing</li>
+<li><a href="https://docs.confluent.io/platform/current/streams/index.html" target="_blank" rel="noopener noreferrer">Streaming Analytics</a> - Confluent streaming platform</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="business-intelligence-and-decision-support">Business Intelligence and Decision Support<a href="#business-intelligence-and-decision-support" class="hash-link" aria-label="Direct link to Business Intelligence and Decision Support" title="Direct link to Business Intelligence and Decision Support">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Data Warehousing and ETL</strong></p>
+<ul>
+<li>Dimensional modeling and star schema design</li>
+<li>ETL pipeline design and implementation</li>
+<li>Data quality and governance frameworks</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/" target="_blank" rel="noopener noreferrer">Data Warehouse Concepts</a> - Kimball dimensional modeling</li>
+<li><a href="https://github.com/awesome-data-engineering/awesome-data-engineering" target="_blank" rel="noopener noreferrer">ETL Best Practices</a> - Data engineering resources</li>
+<li><a href="https://github.com/great-expectations/great_expectations" target="_blank" rel="noopener noreferrer">Data Quality</a> - Data validation framework</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Business Metrics and KPI Development</strong></p>
+<ul>
+<li>Key Performance Indicator (KPI) design</li>
+<li>Balanced scorecard and metrics frameworks</li>
+<li>ROI analysis and business impact measurement</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://blog.hubspot.com/marketing/kpi-reporting" target="_blank" rel="noopener noreferrer">KPI Development</a> - Key performance indicator design</li>
+<li><a href="https://www.klipfolio.com/resources/what-is-a-kpi" target="_blank" rel="noopener noreferrer">Business Metrics</a> - Business intelligence metrics</li>
+<li><a href="https://www.investopedia.com/articles/personal-finance/053015/how-calculate-roi-investment.asp" target="_blank" rel="noopener noreferrer">ROI Analysis</a> - Return on investment calculation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="research-and-academic-data-science">Research and Academic Data Science<a href="#research-and-academic-data-science" class="hash-link" aria-label="Direct link to Research and Academic Data Science" title="Direct link to Research and Academic Data Science">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Research Design and Methodology</strong></p>
+<ul>
+<li>Observational studies and experimental design</li>
+<li>Longitudinal data analysis and panel studies</li>
+<li>Meta-analysis and systematic reviews</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/research-methods" target="_blank" rel="noopener noreferrer">Research Methods</a> - University of London research methodology</li>
+<li><a href="https://online.stat.psu.edu/stat502/lesson/11" target="_blank" rel="noopener noreferrer">Longitudinal Data Analysis</a> - Penn State longitudinal methods</li>
+<li><a href="https://www.coursera.org/learn/systematic-review" target="_blank" rel="noopener noreferrer">Meta-Analysis</a> - Johns Hopkins systematic review</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Publication and Peer Review</strong></p>
+<ul>
+<li>Scientific writing and manuscript preparation</li>
+<li>Statistical reporting standards and guidelines</li>
+<li>Peer review process and academic publishing</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/sciwrite" target="_blank" rel="noopener noreferrer">Scientific Writing</a> - Stanford scientific writing course</li>
+<li><a href="https://www.apa.org/science/leadership/bsa/statistical" target="_blank" rel="noopener noreferrer">Statistical Reporting</a> - APA statistical reporting standards</li>
+<li><a href="https://www.nature.com/authors/author_resources/how_to_write.html" target="_blank" rel="noopener noreferrer">Academic Publishing Guide</a> - Nature publishing guidance</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="specialized-analytics-domains">Specialized Analytics Domains<a href="#specialized-analytics-domains" class="hash-link" aria-label="Direct link to Specialized Analytics Domains" title="Direct link to Specialized Analytics Domains">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Healthcare and Biostatistics</strong></p>
+<ul>
+<li>Clinical trial analysis and biostatistical methods</li>
+<li>Epidemiological studies and public health analytics</li>
+<li>Medical imaging and genomics data analysis</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/biostatistics" target="_blank" rel="noopener noreferrer">Biostatistics</a> - Johns Hopkins biostatistics course</li>
+<li><a href="https://online.stat.psu.edu/stat509/" target="_blank" rel="noopener noreferrer">Clinical Trial Analysis</a> - Penn State clinical trials</li>
+<li><a href="https://www.coursera.org/learn/epidemiology" target="_blank" rel="noopener noreferrer">Epidemiology</a> - UNC epidemiology course</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Social Science and Survey Analytics</strong></p>
+<ul>
+<li>Survey data analysis and weighting</li>
+<li>Social network analysis and community detection</li>
+<li>Behavioral analytics and psychological measurement</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/survey-data-collection" target="_blank" rel="noopener noreferrer">Survey Analysis</a> - University of Michigan survey methods</li>
+<li><a href="https://www.coursera.org/learn/social-network-analysis" target="_blank" rel="noopener noreferrer">Social Network Analysis</a> - UC Davis network analysis</li>
+<li><a href="https://networkx.org/documentation/stable/tutorial.html" target="_blank" rel="noopener noreferrer">NetworkX Tutorial</a> - Network analysis with Python</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Sports Analytics and Performance Analysis</strong></p>
+<ul>
+<li>Player performance metrics and advanced statistics</li>
+<li>Team strategy analysis and game theory</li>
+<li>Predictive modeling for sports outcomes</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/sports-analytics" target="_blank" rel="noopener noreferrer">Sports Analytics</a> - University of Michigan sports analytics</li>
+<li><a href="https://github.com/jldbc/pybaseball" target="_blank" rel="noopener noreferrer">Baseball Analytics</a> - Baseball data analysis library</li>
+<li><a href="https://github.com/swar/nba_api" target="_blank" rel="noopener noreferrer">Sports Data Analysis</a> - NBA data analysis tools</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="data-ethics-and-responsible-analytics">Data Ethics and Responsible Analytics<a href="#data-ethics-and-responsible-analytics" class="hash-link" aria-label="Direct link to Data Ethics and Responsible Analytics" title="Direct link to Data Ethics and Responsible Analytics">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Privacy and Data Protection</strong></p>
+<ul>
+<li>Data anonymization and de-identification techniques</li>
+<li>Differential privacy and privacy-preserving analytics</li>
+<li>GDPR compliance and data governance</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/data-privacy-fundamentals" target="_blank" rel="noopener noreferrer">Data Privacy</a> - Northeastern University data privacy</li>
+<li><a href="https://programming-dp.com/" target="_blank" rel="noopener noreferrer">Differential Privacy</a> - Privacy-preserving data analysis</li>
+<li><a href="https://gdpr.eu/compliance/" target="_blank" rel="noopener noreferrer">GDPR Compliance</a> - European data protection regulation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Algorithmic Bias and Fairness</strong></p>
+<ul>
+<li>Bias detection and measurement in data and models</li>
+<li>Fairness metrics and bias mitigation techniques</li>
+<li>Ethical considerations in predictive modeling</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/data-science-ethics" target="_blank" rel="noopener noreferrer">Algorithmic Bias</a> - University of Michigan data science ethics</li>
+<li><a href="https://fairmlbook.org/" target="_blank" rel="noopener noreferrer">Fairness in ML</a> - Fairness and machine learning book</li>
+<li><a href="https://aif360.readthedocs.io/" target="_blank" rel="noopener noreferrer">AI Fairness 360</a> - IBM fairness toolkit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Transparency and Interpretability</strong></p>
+<ul>
+<li>Model explainability and interpretable ML</li>
+<li>Audit trails and decision documentation</li>
+<li>Stakeholder communication of model limitations</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://christophm.github.io/interpretable-ml-book/" target="_blank" rel="noopener noreferrer">Interpretable ML</a> - Model interpretability guide</li>
+<li><a href="https://modelcards.withgoogle.com/about" target="_blank" rel="noopener noreferrer">Model Cards</a> - Google model documentation framework</li>
+<li><a href="https://www.partnershiponai.org/about/" target="_blank" rel="noopener noreferrer">Algorithmic Transparency</a> - Partnership on AI transparency guidelines</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="industry-applications-and-case-studies">Industry Applications and Case Studies<a href="#industry-applications-and-case-studies" class="hash-link" aria-label="Direct link to Industry Applications and Case Studies" title="Direct link to Industry Applications and Case Studies">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>E-commerce and Retail Analytics</strong></p>
+<ul>
+<li>Recommendation systems and collaborative filtering</li>
+<li>Price optimization and demand forecasting</li>
+<li>Inventory management and supply chain analytics</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://realpython.com/build-recommendation-engine-collaborative-filtering/" target="_blank" rel="noopener noreferrer">Recommendation Systems</a> - Collaborative filtering implementation</li>
+<li><a href="https://www.coursera.org/learn/retail-digital-supply-chain" target="_blank" rel="noopener noreferrer">Retail Analytics</a> - Rutgers retail analytics</li>
+<li><a href="https://facebook.github.io/prophet/docs/quick_start.html" target="_blank" rel="noopener noreferrer">Demand Forecasting</a> - Prophet forecasting for retail</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Financial Services Analytics</strong></p>
+<ul>
+<li>Credit risk modeling and fraud detection</li>
+<li>Algorithmic trading and portfolio optimization</li>
+<li>Regulatory reporting and compliance analytics</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/financial-risk-management" target="_blank" rel="noopener noreferrer">Financial Risk Analytics</a> - NYU financial risk course</li>
+<li><a href="https://github.com/Fraud-Detection-Handbook/fraud-detection-handbook" target="_blank" rel="noopener noreferrer">Fraud Detection</a> - Machine learning for fraud detection</li>
+<li><a href="https://github.com/wilsonfreitas/awesome-quant" target="_blank" rel="noopener noreferrer">Quantitative Finance</a> - Quantitative finance resources</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Technology and Product Analytics</strong></p>
+<ul>
+<li>User behavior analysis and product metrics</li>
+<li>A/B testing and feature experimentation</li>
+<li>Growth analytics and funnel optimization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://amplitude.com/blog/product-analytics" target="_blank" rel="noopener noreferrer">Product Analytics</a> - Product data analysis techniques</li>
+<li><a href="https://blog.mixpanel.com/growth-analytics/" target="_blank" rel="noopener noreferrer">Growth Analytics</a> - User growth and retention analysis</li>
+<li><a href="https://support.google.com/analytics/topic/1008008" target="_blank" rel="noopener noreferrer">Web Analytics</a> - Google Analytics fundamentals</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="career-development-and-specialization">Career Development and Specialization<a href="#career-development-and-specialization" class="hash-link" aria-label="Direct link to Career Development and Specialization" title="Direct link to Career Development and Specialization">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Data Science Career Paths</strong></p>
+<ul>
+<li>Analytics specialization vs generalist roles</li>
+<li>Research scientist and applied scientist positions</li>
+<li>Data science management and leadership</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.kdnuggets.com/2021/12/data-science-career-guide-2022.html" target="_blank" rel="noopener noreferrer">Data Science Career Guide</a> - Career paths and progression</li>
+<li><a href="https://hbr.org/2018/10/managing-a-data-science-team" target="_blank" rel="noopener noreferrer">Data Science Leadership</a> - Harvard Business Review leadership guide</li>
+<li><a href="https://www.nature.com/articles/d41586-018-07332-x" target="_blank" rel="noopener noreferrer">Academic vs Industry</a> - Career path comparison</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Professional Development and Networking</strong></p>
+<ul>
+<li>Building a data science portfolio</li>
+<li>Conference presentations and publication</li>
+<li>Professional networking and community engagement</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://towardsdatascience.com/how-to-build-a-data-science-portfolio-5f566517c79c" target="_blank" rel="noopener noreferrer">Data Science Portfolio</a> - Portfolio development guide</li>
+<li><a href="https://github.com/academic/awesome-datascience#conferences" target="_blank" rel="noopener noreferrer">Data Science Conferences</a> - Professional conferences and events</li>
+<li><a href="https://www.kaggle.com/discussions" target="_blank" rel="noopener noreferrer">Kaggle Community</a> - Data science competition and community</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Congratulations!</strong> You have completed the comprehensive Data Science learning path. You now possess the analytical skills and technical knowledge to extract insights from data, build predictive models, and drive data-informed decision making. Continue your journey by specializing in domain applications, contributing to research, and leading data-driven initiatives!</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site/tree/main/docs/data-science/05-advanced-analytics.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/chasingcloudcareers-site/docs/data-science/data-visualization"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Data Visualization</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Getting Started with Linux Engineering</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#advanced-statistical-methods" class="table-of-contents__link toc-highlight">Advanced Statistical Methods</a></li><li><a href="#causal-inference-and-experimental-design" class="table-of-contents__link toc-highlight">Causal Inference and Experimental Design</a></li><li><a href="#text-analytics-and-natural-language-processing" class="table-of-contents__link toc-highlight">Text Analytics and Natural Language Processing</a></li><li><a href="#advanced-machine-learning-techniques" class="table-of-contents__link toc-highlight">Advanced Machine Learning Techniques</a></li><li><a href="#domain-specific-analytics-applications" class="table-of-contents__link toc-highlight">Domain-Specific Analytics Applications</a></li><li><a href="#big-data-analytics-and-distributed-computing" class="table-of-contents__link toc-highlight">Big Data Analytics and Distributed Computing</a></li><li><a href="#business-intelligence-and-decision-support" class="table-of-contents__link toc-highlight">Business Intelligence and Decision Support</a></li><li><a href="#research-and-academic-data-science" class="table-of-contents__link toc-highlight">Research and Academic Data Science</a></li><li><a href="#specialized-analytics-domains" class="table-of-contents__link toc-highlight">Specialized Analytics Domains</a></li><li><a href="#data-ethics-and-responsible-analytics" class="table-of-contents__link toc-highlight">Data Ethics and Responsible Analytics</a></li><li><a href="#industry-applications-and-case-studies" class="table-of-contents__link toc-highlight">Industry Applications and Case Studies</a></li><li><a href="#career-development-and-specialization" class="table-of-contents__link toc-highlight">Career Development and Specialization</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Learning Paths</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/intro">Get Started</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/support-engineering/getting-started">Support Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/cloud-engineering/getting-started">Cloud Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">DevOps Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/ai-engineering/getting-started">AI Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/research-engineering/getting-started">Research Engineering</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/about">About</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Chasing Cloud Careers LLC - All rights reserved.</div></div></div></footer></div>
+</body>
+</html>
