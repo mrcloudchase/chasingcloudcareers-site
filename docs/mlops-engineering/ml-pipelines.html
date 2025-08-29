@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-mlops-engineering/ml-pipelines" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">ML Pipelines | Chasing Cloud Careers</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" property="og:url" content="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/mlops-engineering/ml-pipelines"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="ML Pipelines | Chasing Cloud Careers"><meta data-rh="true" name="description" content="Data Pipeline Architecture and Design"><meta data-rh="true" property="og:description" content="Data Pipeline Architecture and Design"><link data-rh="true" rel="icon" href="/chasingcloudcareers-site/img/logo.png"><link data-rh="true" rel="canonical" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/mlops-engineering/ml-pipelines"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/mlops-engineering/ml-pipelines" hreflang="en"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/mlops-engineering/ml-pipelines" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"MLOps Engineering","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/category/mlops-engineering"},{"@type":"ListItem","position":2,"name":"ML Pipelines","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/mlops-engineering/ml-pipelines"}]}</script><link rel="alternate" type="application/rss+xml" href="/chasingcloudcareers-site/blog/rss.xml" title="Chasing Cloud Careers RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/chasingcloudcareers-site/blog/atom.xml" title="Chasing Cloud Careers Atom Feed"><link rel="stylesheet" href="/chasingcloudcareers-site/assets/css/styles.8643be14.css">
+<script src="/chasingcloudcareers-site/assets/js/runtime~main.63f5f08f.js" defer="defer"></script>
+<script src="/chasingcloudcareers-site/assets/js/main.310d0031.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/chasingcloudcareers-site/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/chasingcloudcareers-site/"><div class="navbar__logo"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Chasing Cloud Careers</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/chasingcloudcareers-site/docs/intro">Learning Paths</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/blog">Blog</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/about">About</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/chasingcloudcareers-site/docs/intro">Welcome to Chasing Cloud Careers</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/support-engineering">Support Engineering</a><button aria-label="Expand sidebar category &#x27;Support Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/cloud-engineering">Cloud Engineering</a><button aria-label="Expand sidebar category &#x27;Cloud Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/ai-engineering">AI Engineering</a><button aria-label="Expand sidebar category &#x27;AI Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/devops-engineering">DevOps Engineering</a><button aria-label="Expand sidebar category &#x27;DevOps Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/machine-learning-engineering">Machine Learning Engineering</a><button aria-label="Expand sidebar category &#x27;Machine Learning Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/chasingcloudcareers-site/docs/category/mlops-engineering">MLOps Engineering</a><button aria-label="Collapse sidebar category &#x27;MLOps Engineering&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/prerequisites">Prerequisites for MLOps Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/getting-started">Getting Started with MLOps Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/mlops-fundamentals">MLOps Fundamentals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/ml-pipelines">ML Pipelines</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/model-deployment">Model Deployment</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/monitoring-observability">Monitoring and Observability</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/infrastructure-automation">Infrastructure Automation</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/research-engineering">Research Engineering</a><button aria-label="Expand sidebar category &#x27;Research Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/chasingcloudcareers-site/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/chasingcloudcareers-site/docs/category/mlops-engineering"><span>MLOps Engineering</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">ML Pipelines</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>ML Pipelines</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="data-pipeline-architecture-and-design">Data Pipeline Architecture and Design<a href="#data-pipeline-architecture-and-design" class="hash-link" aria-label="Direct link to Data Pipeline Architecture and Design" title="Direct link to Data Pipeline Architecture and Design">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>ETL/ELT Pipeline Patterns for ML</strong></p>
+<ul>
+<li>Extract, Transform, Load (ETL) vs Extract, Load, Transform (ELT) strategies</li>
+<li>Batch processing vs stream processing for ML data</li>
+<li>Data pipeline orchestration and scheduling frameworks</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://airflow.apache.org/docs/" target="_blank" rel="noopener noreferrer">Apache Airflow Documentation</a> - Workflow orchestration platform for data pipelines</li>
+<li><a href="https://docs.prefect.io/" target="_blank" rel="noopener noreferrer">Prefect Documentation</a> - Modern data workflow orchestration</li>
+<li><a href="https://luigi.readthedocs.io/" target="_blank" rel="noopener noreferrer">Luigi Pipeline Framework</a> - Python pipeline building framework</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Ingestion and Collection</strong></p>
+<ul>
+<li>Real-time data streaming with Apache Kafka</li>
+<li>Batch data ingestion from databases and APIs</li>
+<li>Data lake and data warehouse integration patterns</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kafka.apache.org/documentation/" target="_blank" rel="noopener noreferrer">Apache Kafka Documentation</a> - Distributed streaming platform</li>
+<li><a href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html" target="_blank" rel="noopener noreferrer">Apache Spark Structured Streaming</a> - Real-time data processing</li>
+<li><a href="https://docs.delta.io/" target="_blank" rel="noopener noreferrer">Delta Lake</a> - Reliable data lakes with ACID transactions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Validation and Quality Assurance</strong></p>
+<ul>
+<li>Schema validation and data type enforcement</li>
+<li>Statistical data profiling and anomaly detection</li>
+<li>Data quality monitoring and alerting systems</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.greatexpectations.io/" target="_blank" rel="noopener noreferrer">Great Expectations</a> - Data validation and documentation framework</li>
+<li><a href="https://pandera.readthedocs.io/" target="_blank" rel="noopener noreferrer">Pandera</a> - Statistical data validation for pandas</li>
+<li><a href="https://griffin.apache.org/" target="_blank" rel="noopener noreferrer">Apache Griffin</a> - Data quality solution for big data</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="feature-engineering-pipelines">Feature Engineering Pipelines<a href="#feature-engineering-pipelines" class="hash-link" aria-label="Direct link to Feature Engineering Pipelines" title="Direct link to Feature Engineering Pipelines">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Automated Feature Engineering</strong></p>
+<ul>
+<li>Feature extraction and transformation pipelines</li>
+<li>Time-series feature engineering and windowing</li>
+<li>Text and image feature engineering automation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://feature-engine.readthedocs.io/" target="_blank" rel="noopener noreferrer">Feature-engine</a> - Feature engineering library for Python</li>
+<li><a href="https://tsfresh.readthedocs.io/" target="_blank" rel="noopener noreferrer">TSfresh</a> - Automated time series feature extraction</li>
+<li><a href="https://docs.featuretools.com/" target="_blank" rel="noopener noreferrer">Featuretools</a> - Automated feature engineering framework</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Feature Store Implementation</strong></p>
+<ul>
+<li>Online and offline feature serving architecture</li>
+<li>Feature versioning and lineage tracking</li>
+<li>Feature monitoring and drift detection</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.feast.dev/" target="_blank" rel="noopener noreferrer">Feast Feature Store</a> - Open-source feature store for ML</li>
+<li><a href="https://www.tecton.ai/blog/what-is-a-feature-store/" target="_blank" rel="noopener noreferrer">Tecton Feature Platform</a> - Enterprise feature store concepts</li>
+<li><a href="https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html" target="_blank" rel="noopener noreferrer">AWS SageMaker Feature Store</a> - Managed feature store service</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Feature Pipeline Optimization</strong></p>
+<ul>
+<li>Distributed feature computation with Spark</li>
+<li>Feature caching and materialization strategies</li>
+<li>Feature pipeline performance monitoring</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://spark.apache.org/docs/latest/ml-pipeline.html" target="_blank" rel="noopener noreferrer">Apache Spark ML Pipelines</a> - Scalable ML pipeline construction</li>
+<li><a href="https://docs.dask.org/en/stable/" target="_blank" rel="noopener noreferrer">Dask for Feature Engineering</a> - Parallel computing for feature pipelines</li>
+<li><a href="https://docs.ray.io/en/latest/ray-overview/index.html" target="_blank" rel="noopener noreferrer">Ray for Distributed ML</a> - Distributed computing framework</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="training-pipeline-automation">Training Pipeline Automation<a href="#training-pipeline-automation" class="hash-link" aria-label="Direct link to Training Pipeline Automation" title="Direct link to Training Pipeline Automation">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Automated Model Training Workflows</strong></p>
+<ul>
+<li>Training pipeline orchestration and scheduling</li>
+<li>Distributed training and parallel processing</li>
+<li>Hyperparameter optimization integration</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.kubeflow.org/docs/components/pipelines/" target="_blank" rel="noopener noreferrer">Kubeflow Pipelines</a> - ML workflows on Kubernetes</li>
+<li><a href="https://beam.apache.org/documentation/" target="_blank" rel="noopener noreferrer">Apache Beam</a> - Unified batch and stream processing</li>
+<li><a href="https://mlflow.org/docs/latest/projects.html" target="_blank" rel="noopener noreferrer">MLflow Projects</a> - Reproducible ML project packaging</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Distributed Training Systems</strong></p>
+<ul>
+<li>Multi-GPU and multi-node training coordination</li>
+<li>Parameter server and all-reduce architectures</li>
+<li>Fault tolerance and recovery mechanisms</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://horovod.readthedocs.io/" target="_blank" rel="noopener noreferrer">Horovod</a> - Distributed deep learning training framework</li>
+<li><a href="https://pytorch.org/tutorials/intermediate/ddp_tutorial.html" target="_blank" rel="noopener noreferrer">PyTorch Distributed</a> - Distributed training with PyTorch</li>
+<li><a href="https://www.tensorflow.org/guide/distributed_training" target="_blank" rel="noopener noreferrer">TensorFlow Distributed</a> - TensorFlow distributed strategies</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Continuous Training and Model Updates</strong></p>
+<ul>
+<li>Automated retraining triggers and schedules</li>
+<li>Incremental learning and online model updates</li>
+<li>Model performance monitoring and retraining decisions</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://martinfowler.com/articles/cd4ml.html" target="_blank" rel="noopener noreferrer">Continuous Training Patterns</a> - Continuous delivery for ML systems</li>
+<li><a href="https://mlflow.org/docs/latest/model-registry.html" target="_blank" rel="noopener noreferrer">MLflow Model Registry</a> - Model lifecycle management</li>
+<li><a href="https://docs.evidentlyai.com/" target="_blank" rel="noopener noreferrer">Evidently AI</a> - ML model monitoring and retraining</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pipeline-orchestration-frameworks">Pipeline Orchestration Frameworks<a href="#pipeline-orchestration-frameworks" class="hash-link" aria-label="Direct link to Pipeline Orchestration Frameworks" title="Direct link to Pipeline Orchestration Frameworks">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Apache Airflow for ML Workflows</strong></p>
+<ul>
+<li>DAG design patterns for ML pipelines</li>
+<li>Custom operators for ML tasks</li>
+<li>Integration with ML frameworks and cloud services</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html" target="_blank" rel="noopener noreferrer">Airflow ML Tutorial</a> - Building ML workflows with Airflow</li>
+<li><a href="https://airflow.apache.org/docs/apache-airflow-providers/packages-ref.html" target="_blank" rel="noopener noreferrer">Airflow ML Operators</a> - ML-specific Airflow operators</li>
+<li><a href="https://docs.astronomer.io/" target="_blank" rel="noopener noreferrer">Astronomer Airflow</a> - Managed Airflow platform</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Kubeflow for Kubernetes-Native ML</strong></p>
+<ul>
+<li>Kubeflow Pipelines for ML workflow orchestration</li>
+<li>Katib for hyperparameter tuning</li>
+<li>KFServing for model serving</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.kubeflow.org/docs/" target="_blank" rel="noopener noreferrer">Kubeflow Documentation</a> - End-to-end ML platform on Kubernetes</li>
+<li><a href="https://kubeflow-pipelines.readthedocs.io/" target="_blank" rel="noopener noreferrer">Kubeflow Pipelines SDK</a> - Python SDK for pipeline development</li>
+<li><a href="https://github.com/kubeflow/examples" target="_blank" rel="noopener noreferrer">Kubeflow Examples</a> - Real-world Kubeflow implementations</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud-Native Pipeline Solutions</strong></p>
+<ul>
+<li>AWS Step Functions for serverless ML workflows</li>
+<li>Azure ML Pipelines for integrated ML workflows</li>
+<li>Google Cloud Composer for managed Airflow</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.aws.amazon.com/step-functions/" target="_blank" rel="noopener noreferrer">AWS Step Functions</a> - Serverless workflow orchestration</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines" target="_blank" rel="noopener noreferrer">Azure ML Pipelines</a> - Azure ML workflow management</li>
+<li><a href="https://cloud.google.com/composer/docs" target="_blank" rel="noopener noreferrer">Google Cloud Composer</a> - Managed Apache Airflow service</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="data-processing-and-transformation">Data Processing and Transformation<a href="#data-processing-and-transformation" class="hash-link" aria-label="Direct link to Data Processing and Transformation" title="Direct link to Data Processing and Transformation">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Big Data Processing with Apache Spark</strong></p>
+<ul>
+<li>Spark SQL for large-scale data transformations</li>
+<li>Spark MLlib for distributed machine learning</li>
+<li>Spark Streaming for real-time data processing</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://spark.apache.org/docs/latest/" target="_blank" rel="noopener noreferrer">Apache Spark Documentation</a> - Unified analytics engine for big data</li>
+<li><a href="https://spark.apache.org/docs/latest/api/python/getting_started/index.html" target="_blank" rel="noopener noreferrer">PySpark Tutorial</a> - Python API for Spark</li>
+<li><a href="https://spark.apache.org/docs/latest/ml-pipeline.html" target="_blank" rel="noopener noreferrer">Spark ML Pipelines</a> - Machine learning pipelines</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Stream Processing for Real-Time ML</strong></p>
+<ul>
+<li>Apache Kafka Streams for stream processing</li>
+<li>Apache Flink for complex event processing</li>
+<li>Real-time feature computation and serving</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kafka.apache.org/documentation/streams/" target="_blank" rel="noopener noreferrer">Kafka Streams</a> - Stream processing library</li>
+<li><a href="https://flink.apache.org/learn-flink/" target="_blank" rel="noopener noreferrer">Apache Flink</a> - Stream processing framework</li>
+<li><a href="https://docs.confluent.io/" target="_blank" rel="noopener noreferrer">Confluent Platform</a> - Enterprise Kafka platform</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Transformation and Preprocessing</strong></p>
+<ul>
+<li>Scalable data cleaning and preprocessing</li>
+<li>Feature scaling and normalization at scale</li>
+<li>Categorical encoding and text processing pipelines</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://modin.readthedocs.io/" target="_blank" rel="noopener noreferrer">Pandas on Ray</a> - Scalable pandas operations</li>
+<li><a href="https://docs.dask.org/en/stable/dataframe.html" target="_blank" rel="noopener noreferrer">Dask DataFrame</a> - Parallel pandas operations</li>
+<li><a href="https://docs.vaex.io/" target="_blank" rel="noopener noreferrer">Vaex</a> - Out-of-core dataframe processing</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pipeline-testing-and-validation">Pipeline Testing and Validation<a href="#pipeline-testing-and-validation" class="hash-link" aria-label="Direct link to Pipeline Testing and Validation" title="Direct link to Pipeline Testing and Validation">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Data Pipeline Testing</strong></p>
+<ul>
+<li>Unit testing for data transformations</li>
+<li>Integration testing for end-to-end pipelines</li>
+<li>Data quality testing and validation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.pytest.org/en/stable/" target="_blank" rel="noopener noreferrer">pytest for Data Pipelines</a> - Python testing framework</li>
+<li><a href="https://docs.greatexpectations.io/docs/guides/validation/how_to_validate_data_by_running_a_checkpoint" target="_blank" rel="noopener noreferrer">Great Expectations Testing</a> - Data validation testing</li>
+<li><a href="https://docs.getdbt.com/docs/building-a-dbt-project/tests" target="_blank" rel="noopener noreferrer">dbt Testing</a> - Data transformation testing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>ML Pipeline Validation</strong></p>
+<ul>
+<li>Model training pipeline testing</li>
+<li>Cross-validation and holdout testing strategies</li>
+<li>Pipeline performance and resource testing</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://madewithml.com/courses/mlops/testing/" target="_blank" rel="noopener noreferrer">ML Testing Best Practices</a> - Comprehensive ML testing guide</li>
+<li><a href="https://scikit-learn.org/stable/modules/cross_validation.html" target="_blank" rel="noopener noreferrer">Model Validation Techniques</a> - Cross-validation and model selection</li>
+<li><a href="https://github.com/bentoml/BentoML/blob/main/tests/README.md" target="_blank" rel="noopener noreferrer">Pipeline Performance Testing</a> - ML pipeline testing examples</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Continuous Integration for Pipelines</strong></p>
+<ul>
+<li>Automated pipeline testing in CI/CD</li>
+<li>Pipeline deployment and rollback strategies</li>
+<li>Environment-specific pipeline configuration</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer">GitHub Actions for ML</a> - CI/CD for ML pipelines</li>
+<li><a href="https://docs.gitlab.com/ee/ci/examples/" target="_blank" rel="noopener noreferrer">GitLab CI/CD for Data Science</a> - Pipeline automation examples</li>
+<li><a href="https://www.jenkins.io/solutions/pipeline/" target="_blank" rel="noopener noreferrer">Jenkins for ML Pipelines</a> - Pipeline automation with Jenkins</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pipeline-monitoring-and-observability">Pipeline Monitoring and Observability<a href="#pipeline-monitoring-and-observability" class="hash-link" aria-label="Direct link to Pipeline Monitoring and Observability" title="Direct link to Pipeline Monitoring and Observability">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Pipeline Performance Monitoring</strong></p>
+<ul>
+<li>Execution time and resource utilization tracking</li>
+<li>Pipeline failure detection and alerting</li>
+<li>Bottleneck identification and optimization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://prometheus.io/docs/" target="_blank" rel="noopener noreferrer">Prometheus for Pipeline Monitoring</a> - Metrics collection for pipelines</li>
+<li><a href="https://grafana.com/docs/" target="_blank" rel="noopener noreferrer">Grafana Dashboards</a> - Pipeline performance visualization</li>
+<li><a href="https://airflow.apache.org/docs/apache-airflow/stable/logging-monitoring/index.html" target="_blank" rel="noopener noreferrer">Apache Airflow Monitoring</a> - Airflow observability</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Quality Monitoring</strong></p>
+<ul>
+<li>Schema drift detection and alerting</li>
+<li>Statistical data profiling and anomaly detection</li>
+<li>Data freshness and completeness monitoring</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.getmontecarlo.com/" target="_blank" rel="noopener noreferrer">Monte Carlo Data Observability</a> - Data reliability platform</li>
+<li><a href="https://docs.datadoghq.com/monitors/" target="_blank" rel="noopener noreferrer">Datadog Data Monitoring</a> - Infrastructure and application monitoring</li>
+<li><a href="https://docs.evidentlyai.com/" target="_blank" rel="noopener noreferrer">Evidently Data Drift</a> - Data and model drift detection</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Pipeline Logging and Debugging</strong></p>
+<ul>
+<li>Structured logging for pipeline components</li>
+<li>Error tracking and root cause analysis</li>
+<li>Pipeline lineage and dependency tracking</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.honeycomb.io/blog/structured-logging-and-your-team/" target="_blank" rel="noopener noreferrer">Structured Logging Best Practices</a> - Logging strategies</li>
+<li><a href="https://www.elastic.co/what-is/elk-stack" target="_blank" rel="noopener noreferrer">ELK Stack for Pipeline Logs</a> - Log aggregation and analysis</li>
+<li><a href="https://atlas.apache.org/" target="_blank" rel="noopener noreferrer">Apache Atlas</a> - Data governance and lineage</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pipeline-optimization-and-scaling">Pipeline Optimization and Scaling<a href="#pipeline-optimization-and-scaling" class="hash-link" aria-label="Direct link to Pipeline Optimization and Scaling" title="Direct link to Pipeline Optimization and Scaling">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Performance Optimization Techniques</strong></p>
+<ul>
+<li>Pipeline parallelization and resource allocation</li>
+<li>Caching strategies for intermediate results</li>
+<li>Data partitioning and distribution optimization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://spark.apache.org/docs/latest/tuning.html" target="_blank" rel="noopener noreferrer">Spark Performance Tuning</a> - Apache Spark optimization guide</li>
+<li><a href="https://docs.dask.org/en/stable/best-practices.html" target="_blank" rel="noopener noreferrer">Dask Performance</a> - Distributed computing optimization</li>
+<li><a href="https://docs.prefect.io/core/concepts/results.html" target="_blank" rel="noopener noreferrer">Pipeline Caching Strategies</a> - Result caching in workflows</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Auto-Scaling and Resource Management</strong></p>
+<ul>
+<li>Dynamic resource allocation based on workload</li>
+<li>Cost optimization for cloud-based pipelines</li>
+<li>Spot instance and preemptible VM usage</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/" target="_blank" rel="noopener noreferrer">Kubernetes Autoscaling</a> - Pod autoscaling for ML workloads</li>
+<li><a href="https://docs.aws.amazon.com/batch/" target="_blank" rel="noopener noreferrer">AWS Batch for ML</a> - Managed batch computing service</li>
+<li><a href="https://cloud.google.com/dataflow/docs" target="_blank" rel="noopener noreferrer">Google Cloud Dataflow</a> - Serverless data processing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Pipeline Reliability and Fault Tolerance</strong></p>
+<ul>
+<li>Retry mechanisms and error handling</li>
+<li>Checkpointing and recovery strategies</li>
+<li>Circuit breaker patterns for pipeline components</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://martinfowler.com/articles/patterns-of-distributed-systems/" target="_blank" rel="noopener noreferrer">Fault Tolerance Patterns</a> - Distributed systems reliability</li>
+<li><a href="https://beam.apache.org/documentation/programming-guide/#triggers" target="_blank" rel="noopener noreferrer">Apache Beam Fault Tolerance</a> - Stream processing reliability</li>
+<li><a href="https://airflow.apache.org/docs/apache-airflow/stable/concepts/tasks.html#retries" target="_blank" rel="noopener noreferrer">Airflow Error Handling</a> - Pipeline error recovery</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ready to Deploy?</strong> Continue to <a href="/chasingcloudcareers-site/docs/mlops-engineering/model-deployment">Module 3: Model Deployment</a> to master production model serving, containerization, and scalable inference systems.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site/tree/main/docs/mlops-engineering/02-ml-pipelines.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/chasingcloudcareers-site/docs/mlops-engineering/mlops-fundamentals"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MLOps Fundamentals</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/chasingcloudcareers-site/docs/mlops-engineering/model-deployment"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Model Deployment</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#data-pipeline-architecture-and-design" class="table-of-contents__link toc-highlight">Data Pipeline Architecture and Design</a></li><li><a href="#feature-engineering-pipelines" class="table-of-contents__link toc-highlight">Feature Engineering Pipelines</a></li><li><a href="#training-pipeline-automation" class="table-of-contents__link toc-highlight">Training Pipeline Automation</a></li><li><a href="#pipeline-orchestration-frameworks" class="table-of-contents__link toc-highlight">Pipeline Orchestration Frameworks</a></li><li><a href="#data-processing-and-transformation" class="table-of-contents__link toc-highlight">Data Processing and Transformation</a></li><li><a href="#pipeline-testing-and-validation" class="table-of-contents__link toc-highlight">Pipeline Testing and Validation</a></li><li><a href="#pipeline-monitoring-and-observability" class="table-of-contents__link toc-highlight">Pipeline Monitoring and Observability</a></li><li><a href="#pipeline-optimization-and-scaling" class="table-of-contents__link toc-highlight">Pipeline Optimization and Scaling</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Learning Paths</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/intro">Get Started</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/support-engineering/getting-started">Support Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/cloud-engineering/getting-started">Cloud Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">DevOps Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/ai-engineering/getting-started">AI Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/research-engineering/getting-started">Research Engineering</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/about">About</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Chasing Cloud Careers LLC - All rights reserved.</div></div></div></footer></div>
+</body>
+</html>

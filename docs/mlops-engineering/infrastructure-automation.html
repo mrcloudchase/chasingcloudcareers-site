@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-mlops-engineering/infrastructure-automation" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Infrastructure Automation | Chasing Cloud Careers</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://mrcloudchase.github.io/chasingcloudcareers-site/img/logo.png"><meta data-rh="true" property="og:url" content="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/mlops-engineering/infrastructure-automation"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Infrastructure Automation | Chasing Cloud Careers"><meta data-rh="true" name="description" content="Infrastructure as Code for ML Systems"><meta data-rh="true" property="og:description" content="Infrastructure as Code for ML Systems"><link data-rh="true" rel="icon" href="/chasingcloudcareers-site/img/logo.png"><link data-rh="true" rel="canonical" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/mlops-engineering/infrastructure-automation"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/mlops-engineering/infrastructure-automation" hreflang="en"><link data-rh="true" rel="alternate" href="https://mrcloudchase.github.io/chasingcloudcareers-site/docs/mlops-engineering/infrastructure-automation" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"MLOps Engineering","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/category/mlops-engineering"},{"@type":"ListItem","position":2,"name":"Infrastructure Automation","item":"https://mrcloudchase.github.io/chasingcloudcareers-site/docs/mlops-engineering/infrastructure-automation"}]}</script><link rel="alternate" type="application/rss+xml" href="/chasingcloudcareers-site/blog/rss.xml" title="Chasing Cloud Careers RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/chasingcloudcareers-site/blog/atom.xml" title="Chasing Cloud Careers Atom Feed"><link rel="stylesheet" href="/chasingcloudcareers-site/assets/css/styles.8643be14.css">
+<script src="/chasingcloudcareers-site/assets/js/runtime~main.63f5f08f.js" defer="defer"></script>
+<script src="/chasingcloudcareers-site/assets/js/main.310d0031.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/chasingcloudcareers-site/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/chasingcloudcareers-site/"><div class="navbar__logo"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/chasingcloudcareers-site/img/logo.png" alt="Chasing Cloud Careers Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Chasing Cloud Careers</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/chasingcloudcareers-site/docs/intro">Learning Paths</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/blog">Blog</a><a class="navbar__item navbar__link" href="/chasingcloudcareers-site/about">About</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/chasingcloudcareers-site/docs/intro">Welcome to Chasing Cloud Careers</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/support-engineering">Support Engineering</a><button aria-label="Expand sidebar category &#x27;Support Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/cloud-engineering">Cloud Engineering</a><button aria-label="Expand sidebar category &#x27;Cloud Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/ai-engineering">AI Engineering</a><button aria-label="Expand sidebar category &#x27;AI Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/devops-engineering">DevOps Engineering</a><button aria-label="Expand sidebar category &#x27;DevOps Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/machine-learning-engineering">Machine Learning Engineering</a><button aria-label="Expand sidebar category &#x27;Machine Learning Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/chasingcloudcareers-site/docs/category/mlops-engineering">MLOps Engineering</a><button aria-label="Collapse sidebar category &#x27;MLOps Engineering&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/prerequisites">Prerequisites for MLOps Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/getting-started">Getting Started with MLOps Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/mlops-fundamentals">MLOps Fundamentals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/ml-pipelines">ML Pipelines</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/model-deployment">Model Deployment</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/monitoring-observability">Monitoring and Observability</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/chasingcloudcareers-site/docs/mlops-engineering/infrastructure-automation">Infrastructure Automation</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/chasingcloudcareers-site/docs/category/research-engineering">Research Engineering</a><button aria-label="Expand sidebar category &#x27;Research Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/chasingcloudcareers-site/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/chasingcloudcareers-site/docs/category/mlops-engineering"><span>MLOps Engineering</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Infrastructure Automation</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Infrastructure Automation</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="infrastructure-as-code-for-ml-systems">Infrastructure as Code for ML Systems<a href="#infrastructure-as-code-for-ml-systems" class="hash-link" aria-label="Direct link to Infrastructure as Code for ML Systems" title="Direct link to Infrastructure as Code for ML Systems">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Terraform for Multi-Cloud ML Infrastructure</strong></p>
+<ul>
+<li>ML infrastructure provisioning across AWS, Azure, and GCP</li>
+<li>State management and remote backends for team collaboration</li>
+<li>Module development for reusable ML infrastructure components</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.terraform.io/docs" target="_blank" rel="noopener noreferrer">Terraform Documentation</a> - Infrastructure as Code platform</li>
+<li><a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs" target="_blank" rel="noopener noreferrer">Terraform AWS Provider</a> - AWS resource provisioning</li>
+<li><a href="https://www.terraform.io/docs/cloud/guides/recommended-practices/index.html" target="_blank" rel="noopener noreferrer">Terraform Best Practices</a> - Production Terraform workflows</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>CloudFormation and ARM Templates</strong></p>
+<ul>
+<li>AWS CloudFormation for ML infrastructure automation</li>
+<li>Azure Resource Manager (ARM) templates for ML resources</li>
+<li>Template versioning and stack management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.aws.amazon.com/cloudformation/" target="_blank" rel="noopener noreferrer">AWS CloudFormation</a> - AWS infrastructure automation</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/" target="_blank" rel="noopener noreferrer">Azure ARM Templates</a> - Azure infrastructure as code</li>
+<li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html" target="_blank" rel="noopener noreferrer">CloudFormation Best Practices</a> - CF template optimization</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Configuration Management with Ansible</strong></p>
+<ul>
+<li>Ansible playbooks for ML system configuration</li>
+<li>Inventory management and variable handling</li>
+<li>Integration with cloud platforms and container orchestration</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.ansible.com/" target="_blank" rel="noopener noreferrer">Ansible Documentation</a> - Configuration management platform</li>
+<li><a href="https://docs.ansible.com/ansible/latest/collections/kubernetes/core/" target="_blank" rel="noopener noreferrer">Ansible for Kubernetes</a> - K8s automation with Ansible</li>
+<li><a href="https://galaxy.ansible.com/" target="_blank" rel="noopener noreferrer">Ansible Galaxy</a> - Community automation content</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="container-orchestration-and-kubernetes">Container Orchestration and Kubernetes<a href="#container-orchestration-and-kubernetes" class="hash-link" aria-label="Direct link to Container Orchestration and Kubernetes" title="Direct link to Container Orchestration and Kubernetes">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Kubernetes for ML Workloads</strong></p>
+<ul>
+<li>Pod scheduling and resource allocation for ML jobs</li>
+<li>StatefulSets for distributed training workloads</li>
+<li>Jobs and CronJobs for batch ML processing</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kubernetes.io/docs/" target="_blank" rel="noopener noreferrer">Kubernetes Documentation</a> - Container orchestration platform</li>
+<li><a href="https://kubernetes.io/docs/concepts/workloads/" target="_blank" rel="noopener noreferrer">Kubernetes ML Workloads</a> - Workload types and management</li>
+<li><a href="https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/" target="_blank" rel="noopener noreferrer">Kubernetes GPU Scheduling</a> - GPU resource management</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Helm for ML Application Management</strong></p>
+<ul>
+<li>Helm charts for ML application packaging</li>
+<li>Configuration templating and environment management</li>
+<li>Chart repositories and dependency management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://helm.sh/docs/" target="_blank" rel="noopener noreferrer">Helm Documentation</a> - Kubernetes package manager</li>
+<li><a href="https://helm.sh/docs/chart_best_practices/" target="_blank" rel="noopener noreferrer">Helm Chart Best Practices</a> - Chart development guidelines</li>
+<li><a href="https://artifacthub.io/" target="_blank" rel="noopener noreferrer">Artifact Hub</a> - Kubernetes package discovery</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Operator Pattern for ML Systems</strong></p>
+<ul>
+<li>Custom Resource Definitions (CRDs) for ML workloads</li>
+<li>Kubernetes operators for ML platform management</li>
+<li>Controller patterns and reconciliation loops</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/" target="_blank" rel="noopener noreferrer">Kubernetes Operators</a> - Operator pattern documentation</li>
+<li><a href="https://book.kubebuilder.io/" target="_blank" rel="noopener noreferrer">Kubebuilder</a> - Operator development framework</li>
+<li><a href="https://sdk.operatorframework.io/" target="_blank" rel="noopener noreferrer">Operator SDK</a> - Operator development toolkit</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cicd-automation-for-ml">CI/CD Automation for ML<a href="#cicd-automation-for-ml" class="hash-link" aria-label="Direct link to CI/CD Automation for ML" title="Direct link to CI/CD Automation for ML">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>GitOps for ML Infrastructure</strong></p>
+<ul>
+<li>Git-based infrastructure and configuration management</li>
+<li>ArgoCD for continuous deployment of ML applications</li>
+<li>Flux for GitOps automation and synchronization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://argo-cd.readthedocs.io/" target="_blank" rel="noopener noreferrer">ArgoCD Documentation</a> - Declarative GitOps continuous delivery</li>
+<li><a href="https://fluxcd.io/docs/" target="_blank" rel="noopener noreferrer">Flux Documentation</a> - GitOps toolkit for Kubernetes</li>
+<li><a href="https://www.gitops.tech/" target="_blank" rel="noopener noreferrer">GitOps Guide</a> - GitOps principles and practices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Pipeline as Code</strong></p>
+<ul>
+<li>Jenkins pipelines for ML workflow automation</li>
+<li>GitHub Actions for ML CI/CD workflows</li>
+<li>GitLab CI/CD for integrated DevOps</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.jenkins.io/doc/book/pipeline/" target="_blank" rel="noopener noreferrer">Jenkins Pipeline</a> - Pipeline as code with Jenkins</li>
+<li><a href="https://docs.github.com/en/actions" target="_blank" rel="noopener noreferrer">GitHub Actions</a> - CI/CD automation platform</li>
+<li><a href="https://docs.gitlab.com/ee/ci/" target="_blank" rel="noopener noreferrer">GitLab CI/CD</a> - Integrated DevOps platform</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Automated Testing and Validation</strong></p>
+<ul>
+<li>Infrastructure testing with Terratest</li>
+<li>Container image security scanning</li>
+<li>Compliance and policy validation automation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://terratest.gruntwork.io/" target="_blank" rel="noopener noreferrer">Terratest</a> - Infrastructure testing framework</li>
+<li><a href="https://docs.docker.com/engine/scan/" target="_blank" rel="noopener noreferrer">Container Security Scanning</a> - Docker image vulnerability scanning</li>
+<li><a href="https://www.openpolicyagent.org/docs/latest/" target="_blank" rel="noopener noreferrer">Open Policy Agent</a> - Policy as code framework</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="scalable-ml-platform-architecture">Scalable ML Platform Architecture<a href="#scalable-ml-platform-architecture" class="hash-link" aria-label="Direct link to Scalable ML Platform Architecture" title="Direct link to Scalable ML Platform Architecture">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Multi-Tenant ML Platforms</strong></p>
+<ul>
+<li>Resource isolation and namespace management</li>
+<li>User access control and quota management</li>
+<li>Platform monitoring and resource optimization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kubernetes.io/docs/concepts/security/multi-tenancy/" target="_blank" rel="noopener noreferrer">Kubernetes Multi-Tenancy</a> - Multi-tenant cluster design</li>
+<li><a href="https://www.kubeflow.org/docs/components/multi-tenancy/" target="_blank" rel="noopener noreferrer">Kubeflow Multi-User</a> - Multi-user ML platform</li>
+<li><a href="https://platformengineering.org/blog/what-is-platform-engineering" target="_blank" rel="noopener noreferrer">Platform Engineering</a> - Platform engineering principles</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Microservices Architecture for ML</strong></p>
+<ul>
+<li>Service decomposition and API design</li>
+<li>Service mesh integration for ML microservices</li>
+<li>Data consistency and transaction management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://microservices.io/patterns/" target="_blank" rel="noopener noreferrer">Microservices Patterns</a> - Microservices architecture patterns</li>
+<li><a href="https://istio.io/latest/docs/" target="_blank" rel="noopener noreferrer">Service Mesh for ML</a> - Istio service mesh documentation</li>
+<li><a href="https://docs.aws.amazon.com/apigateway/" target="_blank" rel="noopener noreferrer">API Gateway Patterns</a> - API management for microservices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Event-Driven Architecture</strong></p>
+<ul>
+<li>Event sourcing and CQRS patterns for ML systems</li>
+<li>Message queues and event streaming integration</li>
+<li>Saga pattern for distributed ML transactions</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://martinfowler.com/articles/201701-event-driven.html" target="_blank" rel="noopener noreferrer">Event-Driven Architecture</a> - EDA patterns and implementation</li>
+<li><a href="https://kafka.apache.org/documentation/" target="_blank" rel="noopener noreferrer">Apache Kafka</a> - Event streaming platform</li>
+<li><a href="https://martinfowler.com/eaaDev/EventSourcing.html" target="_blank" rel="noopener noreferrer">Event Sourcing</a> - Event-driven data architecture</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-automation-and-compliance">Security Automation and Compliance<a href="#security-automation-and-compliance" class="hash-link" aria-label="Direct link to Security Automation and Compliance" title="Direct link to Security Automation and Compliance">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Security Scanning and Vulnerability Management</strong></p>
+<ul>
+<li>Automated container image scanning</li>
+<li>Infrastructure security scanning with tools</li>
+<li>Dependency vulnerability monitoring</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://aquasecurity.github.io/trivy/" target="_blank" rel="noopener noreferrer">Trivy Security Scanner</a> - Container vulnerability scanner</li>
+<li><a href="https://snyk.io/learn/" target="_blank" rel="noopener noreferrer">Snyk Security</a> - Developer-first security platform</li>
+<li><a href="https://owasp.org/www-project-dependency-check/" target="_blank" rel="noopener noreferrer">OWASP Dependency Check</a> - Dependency vulnerability detection</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Policy as Code and Compliance Automation</strong></p>
+<ul>
+<li>Open Policy Agent (OPA) for policy enforcement</li>
+<li>Compliance scanning and reporting automation</li>
+<li>Security policy validation in CI/CD pipelines</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.openpolicyagent.org/docs/latest/" target="_blank" rel="noopener noreferrer">Open Policy Agent</a> - Policy as code framework</li>
+<li><a href="https://open-policy-agent.github.io/gatekeeper/website/" target="_blank" rel="noopener noreferrer">Gatekeeper</a> - OPA for Kubernetes</li>
+<li><a href="https://falco.org/docs/" target="_blank" rel="noopener noreferrer">Falco Runtime Security</a> - Runtime security monitoring</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Secrets Management Automation</strong></p>
+<ul>
+<li>HashiCorp Vault for secrets management</li>
+<li>Kubernetes secrets and external secrets operators</li>
+<li>Automated secret rotation and lifecycle management</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://learn.hashicorp.com/vault" target="_blank" rel="noopener noreferrer">HashiCorp Vault</a> - Secrets management platform</li>
+<li><a href="https://external-secrets.io/" target="_blank" rel="noopener noreferrer">External Secrets Operator</a> - Kubernetes secrets integration</li>
+<li><a href="https://sealed-secrets.netlify.app/" target="_blank" rel="noopener noreferrer">Sealed Secrets</a> - Encrypted Kubernetes secrets</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-automation-patterns">Advanced Automation Patterns<a href="#advanced-automation-patterns" class="hash-link" aria-label="Direct link to Advanced Automation Patterns" title="Direct link to Advanced Automation Patterns">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Chaos Engineering for ML Systems</strong></p>
+<ul>
+<li>Fault injection and resilience testing</li>
+<li>ML system failure simulation and recovery</li>
+<li>Chaos engineering tools and frameworks</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://principlesofchaos.org/" target="_blank" rel="noopener noreferrer">Chaos Engineering Principles</a> - Chaos engineering methodology</li>
+<li><a href="https://litmuschaos.io/" target="_blank" rel="noopener noreferrer">Litmus Chaos</a> - Kubernetes-native chaos engineering</li>
+<li><a href="https://netflix.github.io/chaosmonkey/" target="_blank" rel="noopener noreferrer">Chaos Monkey</a> - Netflix chaos engineering tool</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Auto-Remediation and Self-Healing</strong></p>
+<ul>
+<li>Automated problem detection and resolution</li>
+<li>Self-healing infrastructure patterns</li>
+<li>Predictive maintenance for ML systems</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/" target="_blank" rel="noopener noreferrer">Self-Healing Systems</a> - Kubernetes self-healing mechanisms</li>
+<li><a href="https://github.com/kubernetes/autoscaler" target="_blank" rel="noopener noreferrer">Automated Remediation</a> - Kubernetes cluster autoscaler</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/industries/manufacturing/predictive-maintenance-overview" target="_blank" rel="noopener noreferrer">Predictive Maintenance</a> - ML for infrastructure maintenance</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Infrastructure Optimization Automation</strong></p>
+<ul>
+<li>Resource rightsizing and cost optimization</li>
+<li>Performance tuning and capacity planning</li>
+<li>Automated scaling policies and optimization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/" target="_blank" rel="noopener noreferrer">Kubernetes Resource Optimization</a> - Resource management best practices</li>
+<li><a href="https://aws.amazon.com/aws-cost-management/" target="_blank" rel="noopener noreferrer">Cloud Cost Optimization</a> - Automated cost optimization</li>
+<li><a href="https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler" target="_blank" rel="noopener noreferrer">Vertical Pod Autoscaler</a> - Automated resource rightsizing</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="platform-engineering-and-developer-experience">Platform Engineering and Developer Experience<a href="#platform-engineering-and-developer-experience" class="hash-link" aria-label="Direct link to Platform Engineering and Developer Experience" title="Direct link to Platform Engineering and Developer Experience">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>Internal Developer Platform (IDP)</strong></p>
+<ul>
+<li>Self-service ML platform design</li>
+<li>Developer portal and documentation automation</li>
+<li>Platform API design and integration</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://platformengineering.org/" target="_blank" rel="noopener noreferrer">Platform Engineering Guide</a> - Platform engineering best practices</li>
+<li><a href="https://backstage.io/docs/overview/what-is-backstage" target="_blank" rel="noopener noreferrer">Backstage Developer Portal</a> - Open-source developer portal</li>
+<li><a href="https://internaldeveloperplatform.org/" target="_blank" rel="noopener noreferrer">Internal Developer Platform</a> - IDP concepts and implementation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Workflow Automation and Productivity</strong></p>
+<ul>
+<li>Automated environment provisioning</li>
+<li>Code generation and template automation</li>
+<li>Developer workflow optimization</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://cookiecutter.readthedocs.io/" target="_blank" rel="noopener noreferrer">Cookiecutter Templates</a> - Project template automation</li>
+<li><a href="https://yeoman.io/learning/" target="_blank" rel="noopener noreferrer">Yeoman Generators</a> - Web application scaffolding</li>
+<li><a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository" target="_blank" rel="noopener noreferrer">GitHub Templates</a> - Repository template automation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Documentation Automation</strong></p>
+<ul>
+<li>Automated API documentation generation</li>
+<li>Infrastructure documentation and diagrams</li>
+<li>Runbook and procedure automation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener noreferrer">Sphinx Documentation</a> - Python documentation generator</li>
+<li><a href="https://www.mkdocs.org/" target="_blank" rel="noopener noreferrer">MkDocs</a> - Static site generator for documentation</li>
+<li><a href="https://terraform-docs.io/" target="_blank" rel="noopener noreferrer">Terraform Docs</a> - Automated Terraform documentation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="enterprise-mlops-and-governance">Enterprise MLOps and Governance<a href="#enterprise-mlops-and-governance" class="hash-link" aria-label="Direct link to Enterprise MLOps and Governance" title="Direct link to Enterprise MLOps and Governance">​</a></h2>
+<ul>
+<li><strong>What you Need to Know</strong>
+<ul>
+<li>
+<p><strong>ML Governance and Compliance</strong></p>
+<ul>
+<li>Model governance frameworks and policies</li>
+<li>Audit trails and compliance reporting</li>
+<li>Risk management and model validation</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/example-scenario/mlops/mlops-maturity-model" target="_blank" rel="noopener noreferrer">ML Governance Framework</a> - Enterprise ML governance</li>
+<li><a href="https://www.federalreserve.gov/supervisionreg/srletters/sr1107a1.pdf" target="_blank" rel="noopener noreferrer">Model Risk Management</a> - Federal Reserve model risk guidance</li>
+<li><a href="https://ai.google/principles/" target="_blank" rel="noopener noreferrer">AI Ethics Guidelines</a> - Responsible AI development</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Enterprise Integration Patterns</strong></p>
+<ul>
+<li>Legacy system integration and data migration</li>
+<li>Enterprise security and identity management</li>
+<li>Hybrid cloud and on-premises integration</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://www.enterpriseintegrationpatterns.com/" target="_blank" rel="noopener noreferrer">Enterprise Integration Patterns</a> - Integration architecture patterns</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/hybrid/" target="_blank" rel="noopener noreferrer">Hybrid Cloud Architecture</a> - Hybrid cloud design patterns</li>
+<li><a href="https://owasp.org/www-project-enterprise-security-api/" target="_blank" rel="noopener noreferrer">Enterprise Security</a> - Enterprise application security</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Change Management and Organizational Adoption</strong></p>
+<ul>
+<li>MLOps transformation strategies</li>
+<li>Training and enablement programs</li>
+<li>Cultural change and best practice adoption</li>
+<li><strong>Resources:</strong>
+<ul>
+<li><a href="https://ml-ops.org/content/mlops-stack-canvas" target="_blank" rel="noopener noreferrer">MLOps Adoption Guide</a> - Organizational MLOps implementation</li>
+<li><a href="https://www.prosci.com/methodology/adkar" target="_blank" rel="noopener noreferrer">Change Management</a> - ADKAR change management model</li>
+<li><a href="https://www.atlassian.com/devops/what-is-devops/devops-culture" target="_blank" rel="noopener noreferrer">DevOps Culture</a> - Cultural transformation practices</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Congratulations!</strong> You have completed the comprehensive MLOps Engineering learning path. You now possess the advanced skills to design, implement, and manage production-scale ML infrastructure and automation systems. Continue your journey by staying current with emerging MLOps technologies, contributing to open-source platforms, and leading ML infrastructure transformation initiatives!</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site/tree/main/docs/mlops-engineering/05-infrastructure-automation.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/chasingcloudcareers-site/docs/mlops-engineering/monitoring-observability"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Monitoring and Observability</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/chasingcloudcareers-site/docs/category/research-engineering"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Research Engineering</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#infrastructure-as-code-for-ml-systems" class="table-of-contents__link toc-highlight">Infrastructure as Code for ML Systems</a></li><li><a href="#container-orchestration-and-kubernetes" class="table-of-contents__link toc-highlight">Container Orchestration and Kubernetes</a></li><li><a href="#cicd-automation-for-ml" class="table-of-contents__link toc-highlight">CI/CD Automation for ML</a></li><li><a href="#scalable-ml-platform-architecture" class="table-of-contents__link toc-highlight">Scalable ML Platform Architecture</a></li><li><a href="#security-automation-and-compliance" class="table-of-contents__link toc-highlight">Security Automation and Compliance</a></li><li><a href="#advanced-automation-patterns" class="table-of-contents__link toc-highlight">Advanced Automation Patterns</a></li><li><a href="#platform-engineering-and-developer-experience" class="table-of-contents__link toc-highlight">Platform Engineering and Developer Experience</a></li><li><a href="#enterprise-mlops-and-governance" class="table-of-contents__link toc-highlight">Enterprise MLOps and Governance</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Learning Paths</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/intro">Get Started</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/support-engineering/getting-started">Support Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/linux-engineering/getting-started">Linux Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/cloud-engineering/getting-started">Cloud Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/devops-engineering/getting-started">DevOps Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/ai-engineering/getting-started">AI Engineering</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/docs/research-engineering/getting-started">Research Engineering</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/your-discord-invite" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/mrcloudchase/chasingcloudcareers-site" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/chasingcloudcareers-site/about">About</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Chasing Cloud Careers LLC - All rights reserved.</div></div></div></footer></div>
+</body>
+</html>
