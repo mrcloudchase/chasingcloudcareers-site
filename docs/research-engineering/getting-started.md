@@ -4,6 +4,11 @@ sidebar_position: 1
 
 # Research Engineering Learning Path
 
+> **🚧 This learning path is in beta!** We're continuously improving our content based on community feedback. Have suggestions, found outdated resources, or want to contribute? 
+> - **Discord:** Join our community discussions
+> - **GitHub:** Open an issue or submit a pull request to our [repository](https://github.com/mrcloudchase/chasingcloudcareers-site)
+> - **Feedback:** Help us make this path even better for future learners!
+
 Welcome to **Research Engineering** - the intersection of cutting-edge research and practical implementation. This field bridges the gap between academic research and real-world applications, making you a valuable contributor to innovation across any industry.
 
 ## What is Research Engineering?

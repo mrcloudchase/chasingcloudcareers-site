@@ -4,6 +4,11 @@ sidebar_position: 2
 
 # Getting Started with Data Science
 
+> **🚧 This learning path is in beta!** We're continuously improving our content based on community feedback. Have suggestions, found outdated resources, or want to contribute? 
+> - **Discord:** Join our community discussions
+> - **GitHub:** Open an issue or submit a pull request to our [repository](https://github.com/mrcloudchase/chasingcloudcareers-site)
+> - **Feedback:** Help us make this path even better for future learners!
+
 ## Data Science Role Overview
 - **What you Need to Know**
   - **Role Definition and Responsibilities**
